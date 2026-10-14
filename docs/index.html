@@ -18,6 +18,9 @@
 <link rel="canonical" href="https://romelserg.github.io/fiscaliza-cusco/">
 <title>Fiscaliza Cusco</title>
 <meta name="description" content="Proyectos de ley, asistencia y votaciones de los congresistas elegidos por Cusco, con enlace a cada documento oficial.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect width="32" height="32" rx="6" fill="%232b2520"/%3E%3Cpath d="M4 28V23h6v-5h6v-5h12v15z" fill="%23b23a48"/%3E%3Crect x="17" y="5" width="9" height="5" fill="%23f4ede0"/%3E%3Crect x="16" y="6" width="11" height="3" fill="%23f4ede0"/%3E%3Crect x="25" y="4" width="4" height="4" fill="%23a8761a"/%3E%3Crect x="18" y="10" width="2" height="3" fill="%23f4ede0"/%3E%3Crect x="23" y="10" width="2" height="3" fill="%23f4ede0"/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Libre+Franklin:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap">
 <style>
@@ -34,6 +37,7 @@
   --abst: #a8761a;       /* abstención: ocre */
   --vacio: #cfc3ad;      /* no votó / ausente */
   --r1: #3b2f26; --r2: #8a7563; --r3: #cdbfa9;  /* rampa de relación con Cusco */
+  --marca-borde: transparent;  /* en modo oscuro el ícono necesita un borde para separarse del fondo */
   --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
   --body: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
   --acta: "Courier Prime", "Courier New", ui-monospace, monospace;
@@ -42,14 +46,14 @@
   :root:not([data-theme="light"]) {
     --paper: #1f1b17; --paper-2: #29241e; --ink: #efe6d6; --ink-2: #b3a796; --rule: #3d362e;
     --si: #3f93cf; --no: #de6474; --abst: #b98a1f; --vacio: #4a4238;
-    --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43;
+    --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43; --marca-borde: #5a4f43;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #1f1b17; --paper-2: #29241e; --ink: #efe6d6; --ink-2: #b3a796; --rule: #3d362e;
   --si: #3f93cf; --no: #de6474; --abst: #b98a1f; --vacio: #4a4238;
-  --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43;
+  --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43; --marca-borde: #5a4f43;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -71,7 +75,8 @@ p { margin: 0; }
 /* cabecera */
 .masthead { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 20px 48px; align-items: end; }
 .masthead h1 { font: 800 clamp(3.2rem, 10vw, 7.2rem)/0.86 var(--display); text-transform: uppercase; letter-spacing: -0.01em; }
-.masthead h1 span { display: block; color: var(--no); }
+.masthead h1 span { display: flex; align-items: flex-end; gap: 0.12em; color: var(--no); }
+.marca { width: 0.74em; height: 0.74em; flex: none; margin-bottom: 0.06em; border-radius: 0.14em; box-shadow: 0 0 0 1px var(--marca-borde); }
 .masthead .lead { font-size: 1.05rem; max-width: 46ch; }
 .masthead .meta { display: grid; gap: 2px; margin-top: 14px; font: 0.84rem/1.5 var(--acta); color: var(--ink-2); }
 @media (max-width: 720px) { .masthead { grid-template-columns: 1fr; } }
@@ -175,6 +180,9 @@ details > summary { cursor: pointer; font: 0.86rem var(--acta); text-decoration:
 
 footer { display: grid; gap: 14px; font-size: 0.9rem; color: var(--ink-2); }
 footer h2 { font: 800 1.4rem/1 var(--display); text-transform: uppercase; color: var(--ink); }
+.firma { display: flex; align-items: center; gap: 10px; margin-top: 8px; padding-top: 16px; border-top: 1px solid var(--rule); font: 0.95rem/1.3 var(--acta); color: var(--ink); }
+.firma .marca { width: 28px; height: 28px; margin: 0; }
+.firma a { font-weight: 700; }
 footer ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; max-width: 78ch; }
 @media (prefers-reduced-motion: no-preference) { .fila { transition: background .15s; } }
 </style>
@@ -200,6 +208,14 @@ const fecha = f => { if (!f) return ""; const [a, m, d] = f.split("-"); return `
 const fechaCorta = f => { const [, m, d] = f.split("-"); return `${+d} ${MESES[+m - 1]}`; };
 const capital = t => t.charAt(0) + t.slice(1).toLowerCase();
 const apellido = c => c.corto.split(" ").slice(-1)[0];
+
+function iconoMarca() {
+  // Escalón de tocapu con un borreguito en la cima (@sieteborreguitos). Colores fijos: es la marca.
+  return `<svg class="marca" viewBox="0 0 32 32" role="img" aria-label="Ícono de Fiscaliza Cusco"><rect width="32" height="32" rx="6" fill="#2b2520"/>
+    <path d="M4 28V23h6v-5h6v-5h12v15z" fill="#b23a48"/><rect x="17" y="5" width="9" height="5" fill="#f4ede0"/>
+    <rect x="16" y="6" width="11" height="3" fill="#f4ede0"/><rect x="25" y="4" width="4" height="4" fill="#a8761a"/>
+    <rect x="18" y="10" width="2" height="3" fill="#f4ede0"/><rect x="23" y="10" width="2" height="3" fill="#f4ede0"/></svg>`;
+}
 
 function tocapu() {
   // Motivo escalonado inspirado en los tocapus incas: un módulo de 18×18 que se repite.
@@ -316,7 +332,7 @@ function inicio() {
   const directos = DATOS.proyectos.filter(p => p.resumen && p.resumen.cusco === "directa" && Object.values(p.cusco).includes("Autor principal"));
   return `
   <header class="masthead">
-    <h1>Fiscaliza<span>Cusco</span></h1>
+    <h1>Fiscaliza<span>Cusco${iconoMarca()}</span></h1>
     <div><p class="lead">Qué proponen, cuándo asisten y cómo votan los seis congresistas elegidos por Cusco. Cada dato enlaza al documento oficial del Congreso del que sale.</p>
       <div class="meta"><span>Período parlamentario 2026–2031</span><span>Datos al ${fecha(DATOS.actualizado)}</span><span>${DATOS.proyectos.length} proyectos de ley · ${sesiones} sesiones del Pleno</span></div></div>
   </header>
@@ -431,7 +447,8 @@ function pie() {
     <li>Asistencia y votaciones: actas de asistencia y votación del Pleno que publica cada cámara. Muchas son escaneos; las lecturas dudosas se verificaron a mano contra la imagen del acta.</li>
     <li>Cada pase de lista y cada votación cuenta por separado. Solo incluye el Pleno, no las comisiones.</li>
     <li>Las cifras empiezan en julio de 2026. Con pocas sesiones, una sola ausencia mueve bastante los porcentajes.</li>
-    <li>Si un dato está mal, el enlace "acta" o el número de proyecto lleva al documento original para comprobarlo.</li></ol></footer>`;
+    <li>Si un dato está mal, el enlace "acta" o el número de proyecto lleva al documento original para comprobarlo.</li></ol>
+    <p class="firma">${iconoMarca()}<span>Un proyecto de <a href="https://www.instagram.com/sieteborreguitos" target="_blank" rel="noopener">@sieteborreguitos</a></span></p></footer>`;
 }
 
 function filtrar(grupo, selector, prueba) {
