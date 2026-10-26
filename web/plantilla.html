@@ -1,7 +1,10 @@
 <title>Fiscaliza Cusco</title>
 <meta name="description" content="Proyectos de ley, asistencia y votaciones de los congresistas elegidos por Cusco, con enlace a cada documento oficial.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect width="32" height="32" rx="6" fill="%232b2520"/%3E%3Cpath d="M4 28V23h6v-5h6v-5h12v15z" fill="%23b23a48"/%3E%3Crect x="17" y="5" width="9" height="5" fill="%23f4ede0"/%3E%3Crect x="16" y="6" width="11" height="3" fill="%23f4ede0"/%3E%3Crect x="25" y="4" width="4" height="4" fill="%23a8761a"/%3E%3Crect x="18" y="10" width="2" height="3" fill="%23f4ede0"/%3E%3Crect x="23" y="10" width="2" height="3" fill="%23f4ede0"/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Libre+Franklin:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Big+Shoulders+Display:wght@600;800&family=Libre+Franklin:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap">
 <style>
 /* Layout: registro en papel crema — cabecera de afiche, franja de tocapu, "tejido" de votos como pieza central,
    padrón de representantes en filas de libro de actas, fichas individuales por ancla. */
@@ -16,7 +19,12 @@
   --abst: #a8761a;       /* abstención: ocre */
   --vacio: #cfc3ad;      /* no votó / ausente */
   --r1: #3b2f26; --r2: #8a7563; --r3: #cdbfa9;  /* rampa de relación con Cusco */
+  --marca-borde: transparent;
+  --cs: #671b27;          /* borgoña de Ciudad Sur: solo marca (enlaces, títulos, tocapu), nunca datos de voto */
+  /* en modo oscuro el ícono necesita un borde para separarse del fondo */
+  --b-FP: #bd6a24; --b-PCO: #665f00; --b-AN: #05987a; --b-RP: #1d58a3; --b-PBG: #8a6fc0; --b-JP: #1f2f5e;  /* bancadas: forma + color */
   --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --titulo: "Cardo", Georgia, "Times New Roman", serif;
   --body: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
   --acta: "Courier Prime", "Courier New", ui-monospace, monospace;
 }
@@ -24,21 +32,23 @@
   :root:not([data-theme="light"]) {
     --paper: #1f1b17; --paper-2: #29241e; --ink: #efe6d6; --ink-2: #b3a796; --rule: #3d362e;
     --si: #3f93cf; --no: #de6474; --abst: #b98a1f; --vacio: #4a4238;
-    --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43;
+    --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43; --marca-borde: #5a4f43; --cs: #d0848f;
+    --b-FP: #c87e41; --b-PCO: #6c7a15; --b-AN: #0baa92; --b-RP: #087aaf; --b-PBG: #9b81d2; --b-JP: #b3c0f0;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --paper: #1f1b17; --paper-2: #29241e; --ink: #efe6d6; --ink-2: #b3a796; --rule: #3d362e;
   --si: #3f93cf; --no: #de6474; --abst: #b98a1f; --vacio: #4a4238;
-  --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43;
+  --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43; --marca-borde: #5a4f43; --cs: #d0848f;
+  --b-FP: #c87e41; --b-PCO: #6c7a15; --b-AN: #0baa92; --b-RP: #087aaf; --b-PBG: #9b81d2; --b-JP: #b3c0f0;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { background: var(--paper); color: var(--ink); font: 15.5px/1.6 var(--body); }
-.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 72px; display: grid; gap: 56px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 72px; display: grid; gap: 56px; grid-template-columns: minmax(0, 1fr); }
 a { color: inherit; text-decoration-color: var(--rule); text-decoration-thickness: 2px; text-underline-offset: 3px; }
-a:hover { text-decoration-color: var(--no); }
+a:hover { text-decoration-color: var(--cs); }
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 h1, h2, h3 { margin: 0; text-wrap: balance; }
 p { margin: 0; }
@@ -47,22 +57,129 @@ p { margin: 0; }
 .num { font-variant-numeric: tabular-nums; }
 .small { font-size: 0.88rem; }
 
+/* barra de Ciudad Sur (la revista que publica la herramienta): negra, como en ciudadsur.pe */
+.cs-barra { background: #000; color: #fff; }
+.cs-barra .in { max-width: 1120px; margin: 0 auto; padding: 8px 20px; display: flex; align-items: center; gap: 24px; }
+.cs-barra img { height: 42px; width: auto; display: block; }
+.cs-barra nav { margin-left: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 22px; font: 400 1.02rem/1.2 var(--titulo); }
+.cs-barra a { color: #ddd; text-decoration: none; }
+.cs-barra a:hover, .cs-barra a[aria-current] { color: #fff; text-decoration: underline; text-decoration-color: #e9b9c1; }
+.cs-barra a:focus-visible { outline-color: #fff; }
+@media (max-width: 720px) { .cs-barra nav a:not([aria-current]) { display: none; } .cs-barra img { height: 34px; } }
+
+/* menú fijo, resumen y elige */
+.menu-sec { position: sticky; top: 0; z-index: 8; display: flex; gap: 4px 22px; overflow-x: auto; white-space: nowrap; scrollbar-width: none;
+  background: var(--paper); border-bottom: 2px solid var(--ink); padding: 10px 2px; margin-top: -40px; font: 600 0.92rem var(--body); }
+.menu-sec::-webkit-scrollbar { display: none; }
+.menu-sec a { text-decoration: none; color: var(--ink-2); }
+.menu-sec a:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--cs); }
+.sec { scroll-margin-top: 56px; }
+.resumen30 { display: grid; gap: 10px; margin-top: -24px; }
+.tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 12px; }
+.tarjeta { display: grid; gap: 6px; align-content: start; padding: 14px 16px; background: var(--paper-2); border-top: 3px solid var(--cs); text-decoration: none; color: var(--ink); }
+.tarjeta:hover { background: color-mix(in oklab, var(--paper-2), var(--ink) 6%); }
+.tarjeta b { font: 800 2.4rem/1 var(--display); }
+.tarjeta span { font-size: 0.95rem; line-height: 1.4; }
+.elige { display: grid; gap: 10px; margin-top: -24px; }
+.elige-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+@media (max-width: 600px) { .elige-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.elige-grid a { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border: 1.5px solid var(--rule); border-radius: 3px; text-decoration: none; color: var(--ink); min-height: 56px; }
+.elige-grid a:hover { border-color: var(--ink); background: var(--paper-2); }
+.elige-grid svg { width: 16px; height: 16px; flex: none; }
+.elige-grid b { display: block; font: 700 1.05rem/1.15 var(--titulo); }
+.elige-grid small { display: block; font-size: 0.76rem; color: var(--ink-2); }
+.glosa { text-decoration: underline dotted var(--ink-2); text-underline-offset: 3px; cursor: help; }
+details.analisis > summary { font: 600 0.95rem var(--body); cursor: pointer; padding: 10px 0; }
+details.analisis[open] { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
+footer.metodo { max-width: 72ch; }
+
+/* padrón en barras */
+.pb { display: grid; }
+.pb-fila { display: grid; grid-template-columns: minmax(0, 13rem) repeat(4, minmax(0, 1fr)); gap: 6px 24px; align-items: center;
+  padding: 14px 4px; border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; }
+a.pb-fila:hover { background: var(--paper-2); }
+.pb-cab { border-bottom: 2px solid var(--ink); padding-top: 0; font-size: 0.86rem; align-items: end; }
+.pb-nom { display: block; font: 700 1.4rem/1.1 var(--titulo); }
+.pb-sub { display: block; font-size: 0.8rem; color: var(--ink-2); margin-top: 2px; }
+.pb-celda { display: grid; grid-template-columns: minmax(0, 1fr) 3.4rem; align-items: center; gap: 2px 8px; }
+.pb-celda .pb-sub { grid-column: 1 / -1; }
+.pb-pista { position: relative; height: 24px; background: var(--paper-2); border-radius: 0 4px 4px 0; }
+.pb-pista i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ink); border-radius: 0 4px 4px 0; min-width: 3px; }
+.pb-med { position: absolute; top: -7px; bottom: -7px; width: 3px; margin-left: -1.5px; z-index: 1;
+  background: linear-gradient(var(--ink-2) 0 7px, var(--paper) 7px calc(100% - 7px), var(--ink-2) calc(100% - 7px)); }
+.pb-v { font: 800 2.1rem/1 var(--display); text-align: right; }
+.pb-v small { font-size: 0.55em; margin-left: 1px; }
+.pb-v.bajo { color: var(--no); }
+.pb-forma { width: 12px; height: 12px; vertical-align: -1px; margin-right: 5px; }
+@media (max-width: 760px) {
+  .pb-fila { grid-template-columns: 1fr; gap: 10px; }
+  .pb-cab { display: none; }
+  .pb-fila > span[role=cell]:not(:first-child)::before { font-size: 0.78rem; color: var(--ink-2); display: block; margin-bottom: 2px; }
+  .pb-fila > span[role=cell]:nth-child(2)::before { content: "Asistencia"; }
+  .pb-fila > span[role=cell]:nth-child(3)::before { content: "Proyectos propios"; }
+  .pb-fila > span[role=cell]:nth-child(4)::before { content: "Como coautor"; }
+  .pb-fila > span[role=cell]:nth-child(5)::before { content: "Intervenciones en el Pleno"; }
+}
+
+/* recorrido de los proyectos */
+.recorrido { display: grid; }
+.rc-fila { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr) minmax(0, 13rem); gap: 6px 24px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.rc-camara { background: var(--paper-2); padding-inline: 10px; margin-top: 10px; }
+.rc-nom { font: 700 1.1rem/1.2 var(--titulo); color: var(--ink); }
+.rc-fila .sub { font-size: 0.82rem; color: var(--ink-2); }
+.rc-pz { display: flex; flex-wrap: wrap; gap: 3px; }
+.rc-pz i.pz { width: 16px; height: 16px; border-radius: 2px; display: block; }
+.rc-pz i.pz.arch { background: transparent; box-shadow: inset 0 0 0 1.5px var(--ink-2); }
+.rc-barra { display: flex; gap: 2px; height: 16px; }
+.rc-barra i { display: block; height: 100%; min-width: 3px; }
+.rc-barra i:first-child { border-radius: 3px 0 0 3px; } .rc-barra i:last-child { border-radius: 0 3px 3px 0; }
+@media (max-width: 760px) { .rc-fila { grid-template-columns: 1fr; } }
+/* En el celular las tablas anchas se leen como tarjetas */
+@media (max-width: 700px) {
+  table.matriz thead { display: none; }
+  table.matriz, table.matriz tbody, table.matriz tr { display: block; width: 100%; }
+  table.matriz tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  table.matriz td { display: block; border: 0; padding: 6px; }
+  table.matriz td:first-child, table.matriz td:last-child, table.matriz td:nth-child(2) { grid-column: 1 / -1; }
+  table.matriz td[data-b]::before { content: attr(data-b); display: block; font: 600 0.7rem var(--acta); }
+  table.matriz td.c.num { text-align: left; }
+  .chips button, .filtros-red button { padding: 9px 12px; font-size: 0.9rem; }
+}
+
+/* escríbele */
+.contactos { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0 28px; }
+.contacto { display: grid; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--rule); align-content: start; }
+.contacto .sub { font-size: 0.82rem; color: var(--ink-2); }
+.contacto .redactar { justify-self: start; margin-top: 4px; }
+.redactor { display: grid; gap: 14px; max-width: 760px; padding: 18px; background: var(--paper-2); border-top: 3px solid var(--cs); }
+.r-campos { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 12px 20px; }
+.redactor label { display: grid; gap: 4px; font-size: 0.86rem; font-weight: 600; min-width: 0; }
+.redactor .r-ancho { grid-column: 1 / -1; }
+.redactor input, .redactor select, .redactor textarea { font: 400 0.95rem/1.45 var(--body); color: var(--ink); background: var(--paper); border: 1.5px solid var(--ink-2); border-radius: 2px; padding: 7px 9px; width: 100%; min-width: 0; }
+.redactor textarea { resize: vertical; }
+.redactor input:focus-visible, .redactor select:focus-visible, .redactor textarea:focus-visible { outline: 3px solid var(--abst); outline-offset: 1px; }
+.r-acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.boton, .redactor button, .redactar { font: 600 0.9rem var(--body); padding: 9px 16px; border: 2px solid var(--ink); border-radius: 2px; background: var(--ink); color: var(--paper); text-decoration: none; cursor: pointer; }
+.redactor button, .redactar { background: transparent; color: var(--ink); }
+.boton[aria-disabled] { opacity: 0.45; cursor: not-allowed; }
+
 /* franja de tocapu */
 .tocapu { display: block; width: 100%; height: 18px; }
 
 /* cabecera */
 .masthead { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 20px 48px; align-items: end; }
-.masthead h1 { font: 800 clamp(3.2rem, 10vw, 7.2rem)/0.86 var(--display); text-transform: uppercase; letter-spacing: -0.01em; }
-.masthead h1 span { display: block; color: var(--no); }
+.masthead h1 { font: 700 clamp(3rem, 9vw, 6.6rem)/0.92 var(--titulo); letter-spacing: -0.015em; }
+.masthead h1 span { display: flex; align-items: flex-end; gap: 0.14em; color: var(--cs); font-style: italic; }
+.marca { width: 0.74em; height: 0.74em; flex: none; margin-bottom: 0.06em; border-radius: 0.14em; box-shadow: 0 0 0 1px var(--marca-borde); }
 .masthead .lead { font-size: 1.05rem; max-width: 46ch; }
 .masthead .meta { display: grid; gap: 2px; margin-top: 14px; font: 0.84rem/1.5 var(--acta); color: var(--ink-2); }
 @media (max-width: 720px) { .masthead { grid-template-columns: 1fr; } }
 
 /* encabezados de sección */
-.sec { display: grid; gap: 18px; min-width: 0; }
+.sec { display: grid; gap: 18px; min-width: 0; grid-template-columns: minmax(0, 1fr); }  /* la columna no crece con tablas anchas (celular) */
 .sec-head { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 4px 24px; border-top: 2px solid var(--ink); padding-top: 12px; }
 .sec-head .folio { font: 700 0.8rem/1.4 var(--acta); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); }
-.sec-head h2 { font: 800 clamp(1.7rem, 4vw, 2.5rem)/1 var(--display); text-transform: uppercase; }
+.sec-head h2 { font: 700 clamp(1.8rem, 4vw, 2.6rem)/1.05 var(--titulo); }
 .sec-head p { grid-column: 2; max-width: 64ch; color: var(--ink-2); }
 @media (max-width: 720px) { .sec-head { grid-template-columns: 1fr; } .sec-head p { grid-column: 1; } }
 
@@ -86,7 +203,7 @@ p { margin: 0; }
 .fila { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr) minmax(0, 9rem); gap: 10px 28px; align-items: center;
   padding: 18px 4px; border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; }
 .fila:hover { background: var(--paper-2); }
-.fila .nombre { font: 800 1.7rem/1 var(--display); text-transform: uppercase; }
+.fila .nombre { font: 700 1.6rem/1.05 var(--titulo); }
 .fila .sub { font-size: 0.82rem; color: var(--ink-2); margin-top: 4px; }
 .fila .graf { display: grid; gap: 8px; min-width: 0; }
 .fila .props { font: 0.84rem/1.4 var(--acta); color: var(--ink-2); text-align: right; }
@@ -124,6 +241,141 @@ p { margin: 0; }
 .pill { display: inline-block; font: 0.74rem/1 var(--acta); padding: 4px 7px; border: 1px solid currentColor; border-radius: 2px; margin-top: 6px; }
 @media (max-width: 640px) { .item { grid-template-columns: 1fr; } }
 
+/* intervenciones */
+.cita { margin: 4px 0 0; padding: 0; font: 600 1.15rem/1.4 var(--body); max-width: 60ch; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 8px; }
+.cita::before { content: "“"; font: 700 3rem/0.8 var(--titulo); color: var(--cs); }
+.ese-dia { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font: 0.78rem/1.3 var(--acta); color: var(--ink-2); margin-top: 4px; }
+.ese-dia .voto { cursor: default; }
+.chip-voto { display: inline-flex; align-items: center; gap: 5px; padding: 3px 6px; border: 1px solid var(--rule); border-radius: 2px; }
+.chip-voto::before { content: ""; width: 9px; height: 9px; border-radius: 2px; background: var(--c, var(--vacio)); }
+
+/* contexto: gráfico de puntos */
+.comp { display: grid; gap: 18px; max-width: 760px; }
+.comp-fila { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 4px 20px; align-items: center; }
+.comp-fila .t { font-weight: 600; font-size: 0.92rem; }
+.comp-fila .d { grid-column: 2; font: 0.8rem/1.4 var(--acta); color: var(--ink-2); }
+.comp svg { width: 100%; height: 30px; display: block; overflow: visible; }
+.comp svg text { font: 10px var(--acta); fill: var(--ink-2); }
+.leyenda-comp { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.84rem; color: var(--ink-2); }
+.leyenda-comp svg { width: 12px; height: 12px; vertical-align: -1px; margin-right: 4px; }
+.tabla-ctx td { white-space: nowrap; }
+.tabla-ctx .mini { width: 140px; height: 18px; display: block; }
+@media (max-width: 640px) { .comp-fila { grid-template-columns: 1fr; } .comp-fila .d { grid-column: 1; } }
+
+/* buscador */
+.buscador { display: grid; gap: 8px; margin-top: -24px; }
+.barra-busqueda { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+.buscador input[type=search] { width: 100%; font: 500 1rem var(--body); padding: 9px 12px; border: 2px solid var(--ink); border-radius: 2px;
+  background: var(--paper); color: var(--ink); }
+.barra-busqueda button, .ver-mas { font: 600 0.9rem var(--body); padding: 10px 16px; border: 2px solid var(--ink); background: var(--ink); color: var(--paper);
+  border-radius: 2px; cursor: pointer; }
+.ver-mas { justify-self: start; margin-top: 10px; background: transparent; color: var(--ink); }
+.res:empty { display: none; }
+.buscador input[type=search]:focus-visible { outline: 3px solid var(--abst); outline-offset: 2px; }
+.res { display: grid; }
+.res-item { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 4px 20px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.res-item .meta { font: 0.78rem/1.45 var(--acta); color: var(--ink-2); }
+.res-item mark { background: color-mix(in oklab, var(--abst) 35%, transparent); color: inherit; padding: 0 2px; }
+.res-item .q { font-weight: 600; }
+@media (max-width: 640px) { .res-item { grid-template-columns: 1fr; } }
+
+/* etiquetas de tema */
+.temas-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.tema-tag { font: 0.72rem/1 var(--acta); padding: 4px 6px; border-radius: 2px; background: var(--paper-2); color: var(--ink-2); border: 0; cursor: pointer; }
+.tema-tag:hover { color: var(--ink); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips button { font: 0.84rem var(--body); padding: 6px 10px; border: 1px solid var(--rule); background: transparent; color: var(--ink); border-radius: 2px; cursor: pointer; }
+.chips button b { font-family: var(--acta); font-weight: 700; margin-left: 4px; color: var(--ink-2); }
+.chips button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chips button[aria-pressed="true"] b { color: var(--paper); }
+.subtit { font: 700 1.3rem/1.15 var(--titulo); margin-top: 8px; }
+
+/* mapa */
+.mapa-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+.mapa svg { width: 100%; height: auto; display: block; }
+.prov { stroke: var(--paper); stroke-width: 2; cursor: pointer; }
+.prov:hover, .prov.sel { stroke: var(--ink); stroke-width: 2.5; }
+.mapa text { font: 11px var(--acta); fill: var(--ink); pointer-events: none; paint-order: stroke; stroke: var(--paper); stroke-width: 3px; }
+.ranking { display: grid; gap: 6px; }
+.rk { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr) 2rem; gap: 10px; align-items: center; background: none; border: 0; padding: 2px 0;
+  font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.rk .bar { height: 14px; border-radius: 0 3px 3px 0; background: var(--cs); }
+.rk .cero { font: 0.74rem var(--acta); color: var(--ink-2); }
+.rk .n { font: 700 0.9rem var(--acta); text-align: right; }
+.rk[aria-pressed="true"] .nom { text-decoration: underline; text-decoration-color: var(--cs); text-decoration-thickness: 2px; }
+@media (max-width: 760px) { .mapa-grid { grid-template-columns: 1fr; } }
+
+/* sección plegable */
+.plegable > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 4px 24px;
+  border-top: 2px solid var(--ink); padding-top: 12px; text-decoration: none; font: inherit; }
+.plegable > summary::-webkit-details-marker { display: none; }
+.plegable > summary .folio { font: 700 0.8rem/1.4 var(--acta); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); }
+.plegable-tit { font: 700 clamp(1.8rem, 4vw, 2.6rem)/1.05 var(--titulo); }
+.plegable-sub { grid-column: 2; font: 0.86rem var(--acta); color: var(--ink-2); }
+.plegable-sub .abrir { color: var(--ink); text-decoration: underline; text-decoration-color: var(--cs); text-decoration-thickness: 2px; }
+.plegable[open] .abrir { font-size: 0; } .plegable[open] .abrir::after { content: "Cerrar"; font-size: 0.86rem; }
+@media (max-width: 720px) { .plegable > summary { grid-template-columns: 1fr; } .plegable-sub { grid-column: 1; } }
+
+/* agenda */
+.agenda { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 28px; }
+.ag-col { display: grid; gap: 8px; align-content: start; min-width: 0; }
+.ag-col h3 { font: 700 1.35rem/1.1 var(--titulo); }
+.ag-item { padding: 10px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 4px; }
+.ag-item.cusco { box-shadow: inset 3px 0 0 var(--cs); padding-left: 12px; }
+.ag-item .sec { font: 0.74rem var(--acta); color: var(--ink-2); text-transform: uppercase; }
+.ag-item details > summary { font: inherit; text-decoration: none; color: var(--ink); }
+.ag-item details > summary::after { content: " ver más"; font: 0.78rem var(--acta); color: var(--ink-2); text-decoration: underline; }
+.firma-cus { font: 0.78rem var(--acta); color: var(--cs); font-weight: 700; }
+
+/* redes */
+.red svg { width: 100%; height: auto; display: block; }
+.red .arista { stroke: var(--ink-2); fill: none; }
+.red .nodo { stroke: var(--paper); stroke-width: 1.5; cursor: pointer; }
+.red .nodo.cus { stroke: var(--ink); stroke-width: 2.5; }
+.red text { font: 700 14px var(--body); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 4.5px; pointer-events: none; }
+.red .arista { stroke-opacity: 0.32; }
+.red .grupo { fill: var(--paper-2); stroke: var(--rule); stroke-width: 1; }
+.red text.grupo-nom { font: 400 13px var(--titulo); fill: var(--ink-2); stroke-width: 3px; }
+.red .arista.debil { display: none; }
+.red.foco .arista { stroke-opacity: 0.05; } .red.foco .nodo { opacity: 0.15; } .red.foco text { opacity: 0.2; }
+.red.foco .arista.on { display: inline; stroke: var(--ink); stroke-opacity: 0.75; }
+.red.foco .on { opacity: 1 !important; }
+.red-senado { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 8px 28px; align-items: center; }
+@media (max-width: 720px) { .red-senado { grid-template-columns: 1fr; } }
+.hallazgos { margin: 0; padding: 14px 18px 14px 34px; background: var(--paper-2); border-left: 4px solid var(--cs); display: grid; gap: 6px; max-width: 78ch; }
+.franjas { display: grid; gap: 4px; max-width: 760px; }
+.franja { margin: 0; }
+.franja figcaption { font-size: 0.92rem; }
+.franja svg { width: 100%; height: auto; display: block; overflow: visible; }
+.franja .gris { fill: var(--ink-2); fill-opacity: 0.4; }
+.franja .eje { stroke: var(--rule); stroke-width: 1; }
+.franja .mediana { stroke: var(--ink-2); stroke-width: 1.2; stroke-dasharray: 3 3; }
+.franja .guia { stroke: var(--ink-2); stroke-width: 1; }
+.franja text { font: 600 12.5px var(--body); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 4px; }
+.franja text.ref { font: 400 11px var(--acta); fill: var(--ink-2); }
+.franja .nodo.cus { stroke: var(--ink); stroke-width: 2; }
+.lados svg { max-width: 820px; }
+.lados .nodo { stroke: var(--paper); stroke-width: 0.8; }
+.lados text.lado { font: 700 13px var(--body); fill: var(--ink); stroke: none; }
+.lados text.banc { font: 400 14px var(--titulo); fill: var(--ink-2); stroke: none; }
+.lados text.ref { font: 400 11px var(--acta); fill: var(--ink-2); stroke: none; }
+.lados text.cus-nom { font: 700 13px var(--body); }
+.lados .riel { stroke: var(--rule); stroke-width: 1; }
+.lados .eje-v { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 3 4; }
+.matriz td.propia { box-shadow: inset 0 0 0 3px var(--ink); }
+.leyenda-banc { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.84rem; color: var(--ink-2); }
+.leyenda-banc svg { width: 14px; height: 14px; vertical-align: -2px; margin-right: 5px; }
+.matriz td.celda { text-align: center; font: 700 0.86rem var(--acta); min-width: 4.2rem; }
+.afin svg { width: 100%; max-width: 640px; height: auto; display: block; }
+.afin .lazo { stroke: var(--ink); stroke-linecap: round; }
+.afin .lazo.fuerte { stroke-width: 11; opacity: 0.85; }
+.afin .lazo.medio { stroke-width: 5; opacity: 0.5; }
+.afin .lazo.debil { stroke-width: 2; opacity: 0.55; stroke-dasharray: 5 6; }
+.afin text.nom { font: 700 17px var(--titulo); }
+.afin text.pct.fuerte { font-size: 16px; fill: var(--ink); }
+.afin text { font: 600 13px var(--body); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 4px; }
+.afin .pct { font: 700 13px var(--acta); fill: var(--ink-2); paint-order: stroke; stroke: var(--paper); stroke-width: 5px; }
+
 /* tablas */
 .scroll { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
@@ -136,14 +388,14 @@ tr.split td:first-child { box-shadow: inset 3px 0 0 var(--abst); }
 .voto { font: 700 0.8rem/1 var(--acta); white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
 .voto::before { content: ""; width: 10px; height: 10px; border-radius: 2px; background: var(--c, var(--vacio)); }
 
-.filtros { display: flex; flex-wrap: wrap; gap: 6px; }
-.filtros button { font: 0.82rem var(--acta); padding: 6px 12px; border: 1px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; border-radius: 2px; }
-.filtros button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.filtros, .filtros-red { display: flex; flex-wrap: wrap; gap: 6px; }
+.filtros button, .filtros-red button { font: 0.82rem var(--acta); padding: 6px 12px; border: 1px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; border-radius: 2px; }
+.filtros button[aria-pressed="true"], .filtros-red button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
 details > summary { cursor: pointer; font: 0.86rem var(--acta); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }
 
 /* ficha */
 .ficha-head { display: grid; gap: 10px; }
-.ficha-head h1 { font: 800 clamp(3rem, 9vw, 6rem)/0.88 var(--display); text-transform: uppercase; }
+.ficha-head h1 { font: 700 clamp(2.8rem, 8vw, 5.4rem)/0.95 var(--titulo); }
 .volver { font: 0.86rem var(--acta); }
 .resumen-prosa { font-size: 1.15rem; line-height: 1.55; max-width: 60ch; }
 .resumen-prosa b { font-weight: 600; }
@@ -156,18 +408,25 @@ details > summary { cursor: pointer; font: 0.86rem var(--acta); text-decoration:
 #tip b { font-family: var(--acta); }
 
 footer { display: grid; gap: 14px; font-size: 0.9rem; color: var(--ink-2); }
-footer h2 { font: 800 1.4rem/1 var(--display); text-transform: uppercase; color: var(--ink); }
+footer h2 { font: 700 1.5rem/1.1 var(--titulo); color: var(--ink); }
+.firma { display: flex; align-items: center; gap: 10px; margin-top: 8px; padding-top: 16px; border-top: 1px solid var(--rule); font: 0.95rem/1.3 var(--acta); color: var(--ink); }
+.firma .marca { width: 28px; height: 28px; margin: 0; }
+.firma a { font-weight: 700; }
 footer ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; max-width: 78ch; }
 @media (prefers-reduced-motion: no-preference) { .fila { transition: background .15s; } }
 </style>
 
+<div class="cs-barra"><div class="in">
+  <a href="https://ciudadsur.pe" aria-label="Ciudad Sur, revista: ir a la portada"><img src="/*LOGO_CS*/" alt="Ciudad Sur" width="300" height="107"></a>
+  <nav aria-label="Secciones de Ciudad Sur"><a href="https://ciudadsur.pe/seccion/actualidad">Actualidad</a><a href="https://ciudadsur.pe/seccion/social">Social</a><a href="https://ciudadsur.pe/seccion/arte-y-cultura">Arte &amp; Cultura</a><a href="https://ciudadsur.pe/seccion/proyectos-especiales" aria-current="page">Proyectos Especiales</a></nav>
+</div></div>
 <div class="wrap" id="app"></div>
 <div id="tip" hidden></div>
 
 <script>
 const DATOS = /*DATOS*/null;
-const ETQ = { SI: "SI", NO: "NO", ABST: "Abst.", AUS: "AUS", SINRES: "Sin resp.", LO: "Lic.", LP: "Lic.", LE: "Lic.", LV: "Lic.", SUS: "Susp.", PRE: "PRE", "***": "Presidía" };
-const LARGO = { SI: "A favor", NO: "En contra", ABST: "Abstención", AUS: "Ausente", SINRES: "Presente, sin marcar voto",
+const ETQ = { SI: "SI", NO: "NO", ABST: "Abst.", AUS: "AUS", SINRES: "Sin resp.", LO: "Lic.", LP: "Lic.", LE: "Lic.", LV: "Lic.", SUS: "Susp.", PRE: "PRE", "***": "Presidía", REVISAR: "Por verificar" };
+const LARGO = { REVISAR: "Lectura por verificar contra el acta (actualización automática)", SI: "A favor", NO: "En contra", ABST: "Abstención", AUS: "Ausente", SINRES: "Presente, sin marcar voto",
   LO: "Licencia oficial", LP: "Licencia personal", LE: "Licencia por enfermedad", LV: "Licencia por viaje",
   SUS: "Suspendido", PRE: "Presente", "***": "Presidía la sesión" };
 const COLOR = { SI: "var(--si)", NO: "var(--no)", ABST: "var(--abst)" };
@@ -181,12 +440,20 @@ const fechaCorta = f => { const [, m, d] = f.split("-"); return `${+d} ${MESES[+
 const capital = t => t.charAt(0) + t.slice(1).toLowerCase();
 const apellido = c => c.corto.split(" ").slice(-1)[0];
 
+function iconoMarca() {
+  // Escalón de tocapu con un borreguito en la cima (@sieteborreguitos). Colores fijos: es la marca.
+  return `<svg class="marca" viewBox="0 0 32 32" role="img" aria-label="Ícono de Fiscaliza Cusco"><rect width="32" height="32" rx="6" fill="#2b2520"/>
+    <path d="M4 28V23h6v-5h6v-5h12v15z" fill="#b23a48"/><rect x="17" y="5" width="9" height="5" fill="#f4ede0"/>
+    <rect x="16" y="6" width="11" height="3" fill="#f4ede0"/><rect x="25" y="4" width="4" height="4" fill="#a8761a"/>
+    <rect x="18" y="10" width="2" height="3" fill="#f4ede0"/><rect x="23" y="10" width="2" height="3" fill="#f4ede0"/></svg>`;
+}
+
 function tocapu() {
   // Motivo escalonado inspirado en los tocapus incas: un módulo de 18×18 que se repite.
   return `<svg class="tocapu" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 360 18">
     <defs><pattern id="tq" width="36" height="18" patternUnits="userSpaceOnUse">
       <rect width="36" height="18" style="fill:var(--ink)"/>
-      <path d="M2 16h4v-4h4v-4h4v-4h4v12z" style="fill:var(--no)"/>
+      <path d="M2 16h4v-4h4v-4h4v-4h4v12z" style="fill:var(--cs)"/>
       <path d="M20 2h4v4h4v4h4v4h4V2z" style="fill:var(--abst)"/>
       <rect x="22" y="12" width="4" height="4" style="fill:var(--paper)"/>
       <rect x="10" y="2" width="4" height="4" style="fill:var(--paper)"/>
@@ -204,7 +471,8 @@ function cifras(c) {
   const roles = DATOS.proyectos.map(p => p.cusco[c.id]).filter(Boolean);
   return { asis, pases: asis.length, presente: asis.filter(v => v === "PRE" || v === "***").length,
     votables, participo, presidio, si: n("SI"), no: n("NO"), abst: n("ABST"), sinVoto: votables - participo,
-    autor: roles.filter(r => r === "Autor principal").length, coautor: roles.filter(r => r !== "Autor principal").length };
+    autor: roles.filter(r => r === "Autor principal").length, coautor: roles.filter(r => r !== "Autor principal").length,
+    habla: DATOS.intervenciones.filter(i => i.congresista === c.id && !i.procedimiento).length };
 }
 
 function apilada(k) {
@@ -289,57 +557,114 @@ function graficoRelacion() {
 }
 
 function inicio() {
-  const dip = DATOS.congresistas.filter(c => c.camara === "D");
-  const sen = DATOS.congresistas.filter(c => c.camara === "S");
-  const votsD = DATOS.eventos.filter(e => e.camara === "D" && e.tipo === "VOTACIÓN");
   const sesiones = new Set(DATOS.eventos.map(e => e.camara + e.fecha)).size;
-  const directos = DATOS.proyectos.filter(p => p.resumen && p.resumen.cusco === "directa" && Object.values(p.cusco).includes("Autor principal"));
   return `
   <header class="masthead">
-    <h1>Fiscaliza<span>Cusco</span></h1>
-    <div><p class="lead">Qué proponen, cuándo asisten y cómo votan los seis congresistas elegidos por Cusco. Cada dato enlaza al documento oficial del Congreso del que sale.</p>
+    <h1>Fiscaliza<span>Cusco${iconoMarca()}</span></h1>
+    <div><p class="lead">Si van al Pleno, cómo votan, qué proponen y con quién trabajan los seis congresistas elegidos por Cusco. Cada dato enlaza al documento oficial del Congreso.</p>
       <div class="meta"><span>Período parlamentario 2026–2031</span><span>Datos al ${fecha(DATOS.actualizado)}</span><span>${DATOS.proyectos.length} proyectos de ley · ${sesiones} sesiones del Pleno</span></div></div>
   </header>
   ${tocapu()}
+  ${menuSecciones()}
+  ${resumen30()}
+  ${eligeCongresista()}
+  ${seccionBuscador()}
 
-  <section class="sec" aria-labelledby="t-tejido">
-    ${encabezado("Pleno · Diputados", "El tejido de votos", `Cada cuadro es el voto de un diputado cusqueño en una votación del Pleno, en orden de fecha. La marca ocre arriba de una columna señala que los cusqueños votaron distinto entre sí. Pasa el cursor por un cuadro para ver el asunto.`, "t-tejido")}
-    ${leyendaVotos(true)}
-    <div class="tejido">${tejido(dip, "D")}</div>
-    <details><summary>Ver las ${votsD.length} votaciones como tabla</summary>
-      <div class="filtros" role="group" aria-label="Filtrar votaciones" style="margin:12px 0">
-        <button type="button" id="f-todas" aria-pressed="true" data-f="todas">Todas</button>
-        <button type="button" id="f-div" aria-pressed="false" data-f="divididas">Solo donde se dividieron</button></div>
-      <div class="scroll"><table><thead><tr><th>Fecha</th><th>Asunto</th>${dip.map(c => `<th class="c">${esc(apellido(c))}</th>`).join("")}<th class="c">Fuente</th></tr></thead>
-        <tbody id="acta">${[...votsD].reverse().map(e => filaVoto(e, dip.map(c => c.id), true)).join("")}</tbody></table></div>
-    </details>
+  <section class="sec" aria-labelledby="t-padron" id="representantes">
+    ${encabezado("Padrón", "Los seis representantes", `Si van al Pleno, cuánto proponen, cuánto respaldan y cuánto hablan. La marca vertical es el promedio o la ${glosa("mediana", "El valor del medio: la mitad de los congresistas de la cámara está por encima y la otra mitad por debajo. Sirve para comparar con un congresista típico.")} de su cámara.`, "t-padron")}
+    ${padronBarras()}
   </section>
 
-  <section class="sec" aria-labelledby="t-senado">
-    ${encabezado("Pleno · Senado", "El senador, votación por votación", `${esc(sen.map(c => c.corto).join(", "))} es el único senador por Cusco. En el Congreso bicameral el Senado revisa lo que aprueba Diputados, así que su trabajo se ve sobre todo en estas votaciones.`, "t-senado")}
-    <div class="tejido">${tejido(sen, "S")}</div>
+  ${seccionVotos()}
+  ${seccionMapa()}
+  ${seccionTemas()}
+
+  <section class="sec" aria-labelledby="t-habla" id="habla">
+    ${encabezado("Diario de Debates", "Quién habla en el Pleno", "Cuántas veces tomó la palabra cada uno y cuánto habló, según la transcripción oficial.", "t-habla")}
+    ${quienHabla()}
   </section>
 
-  <section class="sec" aria-labelledby="t-padron">
-    ${encabezado("Padrón", "Los seis representantes", "Cada barra pequeña es un pase de lista: llena si estuvo presente, en contorno rojo si no. Abajo, cómo repartió sus votos. Abre una fila para ver la ficha completa.", "t-padron")}
-    <div class="padron">${DATOS.congresistas.map(c => { const k = cifras(c); return `
-      <a class="fila" href="#${c.slug}">
-        <div><div class="nombre">${esc(c.corto)}</div><div class="sub">${esc(c.partido)} · ${c.camara === "S" ? "Senado" : "Diputados"}</div></div>
-        <div class="graf">
-          <span class="etq">Asistencia: ${k.presente} de ${k.pases} pases de lista</span>${pases(k, c)}
-          <span class="etq">Votó en ${k.participo} de ${k.votables} votaciones${k.presidio ? ` · presidió ${k.presidio}` : ""}</span>${apilada(k)}
-        </div>
-        <div class="props"><b>${k.autor}</b>proyectos propios<br>${k.coautor} como coautor</div>
-      </a>`; }).join("")}</div>
-  </section>
-
-  <section class="sec" aria-labelledby="t-propone">
-    ${encabezado("Proyectos de ley", "Qué proponen", "Proyectos en los que cada congresista es el primer firmante, según su relación con Cusco. La clasificación sale de leer el texto completo de cada proyecto.", "t-propone")}
-    ${graficoRelacion()}
-    ${directos.length ? `<div class="lista">${directos.map(p => proyecto(p, true)).join("")}</div>` : ""}
-  </section>
+  ${seccionProyectos()}
+  ${seccionRedes()}
+  ${seccionEscribele()}
+  ${seccionAgenda()}
   ${tocapu()}
   ${pie()}`;
+}
+
+/* ---------- Navegación y resumen ---------- */
+const SECCIONES = [["representantes", "Representantes"], ["votos", "Cómo votan"], ["mapa", "Territorio"], ["temas", "Temas"],
+  ["habla", "Quién habla"], ["proyectos", "Proyectos"], ["redes", "Con quién trabajan"], ["escribele", "Escríbele"]];
+function menuSecciones() {
+  return `<nav class="menu-sec" aria-label="Secciones de la página">${SECCIONES.map(([id, n]) => `<a href="#${id}" data-ir="${id}">${n}</a>`).join("")}</nav>`;
+}
+function glosa(termino, definicion) {
+  return `<span class="glosa" tabindex="0" data-tip="${esc(definicion)}">${termino}</span>`;
+}
+function resumen30() {
+  const ctx = (DATOS.contexto || {}).congresistas || {}, cam = (DATOS.contexto || {}).camaras || {};
+  const tarjetas = [];
+  // Asistencia: el más bajo frente al promedio de su cámara
+  const asis = DATOS.congresistas.map(c => ({ c, k: cifras(c) })).filter(x => x.k.pases).map(x => ({ ...x, p: 100 * x.k.presente / x.k.pases, prom: (cam[x.c.camara] || {}).asistencia }));
+  const bajo = asis.sort((a, b) => (a.p - (a.prom || 0)) - (b.p - (b.prom || 0)))[0];
+  if (bajo) tarjetas.push({ cifra: `${Math.round(bajo.p)}%`, ir: "representantes", texto: bajo.prom && bajo.p < bajo.prom
+    ? `${esc(bajo.c.corto)} asistió a ${bajo.k.presente} de ${bajo.k.pases} pases de lista del Pleno: por debajo del promedio de su cámara (${pct1(bajo.prom)}).`
+    : `Todos asisten por encima del promedio; el más bajo es ${esc(bajo.c.corto)}, con ${bajo.k.presente} de ${bajo.k.pases} pases de lista.` });
+  // Votos: el cusqueño que más se aparta de su bancada cuando FP y JP se dividen
+  const L = DATOS.redes && DATOS.redes.votacion && DATOS.redes.votacion.D && DATOS.redes.votacion.D.lados;
+  if (L) {
+    const media = b => { const ps = L.puntos.filter(p => p.bancada === b); return ps.reduce((s, p) => s + p.x, 0) / (ps.length || 1); };
+    const cus = L.puntos.filter(p => p.cusco).map(p => ({ p, d: Math.abs(p.x - media(p.bancada)) })).sort((a, b) => b.d - a.d)[0];
+    if (cus && cus.d > 0.2) { const c = DATOS.congresistas.find(x => String(x.id) === String(cus.p.id)); const conB = cus.p.x > 0.5;
+      tarjetas.push({ cifra: `${conB ? cus.p.como_b : cus.p.como_a} de ${cus.p.como_a + cus.p.como_b}`, ir: "votos",
+        texto: `${esc(c.corto)} (${esc(c.partido)}) votó como ${esc(BANCADAS[conB ? L.b : L.a])} en las votaciones que dividieron a ${esc(BANCADAS[L.a])} y ${esc(BANCADAS[L.b])}.` }); }
+  }
+  // Proyectos: cuántos llegan a algo
+  const R = DATOS.recorrido;
+  if (R) { const D = R.camaras.D, leyes = D.por_etapa[4];
+    tarjetas.push({ cifra: leyes ? `${leyes} ${leyes === 1 ? "ley" : "leyes"}` : "0 leyes", ir: "proyectos",
+      texto: `De ${D.total} proyectos presentados por diputados en este período, ${pct1(100 * D.dictamen_o_mas / (D.total || 1))} tiene dictamen o más${leyes ? "" : " y ninguno es ley todavía"}.` }); }
+  // Quién habla más
+  const habla = DATOS.congresistas.map(c => ({ c, x: ctx[c.id] || {} })).filter(h => h.x.palabras).sort((a, b) => b.x.palabras - a.x.palabras)[0];
+  if (habla) tarjetas.push({ cifra: habla.x.palabras.toLocaleString("es-PE"), ir: "habla",
+    texto: `palabras de ${esc(habla.c.corto)} en el Pleno: quien más habla de los cusqueños, puesto ${habla.x.puesto_palabras} de ${habla.x.miembros} en su cámara.` });
+  return `<section class="resumen30" aria-labelledby="t-30"><h2 id="t-30" class="etq">En 30 segundos</h2>
+    <div class="tarjetas">${tarjetas.map(x => `<a class="tarjeta" href="#${x.ir}" data-ir="${x.ir}"><b>${x.cifra}</b><span>${x.texto}</span></a>`).join("")}</div></section>`;
+}
+function eligeCongresista() {
+  return `<section class="elige" aria-labelledby="t-elige"><h2 id="t-elige" class="etq">Elige a tu congresista</h2>
+    <div class="elige-grid">${DATOS.congresistas.map(c => { const b = CODIGO_PARTIDO[c.partido];
+      return `<a href="#${c.slug}"><svg viewBox="0 0 16 16" aria-hidden="true">${forma(b, 8, 8, 6.5)}</svg><span><b>${esc(c.corto)}</b><small>${esc(c.partido)} · ${c.camara === "S" ? "Senado" : "Diputados"}</small></span></a>`; }).join("")}</div></section>`;
+}
+// Listas largas: muestran unas pocas y el resto detrás de un botón
+let N_PLEGADO = 0;
+function plegar(htmls, n = 3, envoltura = "lista") {
+  if (htmls.length <= n + 1) return `<div class="${envoltura}">${htmls.join("")}</div>`;
+  const id = "plegado-" + (++N_PLEGADO);
+  return `<div class="${envoltura}">${htmls.slice(0, n).join("")}</div><div class="${envoltura}" id="${id}" hidden>${htmls.slice(n).join("")}</div>
+    <button type="button" class="ver-mas" data-desplegar="${id}" data-n="${htmls.length - n}">Ver ${htmls.length - n} más</button>`;
+}
+function seccionVotos() {
+  const V = DATOS.redes && DATOS.redes.votacion; if (!V || !V.D) return "";
+  return `<section class="sec" aria-labelledby="t-votos" id="votos">
+    ${encabezado("Votaciones", "Cómo votan", "Con qué bancadas coincide cada uno y de qué lado se pone cuando las dos bancadas más grandes chocan. Solo cuentan las votaciones cuyo voto nominal cuadra con los totales oficiales.", "t-votos")}
+    <h3 class="subtit">¿Con quién vota cada uno?</h3>
+    ${tablaLealtad()}
+    ${V.D.lados ? `<h3 class="subtit">¿De qué lado votan?</h3>
+    <p class="muted">En las ${V.D.lados.votaciones} votaciones en que Fuerza Popular y Juntos por el Perú votaron distinto: a la izquierda, quienes votaron como Fuerza Popular; a la derecha, como Juntos por el Perú.</p>
+    <div class="red lados">${mapaVotacion("D")}</div>
+    <p class="muted small">Solo aparecen los diputados que votaron en al menos ${V.D.lados.minimo} de esas votaciones${(() => { const fuera = DATOS.congresistas.filter(c => c.camara === "D" && !V.D.lados.puntos.some(p => String(p.id) === String(c.id))); return fuera.length ? ` (${fuera.map(c => esc(c.corto)).join(", ")} no ${fuera.length === 1 ? "llega" : "llegan"})` : ""; })()}.</p>
+    ${listaLados("D")}` : ""}
+  </section>`;
+}
+function seccionProyectos() {
+  const directos = DATOS.proyectos.filter(p => p.resumen && p.resumen.cusco === "directa" && Object.values(p.cusco).includes("Autor principal"));
+  return `<section class="sec" aria-labelledby="t-propone" id="proyectos">
+    ${encabezado("Proyectos de ley", "Sus proyectos", `Qué presentó cada uno como autor principal, cuánto tiene que ver con Cusco y hasta dónde llegó. Casi todo sigue ${glosa("en comisión", "La comisión del Congreso que estudia el proyecto todavía no emite su opinión (dictamen). Sin dictamen, el proyecto no puede ir al Pleno.")}.`, "t-propone")}
+    ${graficoRelacion()}
+    ${directos.length ? `<h3 class="subtit">Los que tratan directamente sobre Cusco (${directos.length})</h3>${plegar(directos.map(p => proyecto(p, true)))}` : ""}
+    ${recorridoCuerpo()}
+  </section>`;
 }
 
 function ficha(c) {
@@ -353,19 +678,30 @@ function ficha(c) {
     <span class="etq">${CAMARA[c.camara]} · ${esc(c.partido)}</span>
     <h1>${esc(c.corto)}</h1>
     <span class="acta muted small">${esc(c.nombre)}</span>
+    ${((DATOS.contacto || {})[c.id] || {}).correo ? `<span class="small">Correo institucional: <a class="acta" href="mailto:${esc(DATOS.contacto[c.id].correo)}">${esc(DATOS.contacto[c.id].correo)}</a> · <a href="#escribele" data-ir="escribele">escríbele desde aquí</a></span>` : ""}
   </header>
   ${tocapu()}
-  <p class="resumen-prosa">Desde julio de 2026 estuvo presente en <b>${k.presente} de ${k.pases}</b> pases de lista del Pleno y votó en <b>${k.participo} de ${k.votables}</b> votaciones: ${k.si} a favor, ${k.no} en contra y ${k.abst} abstenciones${k.presidio ? `; en otras ${k.presidio} presidía la sesión y no votaba` : ""}. Es autor principal de <b>${k.autor}</b> ${k.autor === 1 ? "proyecto" : "proyectos"} de ley y firmó otros ${k.coautor} como coautor.</p>
+  <p class="resumen-prosa">Desde julio de 2026 estuvo presente en <b>${k.presente} de ${k.pases}</b> pases de lista del Pleno y votó en <b>${k.participo} de ${k.votables}</b> votaciones: ${k.si} a favor, ${k.no} en contra y ${k.abst} abstenciones${k.presidio ? `; en otras ${k.presidio} presidía la sesión y no votaba` : ""}. Es autor principal de <b>${k.autor}</b> ${k.autor === 1 ? "proyecto" : "proyectos"} de ley y firmó otros ${k.coautor} como coautor. En el Diario de Debates figura con <b>${k.habla}</b> ${k.habla === 1 ? "intervención" : "intervenciones"} como orador${DATOS.presidio[c.id] ? ` y ${DATOS.presidio[c.id]} turnos presidiendo la sesión` : ""}.</p>
 
   <div class="cifras">
     <div class="cifra"><span class="etq">Pases de lista</span>${pases(k, c)}</div>
     <div class="cifra"><span class="etq">Reparto de sus votos</span>${apilada(k)}</div>
   </div>
 
+  ${contexto(c)}
+  ${temasDe(c)}
+  ${seccionMapa(c.id)}
+
   <section class="sec" aria-labelledby="t-sus">
     ${encabezado("Pleno", "Su tejido de votos", "Cada cuadro es una votación, en orden de fecha.", "t-sus")}
     ${leyendaVotos(k.presidio > 0)}
     <div class="tejido">${tejido([c], c.camara)}</div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-dijo">
+    ${encabezado("Diario de Debates", "Lo que dijo en el Pleno", "Resumen de cada intervención, con una cita textual y el enlace a la página de la transcripción oficial. Debajo, cómo votó ese mismo día.", "t-dijo")}
+    ${(() => { const mias = DATOS.intervenciones.filter(i => i.congresista === c.id).reverse();
+      return mias.length ? `<div class="lista">${mias.map(i => intervencion(i, false, true)).join("")}</div>` : `<p class="muted">No figura con intervenciones como orador en las transcripciones publicadas.</p>`; })()}
   </section>
 
   <section class="sec" aria-labelledby="t-propios">
@@ -377,6 +713,7 @@ function ficha(c) {
       <div class="txt"><span class="small">${esc(capital(p.titulo.replace(/^PROPOSICI[ÓO]N (DE RESOLUCI[ÓO]N )?LEGISLATIVA (DEL CONGRESO )?(QUE )?/, "")))}</span>
       <span class="nota">Autor: ${esc(p.autor.split(",")[0])} · ${esc(capital(p.estado))}</span></div></div>`).join("")}</div></details>` : ""}
   </section>
+  ${seccionRecorrido(c.id)}
 
   <section class="sec" aria-labelledby="t-votos">
     ${encabezado("Pleno", "Cada votación", `Del acta oficial. "Por constancia" indica que el sistema no registró su voto o asistencia y la presidencia lo dejó constando en el acta.`, "t-votos")}
@@ -386,6 +723,7 @@ function ficha(c) {
     <div class="scroll"><table><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Voto</th><th class="c">Fuente</th></tr></thead>
       <tbody id="votos">${vots.map(e => filaVoto(e, [c.id], false)).join("")}</tbody></table></div>
   </section>
+  ${seccionEscribele(c.id)}
   ${tocapu()}
   ${pie()}`;
 }
@@ -401,17 +739,801 @@ function proyecto(p, conAutor) {
       ${r ? `<p>${esc(r.resumen)}</p>` : `<p class="nota">Resumen pendiente. Título oficial: ${esc(capital(p.titulo))}</p>`}
       ${r && r.por_que_cusco ? `<p class="nota"><b>Por qué importa en Cusco:</b> ${esc(r.por_que_cusco)}</p>` : ""}
       ${r && r.nota ? `<p class="nota"><b>Nota:</b> ${esc(r.nota)}</p>` : ""}
+      ${tagsTema(p.temas)}
       ${paso && paso.comisiones ? `<p class="nota">Último paso (${fecha(paso.fecha)}): en ${esc(paso.comisiones)}</p>` : ""}
     </div></article>`;
 }
 
+function intervencion(i, conNombre, conVotos) {
+  const c = DATOS.congresistas.find(x => x.id === i.congresista);
+  const votos = conVotos ? DATOS.eventos.filter(e => e.camara === i.camara && e.fecha === i.fecha && e.tipo === "VOTACIÓN") : [];
+  return `<article class="item">
+    <div class="exp">${fecha(i.fecha)}<br><a href="${esc(i.fuente)}" target="_blank" rel="noopener">Diario de Debates, p. ${i.pagina}</a><br>${i.palabras} palabras
+      ${i.cusco ? `<br><span class="pill">Menciona Cusco</span>` : ""}</div>
+    <div class="txt">
+      <h3>${esc(i.tema || "Intervención")}${conNombre ? ` <span class="muted small">· ${esc(c.corto)}</span>` : ""}</h3>
+      ${i.resumen ? `<p>${esc(i.resumen)}</p>` : `<p class="nota">Resumen pendiente.</p>`}
+      ${tagsTema(i.temas)}
+      ${i.cita && !i.procedimiento ? `<blockquote class="cita">${esc(i.cita)}</blockquote>` : ""}
+      ${votos.length ? `<div class="ese-dia"><span>Ese día votó:</span>${votos.map(e => { const v = e.votos[i.congresista];
+        return `<span class="chip-voto" style="--c:${COLOR[v] || "var(--vacio)"}" data-tip="<b>${esc(LARGO[v] || v)}</b> · ${esc(e.hora || "")}<br>${esc(esc(capital(e.asunto).slice(0, 150)))}…">${esc(ETQ[v] || v)}</span>`; }).join("")}</div>` : ""}
+    </div></article>`;
+}
+
+function quienHabla() {
+  const filas = DATOS.congresistas.map(c => {
+    const prop = DATOS.intervenciones.filter(i => i.congresista === c.id && !i.procedimiento);
+    return { c, n: prop.length, pal: prop.reduce((a, i) => a + i.palabras, 0), pres: DATOS.presidio[c.id] || 0 };
+  });
+  const max = Math.max(...filas.map(f => f.pal), 1);
+  return `<div class="hbars" role="img" aria-label="Palabras pronunciadas en el Pleno por cada congresista">${filas.map(f => `
+    <div class="hbar"><a class="n" href="#${f.c.slug}">${esc(f.c.corto)}</a>
+      <div class="track" style="width:${Math.max(100 * f.pal / max, 0.6)}%"><i style="flex:1;background:var(--ink);border-radius:0 4px 4px 0"
+        data-tip="<b>${f.n}</b> ${f.n === 1 ? "intervención" : "intervenciones"} · ${f.pal.toLocaleString("es-PE")} palabras${f.pres ? `<br>Además, ${f.pres} turnos presidiendo la sesión` : ""}"></i></div>
+      <span class="v">${f.n}</span></div>`).join("")}</div>
+  <p class="muted small">Largo de la barra: palabras pronunciadas. Número: intervenciones como orador (sin contar avisos de procedimiento${filas.some(f => f.pres) ? " ni los turnos presidiendo la sesión" : ""}).</p>`;
+}
+
+const MARCAS = {
+  yo: (x, y) => `<circle cx="${x}" cy="${y}" r="6" style="fill:var(--no);stroke:var(--paper);stroke-width:2"/>`,
+  camara: (x, y) => `<circle cx="${x}" cy="${y}" r="5" style="fill:var(--paper);stroke:var(--ink);stroke-width:2"/>`,
+  bancada: (x, y) => `<rect x="${x - 5}" y="${y - 5}" width="10" height="10" transform="rotate(45 ${x} ${y})" style="fill:var(--abst);stroke:var(--paper);stroke-width:1.5"/>`,
+};
+const pct1 = v => v == null ? "—" : `${String(Math.round(v * 10) / 10).replace(".", ",")}%`;
+
+function puntos(valores, ancho = 400, alto = 30, ejes = true) {
+  // valores: [{tipo, v, tip}] en 0–100
+  const X = v => 8 + v / 100 * (ancho - 16), y = alto / 2;
+  let s = `<svg viewBox="0 0 ${ancho} ${alto}" preserveAspectRatio="none" role="img">`;
+  s += `<line x1="${X(0)}" x2="${X(100)}" y1="${y}" y2="${y}" style="stroke:var(--rule);stroke-width:1"/>`;
+  if (ejes) [0, 50, 100].forEach(t => s += `<line x1="${X(t)}" x2="${X(t)}" y1="${y - 4}" y2="${y + 4}" style="stroke:var(--rule)"/>`);
+  ["camara", "bancada", "yo"].forEach(tipo => valores.filter(v => v.tipo === tipo && v.v != null).forEach(v =>
+    s += `<g data-tip="${v.tip}">${MARCAS[tipo](X(v.v), y)}</g>`));
+  return s + "</svg>";
+}
+
+function leyendaContexto(c) {
+  return `<div class="leyenda-comp">
+    <span><svg viewBox="0 0 12 12">${MARCAS.yo(6, 6)}</svg>${c ? esc(c.corto) : "El congresista"}</span>
+    <span><svg viewBox="0 0 12 12">${MARCAS.camara(6, 6)}</svg>Promedio de su cámara</span>
+    <span><svg viewBox="0 0 12 12">${MARCAS.bancada(6, 6)}</svg>Promedio de su bancada</span></div>`;
+}
+
+function contexto(c) {
+  const X = DATOS.contexto; if (!X) return "";
+  const k = X.congresistas[c.id], cam = X.camaras[c.camara], ban = X.bancadas[`${c.camara}-${k.bancada}`];
+  const nomCam = c.camara === "S" ? "el Senado" : "la Cámara de Diputados";
+  const fila = (titulo, yo, camV, banV, detalle) => `<div class="comp-fila"><span class="t">${titulo}</span>
+    ${puntos([{ tipo: "camara", v: camV, tip: `<b>${pct1(camV)}</b> promedio de ${nomCam}` }, { tipo: "bancada", v: banV, tip: `<b>${pct1(banV)}</b> promedio de su bancada` },
+      { tipo: "yo", v: yo, tip: `<b>${pct1(yo)}</b> ${esc(c.corto)}` }])}<span class="d">${detalle}</span></div>`;
+  const distintos = k.distinto.map(d => ({ d, e: DATOS.eventos.find(e => e.camara === c.camara && e.fecha === d.fecha && e.hora === d.hora && e.tipo === "VOTACIÓN") }));
+  const maxPal = Math.max(k.palabras, k.promedio_palabras) * 1.6 || 1;
+  return `
+  <section class="sec" aria-labelledby="t-ctx">
+    ${encabezado("Comparación", "En contexto", `Sus cifras frente al promedio de ${nomCam} y de su bancada, en las mismas sesiones. Se usan solo las actas cuya tabla de totales cuadra al sumarla (${cam.pases} pases de lista y ${cam.votaciones} votaciones de ${nomCam}).`, "t-ctx")}
+    ${leyendaContexto(c)}
+    <div class="comp">
+      ${fila("Asistencia", k.asistencia, cam.asistencia, ban.asistencia, `${esc(c.corto)}: ${pct1(k.asistencia)} · cámara ${pct1(cam.asistencia)} · bancada ${pct1(ban.asistencia)}`)}
+      ${fila("Votó cuando le tocaba", k.participacion, cam.participacion, null, `${k.participo} de ${k.votaciones} votaciones · cámara ${pct1(cam.participacion)}`)}
+      ${fila("Votó igual que su bancada", k.con_su_bancada, cam.con_su_bancada, ban.con_su_bancada, `${pct1(k.con_su_bancada)} de ${k.comparables} votaciones · su bancada en promedio ${pct1(ban.con_su_bancada)} · cámara ${pct1(cam.con_su_bancada)}`)}
+      <div class="comp-fila"><span class="t">Palabras en el Pleno</span>
+        <svg viewBox="0 0 400 30" preserveAspectRatio="none" role="img"><line x1="8" x2="392" y1="15" y2="15" style="stroke:var(--rule)"/>
+          <g data-tip="<b>${k.promedio_palabras.toLocaleString("es-PE")}</b> palabras: promedio por congresista">${MARCAS.camara(8 + k.promedio_palabras / maxPal * 384, 15)}</g>
+          <g data-tip="<b>${k.palabras.toLocaleString("es-PE")}</b> palabras de ${esc(c.corto)}">${MARCAS.yo(8 + k.palabras / maxPal * 384, 15)}</g></svg>
+        <span class="d">${k.palabras.toLocaleString("es-PE")} palabras · puesto ${k.puesto_palabras || k.miembros} de ${k.miembros} · promedio ${k.promedio_palabras.toLocaleString("es-PE")}</span></div>
+    </div>
+    ${distintos.length ? `<div class="sec-head" style="border-top-width:1px"><span class="folio">Detalle</span><h2 style="font-size:1.3rem">Cuando votó distinto a su bancada (${distintos.length})</h2><p>Votaciones en que su voto no coincidió con el de la mayoría de su bancada.</p></div>
+      <div class="scroll"><table><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Su voto</th><th class="c">Mayoría de su bancada</th></tr></thead><tbody>
+      ${distintos.map(({ d, e }) => `<tr><td class="when">${fecha(d.fecha)}<br>${esc(d.hora)}</td><td class="asunto">${e ? asunto(e.asunto) : ""}</td>
+        <td class="c"><span class="voto" style="--c:${COLOR[d.voto]}">${ETQ[d.voto]}</span></td><td class="c"><span class="voto" style="--c:${COLOR[d.bancada]}">${ETQ[d.bancada]}</span></td></tr>`).join("")}
+      </tbody></table></div>` : `<p class="muted">En las votaciones comparables siempre votó igual que la mayoría de su bancada.</p>`}
+  </section>`;
+}
+
+function tablaContexto() {
+  const X = DATOS.contexto; if (!X) return "";
+  return `<section class="sec" aria-labelledby="t-ctx-todos">
+    ${encabezado("Comparación", "En contexto", "Cada cusqueño frente al promedio de su cámara y de su bancada, en las mismas sesiones. Solo se usan las actas cuya tabla de totales cuadra al sumarla.", "t-ctx-todos")}
+    ${leyendaContexto(null)}
+    <div class="scroll"><table class="tabla-ctx"><thead><tr><th>Congresista</th><th>Asistencia</th><th></th><th>Votó igual que su bancada</th><th></th><th class="c">Palabras: puesto</th></tr></thead><tbody>
+    ${DATOS.congresistas.map(c => { const k = X.congresistas[c.id], cam = X.camaras[c.camara], ban = X.bancadas[`${c.camara}-${k.bancada}`];
+      const m = (yo, cv, bv) => puntos([{ tipo: "camara", v: cv, tip: `<b>${pct1(cv)}</b> promedio de la cámara` }, { tipo: "bancada", v: bv, tip: `<b>${pct1(bv)}</b> promedio de su bancada` }, { tipo: "yo", v: yo, tip: `<b>${pct1(yo)}</b> ${esc(c.corto)}` }], 140, 18, false).replace("<svg", '<svg class="mini"');
+      return `<tr><td><a href="#${c.slug}">${esc(c.corto)}</a><br><span class="muted small">${c.camara === "S" ? "Senado" : "Diputados"}</span></td>
+        <td class="num">${pct1(k.asistencia)}</td><td>${m(k.asistencia, cam.asistencia, ban.asistencia)}</td>
+        <td class="num">${pct1(k.con_su_bancada)}</td><td>${m(k.con_su_bancada, cam.con_su_bancada, ban.con_su_bancada)}</td>
+        <td class="c num acta">${k.puesto_palabras || k.miembros} de ${k.miembros}</td></tr>`; }).join("")}
+    </tbody></table></div></section>`;
+}
+
+/* ---------- Temas ---------- */
+const nomTema = t => DATOS.temas[t] || t;
+function tagsTema(lista) {
+  return lista && lista.length ? `<span class="temas-tags">${lista.map(t => `<button type="button" class="tema-tag" data-tema="${t}">${esc(nomTema(t))}</button>`).join("")}</span>` : "";
+}
+function itemsDeTema(tema, cid) {
+  const cus = DATOS.congresistas.map(c => c.id);
+  const propios = DATOS.proyectos.filter(p => (p.temas || []).includes(tema) && Object.entries(p.cusco).some(([i, r]) => r === "Autor principal" && (!cid || i === cid)));
+  const dichos = DATOS.intervenciones.filter(i => (i.temas || []).includes(tema) && !i.procedimiento && (!cid || i.congresista === cid));
+  const vistos = new Set();
+  const votos = DATOS.eventos.filter(e => e.tipo === "VOTACIÓN" && (e.temas || []).includes(tema) && (!cid || e.votos[cid]) && !vistos.has(e.camara + e.fecha + e.hora) && vistos.add(e.camara + e.fecha + e.hora));
+  return { propios, dichos, votos };
+}
+function seccionTemas() {
+  const cuenta = Object.keys(DATOS.temas).map(t => { const x = itemsDeTema(t); return [t, x.propios.length + x.dichos.length + x.votos.length]; })
+    .filter(([, n]) => n).sort((a, b) => b[1] - a[1]);
+  return `<section class="sec" aria-labelledby="t-temas" id="temas">
+    ${encabezado("Por tema", "Seguridad, salud, educación…", "Elige un tema para ver qué propusieron, qué dijeron en el Pleno y cómo votaron los cusqueños.", "t-temas")}
+    <div class="chips" role="group" aria-label="Temas">${cuenta.map(([t, n], i) => `<button type="button" id="tema-${t}" data-tema-sel="${t}" aria-pressed="${i === 0}">${esc(nomTema(t))}<b>${n}</b></button>`).join("")}</div>
+    <div id="tema-detalle">${detalleTema(cuenta[0] ? cuenta[0][0] : null)}</div>
+  </section>`;
+}
+function detalleTema(tema, cid) {
+  if (!tema) return "";
+  const { propios, dichos, votos } = itemsDeTema(tema, cid);
+  const dip = DATOS.congresistas;
+  return `${propios.length ? `<h3 class="subtit">Proyectos de los cusqueños (${propios.length})</h3>${plegar(propios.map(p => proyecto(p, !cid)))}` : ""}
+    ${dichos.length ? `<h3 class="subtit">Lo que dijeron en el Pleno (${dichos.length})</h3>${plegar(dichos.map(i => intervencion(i, !cid, false)))}` : ""}
+    ${votos.length ? `<h3 class="subtit">Votaciones (${votos.length})</h3><div class="scroll"><table><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Votos de Cusco</th><th class="c">Fuente</th></tr></thead><tbody>
+      ${[...votos].reverse().map((e, k) => `<tr${k >= 5 ? ' class="fila-extra" hidden' : ""}><td class="when">${fecha(e.fecha)}<br>${esc(e.hora || "")}</td><td class="asunto">${asunto(e.asunto)}</td>
+        <td><div class="ese-dia">${dip.filter(c => c.camara === e.camara && (!cid || c.id === cid)).map(c => { const v = e.votos[c.id];
+          return `<span class="chip-voto" style="--c:${COLOR[v] || "var(--vacio)"}" data-tip="<b>${esc(c.corto)}</b>: ${esc(LARGO[v] || v)}">${esc(apellido(c))} ${esc(ETQ[v] || v)}</span>`; }).join("")}</div></td>
+        <td class="c"><a class="acta small" href="${esc(e.fuente)}" target="_blank" rel="noopener">acta</a></td></tr>`).join("")}</tbody></table></div>
+      ${votos.length > 5 ? `<button type="button" class="ver-mas" data-filas-extra="1">Ver ${votos.length - 5} más</button>` : ""}` : ""}
+    ${!propios.length && !dichos.length && !votos.length ? `<p class="muted">Sin registros en este tema.</p>` : ""}`;
+}
+function temasDe(c) {
+  const cuenta = {};
+  DATOS.proyectos.filter(p => p.cusco[c.id] === "Autor principal").forEach(p => (p.temas || []).forEach(t => cuenta[t] = (cuenta[t] || 0) + 1));
+  DATOS.intervenciones.filter(i => i.congresista === c.id && !i.procedimiento).forEach(i => (i.temas || []).forEach(t => cuenta[t] = (cuenta[t] || 0) + 1));
+  const filas = Object.entries(cuenta).sort((a, b) => b[1] - a[1]);
+  if (!filas.length) return "";
+  const max = filas[0][1];
+  return `<section class="sec" aria-labelledby="t-sustemas">
+    ${encabezado("Por tema", "En qué temas trabaja", "Proyectos que presentó e intervenciones en el Pleno, por tema. Toca un tema para ver el detalle.", "t-sustemas")}
+    <div class="hbars">${filas.map(([t, n]) => `<div class="hbar"><button type="button" class="n tema-tag" style="background:none;padding:0;font:600 0.92rem var(--body);color:var(--ink);text-align:left" data-tema-ficha="${t}">${esc(nomTema(t))}</button>
+      <div class="track" style="width:${100 * n / max}%"><i style="flex:1;background:var(--ink);border-radius:0 4px 4px 0" data-tip="<b>${n}</b> entre proyectos e intervenciones"></i></div><span class="v">${n}</span></div>`).join("")}</div>
+    <div id="tema-ficha"></div>
+  </section>`;
+}
+
+/* ---------- Mapa ---------- */
+let mapaFiltro = "", mapaSel = null;
+function contarProvincias(cid) {
+  const cuenta = {};
+  Object.keys(DATOS.mapa.provincias).forEach(p => cuenta[p] = []);
+  DATOS.menciones.filter(m => !cid || m.congresista === cid).forEach(m => cuenta[m.prov].push(m));
+  return cuenta;
+}
+const nomProv = p => p === "LA CONVENCION" ? "La Convención" : p.charAt(0) + p.slice(1).toLowerCase();
+function dibujoMapa(cid) {
+  const M = DATOS.mapa, cuenta = contarProvincias(cid);
+  const max = Math.max(1, ...Object.values(cuenta).map(l => l.length));
+  const color = n => n ? `color-mix(in oklab, var(--cs) ${Math.round(25 + 75 * n / max)}%, var(--paper-2))` : "var(--paper-2)";
+  return `<svg viewBox="0 0 ${M.ancho} ${M.alto}" role="img" aria-label="Mapa de las provincias de Cusco según cuántas veces las mencionaron">
+    ${Object.entries(M.provincias).map(([p, g]) => { const l = cuenta[p], quien = {};
+      l.forEach(m => { const c = DATOS.congresistas.find(x => x.id === m.congresista); quien[c.corto] = (quien[c.corto] || 0) + 1; });
+      return `<path class="prov ${mapaSel === p ? "sel" : ""}" d="${g.d}" style="fill:${color(l.length)}" data-prov="${p}"
+        data-tip="<b>${nomProv(p)}</b> · ${l.length ? `${l.length} ${l.length === 1 ? "mención" : "menciones"}<br>${Object.entries(quien).map(([n, k]) => `${esc(n)}: ${k}`).join(" · ")}` : "sin menciones"}"/>`; }).join("")}
+    ${Object.entries(M.provincias).map(([p, g]) => `<text x="${p === "ACOMAYO" ? g.x + 18 : g.x}" y="${p === "ACOMAYO" ? g.y + 14 : g.y}" text-anchor="middle">${nomProv(p)}</text>`).join("")}
+  </svg>`;
+}
+function rankingProv(cid) {
+  const cuenta = contarProvincias(cid);
+  const filas = Object.entries(cuenta).sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+  const max = Math.max(1, filas[0][1].length);
+  return filas.map(([p, l]) => `<button type="button" class="rk" data-prov="${p}" aria-pressed="${mapaSel === p}"><span class="nom">${nomProv(p)}</span>
+    ${l.length ? `<span class="bar" style="width:${100 * l.length / max}%"></span>` : `<span class="cero">sin menciones</span>`}<span class="n">${l.length}</span></button>`).join("");
+}
+function listaProv(cid) {
+  if (!mapaSel) return `<p class="muted small">Toca una provincia en el mapa o en la lista para ver cada mención.</p>`;
+  const l = contarProvincias(cid)[mapaSel];
+  return `<h3 class="subtit">${nomProv(mapaSel)}: ${l.length} ${l.length === 1 ? "mención" : "menciones"}</h3>
+    ${l.length ? `${plegar(l.sort((a, b) => b.fecha.localeCompare(a.fecha)).map(m => { const c = DATOS.congresistas.find(x => x.id === m.congresista);
+      return `<div class="item"><div class="exp">${fecha(m.fecha)}<br>${m.tipo === "proyecto" ? "Proyecto de ley" : "Intervención en el Pleno"}</div>
+      <div class="txt"><h3>${esc(m.titulo)} <span class="muted small">· ${esc(c.corto)}</span></h3>
+      <a class="acta small" href="${esc(m.url)}" target="_blank" rel="noopener">${m.tipo === "proyecto" ? "Ver el proyecto" : "Ver en el Diario de Debates"}</a></div></div>`; }))}`
+      : `<p class="muted">Ningún congresista cusqueño mencionó esta provincia en sus proyectos o intervenciones${cid ? " (con este filtro)" : ""}.</p>`}`;
+}
+function seccionMapa(cidFijo) {
+  if (!DATOS.mapa) return "";
+  const cid = cidFijo || mapaFiltro;
+  return `<section class="sec" aria-labelledby="t-mapa" id="mapa">
+    ${encabezado("Territorio", cidFijo ? "Las provincias que menciona" : "Qué provincias reciben atención", `Provincias nombradas en ${cidFijo ? "sus" : "los"} proyectos y ${cidFijo ? "sus" : "las"} intervenciones en el Pleno${cidFijo ? "" : " de los cusqueños"}. Toca una provincia para ver cada mención.`, "t-mapa")}
+    ${cidFijo ? "" : `<div class="chips" role="group" aria-label="Filtrar por congresista"><button type="button" data-mapa-c="" aria-pressed="${!mapaFiltro}">Todos</button>
+      ${DATOS.congresistas.map(c => `<button type="button" data-mapa-c="${c.id}" aria-pressed="${mapaFiltro === c.id}">${esc(c.corto)}</button>`).join("")}</div>`}
+    <div class="mapa-grid"><div class="mapa">${dibujoMapa(cid)}</div><div class="ranking">${rankingProv(cid)}</div></div>
+    <div id="mapa-lista">${listaProv(cid)}</div>
+  </section>`;
+}
+
+/* ---------- Agenda ---------- */
+function seccionAgenda() {
+  const A = DATOS.agenda; if (!A) return "";
+  const hoy = DATOS.actualizado;
+  let total = 0, rel = 0;
+  const col = cam => { const a = A[cam]; if (!a) return "";
+    const pts = a.puntos, cus = pts.filter(p => p.cusqueños.length || p.menciona_cusco);
+    total += pts.length; rel += cus.length;
+    return `<div class="ag-col"><h3>${cam === "S" ? "Senado" : "Cámara de Diputados"}</h3>
+      <span class="acta small muted">${a.fecha >= hoy ? "Próxima sesión" : "Última agenda publicada"}: ${fecha(a.fecha)} · <a href="${esc(a.fuente)}" target="_blank" rel="noopener">PDF oficial</a> · ${pts.length} puntos, ${cus.length} relacionados con Cusco</span>
+      ${cus.length ? "" : `<p class="muted small ag-vacio">Ningún punto de esta agenda involucra a los congresistas cusqueños.</p>`}
+      ${pts.map(p => { const quienes = p.cusqueños.map(i => DATOS.congresistas.find(c => c.id === i).corto);
+        const t = p.texto.length > 260 ? `<details><summary>${esc(p.texto.slice(0, 240).replace(/\s+\S*$/, ""))}…</summary>${esc(p.texto)}</details>` : esc(p.texto);
+        const r = quienes.length || p.menciona_cusco;
+        return `<div class="ag-item ${r ? "cusco" : ""}" data-cus="${r ? 1 : 0}" ${r ? "" : "hidden"}>
+          ${p.seccion ? `<span class="sec">${esc(p.seccion)}</span>` : ""}<div class="small">${t}</div>
+          ${quienes.length ? `<span class="firma-cus">Firma: ${quienes.map(esc).join(", ")}</span>` : ""}
+          ${p.provincias.length ? `<span class="firma-cus">Menciona: ${p.provincias.map(nomProv).join(", ")}</span>` : ""}${tagsTema(p.temas)}</div>`; }).join("")}</div>`; };
+  const cuerpo = `${col("D")}${col("S")}`;
+  return `<section class="sec" aria-labelledby="t-agenda" id="agenda">
+    <details class="plegable">
+      <summary><span class="folio">Agenda del Pleno</span><span class="plegable-tit" id="t-agenda">Lo que se verá en el Pleno</span>
+        <span class="plegable-sub">${total} puntos en la última agenda de cada cámara · ${rel} relacionados con Cusco · <span class="abrir">Abrir</span></span></summary>
+      <p class="muted" style="margin:14px 0">La agenda que publica cada cámara, punto por punto. Marcados en rojo, los que firma un congresista cusqueño o que mencionan a Cusco.</p>
+      <div class="chips" role="group" aria-label="Filtrar agenda"><button type="button" data-ag="cusco" aria-pressed="true">Relacionados con Cusco</button><button type="button" data-ag="todo" aria-pressed="false">Todos los puntos</button></div>
+      <div class="agenda" id="agenda-cols" style="margin-top:14px">${cuerpo}</div>
+    </details>
+  </section>`;
+}
+
+/* ---------- Buscador ----------
+   Índice local (siempre disponible, viene dentro de la página) + Diario de Debates completo
+   (busqueda.json, se descarga al primer uso). Si la descarga falla, se busca solo en el local. */
+let INDICE = null, INDICE_COMPLETO = false, LIMITE = 10;
+const norm = t => (t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+function indiceLocal() {
+  const cus = new Set(DATOS.congresistas.map(c => c.id));
+  const d = DATOS.proyectos.map(p => ({ t: "proyecto", f: p.fecha, q: p.autor, h: p.resumen ? p.resumen.tema : p.titulo.slice(0, 140),
+    x: `${p.titulo} ${p.resumen ? p.resumen.resumen : ""}`, u: p.pdf, c: Object.keys(p.cusco) }));
+  const vistos = new Set();
+  DATOS.eventos.forEach(e => { const k = e.camara + e.fecha + e.hora;
+    if (e.tipo === "VOTACIÓN" && !vistos.has(k)) { vistos.add(k);
+      d.push({ t: "votación", f: e.fecha, q: e.camara === "S" ? "Senado" : "Cámara de Diputados", h: e.asunto.slice(0, 140), x: e.asunto, u: e.fuente, c: Object.keys(e.votos) }); } });
+  DATOS.intervenciones.forEach(i => { const c = DATOS.congresistas.find(x => x.id === i.congresista);
+    d.push({ t: "diario", f: i.fecha, q: c.corto, h: i.tema || "", x: `${i.tema || ""}. ${i.resumen || ""} ${i.cita || ""}`, u: i.fuente, c: [i.congresista] }); });
+  return d.map(x => ({ ...x, n: norm(`${x.h} ${x.q} ${x.x}`) }));
+}
+function seccionBuscador() {
+  return `<section class="buscador" aria-label="Buscador" id="buscar">
+    <form class="barra-busqueda" id="form-q" role="search">
+      <label for="q" class="etq">Buscar</label>
+      <input type="search" id="q" placeholder="Machu Picchu, agua, Espinar…" autocomplete="off">
+      <button type="submit">Buscar</button>
+    </form>
+    <p class="acta small muted" style="margin:0">En proyectos, votaciones y todo el Diario de Debates de ambas cámaras.</p>
+    <div class="chips" role="group" aria-label="Tipo de documento" id="q-tipos"></div>
+    <div id="q-res" class="res" aria-live="polite"></div>
+  </section>`;
+}
+async function cargarIndice(caja) {
+  if (!INDICE) INDICE = indiceLocal();
+  if (INDICE_COMPLETO !== false) return;
+  INDICE_COMPLETO = null;  // cargando
+  try {
+    const r = await fetch(new URL("busqueda.json", location.href));
+    if (!r.ok) throw new Error(r.status);
+    const extra = (await r.json()).filter(d => d.t === "diario").map(d => ({ ...d, n: norm(`${d.h} ${d.q} ${d.x}`) }));
+    INDICE = INDICE.filter(d => d.t !== "diario").concat(extra);  // el Diario completo reemplaza a los resúmenes
+    INDICE_COMPLETO = true;
+  } catch (e) { INDICE_COMPLETO = "error"; }
+}
+async function buscar(q, tipo, mas) {
+  const caja = document.getElementById("q-res"), tipos = document.getElementById("q-tipos");
+  if (!caja) return;
+  LIMITE = mas ? LIMITE + 20 : 10;
+  const terms = norm(q).split(/\s+/).filter(w => w.length > 1);
+  if (!terms.length) { caja.innerHTML = ""; tipos.innerHTML = ""; return; }
+  if (!INDICE) INDICE = indiceLocal();
+  if (INDICE_COMPLETO === false) { cargarIndice().then(() => { const v = document.getElementById("q"); if (v && v.value) buscar(v.value, tipoBusqueda); }); }
+  // Palabras completas (con plural): "agua" encuentra "aguas" pero no "Aguayo". Desde 6 letras, también derivados.
+  const escRe = t => t.replace(/[.*+?^$()|[\]\\{}]/g, "\\$&");
+  const fin = t => t.length >= 6 ? "" : "(?:s|es)?(?![a-z0-9])";
+  const pruebas = terms.map(t => new RegExp(`(?<![a-z0-9])${escRe(t)}${fin(t)}`));
+  const hall = INDICE.filter(d => pruebas.every(r => r.test(d.n)));
+  const NOM = { proyecto: "Proyectos", "votación": "Votaciones", diario: "Diario de Debates" };
+  const porTipo = {}; hall.forEach(d => porTipo[d.t] = (porTipo[d.t] || 0) + 1);
+  tipos.innerHTML = hall.length ? [["", "Todo", hall.length], ...Object.entries(porTipo).map(([t, n]) => [t, NOM[t], n])]
+    .map(([t, nombre, n]) => `<button type="button" data-qt="${t}" aria-pressed="${(tipo || "") === t}">${nombre}<b>${n}</b></button>`).join("") : "";
+  const todos = hall.filter(d => !tipo || d.t === tipo).sort((a, b) => (b.f || "").localeCompare(a.f || ""));
+  const lista = todos.slice(0, LIMITE);
+  const VOCAL = { a: "[aáàä]", e: "[eéèë]", i: "[iíìï]", o: "[oóòö]", u: "[uúùü]", n: "[nñ]" };
+  const patron = t => [...t].map(ch => VOCAL[ch] || ch.replace(/[.*+?^$()|[\]\\{}]/g, "\\$&")).join("");
+  const recorte = d => { const n = norm(d.x), m = n.search(pruebas[0]), i = Math.max(0, m - 110);
+    let s = esc(d.x.slice(i, i + 300));
+    terms.forEach(t => { s = s.replace(new RegExp(`(?<!\\p{L})(${patron(t)}${t.length >= 6 ? "" : "(?:s|es)?(?!\\p{L})"})`, "giu"), "<mark>$1</mark>"); });
+    return (i ? "…" : "") + s + "…"; };
+  const estado = INDICE_COMPLETO === true ? "" : INDICE_COMPLETO === "error"
+    ? " · el Diario de Debates completo no se pudo cargar; se busca en proyectos, votaciones y resúmenes de las intervenciones de los cusqueños"
+    : " · cargando el Diario de Debates completo…";
+  caja.innerHTML = (hall.length ? `<p class="acta small muted">${hall.length} resultados${estado}</p>` + lista.map(d => `<div class="res-item">
+      <div class="meta">${fecha(d.f)}<br>${NOM[d.t]}</div>
+      <div><div class="q">${esc(d.t === "diario" ? d.q : d.h)}${d.c.length && d.t !== "votación" ? ` <span class="pill" style="margin:0 0 0 6px">Cusco</span>` : ""}</div>
+      <p class="small">${recorte(d)}</p><a class="acta small" href="${esc(d.u)}" target="_blank" rel="noopener">Ver documento oficial</a></div></div>`).join("")
+      + (todos.length > LIMITE ? `<button type="button" class="ver-mas" data-mas="1">Ver más resultados (${todos.length - LIMITE} restantes)</button>` : "")
+    : `<p class="muted small">Sin resultados para «${esc(q)}»${estado}.</p>`);
+}
+
+/* ---------- Redes (SNA) ---------- */
+const BANCADAS = { AN: "Ahora Nación", FP: "Fuerza Popular", JP: "Juntos por el Perú", PBG: "Partido del Buen Gobierno", PCO: "Partido Cívico Obras", RP: "Renovación Popular" };
+const CODIGO_PARTIDO = Object.fromEntries(Object.entries(BANCADAS).map(([k, v]) => [v, k]));
+const num1 = v => v == null ? "—" : String(Math.round(v * 10) / 10).replace(".", ",");
+const nombreCus = id => { const c = DATOS.congresistas.find(x => x.id === id); return c ? apellido(c) : ""; };
+const apellidoDe = nombre => { const a = String(nombre).split(",")[0].trim(); return a.split(" ").filter(w => w.length > 2 || /^[A-Z]{2}$/.test(w)).slice(0, 1).map(capital).join(" ") || capital(a); };
+function forma(b, x, y, r, extra = "") {
+  // Cada bancada con una forma distinta: el color no es el único código (lectura para daltonismo).
+  const col = `fill:var(--b-${b || "x"}, var(--vacio))`;
+  const pts = (n, rot) => Array.from({ length: n }, (_, i) => { const a = rot + i * 2 * Math.PI / n; return `${(x + r * Math.cos(a)).toFixed(1)},${(y + r * Math.sin(a)).toFixed(1)}`; }).join(" ");
+  if (b === "FP") return `<rect x="${(x - r * 0.85).toFixed(1)}" y="${(y - r * 0.85).toFixed(1)}" width="${(r * 1.7).toFixed(1)}" height="${(r * 1.7).toFixed(1)}" style="${col}" ${extra}/>`;
+  if (b === "JP") return `<polygon points="${pts(3, -Math.PI / 2)}" style="${col}" ${extra}/>`;
+  if (b === "PBG") return `<polygon points="${pts(4, 0)}" style="${col}" ${extra}/>`;
+  if (b === "PCO") return `<polygon points="${pts(6, 0)}" style="${col}" ${extra}/>`;
+  if (b === "RP") return `<polygon points="${pts(5, -Math.PI / 2)}" style="${col}" ${extra}/>`;
+  return `<circle cx="${x}" cy="${y}" r="${r}" style="${col}" ${extra}/>`;
+}
+function leyendaBancadas() {
+  return `<div class="leyenda-banc">${Object.entries(BANCADAS).map(([b, n]) => `<span><svg viewBox="0 0 16 16">${forma(b, 8, 8, 6.5)}</svg>${n}</span>`).join("")}
+    <span><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" style="fill:none;stroke:var(--ink);stroke-width:2.5"/></svg>Congresista de Cusco</span></div>`;
+}
+
+// Red de coautoría de toda una cámara. Las líneas de un solo proyecto se ocultan salvo al enfocar a alguien.
+function redCamara(cam, id) {
+  const R = DATOS.redes.coautoria[cam]; if (!R) return "";
+  const pos = Object.fromEntries(R.nodos.map(n => [n.id, n]));
+  const maxP = Math.max(...R.aristas.map(a => a.peso));
+  const radio = n => n.cusco ? 10 : 2.6 + Math.sqrt(n.fuerza) * 0.42;
+  const aristas = [...R.aristas].sort((a, b) => a.peso - b.peso).map(a => { const A = pos[a.a], B = pos[a.b];
+    return `<line class="arista${a.peso < 2 ? " debil" : ""}" data-a="${a.a}" data-b="${a.b}" x1="${A.x}" y1="${A.y}" x2="${B.x}" y2="${B.y}" style="stroke-width:${(0.5 + 3 * Math.sqrt(a.peso / maxP)).toFixed(2)}"
+      data-tip="<b>${esc(A.nombre)} y ${esc(B.nombre)}</b><br>${a.peso} ${a.peso === 1 ? "proyecto firmado" : "proyectos firmados"} juntos"/>`; }).join("");
+  const nodos = [...R.nodos].sort((a, b) => a.cusco - b.cusco).map(n => forma(n.bancada, n.x, n.y, radio(n),
+    `class="nodo ${n.cusco ? "cus" : ""}" data-n="${n.id}" data-tip="<b>${esc(n.completo)}</b><br>${esc(BANCADAS[n.bancada] || "Bancada no identificada")}<br>${n.grado} coautores distintos · ${n.propios} ${n.propios === 1 ? "proyecto propio" : "proyectos propios"}"`)).join("");
+  const corto = id => { const c = DATOS.congresistas.find(x => x.id === id); return c ? apellido(c) : ""; };
+  const etiquetas = R.nodos.filter(n => n.cusco).map(n => `<text x="${n.x}" y="${n.y - 16}" text-anchor="middle" data-n="${n.id}">${esc(corto(n.id))}</text>`).join("");
+  return `<svg viewBox="0 0 ${R.ancho} ${R.alto}" role="img" aria-label="Red de coautoría de ${cam === "D" ? "la Cámara de Diputados" : "el Senado"}: ${R.nodos.length} congresistas y ${R.aristas.length} vínculos">
+    ${(R.grupos || []).map(g => `<circle class="grupo" cx="${g.x}" cy="${g.y}" r="${g.r + 14}"/>
+      <text class="grupo-nom" x="${g.x}" y="${g.y + g.r + 32}" text-anchor="middle">${esc(BANCADAS[g.bancada] || g.bancada)} · ${g.miembros}</text>`).join("")}
+    <g class="aristas">${aristas}</g>${nodos}${etiquetas}</svg>`;
+}
+
+// Franja de distribución: cada punto gris es un diputado; las figuras, los cusqueños.
+function franja(R, campo, titulo, nota, formato, invertir = false) {
+  const vals = R.nodos.filter(n => n[campo] != null);
+  if (!vals.length) return "";
+  const W = 680, H = 92, x0 = 16, x1 = W - 16, y = 58;
+  const max = Math.max(...vals.map(n => n[campo])), min = 0;
+  const X = v => x0 + (v - min) / ((max - min) || 1) * (x1 - x0);
+  const orden = [...vals].map(n => n[campo]).sort((a, b) => a - b);
+  const mediana = orden.length % 2 ? orden[(orden.length - 1) / 2] : (orden[orden.length / 2 - 1] + orden[orden.length / 2]) / 2;
+  // Puntos grises con desplazamiento vertical determinista para que no se tapen
+  const cuenta = {};
+  const grises = vals.filter(n => !n.cusco).map(n => { const k = Math.round(X(n[campo]) / 5); cuenta[k] = (cuenta[k] || 0) + 1;
+    const dy = ((cuenta[k] - 1) % 5) * 4 - 8;
+    return `<circle cx="${X(n[campo]).toFixed(1)}" cy="${y + dy}" r="2.6" class="gris" data-tip="<b>${esc(n.completo)}</b> · ${n.bancada || "?"}<br>${esc(titulo)}: ${formato(n[campo])}"/>`; }).join("");
+  const cus = vals.filter(n => n.cusco).sort((a, b) => a[campo] - b[campo]);
+  // Cusqueños con el mismo valor comparten una sola etiqueta
+  const juntos = [];
+  cus.forEach(n => { const g = juntos.find(j => Math.abs(X(j[0][campo]) - X(n[campo])) < 3); g ? g.push(n) : juntos.push([n]); });
+  const filas = [];  // etiquetas en filas para que no se encimen
+  const marcas = juntos.map(g => { const x = X(g[0][campo]); const nom = g.map(n => nombreCus(n.id) || apellidoDe(n.completo)).join(" · ");
+    const ancho = 8 + nom.length * 7; let f = 0;
+    while (filas[f] != null && x - ancho / 2 - filas[f] < 6) f++; filas[f] = x + ancho / 2;
+    const ly = 30 - f * 13;
+    const tx = Math.min(Math.max(x, x0 + ancho / 2), x1 - ancho / 2);
+    return `<line x1="${x}" y1="${ly + 3}" x2="${x}" y2="${y - 9}" class="guia"/>
+      ${g.map((n, k) => { const puesto = 1 + vals.filter(o => invertir ? o[campo] < n[campo] : o[campo] > n[campo]).length;
+        return forma(n.bancada, x + (k - (g.length - 1) / 2) * 5, y, 7.5, `class="nodo cus" data-tip="<b>${esc(n.completo)}</b><br>${esc(titulo)}: ${formato(n[campo])}<br>Puesto ${puesto} de ${vals.length}"`); }).join("")}
+      <text x="${tx}" y="${ly}" text-anchor="middle">${esc(nom)}</text>`; }).join("");
+  const alto = H + 6;
+  return `<figure class="franja"><figcaption><b>${titulo}</b> <span class="muted small">${nota}</span></figcaption>
+    <svg viewBox="0 ${30 - 13 * Math.max(filas.length - 1, 0) - 14} ${W} ${alto + 13 * Math.max(filas.length - 1, 0)}" role="img" aria-label="${esc(titulo)}: distribución de ${vals.length} congresistas, con los cusqueños resaltados">
+      <line x1="${x0}" x2="${x1}" y1="${y + 14}" y2="${y + 14}" class="eje"/>
+      <line x1="${X(mediana)}" x2="${X(mediana)}" y1="${y - 14}" y2="${y + 18}" class="mediana"/>
+      <text class="ref" x="${X(mediana) + 4}" y="${y + 28}">mediana ${formato(mediana)}</text>
+      ${X(mediana) - x0 > 80 ? `<text class="ref" x="${x0}" y="${y + 28}">${formato(min)}</text>` : ""}${x1 - X(mediana) > 110 ? `<text class="ref" x="${x1}" y="${y + 28}" text-anchor="end">${formato(max)}</text>` : ""}
+      ${grises}${marcas}</svg></figure>`;
+}
+
+function tablaCoautoria() {
+  const R = DATOS.redes.coautoria;
+  const filas = DATOS.congresistas.map(c => { const m = (R[c.camara] || {}).metricas?.[c.id]; if (!m) return "";
+    const N = R[c.camara].nodos.length;
+    return `<tr><td><a href="#${c.slug}">${esc(c.corto)}</a><br><span class="muted small">${c.camara === "S" ? "Senado" : "Diputados"}</span></td>
+      <td class="c num acta">${m.coautores}<br><span class="muted small">puesto ${m.puesto_coautores} de ${N}</span></td>
+      <td class="c num acta">${m.proyectos_propios}<br><span class="muted small">mediana ${num1(m.mediana_propios_camara)}</span></td>
+      <td class="c num acta">${num1(m.firmas_por_proyecto)}<br><span class="muted small">mediana ${num1(m.mediana_firmas_camara)}</span></td>
+      <td class="c num acta">${pct1(m.fuera_de_bancada)}<br><span class="muted small">mediana ${pct1(m.mediana_fuera_camara)}</span></td>
+      <td class="c num acta">${num1(m.intermediacion * 100)}<br><span class="muted small">puesto ${m.puesto_intermediacion} de ${N}</span></td>
+      <td class="small">${m.socios.slice(0, 3).map(x => `${esc(apellidoDe(x.nombre))} <span class="muted">(${x.bancada || "?"}, ${x.peso})</span>`).join("<br>")}</td></tr>`; }).join("");
+  return `<details><summary>Ver las cifras exactas como tabla</summary><div class="scroll"><table><thead><tr><th>Congresista</th><th class="c">Coautores distintos</th><th class="c">Proyectos propios</th>
+    <th class="c">Firmas de colegas por proyecto propio</th><th class="c">Firmas con otras bancadas</th><th class="c">Intermediación (0–100)</th><th>Con quién firma más</th></tr></thead><tbody>${filas}</tbody></table></div></details>`;
+}
+
+function tablaLealtad() {
+  const V = DATOS.redes.votacion; if (!V) return "";
+  const cols = ["AN", "FP", "JP", "PBG", "PCO", "RP"];
+  const filas = DATOS.congresistas.map(c => { const m = V[c.camara]?.metricas?.[c.id]; if (!m) return "";
+    const propia = CODIGO_PARTIDO[c.partido];
+    const celdas = cols.map(b => { const v = m.acuerdo_por_bancada[b];
+      if (v == null) return `<td class="celda muted" data-b="${b}">—</td>`;
+      const fondo = `color-mix(in oklab, var(--ink) ${Math.round(Math.max(0, v - 40) * 1.4)}%, var(--paper-2))`, tinta = v >= 75 ? "var(--paper)" : "var(--ink)";
+      return `<td class="celda${b === propia ? " propia" : ""}" data-b="${b}" style="background:${fondo};color:${tinta}" data-tip="<b>${esc(c.corto)}</b> votó igual que un diputado de ${BANCADAS[b]} en el ${pct1(v)} de las votaciones, en promedio">${Math.round(v)}%</td>`; }).join("");
+    return `<tr><td><a href="#${c.slug}">${esc(c.corto)}</a><br><span class="muted small">${esc(c.partido)}</span></td>
+      <td class="c num acta" data-b="Votó como su bancada">${pct1(m.lealtad)}<br><span class="muted small">bancada: ${pct1(m.lealtad_mediana_bancada)}</span></td>${celdas}
+      <td class="small" data-b="Votó exactamente igual que…">${Object.keys(m.identicos).length ? Object.entries(m.identicos).map(([b, k]) => `${k} de ${esc(BANCADAS[b] || b)}`).join("<br>") : `<span class="muted">nadie</span>`}</td></tr>`; }).join("");
+  return `<div class="scroll"><table class="matriz"><thead><tr><th>Congresista</th><th class="c">Votó como su bancada</th>
+    ${cols.map(b => `<th class="c" title="${BANCADAS[b]}"><svg viewBox="0 0 16 16" style="width:12px;height:12px;vertical-align:-1px;margin-right:4px">${forma(b, 8, 8, 6.5)}</svg>${b}</th>`).join("")}<th>Votó exactamente igual que…</th></tr></thead><tbody>${filas}</tbody></table></div>
+    <p class="muted small">"Votó como su bancada": porcentaje de votaciones en que votó como la mayoría de sus compañeros; debajo, la mediana de sus compañeros de bancada. Columnas: coincidencia promedio con los diputados de cada bancada; recuadro grueso, la suya. Última columna: cuántos colegas de su cámara votaron igual que él en todas las votaciones que compartieron.</p>
+    ${(() => { const fuera = DATOS.congresistas.filter(c => !(V[c.camara]?.metricas?.[c.id])); return fuera.length ? `<p class="muted small">${fuera.map(c => esc(c.corto)).join(", ")} no ${fuera.length === 1 ? "aparece" : "aparecen"}: votó en menos de 8 de las votaciones validadas.</p>` : ""; })()}`;
+}
+
+// ¿De qué lado se pone cada diputado cuando Fuerza Popular y Juntos por el Perú votan distinto?
+function mapaVotacion(cam) {
+  const L = DATOS.redes.votacion && DATOS.redes.votacion[cam] && DATOS.redes.votacion[cam].lados; if (!L || !L.puntos.length) return "";
+  const W = 800, x0 = 215, x1 = W - 30, filaH = 64, top = 46;
+  const X = v => x0 + v * (x1 - x0);
+  const orden = Object.keys(BANCADAS).map(b => ({ b, pts: L.puntos.filter(p => p.bancada === b) })).filter(g => g.pts.length)
+    .map(g => ({ ...g, media: g.pts.reduce((s, p) => s + p.x, 0) / g.pts.length })).sort((a, b) => a.media - b.media);
+  const H = top + orden.length * filaH + 30;
+  const paso = 8.5, maxFilas = 5;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="En las ${L.votaciones} votaciones que dividieron a ${BANCADAS[L.a]} y ${BANCADAS[L.b]}, de qué lado votó cada diputado">
+    <text class="lado" x="${x0}" y="18">← Siempre con ${esc(BANCADAS[L.a])}</text>
+    <text class="lado" x="${x1}" y="18" text-anchor="end">Siempre con ${esc(BANCADAS[L.b])} →</text>
+    <line class="eje-v" x1="${X(0.5)}" x2="${X(0.5)}" y1="${top - 14}" y2="${H - 22}"/>
+    <text class="ref" x="${X(0.5)}" y="${H - 6}" text-anchor="middle">mitad y mitad</text>`;
+  const etiquetas = [];
+  orden.forEach((g, k) => {
+    const yc = top + k * filaH + filaH / 2;
+    s += `<line class="riel" x1="${x0}" x2="${x1}" y1="${yc}" y2="${yc}"/>
+      <text class="banc" x="${x0 - 14}" y="${yc + 4}" text-anchor="end">${esc(BANCADAS[g.b])}</text>`;
+    // Los que votaron igual se apilan en una cuadrícula alrededor de su posición (sin salirse del eje)
+    const grupos = {};
+    g.pts.filter(p => !p.cusco).forEach(p => (grupos[p.x] = grupos[p.x] || []).push(p));
+    Object.entries(grupos).forEach(([x, ps]) => {
+      const filas = Math.min(ps.length, maxFilas), cols = Math.ceil(ps.length / maxFilas);
+      let cx = X(+x) - (cols - 1) * paso / 2;
+      cx = Math.min(Math.max(cx, x0), x1 - (cols - 1) * paso);
+      ps.forEach((p, j) => {
+        const c = Math.floor(j / filas), f = j % filas;
+        s += forma(p.bancada, cx + c * paso, yc + (f - (filas - 1) / 2) * paso, 3.6,
+          `class="nodo" data-tip="<b>${esc(p.nombre)}</b><br>Votó como ${esc(BANCADAS[L.b])} en ${p.como_b} y como ${esc(BANCADAS[L.a])} en ${p.como_a} de estas votaciones"`);
+      });
+    });
+    g.pts.filter(p => p.cusco).forEach(p => {
+      const c = DATOS.congresistas.find(x => String(x.id) === String(p.id));
+      s += forma(p.bancada, X(p.x), yc, 11, `class="nodo cus" style="stroke:var(--ink);stroke-width:2.5" data-tip="<b>${esc(c ? c.corto : p.nombre)}</b><br>Votó como ${esc(BANCADAS[L.b])} en ${p.como_b} y como ${esc(BANCADAS[L.a])} en ${p.como_a} de estas votaciones"`);
+      etiquetas.push({ x: X(p.x), y: yc - 18, t: `${c ? apellido(c) : p.nombre} · ${p.como_b} de ${p.como_a + p.como_b}` });
+    });
+  });
+  etiquetas.forEach(e => { const ancho = e.t.length * 7.2; const tx = Math.min(Math.max(e.x, x0 + ancho / 2), x1 - ancho / 2);
+    s += `<text class="cus-nom" x="${tx}" y="${e.y}" text-anchor="middle">${esc(e.t)}</text>`; });
+  return s + "</svg>";
+}
+function listaLados(cam) {
+  const L = DATOS.redes.votacion && DATOS.redes.votacion[cam] && DATOS.redes.votacion[cam].lados; if (!L) return "";
+  const v = { SI: "a favor", NO: "en contra", ABST: "abstención" };
+  return `<details><summary>Ver las ${L.votaciones} votaciones en que se dividieron</summary><div class="lista">${L.asuntos.map(a => `
+    <div class="item"><div class="exp">${fecha(a.fecha)}<br>${esc(a.hora || "")}</div><div class="txt"><span class="small">${esc(capital(a.asunto))}…</span>
+    <span class="nota">${esc(BANCADAS[L.a])}: ${v[a[L.a]]} · ${esc(BANCADAS[L.b])}: ${v[a[L.b]]}</span></div></div>`).join("")}</div></details>`;
+}
+
+// Afinidad entre los cusqueños: cada uno ubicado según cuánto coincide con los demás (más coincidencia, más cerca).
+function afinidadCusquenos() {
+  const A = DATOS.redes.pares_cusquenos, P = DATOS.redes.afinidad_xy, dip = DATOS.congresistas.filter(c => c.camara === "D");
+  if (!P) return "";
+  const W = 640, H = 500, cx = W / 2, cy = H / 2;
+  const p = dip.map(c => ({ c, x: cx + P[c.id][0] * 1.3, y: cy + P[c.id][1] * 1.15 }));
+  const par = (a, b) => A[`${a}-${b}`] || A[`${b}-${a}`];
+  const lazos = [];
+  for (let i = 0; i < p.length; i++) for (let j = i + 1; j < p.length; j++) { const d = par(p[i].c.id, p[j].c.id); if (d && d.pct != null) lazos.push({ a: p[i], b: p[j], d }); }
+  lazos.sort((u, v) => u.d.pct - v.d.pct);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Diputados cusqueños ubicados según cuánto coinciden sus votos: más cerca, más coincidencia">`;
+  lazos.forEach(({ a, b, d }) => {
+    const fuerte = d.pct >= 90, medio = d.pct >= 80;
+    s += `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" class="lazo ${fuerte ? "fuerte" : medio ? "medio" : "debil"}"
+      data-tip="<b>${esc(a.c.corto)} y ${esc(b.c.corto)}</b><br>Votaron igual en ${d.igual} de ${d.total} votaciones (${pct1(d.pct)})"/>`;
+  });
+  // Cifras: en el medio de cada línea; si la línea es corta, desplazadas hacia un costado
+  const ocupados = p.map(q => ({ x: q.x, y: q.y }));
+  lazos.forEach(({ a, b, d }) => {
+    const fuerte = d.pct >= 90, largo = Math.hypot(b.x - a.x, b.y - a.y);
+    let mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+    if (largo < 110) { const nx = -(b.y - a.y) / largo, ny = (b.x - a.x) / largo; const sgn = (mx - cx) * nx + (my - cy) * ny >= 0 ? 1 : -1; mx += nx * 24 * sgn; my += ny * 24 * sgn; }
+    // Si la cifra cae sobre otro diputado o sobre otra cifra, se corre a lo largo de su línea
+    for (const t of [0.35, 0.65, 0.25, 0.75]) {
+      if (!ocupados.some(o => Math.hypot(o.x - mx, o.y - my) < 30)) break;
+      mx = a.x + (b.x - a.x) * t; my = a.y + (b.y - a.y) * t;
+    }
+    ocupados.push({ x: mx, y: my });
+    s += `<text class="pct ${fuerte ? "fuerte" : ""}" x="${mx}" y="${my}" dy="5" text-anchor="middle">${Math.round(d.pct)}%</text>`;
+  });
+  p.forEach(q => { const b = CODIGO_PARTIDO[q.c.partido];
+    s += forma(b, q.x, q.y, 17, `class="nodo cus" style="stroke:var(--ink);stroke-width:3" data-tip="<b>${esc(q.c.corto)}</b> · ${esc(q.c.partido)}"`); });
+  // Nombres: en la dirección con más espacio libre (lejos de otros nodos, cifras y nombres)
+  p.forEach(q => {
+    let mejor = null;
+    for (let k = 0; k < 8; k++) {
+      const ang = k * Math.PI / 4, lx = q.x + Math.cos(ang) * 44, ly = q.y + Math.sin(ang) * 34;
+      const libre = Math.min(...ocupados.filter(o => o.x !== q.x || o.y !== q.y).map(o => Math.hypot(o.x - lx, o.y - ly)), lx - 40, W - 40 - lx, ly - 20, H - 10 - ly);
+      if (!mejor || libre > mejor.libre) mejor = { libre, lx, ly, ang };
+    }
+    ocupados.push({ x: mejor.lx, y: mejor.ly });
+    const c = Math.cos(mejor.ang);
+    s += `<text class="nom" x="${mejor.lx}" y="${mejor.ly + 6}" text-anchor="${c > 0.3 ? "start" : c < -0.3 ? "end" : "middle"}">${esc(apellido(q.c))}</text>`;
+  });
+  return s + "</svg>";
+}
+
+function hallazgos() {
+  const D = DATOS.redes.coautoria.D, V = DATOS.redes.votacion && DATOS.redes.votacion.D;
+  const cus = DATOS.congresistas.filter(c => c.camara === "D");
+  const nom = id => (cus.find(c => c.id === id) || {}).corto || id;
+  const top = Object.entries(D.metricas).sort((a, b) => b[1].intermediacion - a[1].intermediacion)[0];
+  const solos = Object.entries(D.metricas).filter(([, m]) => !m.fuera_de_bancada).map(([id]) => nom(id));
+  const l = [];
+  l.push(`En Diputados casi nadie firma con otras bancadas: la mediana es ${pct1(D.mediana_fuera_camara ?? Object.values(D.metricas)[0].mediana_fuera_camara)} de las firmas. Los ${D.comunidades.length} grupos que encuentra el algoritmo coinciden con las ${D.comunidades.length} bancadas.`);
+  if (top) l.push(`${esc(nom(top[0]))} es el cusqueño que más conecta grupos: puesto ${top[1].puesto_intermediacion} de ${D.nodos.length} en ${glosa("intermediación", "Qué tanto un congresista une a colegas que no firman entre sí. Alto: hace de puente entre grupos.")}, con ${pct1(top[1].fuera_de_bancada)} de sus firmas fuera de su bancada.`);
+  if (solos.length) l.push(`${solos.map(esc).join(", ").replace(/, ([^,]*)$/, " y $1")} ${solos.length === 1 ? "solo firmó" : "solo firmaron"} con su propia bancada.`);
+  return `<ul class="hallazgos">${l.map(x => `<li>${x}</li>`).join("")}</ul>`;
+}
+
+function seccionRedes() {
+  if (!DATOS.redes || !DATOS.redes.coautoria || !DATOS.redes.coautoria.D) return "";
+  const D = DATOS.redes.coautoria.D, S = DATOS.redes.coautoria.S, V = DATOS.redes.votacion || {};
+  const dip = DATOS.congresistas.filter(c => c.camara === "D"), sen = DATOS.congresistas.filter(c => c.camara === "S");
+  const fmtN = v => num1(v), fmtP = v => pct1(v), fmtI = v => num1(v * 100);
+  return `<section class="sec" aria-labelledby="t-redes" id="redes">
+    ${encabezado("Análisis de redes", "Con quién trabajan", `Con quién firma proyectos cada uno, medido sobre los ${D.miembros_camara} diputados y ${S ? S.miembros_camara : 60} senadores. Son pocos meses de legislatura: describe lo que va hasta ahora.`, "t-redes")}
+    ${hallazgos()}
+    <h3 class="subtit">La red de firmas de la Cámara de Diputados</h3>
+    <p class="muted">Cada figura es un diputado; cada línea une a dos que firmaron al menos dos proyectos juntos. Cada círculo es una bancada. Elige a un cusqueño para ver todos sus vínculos.</p>
+    <div class="filtros-red" role="group" aria-label="Enfocar la red en un congresista" data-red="red-D">
+      <button type="button" aria-pressed="true" data-foco="">Toda la cámara</button>${dip.map(c => `<button type="button" aria-pressed="false" data-foco="${c.id}">${esc(apellido(c))}</button>`).join("")}</div>
+    ${leyendaBancadas()}
+    <div class="red" id="red-D">${redCamara("D")}</div>
+    ${S ? `<div class="red-senado"><div class="red" id="red-S">${redCamara("S")}</div>
+      <p class="muted small"><b>Senado.</b> ${S.nodos.length} senadores con proyectos. ${sen.map(c => { const m = S.metricas[c.id]; return m ? `${esc(c.corto)} firmó con ${m.coautores} colegas (puesto ${m.puesto_coautores} de ${S.nodos.length}), ${m.fuera_de_bancada ? `${pct1(m.fuera_de_bancada)} fuera de su bancada` : "todos de su bancada"}, y no ha presentado proyectos como autor principal.`.replace(/, y no ha presentado proyectos como autor principal\./, m.proyectos_propios ? `, y es autor principal de ${m.proyectos_propios}.` : ", y no ha presentado proyectos como autor principal.") : ""; }).join(" ")}</p></div>` : ""}
+
+    <details class="analisis"><summary>Ver el análisis completo: cómo se compara cada uno con los ${D.nodos.length} diputados y la afinidad entre los cusqueños</summary>
+    <h3 class="subtit">Cómo se compara cada uno con los ${D.nodos.length} diputados</h3>
+    <p class="muted">Cada punto gris es un diputado; las figuras, los cusqueños. La línea punteada marca la mediana de la cámara.</p>
+    <div class="franjas">
+      ${franja(D, "grado", "Coautores distintos", "con cuántos colegas firmó al menos un proyecto", fmtN)}
+      ${franja(D, "propios", "Proyectos propios", "como autor principal", fmtN)}
+      ${franja(D, "firmas_prom", "Firmas que reúne", "colegas que firman cada proyecto propio, en promedio", fmtN)}
+      ${franja(D, "fuera", "Firmas con otras bancadas", "porcentaje de sus firmas compartidas con diputados de otra bancada", fmtP)}
+      ${franja(D, "inter", "Intermediación", "qué tanto conecta a colegas que no firman entre sí (0 a 100)", fmtI)}
+    </div>
+    ${tablaCoautoria()}
+    <h3 class="subtit">Afinidad de voto entre los diputados cusqueños</h3>
+    <p class="muted">Cada diputado está ubicado según cuánto vota como los otros cuatro: los que votan igual quedan pegados; los que se separan, lejos. Línea gruesa: 90% o más; punteada: menos de 80%.</p>
+    <div class="afin">${afinidadCusquenos()}</div>
+    </details>
+  </section>`;
+}
+
+/* ---------- Padrón: proyectos, coautorías e intervenciones ---------- */
+function padronBarras() {
+  const R = DATOS.recorrido, ctx = (DATOS.contexto || {}).congresistas || {}, camCtx = (DATOS.contexto || {}).camaras || {};
+  const filas = DATOS.congresistas.map(c => {
+    const k = cifras(c), cam = (R && R.camaras[c.camara]) || {}, x = ctx[c.id] || {};
+    return { c, k, b: CODIGO_PARTIDO[c.partido], asis: k.pases ? Math.round(1000 * k.presente / k.pases) / 10 : 0, medA: (camCtx[c.camara] || {}).asistencia,
+      propios: k.autor, coautor: k.coautor, habla: k.habla, palabras: x.palabras, puesto: x.puesto_palabras, miembros: x.miembros,
+      medP: cam.mediana_propios, medC: cam.mediana_coautor };
+  });
+  const cols = [
+    { clave: "asis", med: "medA", titulo: "Asistencia", nota: "pases de lista", max: 100, pct: true },
+    { clave: "propios", med: "medP", titulo: "Proyectos propios", nota: "como autor principal" },
+    { clave: "coautor", med: "medC", titulo: "Como coautor", nota: "proyectos de otros" },
+    { clave: "habla", med: null, titulo: "Intervenciones", nota: "como orador" },
+  ];
+  cols.forEach(col => { col.max = col.max || Math.max(1, ...filas.map(f => Math.max(f[col.clave] || 0, col.med ? f[col.med] || 0 : 0))); });
+  const barra = (f, col) => {
+    const v = f[col.clave] || 0, pct = 100 * v / col.max, med = col.med ? f[col.med] : null;
+    const tip = col.clave === "asis"
+      ? `<b>${esc(f.c.corto)}</b>: presente en ${f.k.presente} de ${f.k.pases} pases de lista (${pct1(v)})${med != null ? `<br>Promedio de ${f.c.camara === "S" ? "los senadores" : "los diputados"}: ${pct1(med)}` : ""}<br>Votó en ${f.k.participo} de ${f.k.votables} votaciones`
+      : col.clave === "habla"
+      ? `<b>${esc(f.c.corto)}</b>: ${v} ${v === 1 ? "intervención" : "intervenciones"}${f.palabras ? `<br>${f.palabras.toLocaleString("es-PE")} palabras · puesto ${f.puesto} de ${f.miembros} en su cámara` : ""}`
+      : `<b>${esc(f.c.corto)}</b>: ${v} ${col.clave === "propios" ? (v === 1 ? "proyecto como autor principal" : "proyectos como autor principal") : (v === 1 ? "proyecto como coautor" : "proyectos como coautor")}${med != null ? `<br>Mediana de ${f.c.camara === "S" ? "los senadores" : "los diputados"}: ${String(med).replace(".", ",")}` : ""}`;
+    return `<div class="pb-celda" data-tip="${tip}">
+      <div class="pb-pista">${v ? `<i style="width:${pct.toFixed(1)}%;background:var(--b-${f.b}, var(--ink))"></i>` : ""}${med != null ? `<b class="pb-med" style="left:${(100 * med / col.max).toFixed(1)}%"></b>` : ""}</div>
+      <span class="pb-v${col.pct && v < (med || 0) ? " bajo" : ""}">${col.pct ? Math.round(v) + "<small>%</small>" : v}</span>
+      ${col.clave === "asis" ? `<span class="pb-sub">${f.k.presente} de ${f.k.pases} · votó en ${f.k.participo} de ${f.k.votables} votaciones</span>` : ""}
+      ${col.clave === "habla" && f.palabras ? `<span class="pb-sub">${f.palabras.toLocaleString("es-PE")} palabras · puesto ${f.puesto} de ${f.miembros}</span>` : ""}
+    </div>`;
+  };
+  return `<div class="pb" role="table" aria-label="Proyectos propios, coautorías e intervenciones de cada congresista">
+    <div class="pb-fila pb-cab" role="row"><span role="columnheader"></span>${cols.map(col => `<span role="columnheader"><b>${col.titulo}</b><br><span class="muted">${col.nota}</span></span>`).join("")}</div>
+    ${filas.map(f => `<a class="pb-fila" role="row" href="#${f.c.slug}">
+      <span role="cell"><span class="pb-nom">${esc(f.c.corto)}</span><span class="pb-sub"><svg class="pb-forma" viewBox="0 0 16 16" aria-hidden="true">${forma(f.b, 8, 8, 6.5)}</svg>${esc(f.c.partido)} · ${f.c.camara === "S" ? "Senado" : "Diputados"}</span></span>
+      ${cols.map(col => `<span role="cell">${barra(f, col)}</span>`).join("")}</a>`).join("")}
+  </div>
+  <p class="muted small">Cada barra lleva el color de la bancada del congresista. Marca vertical: en asistencia, el promedio de su cámara (${pct1(camCtx.D && camCtx.D.asistencia)} en Diputados, ${pct1(camCtx.S && camCtx.S.asistencia)} en el Senado); en proyectos, la mediana de su cámara (${R ? `${String(R.camaras.D.mediana_propios).replace(".", ",")} proyectos propios y ${String(R.camaras.D.mediana_coautor).replace(".", ",")} como coautor entre los diputados; ${String(R.camaras.S.mediana_propios).replace(".", ",")} y ${String(R.camaras.S.mediana_coautor).replace(".", ",")} entre los senadores, porque casi todos los proyectos entran por Diputados` : ""}). Las intervenciones no cuentan los turnos presidiendo la sesión.</p>`;
+}
+
+/* ---------- Recorrido de los proyectos ---------- */
+// Etapas en una sola tinta, de clara a oscura según cuánto avanzó; archivados en contorno punteado.
+const COLOR_ETAPA = [0, 1, 2, 3, 4].map(k => `color-mix(in oklab, var(--ink) ${[22, 42, 64, 84, 100][k]}%, var(--paper))`);
+function cuadroEtapa(p, c) {
+  const archivado = p.etapa === 5;
+  return `<i class="pz${archivado ? " arch" : ""}" style="${archivado ? "" : `background:${COLOR_ETAPA[p.etapa]}`}"
+    data-tip="<b>${esc(p.numero)}</b> · ${esc(DATOS.recorrido.etapas[p.etapa])}<br>${esc(capital(p.titulo).slice(0, 150))}${p.titulo.length > 150 ? "…" : ""}<br>Estado: ${esc(capital(p.estado))}${p.etapa < 2 ? ` · ${p.dias} días desde que se presentó` : ""}"></i>`;
+}
+function leyendaEtapas() {
+  return `<div class="legend">${DATOS.recorrido.etapas.map((e, k) => `<span><i style="${k === 5 ? "background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink-2)" : `--c:${COLOR_ETAPA[k]}`}"></i>${esc(e)}</span>`).join("")}</div>`;
+}
+function barraCamara(r) {
+  return `<div class="rc-barra">${r.por_etapa.map((n, k) => n ? `<i style="flex:${n};${k === 5 ? "background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink-2)" : `background:${COLOR_ETAPA[k]}`}"
+    data-tip="<b>${n}</b> de ${r.total} proyectos (${pct1(100 * n / r.total)}): ${esc(DATOS.recorrido.etapas[k])}"></i>` : "").join("")}</div>`;
+}
+function filaRecorrido(c) {
+  const r = DATOS.recorrido.congresistas[c.id];
+  const co = r.coautor;
+  return `<div class="rc-fila"><div><a href="#${c.slug}" class="rc-nom">${esc(c.corto)}</a><div class="sub">${r.total} ${r.total === 1 ? "proyecto propio" : "proyectos propios"}${r.dictamen_o_mas ? ` · <b>${r.dictamen_o_mas}</b> con dictamen o más` : ""}</div></div>
+    <div class="rc-pz">${r.total ? r.proyectos.map(p => cuadroEtapa(p, c)).join("") : `<span class="muted small">No es autor principal de ningún proyecto.</span>`}</div>
+    <div class="small muted rc-co">Como coautor: ${co.total}${co.dictamen_o_mas ? `, ${co.dictamen_o_mas} con dictamen o más` : ""}</div></div>`;
+}
+function seccionRecorrido(soloId) {
+  const R = DATOS.recorrido; if (!R) return "";
+  const D = R.camaras.D, S = R.camaras.S;
+  const lista = DATOS.congresistas.filter(c => !soloId || soloId === "cuerpo" || c.id === soloId);
+  const camaras = soloId && soloId !== "cuerpo" ? [lista[0].camara] : ["D", "S"];
+  const filas = camaras.map(cam => { const r = R.camaras[cam]; return `
+    <div class="rc-fila rc-camara"><div><span class="rc-nom">${cam === "D" ? "Toda la Cámara de Diputados" : "Todo el Senado"}</span><div class="sub">${r.total} proyectos de ${cam === "D" ? "diputados" : "senadores"}</div></div>
+      ${barraCamara(r)}<div class="small muted rc-co">${pct1(100 * r.dictamen_o_mas / (r.total || 1))} con dictamen o más${r.dias_esperando_mediana != null ? ` · los que esperan llevan ${r.dias_esperando_mediana} días (mediana)` : ""}</div></div>
+    ${lista.filter(c => c.camara === cam).map(filaRecorrido).join("")}`; }).join("");
+  const leyes = D.por_etapa[4] + S.por_etapa[4];
+  if (soloId === "cuerpo") return { filas, leyes };
+  return `<section class="sec" aria-labelledby="t-recorrido${soloId ? "-f" : ""}">
+    ${encabezado("Proyectos de ley", "¿Hasta dónde llegan?", `Cada cuadro es un proyecto en el que ${soloId ? "es" : "cada uno es"} autor principal, según la etapa a la que llegó. Arriba, como referencia, todos los proyectos de ${soloId ? "su cámara" : "cada cámara"}: en lo que va del período, ${pct1(100 * D.dictamen_o_mas / (D.total || 1))} de los proyectos de diputados tiene dictamen o más${leyes ? ` y ${leyes} ya son ley` : " y ninguno es ley todavía"}. Pasa el cursor por un cuadro para ver el proyecto.`, "t-recorrido" + (soloId ? "-f" : ""))}
+    ${leyendaEtapas()}
+    <div class="recorrido">${filas}</div>
+  </section>`;
+}
+
+function recorridoCuerpo() {
+  const R = DATOS.recorrido; if (!R) return "";
+  const { filas } = seccionRecorrido("cuerpo");
+  return `<h3 class="subtit">¿Hasta dónde llegan?</h3>
+    <p class="muted">Cada cuadro es un proyecto propio, según la etapa a la que llegó; arriba, como referencia, todos los de su cámara. Pasa el cursor por un cuadro para ver cuál es.</p>
+    ${leyendaEtapas()}<div class="recorrido">${filas}</div>`;
+}
+
+/* ---------- Escríbele a tu congresista ---------- */
+const PROVINCIAS_CUSCO = ["Acomayo", "Anta", "Calca", "Canas", "Canchis", "Chumbivilcas", "Cusco", "Espinar", "La Convención", "Paruro", "Paucartambo", "Quispicanchi", "Urubamba"];
+const numCorto = n => String(+n.split("-")[0]);
+const tituloCorto = t => capital(t.replace(/^PROPOSICI[ÓO]N (DE RESOLUCI[ÓO]N )?(LEGISLATIVA|DE LEY) (DEL CONGRESO )?(QUE )?/i, "")).replace(/[.\s]+$/, "");
+const MOTIVOS = { proyecto: "Pregunta sobre uno de sus proyectos", voto: "Pregunta sobre un voto suyo", pedido: "Un pedido para mi provincia", otro: "Otro tema" };
+function recuerda(clave, valor) {
+  try { if (valor === undefined) return localStorage.getItem("fc-" + clave) || ""; localStorage.setItem("fc-" + clave, valor); } catch (e) { return ""; }
+  return "";
+}
+function tarjetaContacto(c) {
+  const k = (DATOS.contacto || {})[c.id] || {};
+  return `<div class="contacto">
+    <div><b class="rc-nom">${esc(c.corto)}</b><div class="sub">${esc(c.partido)} · ${c.camara === "S" ? "Senado" : "Diputados"}</div></div>
+    ${k.correo ? `<a class="acta" href="mailto:${esc(k.correo)}">${esc(k.correo)}</a>` : `<span class="muted small">Correo no publicado</span>`}
+    <div class="small muted">${k.votos_obtenidos ? `${k.votos_obtenidos.toLocaleString("es-PE")} votos en la elección de 2026` : ""}${k.ficha ? ` · <a href="${esc(k.ficha)}" target="_blank" rel="noopener">ficha oficial</a>` : ""}</div>
+    <button type="button" class="redactar" data-para="${c.id}">Escribirle</button>
+  </div>`;
+}
+function opcionesSobre(id, motivo) {
+  const c = DATOS.congresistas.find(x => x.id === id); if (!c) return "";
+  if (motivo === "proyecto") {
+    const ps = DATOS.proyectos.filter(p => p.cusco[id] === "Autor principal");
+    return ps.length ? ps.map(p => `<option value="${esc(p.numero)}">${numCorto(p.numero)} · ${esc(p.resumen ? p.resumen.tema : tituloCorto(p.titulo).slice(0, 80))}</option>`).join("") : `<option value="">No es autor principal de ningún proyecto</option>`;
+  }
+  if (motivo === "voto") {
+    return DATOS.eventos.filter(e => e.camara === c.camara && e.tipo === "VOTACIÓN" && ["SI", "NO", "ABST"].includes(e.votos[id] || "")).slice(-15).reverse()
+      .map((e, k) => `<option value="${esc(e.fecha + "|" + e.hora + "|" + k)}">${fecha(e.fecha)} · ${esc(LARGO[e.votos[id]])} · ${esc(capital(e.asunto).slice(0, 70))}</option>`).join("") || `<option value="">Sin votaciones registradas</option>`;
+  }
+  return "";
+}
+function textoMensaje() {
+  const g = id => document.getElementById(id);
+  const c = DATOS.congresistas.find(x => x.id === g("m-para").value); if (!c) return { asunto: "", cuerpo: "" };
+  const motivo = g("m-motivo").value, sobre = g("m-sobre") ? g("m-sobre").value : "", nombre = g("m-nombre").value.trim(), prov = g("m-prov").value;
+  const quien = nombre ? `Mi nombre es ${nombre}${prov ? ` y vivo en la provincia de ${prov}` : ""}.` : prov ? `Vivo en la provincia de ${prov}.` : "";
+  let asunto = "Mensaje de un ciudadano del Cusco", centro = "";
+  if (motivo === "proyecto" && sobre) {
+    const p = DATOS.proyectos.find(x => x.numero === sobre);
+    asunto = `Consulta sobre el proyecto de ley N.° ${numCorto(sobre)}`;
+    const tit = tituloCorto(p.titulo);
+    centro = `Le escribo sobre el proyecto de ley N.° ${numCorto(sobre)}, que ${tit.charAt(0).toLowerCase() + tit.slice(1)}, del que usted es autor. Quisiera saber en qué situación se encuentra, qué falta para que avance y cómo beneficiaría a la población del Cusco.`;
+  } else if (motivo === "voto" && sobre) {
+    const [f, h, k] = sobre.split("|");
+    const e = DATOS.eventos.filter(x => x.camara === c.camara && x.tipo === "VOTACIÓN" && ["SI", "NO", "ABST"].includes(x.votos[c.id] || "")).slice(-15).reverse()[+k];
+    asunto = `Consulta sobre su voto del ${fecha(f)}`;
+    centro = `Le escribo sobre la votación del Pleno del ${fecha(f)} (${h}): «${capital(e.asunto).slice(0, 300)}». Según el acta oficial, usted votó ${LARGO[e.votos[c.id]].toLowerCase()}. Quisiera conocer las razones de su voto.`;
+  } else if (motivo === "pedido") {
+    asunto = `Pedido ciudadano${prov ? ` desde ${prov}` : " desde el Cusco"}`;
+    centro = `Le escribo para pedirle que atienda el siguiente problema${prov ? ` de la provincia de ${prov}` : ""}: [describa aquí el problema y qué espera que haga]. Le agradeceré que me informe qué acciones tomará.`;
+  } else {
+    centro = "[Escriba aquí su mensaje.]";
+  }
+  const cuerpo = `Congresista ${c.corto}:\n\n${quien ? quien + " " : ""}${centro}\n\nQuedo atento/a a su respuesta.\n\nAtentamente,\n${nombre || "[Su nombre]"}${prov ? "\n" + prov : ""}`;
+  return { asunto, cuerpo };
+}
+function actualizarMensaje(regenerar) {
+  const g = id => document.getElementById(id); if (!g("m-para")) return;
+  const c = DATOS.congresistas.find(x => x.id === g("m-para").value);
+  if (regenerar) { const m = textoMensaje(); g("m-asunto").value = m.asunto; g("m-cuerpo").value = m.cuerpo; }
+  const correo = ((DATOS.contacto || {})[c && c.id] || {}).correo || "";
+  const enlace = g("m-abrir");
+  enlace.href = `mailto:${correo}?subject=${encodeURIComponent(g("m-asunto").value)}&body=${encodeURIComponent(g("m-cuerpo").value.replace(/\n/g, "\r\n"))}`;
+  enlace.toggleAttribute("aria-disabled", !correo);
+  g("m-dest").textContent = correo ? `Se abrirá tu propio correo, dirigido a ${correo}.` : "Este congresista no tiene un correo publicado.";
+}
+function seccionEscribele(soloId) {
+  const lista = DATOS.congresistas.filter(c => !soloId || c.id === soloId);
+  const inicial = soloId || DATOS.congresistas[0].id;
+  return `<section class="sec" aria-labelledby="t-escribe${soloId ? "-f" : ""}" id="escribele">
+    ${encabezado("Participa", soloId ? "Escríbele" : "Escríbele a tu congresista", "Su correo institucional es público. Arma tu mensaje aquí: se abre en tu propio correo para que lo revises y lo envíes tú. Esta página no guarda ni envía nada.", "t-escribe" + (soloId ? "-f" : ""))}
+    ${soloId ? "" : `<div class="contactos">${lista.map(tarjetaContacto).join("")}</div>`}
+    <form class="redactor" id="redactor" onsubmit="return false">
+      <div class="r-campos">
+        <label>Para<select id="m-para">${DATOS.congresistas.map(c => `<option value="${c.id}"${c.id === inicial ? " selected" : ""}>${esc(c.corto)}</option>`).join("")}</select></label>
+        <label>Motivo<select id="m-motivo">${Object.entries(MOTIVOS).map(([k, v]) => `<option value="${k}">${v}</option>`).join("")}</select></label>
+        <label class="r-ancho" id="m-sobre-l">Sobre<select id="m-sobre">${opcionesSobre(inicial, "proyecto")}</select></label>
+        <label>Tu nombre <span class="muted">(opcional)</span><input id="m-nombre" type="text" autocomplete="name" value="${esc(recuerda("nombre"))}"></label>
+        <label>Tu provincia <span class="muted">(opcional)</span><select id="m-prov"><option value="">—</option>${PROVINCIAS_CUSCO.map(p => `<option${recuerda("prov") === p ? " selected" : ""}>${p}</option>`).join("")}</select></label>
+      </div>
+      <label class="r-ancho">Asunto<input id="m-asunto" type="text"></label>
+      <label class="r-ancho">Mensaje<textarea id="m-cuerpo" rows="11"></textarea></label>
+      <div class="r-acciones"><a class="boton" id="m-abrir" href="#">Abrir en mi correo</a><button type="button" id="m-copiar">Copiar el mensaje</button><span class="small muted" id="m-dest" aria-live="polite"></span></div>
+      <p class="small muted">Consejos: sé breve y concreto, di de qué provincia eres y pide una respuesta. Si no tienes un programa de correo, usa «Copiar el mensaje» y pégalo en tu correo web. También puedes presentar un pedido formal por la mesa de partes virtual del Congreso.</p>
+    </form>
+  </section>`;
+}
+document.addEventListener("change", ev => {
+  const id = ev.target.id;
+  if (id === "m-para" || id === "m-motivo") {
+    const motivo = document.getElementById("m-motivo").value, sobre = document.getElementById("m-sobre");
+    sobre.innerHTML = opcionesSobre(document.getElementById("m-para").value, motivo);
+    document.getElementById("m-sobre-l").hidden = !["proyecto", "voto"].includes(motivo);
+  }
+  if (id === "m-prov") recuerda("prov", ev.target.value);
+  if (["m-para", "m-motivo", "m-sobre", "m-prov"].includes(id)) actualizarMensaje(true);
+});
+document.addEventListener("input", ev => {
+  if (ev.target.id === "m-nombre") { recuerda("nombre", ev.target.value); actualizarMensaje(true); }
+  if (ev.target.id === "m-asunto" || ev.target.id === "m-cuerpo") actualizarMensaje(false);
+});
+document.addEventListener("click", ev => {
+  const b = ev.target.closest(".redactar");
+  if (b) { const s = document.getElementById("m-para"); s.value = b.dataset.para; s.dispatchEvent(new Event("change", { bubbles: true }));
+    document.getElementById("redactor").scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+  if (ev.target.id === "m-copiar") {
+    const t = `Para: ${(((DATOS.contacto || {})[document.getElementById("m-para").value]) || {}).correo || ""}\nAsunto: ${document.getElementById("m-asunto").value}\n\n${document.getElementById("m-cuerpo").value}`;
+    const listo = () => { ev.target.textContent = "Copiado"; setTimeout(() => ev.target.textContent = "Copiar el mensaje", 1800); };
+    try { navigator.clipboard.writeText(t).then(listo, () => { document.getElementById("m-cuerpo").select(); document.execCommand("copy"); listo(); }); }
+    catch (e) { document.getElementById("m-cuerpo").select(); document.execCommand("copy"); listo(); }
+  }
+  if (ev.target.id === "m-abrir" && ev.target.hasAttribute("aria-disabled")) ev.preventDefault();
+});
+
 function pie() {
-  return `<footer><h2>De dónde salen los datos</h2><ol>
+  return `<footer><h2>De dónde salen los datos</h2>
+    <p>Todo sale de documentos oficiales del Congreso: el sistema de proyectos de ley, las actas de asistencia y votación del Pleno y el Diario de Debates. Cada cifra enlaza a su fuente. <a href="#como-se-hizo">Cómo se hizo, paso a paso</a>.</p>
+    <p class="firma">${iconoMarca()}<span>Un proyecto de <a href="https://ciudadsur.pe" target="_blank" rel="noopener">Ciudad Sur</a> y <a href="https://www.instagram.com/sieteborreguitos" target="_blank" rel="noopener">@sieteborreguitos</a></span></p></footer>`;
+}
+function metodologia() {
+  return `<a class="volver" href="#inicio">← Volver a la portada</a>
+  <header class="ficha-head"><span class="etq">Metodología</span><h1>Cómo se hizo</h1></header>
+  ${tocapu()}
+  <footer class="metodo"><ol>
     <li>Proyectos de ley: sistema de proposiciones legislativas del Congreso. Autor principal es el primer firmante, que es quien firma el texto; el sistema a veces marca a todos los firmantes como autores.</li>
     <li>Asistencia y votaciones: actas de asistencia y votación del Pleno que publica cada cámara. Muchas son escaneos; las lecturas dudosas se verificaron a mano contra la imagen del acta.</li>
+    <li>Intervenciones: Diario de Debates, la transcripción oficial de cada sesión del Pleno. Se cuenta cada vez que el congresista toma la palabra como orador; los turnos presidiendo la sesión se cuentan aparte. Los resúmenes salen de leer la transcripción completa.</li>
+    <li>Comparaciones: los promedios salen de la tabla de totales por bancada que trae cada acta. Solo se usan las actas cuya tabla cuadra al sumarla (la suma de las bancadas debe dar el total de la cámara); las demás se descartan. "Votó igual que su bancada" compara su voto con la posición de la mayoría de su bancada; no se cuentan las votaciones en que la bancada empató.</li>
+    <li>Temas y provincias: se asignan con listas de palabras clave sobre el texto oficial (título, resumen y texto completo de cada proyecto; transcripción de cada intervención). Pueden tener errores puntuales; las reglas están publicadas en el código del proyecto.</li>
+    <li>Redes: la red de coautoría incluye a todos los congresistas de cada cámara y une a quienes firmaron un mismo proyecto (como autores o coautores). Los grupos se detectan con el algoritmo de Louvain. La intermediación mide en cuántos de los caminos más cortos entre dos colegas está el congresista. La bancada de cada congresista sale de las actas de asistencia.</li>
+    <li>Votación nominal: se lee el voto de todos los congresistas en cada acta. Una votación solo entra al análisis si los votos leídos de cada bancada suman exactamente lo que dice la tabla oficial de totales del acta; si en una bancada faltan votos de un solo tipo y hay exactamente esa cantidad de miembros sin leer, se deducen de la tabla. "¿De qué lado votan?" usa las votaciones en que la mayoría de Fuerza Popular y la de Juntos por el Perú votaron distinto. La afinidad entre cusqueños los ubica en el plano según cuánto coinciden (escalamiento multidimensional).</li>
+    <li>Recorrido de los proyectos: el estado actual de cada proyecto en el sistema del Congreso, agrupado en etapas (presentado, en comisión, con dictamen, aprobado, ley, archivado). Las medianas de proyectos propios y de coautorías salen de todos los firmantes de cada cámara.</li>
+    <li>Contacto: el correo institucional y los votos obtenidos salen de la ficha oficial de cada congresista en el portal de su cámara.</li>
     <li>Cada pase de lista y cada votación cuenta por separado. Solo incluye el Pleno, no las comisiones.</li>
     <li>Las cifras empiezan en julio de 2026. Con pocas sesiones, una sola ausencia mueve bastante los porcentajes.</li>
-    <li>Si un dato está mal, el enlace "acta" o el número de proyecto lleva al documento original para comprobarlo.</li></ol></footer>`;
+    <li>Si un dato está mal, el enlace "acta" o el número de proyecto lleva al documento original para comprobarlo.</li></ol></footer>
+  ${tocapu()}
+  ${pie()}`;
 }
 
 function filtrar(grupo, selector, prueba) {
@@ -423,13 +1545,87 @@ function filtrar(grupo, selector, prueba) {
 
 function mostrar(id = location.hash.slice(1)) {
   const c = DATOS.congresistas.find(x => x.slug === id);
-  document.getElementById("app").innerHTML = c ? ficha(c) : inicio();
+  N_PLEGADO = 0;
+  document.getElementById("app").innerHTML = c ? ficha(c) : id === "como-se-hizo" ? metodologia() : inicio();
   if (c) filtrar(".filtros", "#votos", (d, tr) => {
     const v = tr.querySelector(".voto").textContent;
     return d.v === "todas" || (d.v === "NO" && v === "NO") || (d.v === "ABST" && v === "Abst.") || (d.v === "sin" && !["SI", "NO", "Abst.", "Presidía"].includes(v));
   });
   else filtrar(".filtros", "#acta", (d, tr) => d.f === "todas" || tr.classList.contains("split"));
+  actualizarMensaje(true);
   window.scrollTo(0, 0);
+}
+
+// Interacción de temas, mapa, agenda y buscador (delegada: sobrevive al redibujado de la página)
+let temporizador = null, tipoBusqueda = "";
+document.addEventListener("submit", ev => {
+  if (ev.target.id !== "form-q") return;
+  ev.preventDefault(); clearTimeout(temporizador);
+  buscar(document.getElementById("q").value, tipoBusqueda);
+});
+document.addEventListener("input", ev => {
+  if (ev.target.id !== "q") return;
+  clearTimeout(temporizador); tipoBusqueda = "";
+  temporizador = setTimeout(() => buscar(ev.target.value, tipoBusqueda), 250);
+});
+document.addEventListener("click", ev => {
+  const b = ev.target.closest("button"); if (!b) return;
+  const fichaId = (DATOS.congresistas.find(x => x.slug === location.hash.slice(1)) || {}).id;
+  if (b.dataset.temaSel) {
+    document.querySelectorAll("[data-tema-sel]").forEach(x => x.setAttribute("aria-pressed", x === b));
+    document.getElementById("tema-detalle").innerHTML = detalleTema(b.dataset.temaSel);
+  } else if (b.dataset.temaFicha) {
+    document.getElementById("tema-ficha").innerHTML = `<h3 class="subtit">${esc(nomTema(b.dataset.temaFicha))}</h3>` + detalleTema(b.dataset.temaFicha, fichaId);
+  } else if (b.dataset.tema && document.querySelector(`[data-tema-sel="${b.dataset.tema}"]`)) {
+    const sel = document.querySelector(`[data-tema-sel="${b.dataset.tema}"]`); sel.click(); document.getElementById("temas").scrollIntoView({ behavior: "smooth" });
+  } else if (b.dataset.mapaC !== undefined) {
+    mapaFiltro = b.dataset.mapaC; redibujarMapa();
+  } else if (b.dataset.ag) {
+    document.querySelectorAll("[data-ag]").forEach(x => x.setAttribute("aria-pressed", x === b));
+    document.querySelectorAll(".ag-item").forEach(x => x.hidden = b.dataset.ag === "cusco" && x.dataset.cus !== "1");
+  } else if (b.dataset.mas) {
+    buscar(document.getElementById("q").value, tipoBusqueda, true);
+  } else if (b.dataset.qt !== undefined) {
+    tipoBusqueda = b.dataset.qt; buscar(document.getElementById("q").value, tipoBusqueda);
+  } else if (b.dataset.prov) {
+    mapaSel = mapaSel === b.dataset.prov ? null : b.dataset.prov; redibujarMapa();
+  }
+});
+document.addEventListener("click", ev => {
+  const b = ev.target.closest("[data-desplegar], [data-filas-extra]"); if (!b) return;
+  if (b.dataset.desplegar) {
+    const d = document.getElementById(b.dataset.desplegar); d.hidden = !d.hidden;
+    b.textContent = d.hidden ? `Ver ${b.dataset.n} más` : "Ver menos";
+  } else {
+    const filas = b.previousElementSibling.querySelectorAll(".fila-extra"), ocultas = filas[0] && filas[0].hidden;
+    filas.forEach(f => f.hidden = !ocultas);
+    b.textContent = ocultas ? "Ver menos" : `Ver ${filas.length} más`;
+  }
+});
+function enfocarRed(red, id) {
+  red.querySelectorAll(".on").forEach(x => x.classList.remove("on"));
+  const grupo = document.querySelector(`[data-red="${red.id}"]`);
+  if (grupo) grupo.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.foco === (id || "")));
+  if (!id || red.dataset.foco === id) { red.classList.remove("foco"); red.dataset.foco = ""; if (grupo) grupo.querySelector('[data-foco=""]').setAttribute("aria-pressed", "true"); return; }
+  red.dataset.foco = id; red.classList.add("foco");
+  const vec = new Set([id]);
+  red.querySelectorAll(".arista").forEach(a => { if (a.dataset.a === id || a.dataset.b === id) { a.classList.add("on"); vec.add(a.dataset.a); vec.add(a.dataset.b); } });
+  red.querySelectorAll(".nodo, text").forEach(x => { if (vec.has(x.dataset.n)) x.classList.add("on"); });
+}
+document.addEventListener("click", ev => {
+  const b = ev.target.closest("[data-red] button");
+  if (b) { const red = document.getElementById(b.closest("[data-red]").dataset.red); if (red) enfocarRed(red, red.dataset.foco === b.dataset.foco ? "" : b.dataset.foco); return; }
+  const n = ev.target.closest(".red .nodo"), red = n && n.closest(".red[id]");
+  if (red && n.classList.contains("cus")) enfocarRed(red, n.dataset.n);
+});
+document.addEventListener("click", ev => {
+  const p = ev.target.closest("path.prov"); if (!p) return;
+  mapaSel = mapaSel === p.dataset.prov ? null : p.dataset.prov; redibujarMapa();
+});
+function redibujarMapa() {
+  const sec = document.getElementById("mapa"); if (!sec) return;
+  const fichaId = (DATOS.congresistas.find(x => x.slug === location.hash.slice(1)) || {}).id;
+  sec.outerHTML = seccionMapa(fichaId);
 }
 
 // Tooltip compartido para cuadros del tejido, barras y pases de lista.
@@ -448,6 +1644,7 @@ document.addEventListener("click", ev => {
   const a = ev.target.closest('a[href^="#"]');
   if (!a) return;
   ev.preventDefault();
+  if (a.dataset.ir) { const d = document.getElementById(a.dataset.ir); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" }); return; }
   const id = a.getAttribute("href").slice(1);
   try { history.pushState(null, "", "#" + id); } catch (e) { /* algunos visores no lo permiten */ }
   mostrar(id);

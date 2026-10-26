@@ -58,3 +58,27 @@ def ocr_recorte(datos, x0, y0, x1, y1, escala=4):
         Quartz.CGBitmapContextCreateImage(ctx), None)
     manejador.performRequests_error_([pedido], None)
     return " ".join(o.topCandidates_(1)[0].string() for o in pedido.results() or [])
+
+
+def ocr_zona(datos, y0, y1, escala=3):
+    """OCR de una franja horizontal ampliada; devuelve (texto, x, y) en coordenadas de la página (0-1)."""
+    imagen = _cgimage(datos)
+    ancho, alto = Quartz.CGImageGetWidth(imagen), Quartz.CGImageGetHeight(imagen)
+    rect = Quartz.CGRectMake(0, y0 * alto, ancho, (y1 - y0) * alto)
+    recorte = Quartz.CGImageCreateWithImageInRect(imagen, rect)
+    w, h = int(rect.size.width * escala), int(rect.size.height * escala)
+    ctx = Quartz.CGBitmapContextCreate(None, w, h, 8, 0, Quartz.CGColorSpaceCreateDeviceRGB(),
+                                       Quartz.kCGImageAlphaNoneSkipLast)
+    Quartz.CGContextDrawImage(ctx, Quartz.CGRectMake(0, 0, w, h), recorte)
+    pedido = Vision.VNRecognizeTextRequest.alloc().init()
+    pedido.setRecognitionLevel_(Vision.VNRequestTextRecognitionLevelAccurate)
+    pedido.setUsesLanguageCorrection_(False)
+    manejador = Vision.VNImageRequestHandler.alloc().initWithCGImage_options_(
+        Quartz.CGBitmapContextCreateImage(ctx), None)
+    manejador.performRequests_error_([pedido], None)
+    salida = []
+    for obs in pedido.results() or []:
+        caja = obs.boundingBox()
+        yy = y0 + (1 - caja.origin.y - caja.size.height) * (y1 - y0)
+        salida.append((obs.topCandidates_(1)[0].string(), caja.origin.x, yy, caja.size.width))
+    return salida

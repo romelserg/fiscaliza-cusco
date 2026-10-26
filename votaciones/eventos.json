@@ -1918,6 +1918,21 @@
   "pagina": 15
  },
  {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-07",
+  "hora": "01:06 PM",
+  "asunto": "PROYECTO DE RESOLUCIÓN LEGISLATIVA 12, QUE AUTORIZA A LA SEÑORA PRESIDENTA DE LA REPÚBLICA A SALIR DEL TERRITORIO NACIONAL DEL 28 AL 31 DE OCTUBRE DE 2026 Y DEL 2 AL 6 DE NOVIEMBRE DE 2026",
+  "votos": {
+   "305": "NO"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_7_10_2026_vbo.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_7_10_2026_vbo.pdf",
+  "pagina": 3
+ },
+ {
   "tipo": "ASISTENCIA",
   "fecha": "2026-10-07",
   "hora": "01:06 PM",
@@ -1931,21 +1946,6 @@
   "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf",
   "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf",
   "pagina": 2
- },
- {
-  "tipo": "VOTACIÓN",
-  "fecha": "2026-10-07",
-  "hora": "01:06 PM",
-  "asunto": "PROYECTO DE RESOLUCIÓN LEGISLATIVA 12, QUE AUTORIZA A LA SEÑORA PRESIDENTA DE LA REPÚBLICA A SALIR DEL TERRITORIO NACIONAL DEL 28 AL 31 DE OCTUBRE DE 2026 Y DEL 2 AL 6 DE NOVIEMBRE DE 2026",
-  "votos": {
-   "305": "NO"
-  },
-  "constancias": {},
-  "registro_sistema": {},
-  "camara": "S",
-  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf",
-  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf",
-  "pagina": 3
  },
  {
   "tipo": "ASISTENCIA",
@@ -1966,15 +1966,15 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-10-07",
   "hora": "01:10 PM",
-  "asunto": "RECONSIDERACIÓN A LA VOTACIÓN POR LA QUE NO SE APROBÓ LA MOCIÓN DE ORDEN DEL DÍA 31, QUE PROPONE CONFORMAR LA COMISIÓN ESPECIAL MULTIPARTIDARIA DEL ESTUDIO Y SEGUIMIENTO DENOMINADA: \"COMISIÓN ESPECIAL DE SEGUIMIENTO ESTRATÉGICO PARA LA PREVENCIÓN DE CONFLICTOS SOCIALES",
+  "asunto": "RECONSIDERACIÓN A LA VOTACIÓN POR LA QUE NO SE APROBÓ LA MOCIÓN DE ORDEN DEL DÍA 31, QUE PROPONE CONFORMAR LA COMISIÓN ESPECIAL MUL TIPARTIDARIA DEL ESTUDIO Y SEGUIMIENTO DENOMINADA: \"COMISIÓN ESPECIAL DE SEGUIMIENTO ESTRATÉGICO PARA LA PREVENCIÓN DE CONFLICTOS SOCIALES\"",
   "votos": {
    "305": "SI"
   },
   "constancias": {},
   "registro_sistema": {},
   "camara": "S",
-  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf",
-  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_7_10_2026_vbo.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_7_10_2026_vbo.pdf",
   "pagina": 5
  },
  {
@@ -1988,8 +1988,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "S",
-  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencia_sesion_solemne_PROVISIONAL_7_10_2026-copia.pdf",
-  "pdf": "S_Asistencia_sesion_solemne_PROVISIONAL_7_10_2026-copia.pdf",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencia_sesion_solemne_7_10_2026_vbo.pdf",
+  "pdf": "S_Asistencia_sesion_solemne_7_10_2026_vbo.pdf",
   "pagina": 1
  },
  {
@@ -2003,8 +2003,328 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "S",
-  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf",
-  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_7_10_2026_vbo.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_7_10_2026_vbo.pdf",
   "pagina": 1
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-21",
+  "hora": "01:27 PM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 2
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "01:29 PM",
+  "asunto": "TEXTO SUSTITUTORIO DEL PROYECTO DE LEY 13, QUE PROPONE LA LEY QUE DELEGA EN EL PODER EJECUTIVO LA FACULTAD DE LEGISLAR EN MATERIAS DE SEGURIDAD CIUDADANA Y DEL FENÓMENO EL NIÑO",
+  "votos": {
+   "305": "NO"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 3
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-21",
+  "hora": "04:00 PM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 4
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "04:02 PM",
+  "asunto": "PROPUESTA DE DESIGNACIÓN DEL CANDIDATO NÚMERO 1 DEL ORDEN DE MÉRITO CONTENIDO EN EL INFORME FINAL, OSWALDO MOLINA CAMPODÓNICO, COMO MIEMBRO DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PERÚ",
+  "votos": {
+   "305": "NO"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 5
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "04:06 PM",
+  "asunto": "PROPUESTA DE DESIGNACIÓN DEL CANDIDATO NÚMERO 2 DEL ORDEN DE MÉRITO CONTENIDO EN EL INFORME FINAL, JOSÉ RICARDC TOK CAPELLA, COMO MIEMBRO DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PERI",
+  "votos": {
+   "305": "NO"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 6
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "04:08 PM",
+  "asunto": "ROPUESTA DE DESIGNACIÓN DEL CANDIDATO NÚMERO 3 DEL ORDEN DE MÉRITO CONTENIDO EN EL INFORME FINAL, JOSÉ ANTONI ERNÁNDEZ BACA LLAMOSAS, COMO MIEMBRO DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PER",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 7
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "04:10 PM",
+  "asunto": "OPUESTA DE DESIGNACIÓN DEL CANDIDATO NÚMERO 4 DEL ORDEN DE MÉRITO CONTENIDO EN EL INFORME FINAL, SANTIAC ANCISCO ROCA TAVELLA, COMO MIEMBRO DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PEF",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 8
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "04:12 PM",
+  "asunto": "PROPUESTA DE DESIGNACIÓN DEL CANDIDATO NÚMERO 5 DEL ORDEN DE MÉRITO CONTENIDO EN EL INFORME FINAL, JUAN JOSÉ MARTHANS LEÓN, COMO MIEMBRO DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PERÚ",
+  "votos": {
+   "305": "NO"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 9
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-21",
+  "hora": "04:18 PM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 10
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "04:19 PM",
+  "asunto": "APROBAR LA SOLICITUD DE PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 120- 2026-PCM, QUE DECLARA EL ESTADO DE EMERGENCIA EN EL DISTRITO DE ENCAÑADA DE LA PROVINCIA DE CAJAMARCA; EN EL DISTRITO",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 11
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "04:22 PM",
+  "asunto": "APROBAR LA SOLICITUD DE PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 121- 2026-PCM, QUE DECLARA EL ESTADO DE EMERGENCIA EN LOS DISTRITOS DE TAMBOPATA, INAMBARI, LAS PIEDRAS Y LABERINTO DE LA",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 12
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "04:24 PM",
+  "asunto": "APROBAR LA SOLICITUD DE PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 123- 2026-PCM, QUE DECLARA EL ESTADO DE EMERGENCIA EN LIMA METROPOLITANA DEL DEPARTAMENTO DE LIMA Y EN LA PROVINCIA",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 13
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-21",
+  "hora": "04:27 PM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 14
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-21",
+  "hora": "04:28 PM",
+  "asunto": "Aslinto' NACIONAL COMO IMPL EMENTACIÓN DE LAS POLÍTICAS PÚBLICAS. LOS PLANES Y LOS PROGRAMAS VINCULADOS CON LA INFANCIA Y LA ADOLESCENCIA; Y DE FISCALIZAR, EN EL MARCO DE SUS COMPETENCIAS, LA ACTUACIÓN DE LAS ENTIDADES DE LOS TRES NIVELES DE GOBIERNO EN ESTA MATERIA. (MOCIÓN 22)",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 15
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-21",
+  "hora": "10:06 AM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_sesion_del_21_10_2026_vb.pdf",
+  "pagina": 1
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-22",
+  "hora": "01:21 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/10/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pagina": 4
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-22",
+  "hora": "01:23 PM",
+  "asunto": "TEXTO SUSTITUTORIO CONSENSUADO, RECAÍDO EN LA PROPOSICIÓN LEGISLATIVA 178, QUE PROPONE LA LEY QUE INSTITUYE EL DÍA NACIONAL PARA LA SENSIBLIZACIÓN SOBRE LOS NIÑOS Y ADOLESCENTES EN SITUACIÓN DE ORFANDAD O DESPROTECCIÓN FAMILIAR EL SEGUNDO LUNES DE NOVIEMBRE DE CADA AÑO Y ESTABLECE ACCIONES DE SENSIBILIZACIÓN SOCIAL.",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/10/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pagina": 5
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-22",
+  "hora": "10:14 AM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/10/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pagina": 1
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-22",
+  "hora": "11:47 AM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/10/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pagina": 2
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-22",
+  "hora": "11:49 AM",
+  "asunto": "TEXTO SUSTITUTORIO DE LAS PROPOSICIONES LEGISLATIVAS 12, 24 Y 121, QUE PROPONEN DEROGAR LA LEY 32645, LEY QUE CREA EL COLEGIO PROFESIONAL DE ARTISTAS DEL PERÚ.",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/10/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional-1.pdf",
+  "pagina": 3
  }
 ]

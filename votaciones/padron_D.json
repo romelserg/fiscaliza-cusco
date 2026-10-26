@@ -1,0 +1,652 @@
+[
+ {
+  "nombre": "ABENSUR PINASCO, JAIME AMERICO",
+  "bancada": "FP",
+  "id": 141
+ },
+ {
+  "nombre": "AGUIRRE RAMOS, MARLON ALBERTO",
+  "bancada": "JP",
+  "id": 142
+ },
+ {
+  "nombre": "ALAYZA MACCERA, ROSSANA HERMINIA",
+  "bancada": "PBG",
+  "id": 143
+ },
+ {
+  "nombre": "ALBANIL CARMONA, HENRY ANTONIO",
+  "bancada": "PCO",
+  "id": 144
+ },
+ {
+  "nombre": "ALEGRIA GARCIA, LUIS ARTURO",
+  "bancada": "FP",
+  "id": 6
+ },
+ {
+  "nombre": "ALVARON DE LA CRUZ, EDGAR ADRIAN",
+  "bancada": "PCO",
+  "id": 145
+ },
+ {
+  "nombre": "AMBROSIO DOMINGUEZ, YULI LILIANA",
+  "bancada": "JP",
+  "id": 146
+ },
+ {
+  "nombre": "ANDRADE SALGUERO DE ALVAREZ, GLADYS GRISELDA",
+  "bancada": "FP",
+  "id": 147
+ },
+ {
+  "nombre": "ARANDA VASQUEZ, CHRISTIAN",
+  "bancada": "RP",
+  "id": 148
+ },
+ {
+  "nombre": "ARMINTA VALENCIA, MARLENY BIBIANA",
+  "bancada": "AN",
+  "id": 149
+ },
+ {
+  "nombre": "AVENDANO VILCA, GIANNINA IRIS",
+  "bancada": "JP",
+  "id": 150
+ },
+ {
+  "nombre": "BAELLA MALCA, JOSE ISIDRO",
+  "bancada": "RP",
+  "id": 151
+ },
+ {
+  "nombre": "BARBARAN REYES, ROSANGELLA ANDREA",
+  "bancada": "FP",
+  "id": 15
+ },
+ {
+  "nombre": "BAZAN CALDERON, DIEGO ALONSO FERNANDO",
+  "bancada": "RP",
+  "id": 16
+ },
+ {
+  "nombre": "BENITEZ BARRIONUEVO, JESSICA",
+  "bancada": "PBG",
+  "id": 152
+ },
+ {
+  "nombre": "BETETA RUBIN, KARINA JULIZA",
+  "bancada": "FP",
+  "id": 153
+ },
+ {
+  "nombre": "BOBADILLA GALINDO, ANGEL BRUNO",
+  "bancada": "FP",
+  "id": 154
+ },
+ {
+  "nombre": "BRAVO QUISPE, ALDO ANTONIO",
+  "bancada": "RP",
+  "id": 155
+ },
+ {
+  "nombre": "BUITRON MARTINEZ, FRESHMAN",
+  "bancada": "AN",
+  "id": 156
+ },
+ {
+  "nombre": "CABRERA NIETO, JUAN CESAR",
+  "bancada": "PCO",
+  "id": 157
+ },
+ {
+  "nombre": "CAHUAZA MITIVIRE, OSWAR ELBIS",
+  "bancada": "JP",
+  "id": 158
+ },
+ {
+  "nombre": "CAMARGO PORTA, RAUL JESUS",
+  "bancada": "PCO",
+  "id": 159
+ },
+ {
+  "nombre": "CASTILLO RIVAS, EDUARDO ENRIQUE",
+  "bancada": "FP",
+  "id": 24
+ },
+ {
+  "nombre": "CASTREJON FERNANDEZ, SEGUNDO JUAN",
+  "bancada": "PBG",
+  "id": 160
+ },
+ {
+  "nombre": "CASTRO CRUZ, JAVIER ALEJANDRO",
+  "bancada": "FP",
+  "id": 161
+ },
+ {
+  "nombre": "CASTRO GRANDEZ, ROYSER",
+  "bancada": "FP",
+  "id": 162
+ },
+ {
+  "nombre": "CELIZ CASTILLO, RAFAEL ALDO",
+  "bancada": "FP",
+  "id": 163
+ },
+ {
+  "nombre": "CHACON DE VETTORI, CECILIA ISABEL",
+  "bancada": "FP",
+  "id": 164
+ },
+ {
+  "nombre": "CHANG APUY, FELIX SEE HUNG",
+  "bancada": "RP",
+  "id": 165
+ },
+ {
+  "nombre": "CHIPANA CONDORI, GRACIELA",
+  "bancada": "JP",
+  "id": 166
+ },
+ {
+  "nombre": "CIPRIANI THORNE, JAVIER JOSE MARIA",
+  "bancada": "RP",
+  "id": 167
+ },
+ {
+  "nombre": "COLCHADO HUAMANI, HARVEY JULIO",
+  "bancada": "AN",
+  "id": 168
+ },
+ {
+  "nombre": "COLUMBUS MURATA, DIETHELL",
+  "bancada": "FP",
+  "id": 169
+ },
+ {
+  "nombre": "CONDORI FLORES, REMIGIO",
+  "bancada": "JP",
+  "id": 170
+ },
+ {
+  "nombre": "DE PAZ LANCHO, LEO MIGUEL",
+  "bancada": "RP",
+  "id": 171
+ },
+ {
+  "nombre": "DODERO JOVICH, PIERANGELI DANIELA",
+  "bancada": "FP",
+  "id": 172
+ },
+ {
+  "nombre": "DOMINGUEZ HERRERA, CARLOS ALBERTO",
+  "bancada": "FP",
+  "id": 173
+ },
+ {
+  "nombre": "DUARTE PATINO DE PEZET, CARMEN GEORGINA",
+  "bancada": "PBG",
+  "id": 174
+ },
+ {
+  "nombre": "ESPINOZA HUILLCA, EDWIN",
+  "bancada": "PBG",
+  "id": 175
+ },
+ {
+  "nombre": "EUSEBIO PADILLA, ARTURO CESAR",
+  "bancada": "PCO",
+  "id": 176
+ },
+ {
+  "nombre": "FERNANDEZ DE LA TORRE, HILDA JUDIT",
+  "bancada": "PBG",
+  "id": 177
+ },
+ {
+  "nombre": "FERNANDEZ GONZALEZ, SVIETA VALIA",
+  "bancada": "JP",
+  "id": 178
+ },
+ {
+  "nombre": "FERNANDEZ NINA, NERY RODOLFO",
+  "bancada": "PBG",
+  "id": 179
+ },
+ {
+  "nombre": "FIGARI MENDOZA, PIER PAOLO",
+  "bancada": "FP",
+  "id": 180
+ },
+ {
+  "nombre": "FLORES VALDIZAN, MARCO ANTONIO",
+  "bancada": "JP",
+  "id": 181
+ },
+ {
+  "nombre": "GAMARRA PITA, LUZMILA MARIA DEL CARMEN",
+  "bancada": "FP",
+  "id": 182
+ },
+ {
+  "nombre": "GARCIA HUBY, FERNANDO ALBERTO",
+  "bancada": "PBG",
+  "id": 183
+ },
+ {
+  "nombre": "GATICA VEGA, FRANCISCO JAVIER",
+  "bancada": "FP",
+  "id": 184
+ },
+ {
+  "nombre": "GONZALES DELGADO, GABRIEL ROBERTINO",
+  "bancada": "JP",
+  "id": 185
+ },
+ {
+  "nombre": "GONZALES POLAR, EDGAR DEMBER",
+  "bancada": "PBG",
+  "id": 186
+ },
+ {
+  "nombre": "GUEVARA RAMIREZ, JESSICA ROXANA",
+  "bancada": "JP",
+  "id": 187
+ },
+ {
+  "nombre": "GUILLEN VALENCIA, HECTOR",
+  "bancada": "JP",
+  "id": 188
+ },
+ {
+  "nombre": "HANCCO HANCCO, DINA IRENE",
+  "bancada": "PCO",
+  "id": 189
+ },
+ {
+  "nombre": "HIRACHE PIZARRO, GLORIA CHARITO",
+  "bancada": "PBG",
+  "id": 190
+ },
+ {
+  "nombre": "HOLGUIN AGUIRRE, JAMES ARTURO",
+  "bancada": "JP",
+  "id": 191
+ },
+ {
+  "nombre": "HOLGUIN LOAIZA, CESAR AUGUSTO",
+  "bancada": "AN",
+  "id": 192
+ },
+ {
+  "nombre": "HUAMAN CORNEJO, MIGUEL FELIX",
+  "bancada": "PBG",
+  "id": 193
+ },
+ {
+  "nombre": "HUILCA FLORES, INDIRA ISABEL",
+  "bancada": "AN",
+  "id": 194
+ },
+ {
+  "nombre": "INFANTES CASTANEDA, MERY ELIANA",
+  "bancada": "FP",
+  "id": 59
+ },
+ {
+  "nombre": "ISLA ROJAS, AZUCENA",
+  "bancada": "JP",
+  "id": 195
+ },
+ {
+  "nombre": "JIBAJA RAMOS, LUIS ANGEL",
+  "bancada": "JP",
+  "id": 196
+ },
+ {
+  "nombre": "KRKLEC TORRES, FRANK",
+  "bancada": "RP",
+  "id": 197
+ },
+ {
+  "nombre": "LAVADO VALDIVIA, MARINO TEOFILO",
+  "bancada": "JP",
+  "id": 198
+ },
+ {
+  "nombre": "LEIVA BAYLON, LETICIA MARUJA",
+  "bancada": "FP",
+  "id": 199
+ },
+ {
+  "nombre": "LLAQUE LINARES, NORA MARIA",
+  "bancada": "PBG",
+  "id": 200
+ },
+ {
+  "nombre": "LOPEZ LETONA, HEBER",
+  "bancada": "PCO",
+  "id": 201
+ },
+ {
+  "nombre": "MANAY PILLACA, ALEJANDRO JOSE",
+  "bancada": "JP",
+  "id": 202
+ },
+ {
+  "nombre": "MANRIQUE OLIVERA, BERNARDINO JAIR",
+  "bancada": "AN",
+  "id": 203
+ },
+ {
+  "nombre": "MARCELO SALAZAR, JOSE MIGUEL",
+  "bancada": "AN",
+  "id": 204
+ },
+ {
+  "nombre": "MARQUEZ HUANCA, ANALI",
+  "bancada": "JP",
+  "id": 205
+ },
+ {
+  "nombre": "MARTINEZ PAITAN, PAOLA ISABEL",
+  "bancada": "RP",
+  "id": 206
+ },
+ {
+  "nombre": "MASCO CACERES, LUIS AURELIO",
+  "bancada": "PCO",
+  "id": 207
+ },
+ {
+  "nombre": "MEDINA STEIN, ANDREA DAYNA",
+  "bancada": "PCO",
+  "id": 208
+ },
+ {
+  "nombre": "MENDOZA BERNEDO, LIZ HULI",
+  "bancada": "FP",
+  "id": 209
+ },
+ {
+  "nombre": "MENESES CRISPIN, ANGEL RENATO",
+  "bancada": "AN",
+  "id": 210
+ },
+ {
+  "nombre": "MEZA RIVERA, FLOR DE JESUS",
+  "bancada": "FP",
+  "id": 211
+ },
+ {
+  "nombre": "MOLINA SOTO, NATHALY MILAGROS",
+  "bancada": "PBG",
+  "id": 212
+ },
+ {
+  "nombre": "MUEDAS BALBIESE, CESAR AUGUSTO",
+  "bancada": "AN",
+  "id": 213
+ },
+ {
+  "nombre": "MUNOZ YURIVILCA, KIM TAMI",
+  "bancada": "FP",
+  "id": 214
+ },
+ {
+  "nombre": "NAVAS SANCHEZ, JESSICA LIZBETH",
+  "bancada": "FP",
+  "id": 215
+ },
+ {
+  "nombre": "OBANDO MORGAN, AURISTELA ANA",
+  "bancada": "FP",
+  "id": 84
+ },
+ {
+  "nombre": "PACHECO QUISPE, MARCO ANTONIO",
+  "bancada": "FP",
+  "id": 216
+ },
+ {
+  "nombre": "PALMA MENDOZA, JOSE MARVIN",
+  "bancada": "FP",
+  "id": 217
+ },
+ {
+  "nombre": "PALOMINO CASAVILCA, CATHERIN NORMA",
+  "bancada": "JP",
+  "id": 218
+ },
+ {
+  "nombre": "PALOMINO PACHECO, AMALIA EMILIA",
+  "bancada": "JP",
+  "id": 219
+ },
+ {
+  "nombre": "PAREDES NAVARRO, YENIFER NOELIA",
+  "bancada": "JP",
+  "id": 220
+ },
+ {
+  "nombre": "PATINO URCO, ANA BERTHA",
+  "bancada": "FP",
+  "id": 221
+ },
+ {
+  "nombre": "PAUCARA PAXI, CARMELA",
+  "bancada": "FP",
+  "id": 222
+ },
+ {
+  "nombre": "PENA CORDOVA, OLVER",
+  "bancada": "JP",
+  "id": 223
+ },
+ {
+  "nombre": "PERALTA JORPA, MAXIMO",
+  "bancada": "PCO",
+  "id": 224
+ },
+ {
+  "nombre": "PEREZ ALCCAHUAMAN, JESUS",
+  "bancada": "JP",
+  "id": 225
+ },
+ {
+  "nombre": "PEREZ MALLQUI, JULIAN LUIS",
+  "bancada": "JP",
+  "id": 226
+ },
+ {
+  "nombre": "PEREZ QUISPE, JESSICA SADITH",
+  "bancada": "JP",
+  "id": 227
+ },
+ {
+  "nombre": "PINAN MAMANI, VICTOR EDUARDO",
+  "bancada": "PCO",
+  "id": 228
+ },
+ {
+  "nombre": "PINASCO MONTENEGRO, NARY BENVINDA",
+  "bancada": "FP",
+  "id": 229
+ },
+ {
+  "nombre": "POMA HUAMANI, HAYDEE CELINDA",
+  "bancada": "JP",
+  "id": 230
+ },
+ {
+  "nombre": "PRADO VALLEJOS, LILA MARIANELA",
+  "bancada": "PBG",
+  "id": 231
+ },
+ {
+  "nombre": "QUEZADA CASTRO, GEANMARCO ANTONIO",
+  "bancada": "FP",
+  "id": 232
+ },
+ {
+  "nombre": "QUISPE CANDIA, LUIS ELISEO",
+  "bancada": "PBG",
+  "id": 233
+ },
+ {
+  "nombre": "RAMOS ROSALES, MARIA CANDELARIA",
+  "bancada": "FP",
+  "id": 234
+ },
+ {
+  "nombre": "RETO OTERO, OSCAR DE JESUS",
+  "bancada": "PBG",
+  "id": 235
+ },
+ {
+  "nombre": "REVILLA VILLANUEVA, CESAR MANUEL",
+  "bancada": "FP",
+  "id": 101
+ },
+ {
+  "nombre": "ROCHA GALLEGOS, ROXANA MARIA",
+  "bancada": "RP",
+  "id": 236
+ },
+ {
+  "nombre": "SALAS RIVERA, ALEXANDER",
+  "bancada": "FP",
+  "id": 237
+ },
+ {
+  "nombre": "SAMANEZ GONZALES VIGIL, JEENNY CRISTINA",
+  "bancada": "PCO",
+  "id": 238
+ },
+ {
+  "nombre": "SANTANA VERA, MILAGROS KARINA",
+  "bancada": "PBG",
+  "id": 239
+ },
+ {
+  "nombre": "SEGURA FIGUEROA, GUSTAVO ALEXANDER",
+  "bancada": "RP",
+  "id": 240
+ },
+ {
+  "nombre": "SILUPU INGA, MARIA LUISA",
+  "bancada": "FP",
+  "id": 241
+ },
+ {
+  "nombre": "SONCO VILLANUEVA, HELARD BLADIMIR",
+  "bancada": "AN",
+  "id": 242
+ },
+ {
+  "nombre": "SOTO FERRARI, LUZ MERIDA",
+  "bancada": "JP",
+  "id": 243
+ },
+ {
+  "nombre": "SULCA CASTILLO, PILAR",
+  "bancada": "JP",
+  "id": 244
+ },
+ {
+  "nombre": "TAKAYAMA JIMENEZ, LILIANA MILAGROS",
+  "bancada": "FP",
+  "id": 245
+ },
+ {
+  "nombre": "TAPULLIMA INSAPILLO, JACQUELINE VIVIANA",
+  "bancada": "JP",
+  "id": 246
+ },
+ {
+  "nombre": "TICLLA RAFAEL, SEGUNDO SENOVIO",
+  "bancada": "FP",
+  "id": 247
+ },
+ {
+  "nombre": "TITO ROJAS, CESAR HUGO",
+  "bancada": "JP",
+  "id": 248
+ },
+ {
+  "nombre": "TRUJILLO ZEGARRA, GILMER",
+  "bancada": "FP",
+  "id": 249
+ },
+ {
+  "nombre": "URIBE SAENZ, ROMINA ALEJANDRA",
+  "bancada": "PBG",
+  "id": 250
+ },
+ {
+  "nombre": "VALQUI CALDERON, DEMETRIO FLAVIO",
+  "bancada": "PCO",
+  "id": 251
+ },
+ {
+  "nombre": "VALQUI ORDONEZ, JHONN BRAYAM",
+  "bancada": "FP",
+  "id": 252
+ },
+ {
+  "nombre": "VARAS SEGUIN, DANIEL JEFFERSON",
+  "bancada": "JP",
+  "id": 253
+ },
+ {
+  "nombre": "VIDAURRE FLORIDAS, CESAR MANUEL",
+  "bancada": "FP",
+  "id": 254
+ },
+ {
+  "nombre": "VILLANUEVA CALDERON, JUAN AMILCAR",
+  "bancada": "JP",
+  "id": 255
+ },
+ {
+  "nombre": "YALTA SOTELO, CARLOS ALBERTO",
+  "bancada": "RP",
+  "id": 256
+ },
+ {
+  "nombre": "YARROW LUMBRERAS, NORMA MARTINA",
+  "bancada": "RP",
+  "id": 126
+ },
+ {
+  "nombre": "YATACO TORREALVA, JOSE RICARDO",
+  "bancada": "PCO",
+  "id": 257
+ },
+ {
+  "nombre": "YONZ NUNEZ, MADY VERONICA",
+  "bancada": "RP",
+  "id": 258
+ },
+ {
+  "nombre": "YUFFRA LUGO, ANA LUISA",
+  "bancada": "FP",
+  "id": 259
+ },
+ {
+  "nombre": "ZEBALLOS APONTE, JORGE ARTURO",
+  "bancada": "RP",
+  "id": 128
+ },
+ {
+  "nombre": "ZEGARRA SANCHEZ, CARLOS ALBERTO",
+  "bancada": "FP",
+  "id": 260
+ },
+ {
+  "nombre": "ZUNINI YERREN, ERNESTO ALONZO",
+  "bancada": "JP",
+  "id": 261
+ }
+]

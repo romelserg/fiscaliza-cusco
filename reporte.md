@@ -1,18 +1,77 @@
 # Proyectos de ley — congresistas de Cusco
-_Actualizado: 2026-10-13 20:49_
+_Actualizado: 2026-10-26 01:35_
+
+## Novedades desde la última revisión
+
+- **NUEVO** · [00648-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1Mzg0/pdf) · PROPOSICIÓN LEGISLATIVA QUE RESTABLECE EL CONTENIDO ESENCIAL DEL DERECHO CONSTITUCIONAL DE REFERÉNDUM.
+- **NUEVO** · [00640-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1Mzcw/pdf) · PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1252, DECRETO LEGISLATIVO QUE CREA EL SISTEMA NACIONAL DE PROGRAMACIÓN MULTIANUAL Y GESTIÓN DE INVER
+- **NUEVO** · [00612-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MzAz/pdf) · PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32326, LEY QUE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, A FIN DE PERFECCI
+- **NUEVO** · [00666-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDQy/pdf) · PROPOSICIÓN LEGISLATIVA QUE DESINCENTIVA LA DEFORESTACION Y PROTEGE EL DERECHO A LA CONSULTA PREVIA MEDIANTE LA DEROGACIÓN DE LA LEY N.° 31973.
+- **NUEVO** · [00662-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDM0/pdf) · PROPOSICIÓN LEGISLATIVA QUE CREA EL SISTEMA NACIONAL DE CUIDADOS.
+- **NUEVO** · [00638-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MzY4/pdf) · PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 5 DEL TEXTO ÚNICO ORDENADO DEL DECRETO LEGISLATIVO 1252, DECRETO LEGISLATIVO QUE CREA EL SISTEMA NACIONAL DE PR
+- **NUEVO** · [00607-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1Mjg2/pdf) · PROPOSICIÓN LEGISLATIVA QUE FORTALECE EL PROCESO DE FORMALIZACIÓN DE LAS EMBARCACIONES PESQUERAS ARTESANALES EN EL MARCO DEL DECRETO LEGISLATIVO 1392-DECRETO LE
+- **NUEVO** · [00592-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MjY1/pdf) · PROPOSICIÓN LEGISLATIVA QUE MODIFICA E INCORPORA DISPOSICIONES AL DECRETO LEGISLATIVO N.° 147, LEY DEL SERVICIO NACIONAL DE CAPACITACIÓN PARA LA INDUSTRIA DE LA
+- **NUEVO** · [00590-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MjYz/pdf) · PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 11 DEL DECRETO LEGISLATIVO 882, LEY DE PROMOCIÓN DE LA INVERSIÓN EN LA EDUCACIÓN, CON EL FIN DE GARANTIZAR QUE 
+- **NUEVO** · [00587-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MjYw/pdf) · PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 27972, LEY ORGÁNICA DE MUNICIPALIDADES, PARA FORTALECER LA FISCALIZACIÓN EN GOBIERNOS LOCALES Y LA PUBLICIDAD DE LAS
+- **NUEVO** · [00584-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MjQ4/pdf) · PROPOSICIÓN LEGISLATIVA DE DESTRABE SOSTENIBLE DE PROYECTOS DE INVERSIÓN EJECUTADOS Y SANEAMIENTO DE PASIVOS AMBIENTALES.
+
+- **NUEVO** · [00583-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MjIx/pdf) · PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 13 DE LA LEY 27795 LEY DE DEMARCACIÓN Y ORGANIZACIÓN TERRITORIAL, PARA OPTIMIZAR LOS PROCEDIMIENTOS SOBRE LA DE
+- **CAMBIO: PRESENTADO → EN COMISIÓN** · [00575-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MjEx/pdf) · PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL NUMERAL 3 DEL ARTÍCULO 112 DE LA LEY 29571, CÓDIGO DE PROTECCIÓN Y DEFENSA DEL CONSUMIDOR, PARA GARANTIZAR EL PAGO DE CO
+- **CAMBIO: PRESENTADO → EN COMISIÓN** · [00573-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MTk2/pdf) · PROPOSICIÓN LEGISLATIVA QUE FACILITA LA ADQUISICIÓN DE PRODUCTOS AGROPECUARIOS NACIONALES A PEQUEÑOS PRODUCTORES ANTE SITUACIONES EXCEPCIONALES.
+- **CAMBIO: CON DICTAMEN → APROBADO** · [00024-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDEyMzA0/pdf) · PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32645, LEY QUE CREA EL COLEGIO PROFESIONAL DE ARTISTAS DEL PERÚ (CPAP)
+- **NUEVO** · [00600-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1Mjc4/pdf) · PROPOSICIÓN LEGISLATIVA QUE ESTABLECE EXCEPCIONES A LA PROHIBICIÓN DE DESINTEGRACIÓN O ESCISIÓN DE EMPRESAS PRESTADORAS PÚBLICAS DE ACCIONARIADO MUNICIPAL Y AUT
+- **NUEVO** · [00639-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MzY5/pdf) · PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 29338, LEY DE RECURSOS HÍDRICOS, PARA REGULAR LA MODIFICACIÓN DE LOS DERECHOS DE USO DE AGUA ANTE LA ESCASEZ PERMANE
+- **NUEVO** · [00598-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1Mjc2/pdf) · PROPOSICIÓN LEGISLATIVA QUE INCORPORA LOS ARTÍCULOS 20-A Y 20-B EN LA LEY 29973, LEY GENERAL DE LA PERSONA CON DISCAPACIDAD, PARA GARANTIZAR EL TRASLADO DEL ACO
+- **CAMBIO: PRESENTADO → EN COMISIÓN** · [00564-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MTg4/pdf) · PROPOSICIÓN LEGISLATIVA DE TITULACIÓN PRIORITARIA, SANEAMIENTO FÍSICO-LEGAL Y PROTECCIÓN INTEGRAL DE LOS TERRITORIOS DE LAS COMUNIDADES CAMPESINAS Y NATIVAS FRE
+- **CAMBIO: PRESENTADO → EN COMISIÓN** · [00563-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MTg3/pdf) · PROPOSICIÓN LEGISLATIVA QUE ESTABLECE EL MARCO PARA LA ATENCIÓN PREFERENTE Y EL DESARROLLO INTEGRAL DEL VALLE DE LOS RIOS APURIMAC, ENE Y MANTARO - VRAEM
+- **CAMBIO: EN COMISIÓN → CON DICTAMEN** · [00428-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE0NDcw/pdf) · PROPOSICIÓN LEGISLATIVA QUE FORTALECE LA PROTECCIÓN DE LA HOJA DE COCA Y SUS USOS CULTURALES TRADICIONALES, Y PROMUEVE LA INVESTIGACIÓN CIENTÍFICA, EL DESARROLL
+- **CAMBIO: PRESENTADO → EN COMISIÓN** · [00562-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MTg2/pdf) · PROPOSICIÓN LEGISLATIVA QUE ESTABLECE EL MONTO MÍNIMO DE COBERTURA A FAVOR DE PRODUCTORES AGRARIOS POR INDEMNIZACIÓN DEL SEGURO AGRARIO CATASTRÓFICO - SAC
+- **CAMBIO: PRESENTADO → EN COMISIÓN** · [00561-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MTg0/pdf) · PROPOSICIÓN LEGISLATIVA QUE AMPLIA LOS ALCANCES DEL FONDO PARA LA INTERVENCION ANTE LA OCURRENCIA DE DESASTRES NATURALES (FONDES), PARA LA PROTECCIÓN DE LA ACTI
+- **CAMBIO: EN COMISIÓN → CON DICTAMEN** · [00230-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDEzODgy/pdf) · PROPOSICIÓN LEGISLATIVA QUE FORTALECE LA ATENCIÓN MÉDICA Y LA VIGILANCIA EPIDEMIOLÓGICA PARA LA POBLACIÓN AFECTADA POR LA CONTAMINACIÓN CON METALES PESADOS Y OT
+- **NUEVO** · [00654-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDEw/pdf) · PROPOSICIÓN LEGISLATIVA QUE FORTALECE LA SEGURIDAD ALIMENTARIA Y NUTRICIONAL PARA LA PREVENCIÓN DE LA ANEMIA INFANTIL, INCORPORANDO LA PARTICIPACIÓN DEL INGENIE
+- **NUEVO** · [00652-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDA3/pdf) · PROPOSICIÓN LEGISLATIVA DE REFORMA CONSTITUCIONAL QUE RECONOCE COMO DERECHO FUNDAMENTAL EL DERECHO A LA VERDAD.
+- **NUEVO** · [00650-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDA1/pdf) · PROPOSICIÓN LEGISLATIVA QUE FORTALECE LOS RECURSOS PROPIOS DEL MINISTERIO PÚBLICO PROVENIENTES DE LA APLICACIÓN DEL PRINCIPIO DE OPORTUNIDAD, DE LAS MULTAS POR 
+- **CAMBIO: CON DICTAMEN → APROBADO** · [00012-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDExOTk3/pdf) · PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY N' 32645, LEY QUE CREA EL COLEGIO PROFESIONAL DE ARTISTAS DEL PERÚ (CPAP)
+- **NUEVO** · [00635-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MzY1/pdf) · PROPOSICIÓN LEGISLATIVA QUE DECLARA DE INTERÉS NACIONAL Y NECESIDAD PÚBLICA LA PROTECCIÓN, CONSERVACIÓN Y RECUPERACIÓN DEL PINGUINO DE HUMBOLDT (SPHENISCUS HUMB
+- **NUEVO** · [00628-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MzU1/pdf) · PROPOSICIÓN LEGISLATIVA QUE PROMUEVE EL USO DE TUTORES DE INTELIGENCIA ARTIFICIAL EN APOYO A LA LABOR DOCENTE PARA LA RECUPERACIÓN DE APRENDIZAJES EN LA EDUCACI
+- **NUEVO** · [00627-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MzU0/pdf) · PROPOSICIÓN LEGISLATIVA QUE INCORPORA EL ARTÍCULO 34-A A LA LEY 28044, LEY GENERAL DE EDUCACIÓN, Y PROMUEVE LA RESPONSABILIDAD Y EL CUIDADO DE LOS ESPACIOS EDUC
+- **NUEVO** · [00610-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MzAx/pdf) · PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 91 DE LA LEY GENERAL DE MINERÍA, CUYO TEXTO ÚNICO ORDENADO FUE APROBADO MEDIANTE DECRETO SUPREMO 014-92-EM, Y E
+- **CAMBIO: PRESENTADO → EN COMISIÓN** · [00566-2026-2031-CD](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MTkw/pdf) · PROPOSICIÓN LEGISLATIVA DE REINSERSIÓN QUE ESTABLECE UN RÉGIMEN EXCEPCIONAL DE REHABILITACIÓN PARA CONDUCTORES CON INHABILITACIÓN ADMINISTRATIVA DEFINITIVA SIN 
+- **NUEVO** · [00016-2026-2031-S](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDE3/pdf) · PROPOSICIÓN DE RESOLUCIÓN LEGISLATIVA QUE APRUEBA EL REGLAMENTO PARA LA ELECCIÓN DE MAGISTRADOS DEL TRIBUNAL CONSTITUCIONAL
 
 ## Resumen
 
 | Congresista | Cámara | Autor principal | Coautor | Adherente | Total |
 |---|---|---|---|---|---|
-| César Holguín (Ahora Nación) | Diputados | 8 | 58 | 0 | 66 |
-| Analí Márquez (Juntos por el Perú) | Diputados | 11 | 13 | 0 | 24 |
-| Julián Pérez (Juntos por el Perú) | Diputados | 3 | 22 | 0 | 25 |
-| Edwin Espinoza (Partido del Buen Gobierno) | Diputados | 1 | 8 | 0 | 9 |
-| Heber López (Partido Cívico Obras) | Diputados | 3 | 14 | 0 | 17 |
-| Wilfredo Verano (Juntos por el Perú) | Senado | 0 | 1 | 0 | 1 |
+| César Holguín (Ahora Nación) | Diputados | 11 | 67 | 0 | 78 |
+| Analí Márquez (Juntos por el Perú) | Diputados | 12 | 15 | 0 | 27 |
+| Julián Pérez (Juntos por el Perú) | Diputados | 3 | 23 | 0 | 26 |
+| Edwin Espinoza (Partido del Buen Gobierno) | Diputados | 1 | 11 | 0 | 12 |
+| Heber López (Partido Cívico Obras) | Diputados | 4 | 17 | 0 | 21 |
+| Wilfredo Verano (Juntos por el Perú) | Senado | 0 | 2 | 0 | 2 |
 
-## César Holguín — proyectos como autor principal (8)
+## César Holguín — proyectos como autor principal (11)
+
+### 00648-2026-2031-CD · 2026-10-22 · PRESENTADO
+
+PROPOSICIÓN LEGISLATIVA QUE RESTABLECE EL CONTENIDO ESENCIAL DEL DERECHO CONSTITUCIONAL DE REFERÉNDUM.
+
+_Resumen pendiente._
+[PDF oficial](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1Mzg0/pdf)
+
+### 00640-2026-2031-CD · 2026-10-21 · PRESENTADO
+
+PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1252, DECRETO LEGISLATIVO QUE CREA EL SISTEMA NACIONAL DE PROGRAMACIÓN MULTIANUAL Y GESTIÓN DE INVERSIONES, CON EL FIN DE FORTALECER LA PLANIFICACIÓN DE LAS INVERSIONES EN LAS UNIVERSIDADES PÚBLICAS.
+
+_Resumen pendiente._
+[PDF oficial](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1Mzcw/pdf)
+
+### 00612-2026-2031-CD · 2026-10-19 · EN COMISIÓN
+
+PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32326, LEY QUE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, A FIN DE PERFECCIONAR EL PROCESO DE EXTINCIÓN DE DOMINIO.
+
+_Resumen pendiente._
+[PDF oficial](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MzAz/pdf)
 
 ### 00151-2026-2031-CD · Educación universitaria
 
@@ -89,7 +148,14 @@ Deroga diez leyes aprobadas por el Congreso anterior (las llamadas "leyes pro cr
 [PDF oficial](https://api.congreso.gob.pe/spley-portal-service/archivo/NDExNjIz/pdf)
 
 
-## Analí Márquez — proyectos como autor principal (11)
+## Analí Márquez — proyectos como autor principal (12)
+
+### 00600-2026-2031-CD · 2026-10-19 · EN COMISIÓN
+
+PROPOSICIÓN LEGISLATIVA QUE ESTABLECE EXCEPCIONES A LA PROHIBICIÓN DE DESINTEGRACIÓN O ESCISIÓN DE EMPRESAS PRESTADORAS PÚBLICAS DE ACCIONARIADO MUNICIPAL Y AUTORIZA LA CONSTITUCIÓN DE LA EPS.
+
+_Resumen pendiente._
+[PDF oficial](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1Mjc4/pdf)
 
 ### 00558-2026-2031-CD · Organización del Congreso
 
@@ -190,7 +256,7 @@ Excluye de los beneficios de la nueva ley agraria (Ley 32434) a las empresas que
 
 ### 00563-2026-2031-CD · Desarrollo territorial
 
-2026-10-09 · **PRESENTADO** · 🟢 Relación directa con Cusco
+2026-10-09 · **EN COMISIÓN** · 🟢 Relación directa con Cusco
 
 Crea un marco legal para atender con prioridad al VRAEM: coordinación entre ministerios, gobiernos regionales y municipios para cerrar brechas de servicios, infraestructura y desarrollo productivo legal. No crea entidades ni gasto nuevo.
 
@@ -208,7 +274,7 @@ Obliga a los institutos y escuelas de educación superior públicos a implementa
 
 ### 00428-2026-2031-CD · Hoja de coca
 
-2026-09-23 · **EN COMISIÓN** · 🟢 Relación directa con Cusco
+2026-09-23 · **CON DICTAMEN** · 🟢 Relación directa con Cusco
 
 Reconoce los usos tradicionales de la hoja de coca (chacchado, rituales, medicina) como patrimonio cultural inmaterial y promueve su investigación científica e industrialización legal, sin cambiar los controles contra el narcotráfico. Dice no generar gasto.
 
@@ -228,7 +294,14 @@ Amplía el medio pasaje universitario a todos los días (incluidos sábados, dom
 [PDF oficial](https://api.congreso.gob.pe/spley-portal-service/archivo/NDEyNjkw/pdf)
 
 
-## Heber López — proyectos como autor principal (3)
+## Heber López — proyectos como autor principal (4)
+
+### 00635-2026-2031-CD · 2026-10-21 · PRESENTADO
+
+PROPOSICIÓN LEGISLATIVA QUE DECLARA DE INTERÉS NACIONAL Y NECESIDAD PÚBLICA LA PROTECCIÓN, CONSERVACIÓN Y RECUPERACIÓN DEL PINGUINO DE HUMBOLDT (SPHENISCUS HUMBOLDTI) Y DE SU HABITAD EN EL LITORAL PERUANO.
+
+_Resumen pendiente._
+[PDF oficial](https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1MzY1/pdf)
 
 ### 00518-2026-2031-CD · Justicia
 

@@ -1,0 +1,12 @@
+# Dependencias (macOS: el OCR usa el motor Vision del sistema a través de pyobjc)
+pypdf==6.20.1
+pyobjc-core==10.3.1
+pyobjc-framework-Cocoa==10.3.1
+pyobjc-framework-Quartz==10.3.1
+pyobjc-framework-CoreText==10.3.1
+pyobjc-framework-Vision==10.3.1
+networkx==3.2.1
+numpy==2.0.2
+scipy==1.13.1
+scikit-learn==1.6.1
+pillow==11.3.0

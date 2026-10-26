@@ -1,0 +1,173 @@
+{
+ "651bb020da": {
+  "tema": "Debate con el Gabinete",
+  "cusco": true,
+  "resumen": "Responsabilizó al Congreso anterior por la crisis (vacancias, \"leyes pro crimen\", exoneraciones tributarias) y criticó que el nuevo gobierno recurra a los mismos actores. Pidió atención para Cusco y la ejecución del Gasoducto Sur Peruano.",
+  "cita": "El Cusco, la región de la cual yo vengo, exige también consideración, respeto y emergencia."
+ },
+ "3c30362102": {
+  "tema": "Debate con el Gabinete",
+  "cusco": true,
+  "resumen": "Habló en parte en quechua. Atribuyó la crisis a los políticos tradicionales, reclamó justicia para las víctimas de las protestas y pidió atención al VRAEM, \"30 años en estado de emergencia\". Cuestionó el pedido de facultades legislativas.",
+  "cita": "Mi pueblo, el Vraem, 30 años en estado de emergencia y nunca ha sido atendido."
+ },
+ "baf60cab70": {
+  "tema": "Debate con el Gabinete",
+  "cusco": true,
+  "resumen": "Criticó la estrategia de seguridad del gobierno, pidió destituir al comandante general de la PNP y derogar las \"leyes pro crimen\". Exigió destrabar el Gasoducto Sur Andino y el aeropuerto de Chinchero.",
+  "cita": "Exigimos inmediato destrabamiento y continuidad del Gasoducto Sur Andino, el aeropuerto Chinchero."
+ },
+ "cf0bc80113": {
+  "tema": "Debate con el Gabinete",
+  "cusco": false,
+  "resumen": "Coincidió con el diagnóstico de inseguridad del premier, pero pidió metas y plazos medibles y un plan contra la corrupción dentro de la Policía. Recordó que ya existe marco legal para actuar, por ejemplo en los penales.",
+  "cita": "La seguridad no se va a medir por cuántos operativos hicieron, ni por cuánto presupuesto ejecutaron."
+ },
+ "6a8921ba74": {
+  "tema": "Comisión especial de seguridad ciudadana",
+  "cusco": false,
+  "resumen": "Explicó por qué votó en contra de crear la comisión especial de seguridad ciudadana: el presupuesto para seguridad bajó, siguen vigentes las \"leyes pro crimen\" y hay casos de derechos humanos sin justicia.",
+  "cita": "He votado en contra porque no entiendo la racionalidad ni la coherencia en la constitución de esta comisión."
+ },
+ "02faf348d9": {
+  "tema": "Escudo de las Américas",
+  "cusco": false,
+  "resumen": "Cuestionó el acuerdo de seguridad \"Escudo de las Américas\" con Estados Unidos: dijo que responde a intereses comerciales de ese país y que debilita a las Fuerzas Armadas y la Policía peruanas.",
+  "cita": "Damos prioridad a un apoyo internacional muy dudoso."
+ },
+ "90456ef640": {
+  "continua": "02faf348d9"
+ },
+ "8ff8b0292a": {
+  "tema": "Interpelación al ministro del Interior",
+  "cusco": false,
+  "resumen": "Sustentó la moción de su bancada para interpelar al ministro del Interior, César Astudillo, por \"ineptitud comprobada\" ante el aumento de asesinatos y sicariato. Cerró con un mensaje en quechua.",
+  "cita": "No dejemos que muchas madres y padres sigan derramando lágrimas."
+ },
+ "ff34616117": {
+  "tema": "Interpelación al ministro del Interior",
+  "cusco": false,
+  "resumen": "En medio de un altercado en el Pleno, pidió calma y volvió a reclamar la derogación de las \"leyes pro crimen\", que atribuyó al fujimorismo.",
+  "cita": "La realidad, la verdad altera."
+ },
+ "5b27f59a17": {
+  "continua": "ff34616117"
+ },
+ "0ed44a2229": {
+  "tema": "Interpelación al ministro del Interior",
+  "cusco": false,
+  "resumen": "Lamentó la confrontación en el Pleno y pidió pasar a votar la interpelación para que el ministro responda pronto.",
+  "cita": "Parece que lo único que hemos aprendido todos estos años es confrontación."
+ },
+ "88b7cfeef7": {
+  "tema": "Escudo de las Américas",
+  "cusco": false,
+  "resumen": "Volvió a cuestionar el Escudo de las Américas: comparó el comercio con China y con Estados Unidos y pidió resultados medibles de la cooperación antidrogas estadounidense. Propuso buscar otros socios.",
+  "cita": "Nosotros, como peruanos, también tenemos nuestros propios intereses que debemos defender."
+ },
+ "66d5f5d6e8": {
+  "continua": "88b7cfeef7"
+ },
+ "5b152b9e04": {
+  "tema": "Orden del debate",
+  "cusco": false,
+  "procedimiento": true,
+  "resumen": "Aviso de procedimiento: indicó que se había cedido un turno de palabra.",
+  "cita": "Presidente, ha habido un cambio. Se ha cedido."
+ },
+ "bd40b2bac0": {
+  "tema": "Presidencia del Banco Central de Reserva",
+  "cusco": false,
+  "resumen": "En la ratificación del presidente del BCR, reconoció su gestión pero defendió renovar el cargo: dijo que la autonomía es de la institución y no de la persona, y que la política monetaria favorece al gran capital por encima de las mype.",
+  "cita": "La autonomía del Banco Central de Reserva del Perú es un atributo del marco institucional, no de la persona."
+ },
+ "3d4357d7a4": {
+  "continua": "bd40b2bac0"
+ },
+ "c7b8068c9e": {
+  "tema": "Interpelación al ministro del Interior",
+  "cusco": false,
+  "resumen": "Durante la interpelación dijo que el ministro no presentó un plan estratégico, atribuyó el aumento del crimen a cambios legales impulsados desde 2016 y le preguntó por reportes periodísticos sobre vínculos de la banda \"La Jauría\" con la Policía.",
+  "cita": "Tenemos un Ministerio del Interior a la deriva."
+ },
+ "36c3b8de49": {
+  "tema": "Interpelación al ministro del Interior",
+  "cusco": false,
+  "resumen": "Por la bancada Obras, pidió al ministro resultados verificables (capturas y desarticulación de bandas) en lugar de diagnósticos, y dijo que la interpelación busca respuestas, no confrontación.",
+  "cita": "Los delincuentes no esperan, los ciudadanos tampoco."
+ },
+ "d81a989666": {
+  "tema": "Interpelación al ministro del Interior",
+  "cusco": false,
+  "resumen": "Reconoció que el ministro mostró resultados \"debatibles\" y le pidió indicadores, metas y plazos concretos para medir su gestión.",
+  "cita": "¿Cuáles van a ser los indicadores? ¿Cuáles las metas concretas y en qué plazos?"
+ },
+ "538e1ba686": {
+  "tema": "Incendios forestales en Cusco",
+  "cusco": true,
+  "resumen": "Alertó sobre los incendios en Urubamba, Espinar, Chumbivilcas, Canas y Calca, con dos jóvenes fallecidos. Pidió acción inmediata al Midagri, al Gobierno Regional y a los municipios, y un minuto de silencio.",
+  "cita": "Solicito sensibilidad por parte de las autoridades y actuar de manera inmediata."
+ },
+ "d9a77fd733": {
+  "continua": "538e1ba686"
+ },
+ "eb91107432": {
+  "tema": "Facultades legislativas al Ejecutivo (PL 98)",
+  "cusco": true,
+  "resumen": "Sustentó el dictamen en minoría de su bancada para archivar el pedido de facultades legislativas: dijo que no cumple los requisitos del artículo 104 de la Constitución y que pone en riesgo derechos laborales, tierras comunales, el agua y las cabeceras de cuenca. Mencionó heladas y friaje en Chumbivilcas.",
+  "cita": "No podemos en absoluto firmar de manera irresponsable un cheque en blanco."
+ },
+ "741bf7e035": {
+  "continua": "eb91107432"
+ },
+ "195a3786f1": {
+  "tema": "Facultades legislativas al Ejecutivo (PL 98)",
+  "cusco": false,
+  "resumen": "Argumentó que no hace falta delegar facultades para que las Fuerzas Armadas apoyen a la Policía, porque el marco legal (Decreto Legislativo 1095, actualizado en abril) ya lo permite con límites constitucionales.",
+  "cita": "Una necesidad operativa del Estado no es lo mismo que otorgar nuevas facultades normativas al Ejecutivo."
+ },
+ "2762d13836": {
+  "tema": "Facultades legislativas al Ejecutivo (PL 98)",
+  "cusco": false,
+  "resumen": "Defendió la propuesta de su bancada de dar facultades solo en seguridad ciudadana y Fenómeno El Niño, y pidió al Senado no reincorporar lo que la Cámara de Diputados rechace.",
+  "cita": "Nosotros pasaremos, pero las instituciones quedan."
+ },
+ "eca1aaf718": {
+  "tema": "Facultades legislativas al Ejecutivo (PL 98)",
+  "cusco": false,
+  "procedimiento": true,
+  "resumen": "Como secretario de la Comisión de Constitución, objetó que un dictamen en minoría se volviera a presentar modificado sin cumplir el artículo 138 del Reglamento.",
+  "cita": "Debe cumplir estrictamente lo que dice el reglamento de la Cámara de Diputados."
+ },
+ "2444530d8a": {
+  "tema": "Facultades legislativas al Ejecutivo (PL 98)",
+  "cusco": false,
+  "resumen": "Lamentó que se dejara de lado el texto consensuado por cuatro bancadas y criticó que se insistiera en dar más funciones a las Fuerzas Armadas.",
+  "cita": "Tiene que ganar el pueblo peruano y no nosotros."
+ },
+ "9195d7f79c": {
+  "tema": "Facultades legislativas al Ejecutivo (PL 98)",
+  "cusco": false,
+  "procedimiento": true,
+  "resumen": "Pidió pasar a votar la cuestión previa planteada y cuestionó una interpretación del Reglamento.",
+  "cita": "Por favor, a votar."
+ },
+ "b946e32226": {
+  "tema": "Viaje de la Presidenta a El Salvador y España",
+  "cusco": false,
+  "resumen": "Cuestionó el pedido de viaje presidencial a El Salvador y España: dijo que el modelo penitenciario salvadoreño no es comparable con el Perú y que primero hay que conocer la situación de las cárceles y las instituciones peruanas.",
+  "cita": "¿Modelos traídos de un país que no tiene ningún nivel de comparación con el nuestro?"
+ },
+ "95c995cf8b": {
+  "continua": "b946e32226"
+ },
+ "8d1ce98847": {
+  "tema": "Facultades legislativas al Ejecutivo (PL 98)",
+  "cusco": false,
+  "resumen": "Criticó el pedido de facultades: dijo que el Senado agregó siete materias que Diputados no aprobó, que una de ellas convierte a la Dirección Nacional de Inteligencia en un poder parecido al SIN de los noventa, y advirtió sobre el uso de las Fuerzas Armadas en seguridad interna, citando el caso de Colcabamba. Reclamó que no hay planes ni políticas sobre la Policía y la delincuencia.",
+  "cita": "Hace de la Dirección Nacional de Inteligencia un mega poder, una mega institución."
+ },
+ "75c1144ff4": {
+  "continua": "8d1ce98847"
+ }
+}

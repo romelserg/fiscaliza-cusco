@@ -1,0 +1,32 @@
+{
+ "192": {
+  "correo": "cholguin@congreso.gob.pe",
+  "ficha": "https://diputados.congreso.gob.pe/diputado/holguin-loaiza-cesar-augusto/",
+  "votos_obtenidos": 27527
+ },
+ "205": {
+  "correo": "amarquez@congreso.gob.pe",
+  "ficha": "https://diputados.congreso.gob.pe/diputado/marquez-huanca-anali/",
+  "votos_obtenidos": 19815
+ },
+ "226": {
+  "correo": "jperezm@congreso.gob.pe",
+  "ficha": "https://diputados.congreso.gob.pe/diputado/perez-mallqui-julian-luis/",
+  "votos_obtenidos": 15774
+ },
+ "175": {
+  "correo": "eespinozah@congreso.gob.pe",
+  "ficha": "https://diputados.congreso.gob.pe/diputado/espinoza-huillca-edwin/",
+  "votos_obtenidos": 9564
+ },
+ "201": {
+  "correo": "hlopez@congreso.gob.pe",
+  "ficha": "https://diputados.congreso.gob.pe/diputado/lopez-letona-heber/",
+  "votos_obtenidos": 8701
+ },
+ "305": {
+  "correo": "wverano@congreso.gob.pe",
+  "ficha": "https://senado.congreso.gob.pe/senador/verano-saravia-wilfredo/",
+  "votos_obtenidos": 18964
+ }
+}

@@ -49,6 +49,7 @@ def normalizar(texto):
 
 def codigo(texto):
     t = texto.strip().upper().split(" ")[0] if texto.strip() else ""
+    t = t.rstrip("-") or t  # "NO---": el acta digital pega los guiones al código
     t = ARREGLOS.get(t, t)
     return t if t in CODIGOS else None
 
@@ -141,7 +142,7 @@ def interpretar_pagina(items, tolerancia, padron, objetivo, imagen=None):
     texto_cabecera = " ".join(t for t, x, y in filas if y < 0.2)
     tipo = "VOTACIÓN" if re.search(r"VOTAC", texto_cabecera, re.I) else (
         "ASISTENCIA" if re.search(r"ASIS", texto_cabecera, re.I) else None)
-    hora = re.search(r"(\d{1,2}:\d{2})\s*([AP]M)", texto_cabecera)
+    hora = re.search(r"(\d{1,2})\s?:\s?(\d{2})\s*([AP]M)", texto_cabecera)  # a veces "01 :06 PM"
     fecha = None
     m = re.search(r"Sesi[oó]n del (\d{1,2}) de (\w+) de (\d{4})", texto_cabecera, re.I)
     if m and m.group(2).lower() in MESES:
@@ -189,7 +190,7 @@ def interpretar_pagina(items, tolerancia, padron, objetivo, imagen=None):
     # Cada constancia hasta la siguiente o el pie de página; las cláusulas (";") pueden ser de distinto tipo.
     notas = [c.strip() for n in re.findall(r"deja(?:ron)? constancia(.*?)(?=deja(?:ron)? constancia|\*\*\*|$)", prosa)
              for c in n.split(";") if c.strip()]
-    return {"tipo": tipo, "fecha": fecha, "hora": " ".join(hora.groups()) if hora else None,
+    return {"tipo": tipo, "fecha": fecha, "hora": f"{hora.group(1)}:{hora.group(2)} {hora.group(3)}" if hora else None,
             "asunto": asunto, "votos": votos, "notas": notas}
 
 
@@ -223,7 +224,8 @@ def main():
     padrones = {c: Padron(c) for c in PAGINAS_PLENO}
     eventos, vistos = [], set()
 
-    for pdf in sorted(PDFS.glob("*.pdf")):
+    # El acta final va antes que la provisional de la misma sesión: si ambas traen la misma votación, queda la final.
+    for pdf in sorted(PDFS.glob("*.pdf"), key=lambda f: ("PROVISIONAL" in f.name.upper(), f.name)):
         camara = pdf.name[0]
         objetivo = {c["id"]: c for c in congresistas if c["camara"] == camara}
         url = (PDFS / (pdf.name + ".url")).read_text() if (PDFS / (pdf.name + ".url")).exists() else ""
