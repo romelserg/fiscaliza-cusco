@@ -28,7 +28,7 @@ W, H = 1080, 1920
 ARRIBA, ABAJO = 270, 1570  # zona segura
 X0, X1 = 80, 1000
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "setiembre", "octubre", "noviembre", "diciembre"]
-URL = "romelserg.github.io/fiscaliza-cusco"
+URL = "fiscaliza.ciudadsur.pe"
 CONSERVAR = 8  # semanas que se guardan
 
 cardo = lambda t: fuente("Cardo-Bold.ttf", t)

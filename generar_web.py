@@ -14,7 +14,7 @@ from pathlib import Path
 import temas
 
 BASE = Path(__file__).resolve().parent
-URL_PUBLICA = "https://romelserg.github.io/fiscaliza-cusco/"
+URL_PUBLICA = "https://fiscaliza.ciudadsur.pe/"
 DESCRIPCION = "Qué proponen, cuándo asisten y cómo votan los seis congresistas elegidos por Cusco. Cada dato enlaza al acta oficial del Congreso."
 
 

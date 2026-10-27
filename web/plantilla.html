@@ -20,7 +20,19 @@
   --vacio: #cfc3ad;      /* no votó / ausente */
   --r1: #3b2f26; --r2: #8a7563; --r3: #cdbfa9;  /* rampa de relación con Cusco */
   --marca-borde: transparent;
-  --cs: #671b27;          /* borgoña de Ciudad Sur: solo marca (enlaces, títulos, tocapu), nunca datos de voto */
+  --cs: #671b27;
+  /* tintes naturales andinos: cochinilla, q'olle (amarillo), chilca (verde), añil. Solo para marca y adornos. */
+  --t-cochinilla: #8e2433; --t-qolle: #c99a2e; --t-chilca: #55703a; --t-anil: #2f4471;
+  --trama: rgba(43, 37, 32, 0.015);
+  /* motivos del pallay (tejido andino), uno por sección */
+  --p-kutij: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2212%22 viewBox=%220 0 24 12%22%3E%3Crect width=%2224%22 height=%2212%22 fill=%22%232b2520%22/%3E%3Cpath d=%22M0 12V8h4V4h4V0h4v12z%22 fill=%22%238e2433%22/%3E%3Cpath d=%22M12 0h4v4h4v4h4v4H12z%22 fill=%22%23c99a2e%22/%3E%3C/svg%3E");
+  --p-inti: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2212%22 viewBox=%220 0 20 12%22%3E%3Crect width=%2220%22 height=%2212%22 fill=%22%232b2520%22/%3E%3Cpath d=%22M10 1l6 5-6 5-6-5z%22 fill=%22%23c99a2e%22/%3E%3Cpath d=%22M10 4l2.5 2-2.5 2-2.5-2z%22 fill=%22%238e2433%22/%3E%3C/svg%3E");
+  --p-mayu: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2212%22 viewBox=%220 0 16 12%22%3E%3Crect width=%2216%22 height=%2212%22 fill=%22%232b2520%22/%3E%3Cpath d=%22M0 9l4-6 4 6 4-6 4 6%22 fill=%22none%22 stroke=%22%2355703a%22 stroke-width=%222.4%22/%3E%3C/svg%3E");
+  --p-chakana: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2222%22 height=%2212%22 viewBox=%220 0 22 12%22%3E%3Crect width=%2222%22 height=%2212%22 fill=%22%232b2520%22/%3E%3Cpath d=%22M9 1h4v3h3v4h-3v3H9V8H6V4h3z%22 fill=%22%238e2433%22/%3E%3Crect x=%2210.2%22 y=%225%22 width=%221.6%22 height=%222%22 fill=%22%23c99a2e%22/%3E%3C/svg%3E");
+  --p-nawi: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2214%22 height=%2212%22 viewBox=%220 0 14 12%22%3E%3Crect width=%2214%22 height=%2212%22 fill=%22%232b2520%22/%3E%3Ccircle cx=%227%22 cy=%226%22 r=%223.4%22 fill=%22%23c99a2e%22/%3E%3Ccircle cx=%227%22 cy=%226%22 r=%221.4%22 fill=%22%232f4471%22/%3E%3C/svg%3E");
+  --p-qocha: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2212%22 viewBox=%220 0 24 12%22%3E%3Crect width=%2224%22 height=%2212%22 fill=%22%232b2520%22/%3E%3Cpath d=%22M0 6h24%22 stroke=%22%2355703a%22 stroke-width=%221.6%22/%3E%3Crect x=%227%22 y=%222.5%22 width=%2210%22 height=%227%22 rx=%221%22 fill=%22%232f4471%22/%3E%3Crect x=%2210%22 y=%224.8%22 width=%224%22 height=%222.4%22 fill=%22%23c99a2e%22/%3E%3C/svg%3E");
+  --p-tawa: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2212%22 viewBox=%220 0 16 12%22%3E%3Crect width=%2216%22 height=%2212%22 fill=%22%232b2520%22/%3E%3Cpath d=%22M0 0l8 12M8 0l8 12M8 0L0 12M16 0L8 12%22 stroke=%22%238e2433%22 stroke-width=%221.6%22/%3E%3C/svg%3E");
+  --p-chaska: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2216%22 height=%2212%22 viewBox=%220 0 16 12%22%3E%3Crect width=%2216%22 height=%2212%22 fill=%22%232b2520%22/%3E%3Cpath d=%22M8 2v8M4 6h8%22 stroke=%22%23c99a2e%22 stroke-width=%222%22/%3E%3C/svg%3E");          /* borgoña de Ciudad Sur: solo marca (enlaces, títulos, tocapu), nunca datos de voto */
   /* en modo oscuro el ícono necesita un borde para separarse del fondo */
   --b-FP: #bd6a24; --b-PCO: #665f00; --b-AN: #05987a; --b-RP: #1d58a3; --b-PBG: #8a6fc0; --b-JP: #1f2f5e;  /* bancadas: forma + color */
   --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
@@ -32,7 +44,7 @@
   :root:not([data-theme="light"]) {
     --paper: #1f1b17; --paper-2: #29241e; --ink: #efe6d6; --ink-2: #b3a796; --rule: #3d362e;
     --si: #3f93cf; --no: #de6474; --abst: #b98a1f; --vacio: #4a4238;
-    --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43; --marca-borde: #5a4f43; --cs: #d0848f;
+    --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43; --marca-borde: #5a4f43; --cs: #d0848f; --trama: rgba(239, 230, 214, 0.018);
     --b-FP: #c87e41; --b-PCO: #6c7a15; --b-AN: #0baa92; --b-RP: #087aaf; --b-PBG: #9b81d2; --b-JP: #b3c0f0;
     color-scheme: dark;
   }
@@ -40,12 +52,14 @@
 :root[data-theme="dark"] {
   --paper: #1f1b17; --paper-2: #29241e; --ink: #efe6d6; --ink-2: #b3a796; --rule: #3d362e;
   --si: #3f93cf; --no: #de6474; --abst: #b98a1f; --vacio: #4a4238;
-  --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43; --marca-borde: #5a4f43; --cs: #d0848f;
+  --r1: #efe6d6; --r2: #a8957f; --r3: #5a4f43; --marca-borde: #5a4f43; --cs: #d0848f; --trama: rgba(239, 230, 214, 0.018);
   --b-FP: #c87e41; --b-PCO: #6c7a15; --b-AN: #0baa92; --b-RP: #087aaf; --b-PBG: #9b81d2; --b-JP: #b3c0f0;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
-body { background: var(--paper); color: var(--ink); font: 15.5px/1.6 var(--body); }
+body { background-color: var(--paper); color: var(--ink); font: 15.5px/1.6 var(--body);
+  /* urdimbre y trama casi invisibles: el papel se siente tejido sin ensuciar la lectura */
+  background-image: repeating-linear-gradient(0deg, var(--trama) 0 1px, transparent 1px 4px), repeating-linear-gradient(90deg, var(--trama) 0 1px, transparent 1px 5px); }
 .wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 72px; display: grid; gap: 56px; grid-template-columns: minmax(0, 1fr); }
 a { color: inherit; text-decoration-color: var(--rule); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 a:hover { text-decoration-color: var(--cs); }
@@ -67,18 +81,23 @@ p { margin: 0; }
 .cs-barra a:focus-visible { outline-color: #fff; }
 @media (max-width: 720px) { .cs-barra nav a:not([aria-current]) { display: none; } .cs-barra img { height: 34px; } }
 
+/* cada sección con su motivo de pallay */
+#representantes { --pallay: var(--p-kutij); } #votos { --pallay: var(--p-inti); } #mapa { --pallay: var(--p-mayu); }
+#temas { --pallay: var(--p-chakana); } #habla { --pallay: var(--p-nawi); } #proyectos { --pallay: var(--p-qocha); }
+#redes { --pallay: var(--p-tawa); } #escribele { --pallay: var(--p-chaska); }
+
 /* menú fijo, resumen y elige */
 .menu-sec { position: sticky; top: 0; z-index: 8; display: flex; gap: 4px 22px; overflow-x: auto; white-space: nowrap; scrollbar-width: none;
   background: var(--paper); border-bottom: 2px solid var(--ink); padding: 10px 2px; margin-top: -40px; font: 600 0.92rem var(--body); }
 .menu-sec::-webkit-scrollbar { display: none; }
 .menu-sec a { text-decoration: none; color: var(--ink-2); }
-.menu-sec a:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--cs); }
+.menu-sec a:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--t-qolle); text-decoration-thickness: 3px; }
 .sec { scroll-margin-top: 56px; }
 .elige { display: grid; gap: 10px; margin-top: -30px; }
 .elige-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 @media (max-width: 600px) { .elige-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .elige-grid a { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border: 1.5px solid var(--rule); border-radius: 3px; text-decoration: none; color: var(--ink); min-height: 56px; }
-.elige-grid a:hover { border-color: var(--ink); background: var(--paper-2); }
+.elige-grid a:hover { border-color: var(--t-qolle); background: var(--paper-2); }
 .elige-grid svg { width: 16px; height: 16px; flex: none; }
 .elige-grid b { display: block; font: 700 1.05rem/1.15 var(--titulo); }
 .elige-grid small { display: block; font-size: 0.76rem; color: var(--ink-2); }
@@ -145,7 +164,7 @@ a.pb-fila:hover { background: var(--paper-2); }
 .contacto { display: grid; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--rule); align-content: start; }
 .contacto .sub { font-size: 0.82rem; color: var(--ink-2); }
 .contacto .redactar { justify-self: start; margin-top: 4px; }
-.redactor { display: grid; gap: 14px; max-width: 760px; padding: 18px; background: var(--paper-2); border-top: 3px solid var(--cs); }
+.redactor { display: grid; gap: 14px; max-width: 760px; padding: 18px; background: var(--paper-2); border-top: 3px solid var(--t-chilca); }
 .r-campos { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 12px 20px; }
 .redactor label { display: grid; gap: 4px; font-size: 0.86rem; font-weight: 600; min-width: 0; }
 .redactor .r-ancho { grid-column: 1 / -1; }
@@ -170,28 +189,31 @@ a.pb-fila:hover { background: var(--paper-2); }
 @media (max-width: 720px) { .masthead { grid-template-columns: 1fr; } }
 
 /* portada con hemiciclo */
-.portada { display: grid; justify-items: center; text-align: center; gap: 6px; }
+.portada { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 20px 40px; align-items: center; }
+.portada-txt { display: grid; gap: 10px; justify-items: start; }
+@media (max-width: 760px) { .portada { grid-template-columns: minmax(0, 1fr); } }
 .portada-k { font: 600 0.82rem var(--body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--cs); }
-.portada h1 { font: 700 clamp(2.8rem, 8vw, 5.6rem)/0.95 var(--titulo); letter-spacing: -0.015em; display: flex; align-items: flex-end; justify-content: center; gap: 0.18em; flex-wrap: wrap; }
+.portada h1 { font: 700 clamp(2.6rem, 5.6vw, 4.5rem)/0.95 var(--titulo); letter-spacing: -0.015em; display: flex; align-items: flex-end; gap: 0.16em; flex-wrap: nowrap; white-space: nowrap; }
 .portada h1 span { color: var(--cs); font-style: italic; }
 .portada h1 .marca { width: 0.62em; height: 0.62em; margin-bottom: 0.1em; }
-.hemiciclo { margin: 10px 0 0; width: 100%; max-width: 640px; }
+.hemiciclo { margin: 0; width: 100%; text-align: center; }
 .hemiciclo svg { width: 100%; height: auto; display: block; overflow: visible; }
 .hemiciclo .escano { stroke: var(--paper); stroke-width: 1.5; }
 .hemiciclo .escano.cus { stroke: var(--ink); stroke-width: 3; cursor: pointer; }
 .hemiciclo a:focus-visible .escano { stroke: var(--cs); stroke-width: 4; }
 .hemiciclo .guia-h { stroke: var(--ink-2); stroke-width: 1; }
-.hemiciclo text { font: 700 14px var(--body); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 4px; pointer-events: none; }
+.hemiciclo text { font: 500 11px var(--body); fill: var(--ink-2); paint-order: stroke; stroke: var(--paper); stroke-width: 3px; pointer-events: none; }
 .hemiciclo figcaption { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; font-size: 0.8rem; color: var(--ink-2); margin-top: 8px; }
 .hemiciclo figcaption i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
 .hemi-nota { font-size: 0.74rem; color: var(--ink-2); margin-top: 4px; }
-.portada-lead { font-size: 1.12rem; max-width: 52ch; margin-top: 6px; }
+.portada-lead { font-size: 1.15rem; line-height: 1.5; max-width: 40ch; }
 .portada-lead b { font-weight: 600; }
 .portada-meta { font: 0.8rem/1.5 var(--acta); color: var(--ink-2); max-width: 70ch; }
 
 /* encabezados de sección */
 .sec { display: grid; gap: 18px; min-width: 0; grid-template-columns: minmax(0, 1fr); }  /* la columna no crece con tablas anchas (celular) */
-.sec-head { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 4px 24px; border-top: 2px solid var(--ink); padding-top: 12px; }
+.sec-head { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 4px 24px; padding-top: 24px;
+  background: var(--pallay, var(--p-kutij)) top left / auto 12px repeat-x; }
 .sec-head .folio { font: 700 0.8rem/1.4 var(--acta); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); }
 .sec-head h2 { font: 700 clamp(1.8rem, 4vw, 2.6rem)/1.05 var(--titulo); }
 .sec-head p { grid-column: 2; max-width: 64ch; color: var(--ink-2); }
@@ -356,7 +378,7 @@ a.pb-fila:hover { background: var(--paper-2); }
 .red.foco .on { opacity: 1 !important; }
 .red-senado { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 8px 28px; align-items: center; }
 @media (max-width: 720px) { .red-senado { grid-template-columns: 1fr; } }
-.hallazgos { margin: 0; padding: 14px 18px 14px 34px; background: var(--paper-2); border-left: 4px solid var(--cs); display: grid; gap: 6px; max-width: 78ch; }
+.hallazgos { margin: 0; padding: 14px 18px 14px 34px; background: var(--paper-2); border-left: 4px solid var(--t-qolle); display: grid; gap: 6px; max-width: 78ch; }
 .franjas { display: grid; gap: 4px; max-width: 760px; }
 .franja { margin: 0; }
 .franja figcaption { font-size: 0.92rem; }
@@ -424,6 +446,9 @@ details > summary { cursor: pointer; font: 0.86rem var(--acta); text-decoration:
 footer { display: grid; gap: 14px; font-size: 0.9rem; color: var(--ink-2); }
 footer h2 { font: 700 1.5rem/1.1 var(--titulo); color: var(--ink); }
 footer .que-es { color: var(--ink); font-size: 1rem; max-width: 70ch; }
+.pie-marca { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 18px; align-items: center; padding: 18px 0; border-top: 3px solid var(--t-cochinilla); }
+.silueta { width: 76px; height: auto; display: block; }
+.silueta path { fill: var(--cs); stroke: var(--paper); stroke-width: 3; }
 .firma { display: flex; align-items: center; gap: 10px; margin-top: 8px; padding-top: 16px; border-top: 1px solid var(--rule); font: 0.95rem/1.3 var(--acta); color: var(--ink); }
 .firma .marca { width: 28px; height: 28px; margin: 0; }
 .firma a { font-weight: 700; }
@@ -575,11 +600,13 @@ function inicio() {
   const sesiones = new Set(DATOS.eventos.map(e => e.camara + e.fecha)).size;
   return `
   <header class="portada">
-    <p class="portada-k">Observatorio ciudadano del Congreso</p>
-    <h1>Fiscaliza <span>Cusco</span>${iconoMarca()}</h1>
+    <div class="portada-txt">
+      <p class="portada-k">Observatorio ciudadano del Congreso</p>
+      <h1>Fiscaliza <span>Cusco</span>${iconoMarca()}</h1>
+      <p class="portada-lead">Vigilamos lo que hacen en el Congreso los <b>5 diputados y el senador</b> elegidos por Cusco: si asisten, cómo votan, qué proponen y con quién trabajan.</p>
+      <p class="portada-meta">Período 2026–2031 · datos al ${fecha(DATOS.actualizado)}<br>${DATOS.proyectos.length} proyectos de ley · ${sesiones} sesiones del Pleno<br>Cada dato enlaza al documento oficial</p>
+    </div>
     ${hemiciclo("D")}
-    <p class="portada-lead">De los 130 diputados, <b>5 representan a Cusco</b>, y uno de los 60 senadores. Esto es lo que hacen en el Congreso: si asisten, cómo votan, qué proponen y con quién trabajan.</p>
-    <p class="portada-meta">Período 2026–2031 · datos al ${fecha(DATOS.actualizado)} · ${DATOS.proyectos.length} proyectos de ley · ${sesiones} sesiones del Pleno · cada dato enlaza al documento oficial</p>
   </header>
   ${tocapu()}
   ${menuSecciones()}
@@ -655,7 +682,7 @@ function hemiciclo(cam) {
   });
   // Nombres en un arco dentro del hueco central, en la dirección de cada asiento y sin encimarse:
   // se respeta el orden de los asientos, así las líneas guía no se cruzan.
-  const rl = (r0 - 0.16) * R, sep = 0.5;
+  const rl = (r0 - 0.075) * R, sep = 0.3;
   const ang = marcados.map(m => Math.atan2(cy - m.Y, m.X - cx)).map(a => Math.min(Math.max(a, 0.12), Math.PI - 0.12));
   const orden2 = ang.map((a, i) => i).sort((x, y) => ang[y] - ang[x]);  // de izquierda (π) a derecha (0)
   const pos = orden2.map(i => ang[i]);
@@ -667,8 +694,7 @@ function hemiciclo(cam) {
   orden2.forEach((i, k) => {
     const m = marcados[i], a = pos[k], lx = cx + Math.cos(a) * rl, ly = cy - Math.sin(a) * rl;
     const anc = Math.cos(a) > 0.35 ? "start" : Math.cos(a) < -0.35 ? "end" : "middle";
-    etiquetas += `<line class="guia-h" x1="${m.X.toFixed(1)}" y1="${m.Y.toFixed(1)}" x2="${lx.toFixed(1)}" y2="${(ly - 4).toFixed(1)}"/>
-      <text x="${lx.toFixed(1)}" y="${(ly + 10).toFixed(1)}" text-anchor="${anc}">${esc(apellido(m.c))}</text>`;
+    etiquetas += `<text x="${lx.toFixed(1)}" y="${(ly + 4).toFixed(1)}" text-anchor="${anc}">${esc(apellido(m.c))}</text>`;
   });
   return `<figure class="hemiciclo"><svg viewBox="0 0 ${W} ${W / 2 + 8}" role="img" aria-label="Hemiciclo de la ${cam === "D" ? "Cámara de Diputados" : "Senado"}: ${n} escaños por bancada; resaltados, los de Cusco">${etiquetas.replace(/<text[\s\S]*?<\/text>/g, "")}${s}${(etiquetas.match(/<text[\s\S]*?<\/text>/g) || []).join("")}</svg>
     <figcaption>${orden.map(b => `<span><i style="background:var(--b-${b})"></i>${esc(BANCADAS[b])} ${pad.filter(m => m.b === b).length}</span>`).join("")}</figcaption>
@@ -1564,10 +1590,14 @@ document.addEventListener("click", ev => {
 });
 
 function pie() {
-  return `<footer><p class="que-es"><b>Fiscaliza Cusco</b> es un observatorio ciudadano e independiente del Congreso de la República, hecho por Ciudad Sur con datos públicos oficiales.</p>
+  return `<footer><div class="pie-marca">${siluetaCusco()}<p class="que-es"><b>Fiscaliza Cusco</b> es un observatorio ciudadano e independiente del Congreso de la República, hecho por Ciudad Sur con datos públicos oficiales.<br><span class="muted">Hecho en el Qosqo, para sus 13 provincias.</span></p></div>
     <h2>De dónde salen los datos</h2>
     <p>Todo sale de documentos oficiales del Congreso: el sistema de proyectos de ley, las actas de asistencia y votación del Pleno y el Diario de Debates. Cada cifra enlaza a su fuente. <a href="#como-se-hizo">Cómo se hizo, paso a paso</a>.</p>
     <p class="firma">${iconoMarca()}<span>Un proyecto de <a href="https://ciudadsur.pe" target="_blank" rel="noopener">Ciudad Sur</a> y <a href="https://www.instagram.com/sieteborreguitos" target="_blank" rel="noopener">@sieteborreguitos</a></span></p></footer>`;
+}
+function siluetaCusco(clase = "silueta") {
+  const M = DATOS.mapa; if (!M) return "";
+  return `<svg class="${clase}" viewBox="0 0 ${M.ancho} ${M.alto}" role="img" aria-label="Silueta del departamento de Cusco y sus 13 provincias">${Object.values(M.provincias).map(g => `<path d="${g.d}"/>`).join("")}</svg>`;
 }
 function metodologia() {
   return `<a class="volver" href="#inicio">← Volver a la portada</a>
