@@ -105,6 +105,8 @@ def main():
         "redes": cargar("datos/redes.json", None),
         "recorrido": cargar("datos/recorrido.json", None),
         "contacto": cargar("datos/contacto.json", {}),
+        # Padrón de cada cámara (para el hemiciclo): nombre y bancada de cada integrante
+        "padron": {c: [{"id": str(m["id"]), "n": m["nombre"], "b": m["bancada"]} for m in cargar(f"votaciones/padron_{c}.json", [])] for c in "DS"},
         "presidio": presidio,
         "contexto": cargar("datos/contexto.json", None),
     }
@@ -125,7 +127,7 @@ def main():
                 # Vista previa al compartir el enlace (WhatsApp, Facebook, X, LinkedIn, Telegram)
                 f'<meta property="og:type" content="website">\n'
                 f'<meta property="og:site_name" content="Fiscaliza Cusco">\n'
-                f'<meta property="og:title" content="Fiscaliza Cusco">\n'
+                f'<meta property="og:title" content="Fiscaliza Cusco · Observatorio ciudadano del Congreso">\n'
                 f'<meta property="og:description" content="{DESCRIPCION}">\n'
                 f'<meta property="og:url" content="{URL_PUBLICA}">\n'
                 f'<meta property="og:image" content="{URL_PUBLICA}og.png">\n'

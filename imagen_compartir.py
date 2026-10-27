@@ -75,6 +75,10 @@ class Lienzo:
             CoreText.CFRangeMake(0, 0), Quartz.CGPathCreateWithRect(Quartz.CGRectMake(x, self.h - y - alto, ancho, alto), None), None)
         CoreText.CTFrameDraw(marco, self.ctx)
 
+    def circulo(self, x, y, r, col):
+        Quartz.CGContextSetFillColorWithColor(self.ctx, color(col))
+        Quartz.CGContextFillEllipseInRect(self.ctx, Quartz.CGRectMake(x - r, self.h - y - r, 2 * r, 2 * r))
+
     def imagen(self, ruta, x, y, alto):
         """Pega un PNG con su transparencia; devuelve el ancho dibujado."""
         fuente_img = Quartz.CGImageSourceCreateWithURL(NSURL.fileURLWithPath_(str(ruta)), None)
@@ -116,17 +120,55 @@ def tocapu(lz, y, alto):
             lz.rect(x0 + px * k, y + py * k, 4 * k, 4 * k, PAPEL)
 
 
+BANCADA_COLOR = {"FP": "#bd6a24", "PCO": "#665f00", "AN": "#05987a", "RP": "#1d58a3", "PBG": "#8a6fc0", "JP": "#1f2f5e"}
+
+
+def hemiciclo(lz, cx, cy, R, padron, cusquenos, orden, filas=8, r0=0.4, rad=8.4):
+    """Hemiciclo de la cámara: un círculo por escaño, por bancada de izquierda a derecha; los cusqueños,
+    con borde y en las filas de adelante de su bancada (ubicación ilustrativa). Devuelve sus posiciones."""
+    import math
+    n = len(padron)
+    radios = [r0 + (1 - r0) * k / (filas - 1) for k in range(filas)]
+    cupos = [round(n * r / sum(radios)) for r in radios]
+    cupos[-1] += n - sum(cupos)
+    pts = sorted(((math.pi * (1 - (j + 0.5) / c), r) for r, c in zip(radios, cupos) for j in range(c)), key=lambda p: (-p[0], p[1]))
+    k, marcados = 0, []
+    for b in orden:
+        miembros = [m for m in padron if m["bancada"] == b]
+        bloque = pts[k:k + len(miembros)]
+        k += len(miembros)
+        adelante = sorted(bloque, key=lambda p: (p[1], abs(p[0] - math.pi / 2)))
+        usados = set()
+        for m in sorted(miembros, key=lambda m: str(m["id"]) not in cusquenos):
+            es = str(m["id"]) in cusquenos
+            a, r = next(p for p in (adelante if es else bloque) if p not in usados)
+            usados.add((a, r))
+            x, y = cx + math.cos(a) * r * R, cy - math.sin(a) * r * R
+            if es:
+                lz.circulo(x, y, rad + 6, TINTA)
+                lz.circulo(x, y, rad + 1.5, BANCADA_COLOR[b])
+                marcados.append((x, y, cusquenos[str(m["id"])]))
+            else:
+                lz.circulo(x, y, rad, BANCADA_COLOR.get(b, VACIO))
+    return marcados
+
+
 def main():
-    congresistas = [c for c in json.loads((BASE / "congresistas.json").read_text()) if c["camara"] == "D"]
-    eventos = [e for e in json.loads((BASE / "votaciones" / "eventos.json").read_text())
-               if e["camara"] == "D" and e["tipo"] == "VOTACIÓN"]
-    eventos.sort(key=lambda e: (e["fecha"], e["hora"] or ""))
+    congresistas = {str(c["id"]): c for c in json.loads((BASE / "congresistas.json").read_text()) if c["camara"] == "D"}
+    padron = json.loads((BASE / "votaciones" / "padron_D.json").read_text())
+    # Bancadas de izquierda a derecha según cómo votan (como en la web)
+    orden = ["JP", "PBG", "AN", "PCO", "RP", "FP"]
+    try:
+        lados = json.loads((BASE / "datos" / "redes.json").read_text())["votacion"]["D"]["lados"]["puntos"]
+        media = {b: sum(p["x"] for p in lados if p["bancada"] == b) / max(1, sum(1 for p in lados if p["bancada"] == b)) for b in orden}
+        orden.sort(key=lambda b: -media[b])
+    except (KeyError, FileNotFoundError):
+        pass
 
     cardo = lambda t: fuente("Cardo-Bold.ttf", t)
     cardo_it = lambda t: fuente("Cardo-Italic.ttf", t)
     cardo_reg = lambda t: fuente("Cardo-Regular.ttf", t)
     franklin = lambda t, p=500: fuente("LibreFranklin[wght].ttf", t, p)
-    courier = lambda t: fuente("CourierPrime-Regular.ttf", t)
 
     lz = Lienzo()
     lz.rect(0, 0, W, H, PAPEL)
@@ -137,50 +179,26 @@ def main():
     ancho = lz.texto("PROYECTOS ESPECIALES", 0, 0, cardo_reg(21), "#000000", 3)  # solo para medir
     lz.texto("PROYECTOS ESPECIALES", W - 56 - ancho, 45, cardo_reg(21), "#dddddd", 3)
 
-    # Columna izquierda: nombre y propósito
-    lz.texto("PERÍODO PARLAMENTARIO 2026–2031", 64, 128, courier(18), TINTA2, 0.5)
-    lz.texto("Fiscaliza", 56, 240, cardo(116), TINTA)
-    ancho_cusco = lz.texto("Cusco", 60, 350, cardo_it(116), CS)
-    icono(lz, 60 + ancho_cusco + 22, 350 - 82, 82)  # a la altura de las mayúsculas
-    lz.parrafo("Qué proponen, cuándo asisten y cómo votan los seis congresistas elegidos por Cusco.",
-               64, 384, 480, 120, franklin(27), TINTA)
-    lz.texto("romelserg.github.io/fiscaliza-cusco", 64, 540, courier(20), TINTA2)
+    # Columna izquierda: qué es
+    lz.texto("OBSERVATORIO CIUDADANO", 60, 140, franklin(22, 700), CS, 3)
+    lz.texto("DEL CONGRESO", 60, 170, franklin(22, 700), CS, 3)
+    lz.texto("Fiscaliza", 54, 286, cardo(112), TINTA)
+    ancho_cusco = lz.texto("Cusco", 58, 392, cardo_it(112), CS)
+    icono(lz, 58 + ancho_cusco + 20, 392 - 78, 78)
+    lz.parrafo("De los 130 diputados, 5 representan a Cusco. Si asisten, cómo votan y qué proponen.",
+               62, 420, 470, 100, franklin(27), TINTA)
+    lz.texto("romelserg.github.io/fiscaliza-cusco", 62, 552, franklin(20, 500), TINTA2)
 
-    # Columna derecha: tejido de votos real
-    C, G, SG = 15, 3, 9
-    x0, y0 = 700, 212
-    lz.texto("EL TEJIDO DE VOTOS · PLENO", 600, 150, courier(16), TINTA2, 0.5)
-    lz.rect(600, 164, 536, 2, TINTA)
-    xs, x, prev = [], x0, None
-    for e in eventos:
-        if prev and e["fecha"] != prev:
-            x += SG
-        if not prev or e["fecha"][:7] != prev[:7]:  # solo el mes, para que las etiquetas no se encimen
-            lz.texto(MESES[int(e["fecha"][5:7]) - 1], x, y0 - 14, courier(14), TINTA2)
-        xs.append(x)
-        x += C + G
-        prev = e["fecha"]
-    for r, c in enumerate(congresistas):
-        y = y0 + r * (C + G + 6)
-        lz.texto(c["corto"].split(" ")[-1], 600, y + 13, franklin(16, 600), TINTA)
-        for e, cx in zip(eventos, xs):
-            v = e["votos"].get(str(c["id"]))
-            if v == "***":  # presidía la sesión: cuadro en contorno
-                lz.rect(cx, y, C, C, TINTA2)
-                lz.rect(cx + 2, y + 2, C - 4, C - 4, PAPEL)
-            else:
-                lz.rect(cx, y, C, C, {"SI": SI, "NO": NO, "ABST": ABST}.get(v, VACIO))
-    ly = y0 + len(congresistas) * (C + G + 6) + 26
-    lx = 600
-    for nombre, col in (("A favor", SI), ("En contra", NO), ("Abst.", ABST), ("Sin votar", VACIO), ("Presidía", None)):
-        if col:
-            lz.rect(lx, ly - 12, 13, 13, col)
-        else:
-            lz.rect(lx, ly - 12, 13, 13, TINTA2)
-            lz.rect(lx + 2, ly - 10, 9, 9, PAPEL)
-        lx += 19 + lz.texto(nombre, lx + 19, ly, franklin(15, 500), TINTA2) + 16
-
-    lz.texto("Cada dato enlaza al acta oficial del Congreso.", 600, ly + 52, franklin(19, 500), TINTA)
+    # Columna derecha: el hemiciclo de la Cámara de Diputados
+    marcados = hemiciclo(lz, 880, 500, 290, padron, congresistas, orden)
+    # A este tamaño los nombres no caben: el aro oscuro basta para reconocer a los cusqueños
+    lz.circulo(800, 539, 11, TINTA); lz.circulo(800, 539, 6, PAPEL)
+    lz.texto("los 5 de Cusco", 818, 546, franklin(22, 700), TINTA)
+    x = 600
+    for b in orden:
+        nombre = {"JP": "JP", "PBG": "PBG", "AN": "AN", "PCO": "PCO", "RP": "RP", "FP": "FP"}[b]
+        lz.circulo(x + 7, 582, 7, BANCADA_COLOR[b])
+        x += 22 + lz.texto(f"{nombre} {sum(1 for m in padron if m['bancada'] == b)}", x + 20, 589, franklin(18, 600), TINTA2) + 18
 
     tocapu(lz, H - 36, 36)
     (BASE / "docs").mkdir(exist_ok=True)
