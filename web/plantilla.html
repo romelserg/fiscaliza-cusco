@@ -253,9 +253,13 @@ a.pb-fila:hover { background: var(--paper-2); }
 .stack i:first-child { border-radius: 3px 0 0 3px; } .stack i:last-child { border-radius: 0 3px 3px 0; }
 .stack-lab { display: flex; flex-wrap: wrap; gap: 2px 14px; font: 0.8rem/1.3 var(--acta); color: var(--ink-2); }
 .stack-lab b { color: var(--ink); font-weight: 700; }
-.pases { display: flex; flex-wrap: wrap; gap: 2px; }
-.pases i { width: 8px; height: 14px; background: var(--ink); border-radius: 1px; }
-.pases i.no { background: transparent; box-shadow: inset 0 0 0 1.5px var(--no); }
+.pases { display: flex; flex-wrap: wrap; gap: 5px 9px; }
+.pases .sesion { display: flex; flex-wrap: wrap; gap: 3px; }  /* los pases de lista de una misma sesión */
+.pases i { width: 20px; height: 20px; border-radius: 3px; display: grid; place-items: center; font: 700 13px/1 var(--body); font-style: normal; background: var(--ink); color: var(--paper); }
+.pases i.no { background: transparent; box-shadow: inset 0 0 0 1.5px var(--no); color: var(--no); }
+.pases i.lic { background: transparent; box-shadow: inset 0 0 0 1.5px var(--ink-2); color: var(--ink-2); font-size: 11px; }
+.pases-total { font: 0.9rem/1.4 var(--body); }
+.pases-total b { font-weight: 700; }
 
 /* gráfico de barras horizontales (proyectos) */
 .hbars { display: grid; gap: 10px; max-width: 760px; }
@@ -468,7 +472,7 @@ footer ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; max-width: 7
 </style>
 
 <div class="cs-barra"><div class="in">
-  <a href="https://ciudadsur.pe" aria-label="Ciudad Sur, revista: ir a la portada"><img src="/*LOGO_CS*/" alt="Ciudad Sur" width="300" height="107"></a>
+  <a href="https://ciudadsur.pe" aria-label="Ciudad Sur, proyecto: ir a la portada"><img src="/*LOGO_CS*/" alt="Ciudad Sur" width="300" height="107"></a>
   <nav aria-label="Secciones de Ciudad Sur"><a href="https://ciudadsur.pe/seccion/actualidad">Actualidad</a><a href="https://ciudadsur.pe/seccion/social">Social</a><a href="https://ciudadsur.pe/seccion/arte-y-cultura">Arte &amp; Cultura</a><a href="https://ciudadsur.pe/seccion/proyectos-especiales" aria-current="page">Proyectos Especiales</a></nav>
 </div></div>
 <div class="wrap" id="app"></div>
@@ -534,12 +538,19 @@ function apilada(k) {
     <div class="stack-lab"><span><b>${k.si}</b> a favor</span><span><b>${k.no}</b> en contra</span><span><b>${k.abst}</b> abst.</span><span><b>${k.sinVoto}</b> sin votar</span></div>`;
 }
 
+// Récord de asistencia: un cuadro por pase de lista (✓ presente, ✗ ausente, L licencia), agrupados por sesión.
 function pases(k, c) {
   const ev = DATOS.eventos.filter(e => e.camara === c.camara && e.tipo === "ASISTENCIA");
-  return `<div class="pases" role="img" aria-label="Presente en ${k.presente} de ${k.pases} pases de lista">${ev.map(e => {
-    const v = e.votos[c.id], ok = v === "PRE" || v === "***";
-    return `<i class="${ok ? "" : "no"}" data-tip="<b>${fecha(e.fecha)} · ${esc(e.hora || "")}</b><br>${esc(LARGO[v] || v)}"></i>`;
-  }).join("")}</div>`;
+  const sesiones = new Set(ev.map(e => e.fecha)).size;
+  const licencias = ev.filter(e => /^L[A-Z]$/.test(e.votos[c.id] || "")).length;
+  const porSesion = {};
+  ev.forEach(e => {
+    const v = e.votos[c.id], ok = v === "PRE" || v === "***", lic = /^L[A-Z]$/.test(v || "");
+    (porSesion[e.fecha] = porSesion[e.fecha] || []).push(`<i class="${ok ? "" : lic ? "lic" : "no"}" data-tip="<b>${fecha(e.fecha)} · ${esc(e.hora || "")}</b><br>${esc(LARGO[v] || v)}">${ok ? "✓" : lic ? "L" : "✗"}</i>`);
+  });
+  const cuadros = Object.values(porSesion).map(cs => `<span class="sesion">${cs.join("")}</span>`).join("");
+  return `<div class="pases" role="img" aria-label="${k.presente} asistencias de ${k.pases} pases de lista, en ${sesiones} sesiones del Pleno">${cuadros}</div>
+    <p class="pases-total"><b>${k.presente} ${k.presente === 1 ? "asistencia" : "asistencias"} de ${k.pases}</b> pases de lista, en ${sesiones} ${sesiones === 1 ? "sesión" : "sesiones"} del Pleno${licencias ? ` (${licencias} con licencia)` : ""}</p>`;
 }
 
 /* El tejido: filas = congresistas, columnas = votaciones en orden; cada sesión separada por un hueco. */
@@ -776,7 +787,7 @@ function ficha(c) {
   <p class="resumen-prosa">Desde julio de 2026 estuvo presente en <b>${k.presente} de ${k.pases}</b> pases de lista del Pleno y votó en <b>${k.participo} de ${k.votables}</b> votaciones: ${k.si} a favor, ${k.no} en contra y ${k.abst} abstenciones${k.presidio ? `; en otras ${k.presidio} presidía la sesión y no votaba` : ""}. Es autor principal de <b>${k.autor}</b> ${k.autor === 1 ? "proyecto" : "proyectos"} de ley y firmó otros ${k.coautor} como coautor. En el Diario de Debates figura con <b>${k.habla}</b> ${k.habla === 1 ? "intervención" : "intervenciones"} como orador${DATOS.presidio[c.id] ? ` y ${DATOS.presidio[c.id]} turnos presidiendo la sesión` : ""}.</p>
 
   <div class="cifras">
-    <div class="cifra"><span class="etq">Pases de lista</span>${pases(k, c)}</div>
+    <div class="cifra"><span class="etq">Récord de asistencia</span>${pases(k, c)}</div>
     <div class="cifra"><span class="etq">Reparto de sus votos</span>${apilada(k)}</div>
   </div>
 
