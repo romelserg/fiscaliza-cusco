@@ -795,12 +795,6 @@ function ficha(c) {
   ${temasDe(c)}
   ${seccionMapa(c.id)}
 
-  <section class="sec" aria-labelledby="t-sus">
-    ${encabezado("Pleno", "Su tejido de votos", "Cada cuadro es una votación, en orden de fecha.", "t-sus")}
-    ${leyendaVotos(k.presidio > 0)}
-    <div class="tejido">${tejido([c], c.camara)}</div>
-  </section>
-
   <section class="sec" aria-labelledby="t-dijo">
     ${encabezado("Diario de Debates", "Lo que dijo en el Pleno", "Resumen de cada intervención, con una cita textual y el enlace a la página de la transcripción oficial. Debajo, cómo votó ese mismo día.", "t-dijo")}
     ${(() => { const mias = DATOS.intervenciones.filter(i => i.congresista === c.id).reverse();
