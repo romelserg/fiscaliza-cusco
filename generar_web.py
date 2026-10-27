@@ -105,6 +105,9 @@ def main():
         "redes": cargar("datos/redes.json", None),
         "recorrido": cargar("datos/recorrido.json", None),
         "contacto": cargar("datos/contacto.json", {}),
+        # Fotos oficiales (web/fotos/<id>.jpg, las baja contacto.py), incrustadas como el logo.
+        "fotos": {f.stem: "data:image/jpeg;base64," + base64.b64encode(f.read_bytes()).decode()
+                  for f in sorted((BASE / "web" / "fotos").glob("*.jpg"))},
         # Padrón de cada cámara (para el hemiciclo): nombre y bancada de cada integrante
         "padron": {c: [{"id": str(m["id"]), "n": m["nombre"], "b": m["bancada"]} for m in cargar(f"votaciones/padron_{c}.json", [])] for c in "DS"},
         "presidio": presidio,

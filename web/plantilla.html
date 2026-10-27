@@ -432,6 +432,17 @@ details > summary { cursor: pointer; font: 0.86rem var(--acta); text-decoration:
 /* ficha */
 .ficha-head { display: grid; gap: 10px; }
 .ficha-head h1 { font: 700 clamp(2.8rem, 8vw, 5.4rem)/0.95 var(--titulo); }
+.ficha-head.con-foto { grid-template-columns: auto 1fr; column-gap: 26px; align-items: end; }
+.ficha-head.con-foto > :not(.ficha-foto) { grid-column: 2; }
+.ficha-foto { grid-column: 1; grid-row: 1 / span 4; margin: 0; display: grid; gap: 5px; align-self: center; }
+.ficha-foto img { width: 168px; height: 168px; object-fit: cover; object-position: 50% 20%; border: 1.5px solid var(--ink); border-radius: 3px; display: block; }
+.ficha-foto figcaption { font: 0.7rem var(--acta); color: var(--ink-2); }
+@media (max-width: 600px) {
+  .ficha-head.con-foto { grid-template-columns: 1fr; }
+  .ficha-head.con-foto > :not(.ficha-foto) { grid-column: 1; }
+  .ficha-foto { grid-row: auto; }
+  .ficha-foto img { width: 128px; height: 128px; }
+}
 .volver { font: 0.86rem var(--acta); }
 .resumen-prosa { font-size: 1.15rem; line-height: 1.55; max-width: 60ch; }
 .resumen-prosa b { font-weight: 600; }
@@ -751,9 +762,11 @@ function ficha(c) {
   const propios = DATOS.proyectos.filter(p => p.cusco[c.id] === "Autor principal");
   const coaut = DATOS.proyectos.filter(p => p.cusco[c.id] && p.cusco[c.id] !== "Autor principal");
   const vots = DATOS.eventos.filter(e => e.camara === c.camara && e.tipo === "VOTACIÓN").reverse();
+  const foto = (DATOS.fotos || {})[c.id];
   return `
   <a class="volver" href="#inicio">← Volver al padrón</a>
-  <header class="ficha-head">
+  <header class="ficha-head${foto ? " con-foto" : ""}">
+    ${foto ? `<figure class="ficha-foto"><img src="${foto}" alt="Foto oficial de ${esc(c.corto)}" width="168" height="168"><figcaption>Foto: Congreso de la República</figcaption></figure>` : ""}
     <span class="etq">${CAMARA[c.camara]} · ${esc(c.partido)}</span>
     <h1>${esc(c.corto)}</h1>
     <span class="acta muted small">${esc(c.nombre)}</span>

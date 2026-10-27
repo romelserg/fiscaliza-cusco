@@ -2,31 +2,37 @@
  "192": {
   "correo": "cholguin@congreso.gob.pe",
   "ficha": "https://diputados.congreso.gob.pe/diputado/holguin-loaiza-cesar-augusto/",
-  "votos_obtenidos": 27527
+  "votos_obtenidos": 27527,
+  "foto": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/07/Holguin-Loaiza-Cesar.png"
  },
  "205": {
   "correo": "amarquez@congreso.gob.pe",
   "ficha": "https://diputados.congreso.gob.pe/diputado/marquez-huanca-anali/",
-  "votos_obtenidos": 19815
+  "votos_obtenidos": 19815,
+  "foto": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/07/MArquez-Huanca-Anali.png"
  },
  "226": {
   "correo": "jperezm@congreso.gob.pe",
   "ficha": "https://diputados.congreso.gob.pe/diputado/perez-mallqui-julian-luis/",
-  "votos_obtenidos": 15774
+  "votos_obtenidos": 15774,
+  "foto": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/07/Perez-Mallqui-Julian.png"
  },
  "175": {
   "correo": "eespinozah@congreso.gob.pe",
   "ficha": "https://diputados.congreso.gob.pe/diputado/espinoza-huillca-edwin/",
-  "votos_obtenidos": 9564
+  "votos_obtenidos": 9564,
+  "foto": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/07/Espinoza-Huillca-Edwin-1.png"
  },
  "201": {
   "correo": "hlopez@congreso.gob.pe",
   "ficha": "https://diputados.congreso.gob.pe/diputado/lopez-letona-heber/",
-  "votos_obtenidos": 8701
+  "votos_obtenidos": 8701,
+  "foto": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/07/Lopez-Letona-Heber.png"
  },
  "305": {
   "correo": "wverano@congreso.gob.pe",
   "ficha": "https://senado.congreso.gob.pe/senador/verano-saravia-wilfredo/",
-  "votos_obtenidos": 18964
+  "votos_obtenidos": 18964,
+  "foto": "https://senado.congreso.gob.pe/wp-content/uploads/2026/07/Verano-Saravia-Wilfredo.png"
  }
 }
