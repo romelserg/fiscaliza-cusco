@@ -54,7 +54,8 @@ jobs:
         run: |
           git config user.name "fiscaliza-cusco-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A docs datos texto votaciones intervenciones reporte.md reporte_votaciones.md pendientes.md
+          # web/fotos: contacto.py renueva la foto oficial si el Congreso la cambia
+          git add -A docs datos texto votaciones intervenciones web/fotos reporte.md reporte_votaciones.md pendientes.md
           if git diff --cached --quiet; then
             echo "Sin cambios."
           else
