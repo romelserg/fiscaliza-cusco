@@ -87,12 +87,13 @@ p { margin: 0; }
 #redes { --pallay: var(--p-tawa); } #escribele { --pallay: var(--p-chaska); }
 
 /* menú fijo, resumen y elige */
-.menu-sec { position: sticky; top: 0; z-index: 8; display: flex; gap: 4px 22px; overflow-x: auto; white-space: nowrap; scrollbar-width: none;
-  background: var(--paper); border-bottom: 2px solid var(--ink); padding: 10px 2px; margin-top: -40px; font: 600 0.92rem var(--body); }
+.menu-caja { position: sticky; top: 0; z-index: 8; background: var(--paper); border-bottom: 2px solid var(--ink); margin-top: -40px; }
+.menu-sec { display: flex; gap: 4px 22px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; padding: 10px 2px; font: 600 0.92rem var(--body); }
 .menu-sec::-webkit-scrollbar { display: none; }
 .menu-sec a { text-decoration: none; color: var(--ink-2); }
 .menu-sec a:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--t-qolle); text-decoration-thickness: 3px; }
-.sec { scroll-margin-top: 56px; }
+.sec { scroll-margin-top: 64px; }
+[hidden] { display: none !important; }
 .elige { display: grid; gap: 10px; margin-top: -30px; }
 .elige-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 @media (max-width: 600px) { .elige-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -147,18 +148,6 @@ a.pb-fila:hover { background: var(--paper-2); }
 .rc-barra i { display: block; height: 100%; min-width: 3px; }
 .rc-barra i:first-child { border-radius: 3px 0 0 3px; } .rc-barra i:last-child { border-radius: 0 3px 3px 0; }
 @media (max-width: 760px) { .rc-fila { grid-template-columns: 1fr; } }
-/* En el celular las tablas anchas se leen como tarjetas */
-@media (max-width: 700px) {
-  table.matriz thead { display: none; }
-  table.matriz, table.matriz tbody, table.matriz tr { display: block; width: 100%; }
-  table.matriz tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
-  table.matriz td { display: block; border: 0; padding: 6px; }
-  table.matriz td:first-child, table.matriz td:last-child, table.matriz td:nth-child(2) { grid-column: 1 / -1; }
-  table.matriz td[data-b]::before { content: attr(data-b); display: block; font: 600 0.7rem var(--acta); }
-  table.matriz td.c.num { text-align: left; }
-  .chips button, .filtros-red button { padding: 9px 12px; font-size: 0.9rem; }
-}
-
 /* escríbele */
 .contactos { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0 28px; }
 .contacto { display: grid; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--rule); align-content: start; }
@@ -424,6 +413,7 @@ td { padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: to
 td.c, th.c { text-align: center; }
 td.when { font: 0.8rem/1.4 var(--acta); color: var(--ink-2); white-space: nowrap; }
 td.asunto { min-width: 260px; max-width: 560px; }
+td.asunto details > summary { font: inherit; text-decoration: none; }
 tr.split td:first-child { box-shadow: inset 3px 0 0 var(--abst); }
 .voto { font: 700 0.8rem/1 var(--acta); white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
 .voto::before { content: ""; width: 10px; height: 10px; border-radius: 2px; background: var(--c, var(--vacio)); }
@@ -469,6 +459,110 @@ footer .que-es { color: var(--ink); font-size: 1rem; max-width: 70ch; }
 .firma a { font-weight: 700; }
 footer ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; max-width: 78ch; }
 @media (prefers-reduced-motion: no-preference) { .fila { transition: background .15s; } }
+/* ---------- Celular ---------- */
+.solo-movil { display: none; }
+.pbm { display: none; }
+.menu-sec a[aria-current="true"] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--t-qolle); text-decoration-thickness: 3px; text-underline-offset: 5px; }
+#arriba { position: fixed; right: 14px; bottom: 18px; z-index: 9; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--ink);
+  background: var(--paper); color: var(--ink); font: 700 1.3rem/1 var(--body); cursor: pointer; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18); }
+.volver-fin { justify-self: start; }
+.red-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 4px 24px; margin: 0; padding: 0; list-style: none; }
+.red-lista > div { padding: 6px 0; border-bottom: 1px solid var(--rule); font-size: 0.92rem; }
+.red-lista-cab { font-weight: 600; margin-top: 4px; }
+/* ¿De qué lado votan?, versión de celular */
+.lm-ejes { display: flex; justify-content: space-between; gap: 12px; font-size: 0.84rem; font-weight: 600; }
+.lm-fila { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.lm-cab b { font: 700 1.1rem var(--titulo); }
+.lm-pista { position: relative; height: 28px; margin: 6px 12px; background: linear-gradient(var(--rule), var(--rule)) center / 100% 2px no-repeat; }
+.lm-mitad { position: absolute; left: 50%; top: 3px; bottom: 3px; border-left: 1.5px dashed var(--ink-2); }
+.lm-banc { position: absolute; top: 6px; bottom: 6px; width: 4px; margin-left: -2px; border-radius: 2px; background: var(--ink-2); }
+.lm-yo { position: absolute; top: 1px; width: 26px; height: 26px; margin-left: -13px; overflow: visible; }
+.lm-yo * { stroke: var(--ink); stroke-width: 1.6; }
+.lm-txt { font-size: 0.88rem; color: var(--ink-2); }
+@media (max-width: 700px) {
+  .solo-movil { display: revert; }
+  .solo-ancho { display: none !important; }
+  body { font-size: 16px; }
+  .wrap { gap: 44px; padding-inline: 16px; }
+
+  /* portada: primero la frase y los seis; el hemiciclo después */
+  .portada { display: contents; }
+  .portada-txt { order: -3; }
+  .elige { order: -2; margin-top: -16px; }
+  .hemiciclo { order: -1; }
+  .hemiciclo svg { max-width: 360px; margin: 0 auto; }
+  .hemiciclo svg text { display: none; }
+
+  /* letra mínima de 13 px; fechas y cifras en letra normal */
+  .etq, .sec-head .folio, th, .pill, .tema-tag, .rk .cero, .elige-grid small, .hemi-nota, .hemiciclo figcaption, .legend, .leyenda-banc,
+  .leyenda-comp, .small, .pb-sub, .rc-fila .sub, .contacto .sub, .stack-lab, .ese-dia, td.when, .item .exp, .comp-fila .d, .portada-meta,
+  .res-item .meta, .plegable-sub, .volver { font-size: 0.84rem; }
+  .item .exp, td.when, .stack-lab, .comp-fila .d, .portada-meta, .res-item .meta, .pill, .tema-tag, .ese-dia, .volver,
+  .filtros button, .filtros-red button, .hbar .v, .rk .n, .rk .cero { font-family: var(--body); }
+
+  /* botones de al menos 44 px */
+  .chips button, .filtros button, .filtros-red button, .ver-mas, .redactar, .boton, .redactor button, .barra-busqueda button { min-height: 44px; padding: 10px 14px; font-size: 0.92rem; }
+  .boton { display: inline-flex; align-items: center; }
+  .tema-tag { min-height: 34px; padding: 8px 10px; }
+  .rk { min-height: 40px; }
+  .rk.rk-cero { display: none; }
+  .redactor input, .redactor select, .redactor textarea, .buscador input[type=search] { font-size: 16px; min-height: 44px; }
+  .volver { display: inline-block; padding: 10px 0; }
+
+  /* menú fijo: se ve que continúa hacia la derecha */
+  .menu-sec { padding-block: 0; -webkit-mask-image: linear-gradient(90deg, #000 82%, transparent); mask-image: linear-gradient(90deg, #000 82%, transparent); }
+  .menu-sec a { padding: 13px 0; }
+  .menu-sec::after { content: ""; flex: 0 0 40px; }
+
+  /* filas de botones que se deslizan de lado en vez de apilarse */
+  .chips.desliza, .filtros-red { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 16px, #000 85%, transparent); mask-image: linear-gradient(90deg, transparent, #000 16px, #000 85%, transparent); }
+  .chips.desliza::-webkit-scrollbar, .filtros-red::-webkit-scrollbar { display: none; }
+  .chips.desliza::after, .filtros-red::after { content: ""; flex: 0 0 32px; }
+  .chips.desliza button, .filtros-red button { flex: none; }
+
+  /* votaciones como tarjetas: fecha y voto arriba, asunto debajo */
+  table.votos-t thead { display: none; }
+  table.votos-t, table.votos-t tbody { display: block; }
+  table.votos-t tr { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 8px 12px; align-items: start; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  table.votos-t td { display: block; border: 0; padding: 0; min-width: 0; max-width: none; }
+  table.votos-t td.when { grid-row: 1; grid-column: 1; white-space: normal; }
+  table.votos-t td.c { grid-row: 1; text-align: right; }
+  table.votos-t td.asunto { grid-row: 2; grid-column: 1 / -1; }
+  table.votos-t td.quien { grid-row: 3; grid-column: 1 / -1; }
+  table.votos-t td[data-b]::before { content: attr(data-b); display: block; font-size: 0.78rem; color: var(--ink-2); margin-bottom: 3px; }
+  table.votos-t .voto { font: 700 0.95rem var(--body); padding: 5px 8px; border: 1.5px solid var(--c, var(--vacio)); border-radius: 3px; }
+  table.votos-t tr.split td:first-child { box-shadow: none; }
+  table.votos-t tr.split { box-shadow: inset 3px 0 0 var(--abst); padding-left: 10px; }
+
+  /* ¿Con quién vota cada uno?: una sola tabla de colores */
+  table.matriz { table-layout: fixed; font-size: 0.84rem; }
+  table.matriz th, table.matriz td { padding: 8px 2px; }
+  table.matriz th:first-child, table.matriz td:first-child { width: 6.4rem; padding-left: 0; }
+  table.matriz th svg { display: block; margin: 0 auto 3px !important; }
+  table.matriz .col-leal, table.matriz .col-iden { display: none; }
+  table.matriz td.celda { min-width: 0; font-size: 0.8rem; vertical-align: middle; }
+
+  /* padrón por pestañas */
+  .pb { display: none; }
+  .pbm { display: grid; gap: 4px; }
+  .pbm-fila { display: grid; grid-template-columns: 6.4rem minmax(0, 1fr); gap: 10px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; }
+  .pbm-nom { font: 700 1.08rem/1.15 var(--titulo); }
+  .pbm .pb-celda { grid-template-columns: minmax(0, 1fr) 3.2rem; }
+  .pbm .pb-pista { height: 20px; }
+  .pbm .pb-v { font-size: 1.7rem; }
+  .pbm-nota { font-size: 0.88rem; color: var(--ink-2); margin-top: 6px; }
+
+  /* recorrido: cuadros que se pueden tocar */
+  .rc-pz { gap: 4px; }
+  .rc-pz i.pz { width: 22px; height: 22px; }
+
+  /* red de firmas: letras que se leen */
+  .red text { font-size: 30px; stroke-width: 7px; }
+  .red text.grupo-nom { display: none; }
+  .red-senado .red text { font-size: 30px; }
+}
+
 </style>
 
 <div class="cs-barra"><div class="in">
@@ -477,6 +571,7 @@ footer ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; max-width: 7
 </div></div>
 <div class="wrap" id="app"></div>
 <div id="tip" hidden></div>
+<button type="button" id="arriba" aria-label="Volver arriba" hidden>↑</button>
 
 <script>
 const DATOS = /*DATOS*/null;
@@ -485,6 +580,8 @@ const LARGO = { REVISAR: "Lectura por verificar contra el acta (actualización a
   LO: "Licencia oficial", LP: "Licencia personal", LE: "Licencia por enfermedad", LV: "Licencia por viaje",
   SUS: "Suspendido", PRE: "Presente", "***": "Presidía la sesión" };
 const COLOR = { SI: "var(--si)", NO: "var(--no)", ABST: "var(--abst)" };
+// Voto para mostrar: corto en la tabla de escritorio, en palabras en la tarjeta del celular
+const votoTxt = v => `<span class="solo-ancho">${esc(ETQ[v] || v)}</span><span class="solo-movil">${esc({ SI: "A favor", NO: "En contra", ABST: "Abstención" }[v] || ETQ[v] || v)}</span>`;
 const CAMARA = { D: "Cámara de Diputados", S: "Senado" };
 const RELACION = { directa: "Relación directa con Cusco", indirecta: "Relación indirecta con Cusco", nacional: "Alcance nacional" };
 const MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "set", "oct", "nov", "dic"];
@@ -584,7 +681,7 @@ function filaVoto(e, ids, marcar) {
   return `<tr class="${marcar && new Set(emit).size > 1 ? "split" : ""}">
     <td class="when">${fecha(e.fecha)}<br>${esc(e.hora || "")}</td>
     <td class="asunto">${asunto(e.asunto)}</td>
-    ${ids.map(i => { const v = e.votos[i]; return `<td class="c"><span class="voto" style="--c:${COLOR[v] || "var(--vacio)"}" title="${esc(LARGO[v] || v)}">${esc(ETQ[v] || v)}</span>${e.sistema && e.sistema[i] ? `<br><span class="muted small">por constancia</span>` : ""}</td>`; }).join("")}
+    ${ids.map(i => { const v = e.votos[i]; return `<td class="c"><span class="voto" data-v="${esc(v)}" style="--c:${COLOR[v] || "var(--vacio)"}" title="${esc(LARGO[v] || v)}">${votoTxt(v)}</span>${e.sistema && e.sistema[i] ? `<br><span class="muted small">por constancia</span>` : ""}</td>`; }).join("")}
     <td class="c"><a class="acta small" href="${esc(e.fuente)}" target="_blank" rel="noopener">acta</a></td></tr>`;
 }
 
@@ -727,7 +824,7 @@ function hemiciclo(cam) {
 const SECCIONES = [["representantes", "Representantes"], ["votos", "Cómo votan"], ["mapa", "Territorio"], ["temas", "Temas"],
   ["habla", "Quién habla"], ["proyectos", "Proyectos"], ["redes", "Con quién trabajan"], ["escribele", "Escríbele"]];
 function menuSecciones() {
-  return `<nav class="menu-sec" aria-label="Secciones de la página">${SECCIONES.map(([id, n]) => `<a href="#${id}" data-ir="${id}">${n}</a>`).join("")}</nav>`;
+  return `<div class="menu-caja"><nav class="menu-sec" aria-label="Secciones de la página">${SECCIONES.map(([id, n]) => `<a href="#${id}" data-ir="${id}">${n}</a>`).join("")}</nav></div>`;
 }
 function glosa(termino, definicion) {
   return `<span class="glosa" tabindex="0" data-tip="${esc(definicion)}">${termino}</span>`;
@@ -753,7 +850,8 @@ function seccionVotos() {
     ${tablaLealtad()}
     ${V.D.lados ? `<h3 class="subtit">¿De qué lado votan?</h3>
     <p class="muted">En las ${V.D.lados.votaciones} votaciones en que Fuerza Popular y Juntos por el Perú votaron distinto: a la izquierda, quienes votaron como Fuerza Popular; a la derecha, como Juntos por el Perú.</p>
-    <div class="red lados">${mapaVotacion("D")}</div>
+    <div class="red lados solo-ancho">${mapaVotacion("D")}</div>
+    ${ladosMovil("D")}
     <p class="muted small">Solo aparecen los diputados que votaron en al menos ${V.D.lados.minimo} de esas votaciones${(() => { const fuera = DATOS.congresistas.filter(c => c.camara === "D" && !V.D.lados.puntos.some(p => String(p.id) === String(c.id))); return fuera.length ? ` (${fuera.map(c => esc(c.corto)).join(", ")} no ${fuera.length === 1 ? "llega" : "llegan"})` : ""; })()}.</p>
     ${listaLados("D")}` : ""}
   </section>`;
@@ -784,7 +882,7 @@ function ficha(c) {
     ${((DATOS.contacto || {})[c.id] || {}).correo ? `<span class="small">Correo institucional: <a class="acta" href="mailto:${esc(DATOS.contacto[c.id].correo)}">${esc(DATOS.contacto[c.id].correo)}</a> · <a href="#escribele" data-ir="escribele">escríbele desde aquí</a></span>` : ""}
   </header>
   ${tocapu()}
-  <p class="resumen-prosa">Desde julio de 2026 estuvo presente en <b>${k.presente} de ${k.pases}</b> pases de lista del Pleno y votó en <b>${k.participo} de ${k.votables}</b> votaciones: ${k.si} a favor, ${k.no} en contra y ${k.abst} abstenciones${k.presidio ? `; en otras ${k.presidio} presidía la sesión y no votaba` : ""}. Es autor principal de <b>${k.autor}</b> ${k.autor === 1 ? "proyecto" : "proyectos"} de ley y firmó otros ${k.coautor} como coautor. En el Diario de Debates figura con <b>${k.habla}</b> ${k.habla === 1 ? "intervención" : "intervenciones"} como orador${DATOS.presidio[c.id] ? ` y ${DATOS.presidio[c.id]} turnos presidiendo la sesión` : ""}.</p>
+  <p class="resumen-prosa">Desde julio de 2026 estuvo presente en <b>${k.presente} de ${k.pases}</b> pases de lista del Pleno y votó en <b>${k.participo} de ${k.votables}</b> votaciones: ${k.si} a favor, ${k.no} en contra y ${k.abst} ${k.abst === 1 ? "abstención" : "abstenciones"}${k.presidio ? `; en otras ${k.presidio} presidía la sesión y no votaba` : ""}. Es autor principal de <b>${k.autor}</b> ${k.autor === 1 ? "proyecto" : "proyectos"} de ley y firmó otros ${k.coautor} como coautor. En el Diario de Debates figura con <b>${k.habla}</b> ${k.habla === 1 ? "intervención" : "intervenciones"} como orador${DATOS.presidio[c.id] ? ` y ${DATOS.presidio[c.id]} turnos presidiendo la sesión` : ""}.</p>
 
   <div class="cifras">
     <div class="cifra"><span class="etq">Récord de asistencia</span>${pases(k, c)}</div>
@@ -798,12 +896,12 @@ function ficha(c) {
   <section class="sec" aria-labelledby="t-dijo">
     ${encabezado("Diario de Debates", "Lo que dijo en el Pleno", "Resumen de cada intervención, con una cita textual y el enlace a la página de la transcripción oficial. Debajo, cómo votó ese mismo día.", "t-dijo")}
     ${(() => { const mias = DATOS.intervenciones.filter(i => i.congresista === c.id).reverse();
-      return mias.length ? `<div class="lista">${mias.map(i => intervencion(i, false, true)).join("")}</div>` : `<p class="muted">No figura con intervenciones como orador en las transcripciones publicadas.</p>`; })()}
+      return mias.length ? plegar(mias.map(i => intervencion(i, false, true))) : `<p class="muted">No figura con intervenciones como orador en las transcripciones publicadas.</p>`; })()}
   </section>
 
   <section class="sec" aria-labelledby="t-propios">
     ${encabezado("Autor principal", "Proyectos que presentó", "Proyectos en los que es el primer firmante. El resumen sale de leer el texto completo.", "t-propios")}
-    ${propios.length ? `<div class="lista">${propios.map(p => proyecto(p, false)).join("")}</div>`
+    ${propios.length ? plegar(propios.map(p => proyecto(p, false)))
       : `<p class="muted">${c.camara === "S" ? "En el Congreso bicameral los proyectos de ley se presentan casi siempre en la Cámara de Diputados; el Senado los revisa. Por eso la labor del senador se ve sobre todo en sus votaciones." : "Todavía no presentó proyectos como autor principal."}</p>`}
     ${coaut.length ? `<details><summary>Ver los ${coaut.length} proyectos que firmó como coautor</summary><div class="lista">${coaut.map(p => `
       <div class="item"><div class="exp"><a href="${esc(p.pdf)}" target="_blank" rel="noopener">${esc(p.numero.split("-")[0])}</a><br>${fecha(p.fecha)}</div>
@@ -817,10 +915,11 @@ function ficha(c) {
     <div class="filtros" role="group" aria-label="Filtrar sus votos">
       ${[["todas", "Todas"], ["NO", "En contra"], ["ABST", "Abstenciones"], ["sin", "No votó"]].map(([f, t], i) =>
         `<button type="button" id="v-${f}" data-v="${f}" aria-pressed="${i === 0}">${t}</button>`).join("")}</div>
-    <div class="scroll"><table><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Voto</th><th class="c">Fuente</th></tr></thead>
+    <div class="scroll"><table class="votos-t"><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Voto</th><th class="c">Fuente</th></tr></thead>
       <tbody id="votos">${vots.map(e => filaVoto(e, [c.id], false)).join("")}</tbody></table></div>
   </section>
   ${seccionEscribele(c.id)}
+  <a class="volver volver-fin" href="#inicio">← Volver a la portada</a>
   ${tocapu()}
   ${pie()}`;
 }
@@ -920,9 +1019,9 @@ function contexto(c) {
         <span class="d">${k.palabras.toLocaleString("es-PE")} palabras · puesto ${k.puesto_palabras || k.miembros} de ${k.miembros} · promedio ${k.promedio_palabras.toLocaleString("es-PE")}</span></div>
     </div>
     ${distintos.length ? `<div class="sec-head" style="border-top-width:1px"><span class="folio">Detalle</span><h2 style="font-size:1.3rem">Cuando votó distinto a su bancada (${distintos.length})</h2><p>Votaciones en que su voto no coincidió con el de la mayoría de su bancada.</p></div>
-      <div class="scroll"><table><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Su voto</th><th class="c">Mayoría de su bancada</th></tr></thead><tbody>
+      <div class="scroll"><table class="votos-t"><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Su voto</th><th class="c">Mayoría de su bancada</th></tr></thead><tbody>
       ${distintos.map(({ d, e }) => `<tr><td class="when">${fecha(d.fecha)}<br>${esc(d.hora)}</td><td class="asunto">${e ? asunto(e.asunto) : ""}</td>
-        <td class="c"><span class="voto" style="--c:${COLOR[d.voto]}">${ETQ[d.voto]}</span></td><td class="c"><span class="voto" style="--c:${COLOR[d.bancada]}">${ETQ[d.bancada]}</span></td></tr>`).join("")}
+        <td class="c" data-b="Su voto"><span class="voto" style="--c:${COLOR[d.voto]}">${votoTxt(d.voto)}</span></td><td class="c" data-b="Su bancada"><span class="voto" style="--c:${COLOR[d.bancada]}">${votoTxt(d.bancada)}</span></td></tr>`).join("")}
       </tbody></table></div>` : `<p class="muted">En las votaciones comparables siempre votó igual que la mayoría de su bancada.</p>`}
   </section>`;
 }
@@ -960,7 +1059,7 @@ function seccionTemas() {
     .filter(([, n]) => n).sort((a, b) => b[1] - a[1]);
   return `<section class="sec" aria-labelledby="t-temas" id="temas">
     ${encabezado("Por tema", "Seguridad, salud, educación…", "Elige un tema para ver qué propusieron, qué dijeron en el Pleno y cómo votaron los cusqueños.", "t-temas")}
-    <div class="chips" role="group" aria-label="Temas">${cuenta.map(([t, n], i) => `<button type="button" id="tema-${t}" data-tema-sel="${t}" aria-pressed="${i === 0}">${esc(nomTema(t))}<b>${n}</b></button>`).join("")}</div>
+    <div class="chips desliza" role="group" aria-label="Temas">${cuenta.map(([t, n], i) => `<button type="button" id="tema-${t}" data-tema-sel="${t}" aria-pressed="${i === 0}">${esc(nomTema(t))}<b>${n}</b></button>`).join("")}</div>
     <div id="tema-detalle">${detalleTema(cuenta[0] ? cuenta[0][0] : null)}</div>
   </section>`;
 }
@@ -970,9 +1069,9 @@ function detalleTema(tema, cid) {
   const dip = DATOS.congresistas;
   return `${propios.length ? `<h3 class="subtit">Proyectos de los cusqueños (${propios.length})</h3>${plegar(propios.map(p => proyecto(p, !cid)))}` : ""}
     ${dichos.length ? `<h3 class="subtit">Lo que dijeron en el Pleno (${dichos.length})</h3>${plegar(dichos.map(i => intervencion(i, !cid, false)))}` : ""}
-    ${votos.length ? `<h3 class="subtit">Votaciones (${votos.length})</h3><div class="scroll"><table><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Votos de Cusco</th><th class="c">Fuente</th></tr></thead><tbody>
+    ${votos.length ? `<h3 class="subtit">Votaciones (${votos.length})</h3><div class="scroll"><table class="votos-t"><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Votos de Cusco</th><th class="c">Fuente</th></tr></thead><tbody>
       ${[...votos].reverse().map((e, k) => `<tr${k >= 5 ? ' class="fila-extra" hidden' : ""}><td class="when">${fecha(e.fecha)}<br>${esc(e.hora || "")}</td><td class="asunto">${asunto(e.asunto)}</td>
-        <td><div class="ese-dia">${dip.filter(c => c.camara === e.camara && (!cid || c.id === cid)).map(c => { const v = e.votos[c.id];
+        <td class="quien"><div class="ese-dia">${dip.filter(c => c.camara === e.camara && (!cid || c.id === cid)).map(c => { const v = e.votos[c.id];
           return `<span class="chip-voto" style="--c:${COLOR[v] || "var(--vacio)"}" data-tip="<b>${esc(c.corto)}</b>: ${esc(LARGO[v] || v)}">${esc(apellido(c))} ${esc(ETQ[v] || v)}</span>`; }).join("")}</div></td>
         <td class="c"><a class="acta small" href="${esc(e.fuente)}" target="_blank" rel="noopener">acta</a></td></tr>`).join("")}</tbody></table></div>
       ${votos.length > 5 ? `<button type="button" class="ver-mas" data-filas-extra="1">Ver ${votos.length - 5} más</button>` : ""}` : ""}
@@ -1018,8 +1117,10 @@ function rankingProv(cid) {
   const cuenta = contarProvincias(cid);
   const filas = Object.entries(cuenta).sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
   const max = Math.max(1, filas[0][1].length);
-  return filas.map(([p, l]) => `<button type="button" class="rk" data-prov="${p}" aria-pressed="${mapaSel === p}"><span class="nom">${nomProv(p)}</span>
-    ${l.length ? `<span class="bar" style="width:${100 * l.length / max}%"></span>` : `<span class="cero">sin menciones</span>`}<span class="n">${l.length}</span></button>`).join("");
+  const ceros = filas.filter(([, l]) => !l.length).map(([p]) => nomProv(p));
+  return filas.map(([p, l]) => `<button type="button" class="rk${l.length ? "" : " rk-cero"}" data-prov="${p}" aria-pressed="${mapaSel === p}"><span class="nom">${nomProv(p)}</span>
+    ${l.length ? `<span class="bar" style="width:${100 * l.length / max}%"></span>` : `<span class="cero">sin menciones</span>`}<span class="n">${l.length}</span></button>`).join("") +
+    (ceros.length ? `<p class="small muted solo-movil">Sin menciones: ${ceros.join(", ")}.</p>` : "");
 }
 function listaProv(cid) {
   if (!mapaSel) return `<p class="muted small">Toca una provincia en el mapa o en la lista para ver cada mención.</p>`;
@@ -1036,7 +1137,7 @@ function seccionMapa(cidFijo) {
   const cid = cidFijo || mapaFiltro;
   return `<section class="sec" aria-labelledby="t-mapa" id="mapa">
     ${encabezado("Territorio", cidFijo ? "Las provincias que menciona" : "Qué provincias reciben atención", `Provincias nombradas en ${cidFijo ? "sus" : "los"} proyectos y ${cidFijo ? "sus" : "las"} intervenciones en el Pleno${cidFijo ? "" : " de los cusqueños"}. Toca una provincia para ver cada mención.`, "t-mapa")}
-    ${cidFijo ? "" : `<div class="chips" role="group" aria-label="Filtrar por congresista"><button type="button" data-mapa-c="" aria-pressed="${!mapaFiltro}">Todos</button>
+    ${cidFijo ? "" : `<div class="chips desliza" role="group" aria-label="Filtrar por congresista"><button type="button" data-mapa-c="" aria-pressed="${!mapaFiltro}">Todos</button>
       ${DATOS.congresistas.map(c => `<button type="button" data-mapa-c="${c.id}" aria-pressed="${mapaFiltro === c.id}">${esc(c.corto)}</button>`).join("")}</div>`}
     <div class="mapa-grid"><div class="mapa">${dibujoMapa(cid)}</div><div class="ranking">${rankingProv(cid)}</div></div>
     <div id="mapa-lista">${listaProv(cid)}</div>
@@ -1253,12 +1354,13 @@ function tablaLealtad() {
       if (v == null) return `<td class="celda muted" data-b="${b}">—</td>`;
       const fondo = `color-mix(in oklab, var(--ink) ${Math.round(Math.max(0, v - 40) * 1.4)}%, var(--paper-2))`, tinta = v >= 75 ? "var(--paper)" : "var(--ink)";
       return `<td class="celda${b === propia ? " propia" : ""}" data-b="${b}" style="background:${fondo};color:${tinta}" data-tip="<b>${esc(c.corto)}</b> votó igual que un diputado de ${BANCADAS[b]} en el ${pct1(v)} de las votaciones, en promedio">${Math.round(v)}%</td>`; }).join("");
-    return `<tr><td><a href="#${c.slug}">${esc(c.corto)}</a><br><span class="muted small">${esc(c.partido)}</span></td>
-      <td class="c num acta" data-b="Votó como su bancada">${pct1(m.lealtad)}<br><span class="muted small">bancada: ${pct1(m.lealtad_mediana_bancada)}</span></td>${celdas}
-      <td class="small" data-b="Votó exactamente igual que…">${Object.keys(m.identicos).length ? Object.entries(m.identicos).map(([b, k]) => `${k} de ${esc(BANCADAS[b] || b)}`).join("<br>") : `<span class="muted">nadie</span>`}</td></tr>`; }).join("");
-  return `<div class="scroll"><table class="matriz"><thead><tr><th>Congresista</th><th class="c">Votó como su bancada</th>
-    ${cols.map(b => `<th class="c" title="${BANCADAS[b]}"><svg viewBox="0 0 16 16" style="width:12px;height:12px;vertical-align:-1px;margin-right:4px">${forma(b, 8, 8, 6.5)}</svg>${b}</th>`).join("")}<th>Votó exactamente igual que…</th></tr></thead><tbody>${filas}</tbody></table></div>
-    <p class="muted small">"Votó como su bancada": porcentaje de votaciones en que votó como la mayoría de sus compañeros; debajo, la mediana de sus compañeros de bancada. Columnas: coincidencia promedio con los diputados de cada bancada; recuadro grueso, la suya. Última columna: cuántos colegas de su cámara votaron igual que él en todas las votaciones que compartieron.</p>
+    return `<tr><td><a href="#${c.slug}"><span class="solo-ancho">${esc(c.corto)}</span><span class="solo-movil">${esc(apellido(c))}</span></a><br><span class="muted small solo-ancho">${esc(c.partido)}</span><span class="small muted solo-movil">${pct1(m.lealtad)} con su bancada</span></td>
+      <td class="c num acta col-leal" data-b="Votó como su bancada">${pct1(m.lealtad)}<br><span class="muted small">bancada: ${pct1(m.lealtad_mediana_bancada)}</span></td>${celdas}
+      <td class="small col-iden" data-b="Votó exactamente igual que…">${Object.keys(m.identicos).length ? Object.entries(m.identicos).map(([b, k]) => `${k} de ${esc(BANCADAS[b] || b)}`).join("<br>") : `<span class="muted">nadie</span>`}</td></tr>`; }).join("");
+  return `<div class="scroll"><table class="matriz"><thead><tr><th>Congresista</th><th class="c col-leal">Votó como su bancada</th>
+    ${cols.map(b => `<th class="c" title="${BANCADAS[b]}"><svg viewBox="0 0 16 16" style="width:12px;height:12px;vertical-align:-1px;margin-right:4px">${forma(b, 8, 8, 6.5)}</svg>${b}</th>`).join("")}<th class="col-iden">Votó exactamente igual que…</th></tr></thead><tbody>${filas}</tbody></table></div>
+    <p class="muted small solo-ancho">"Votó como su bancada": porcentaje de votaciones en que votó como la mayoría de sus compañeros; debajo, la mediana de sus compañeros de bancada. Columnas: coincidencia promedio con los diputados de cada bancada; recuadro grueso, la suya. Última columna: cuántos colegas de su cámara votaron igual que él en todas las votaciones que compartieron.</p>
+    <p class="muted small solo-movil">Bajo cada nombre: en qué porcentaje de votaciones votó como la mayoría de su bancada. Cada casilla: cuánto coincide, en promedio, con los diputados de esa bancada; más oscura, más coincidencia. Recuadro grueso: su propia bancada.</p>
     ${(() => { const fuera = DATOS.congresistas.filter(c => !(V[c.camara]?.metricas?.[c.id])); return fuera.length ? `<p class="muted small">${fuera.map(c => esc(c.corto)).join(", ")} no ${fuera.length === 1 ? "aparece" : "aparecen"}: votó en menos de 8 de las votaciones validadas.</p>` : ""; })()}`;
 }
 
@@ -1303,6 +1405,19 @@ function mapaVotacion(cam) {
   etiquetas.forEach(e => { const ancho = e.t.length * 7.2; const tx = Math.min(Math.max(e.x, x0 + ancho / 2), x1 - ancho / 2);
     s += `<text class="cus-nom" x="${tx}" y="${e.y}" text-anchor="middle">${esc(e.t)}</text>`; });
   return s + "</svg>";
+}
+// Versión de celular: una fila por cusqueño, de Fuerza Popular (izquierda) a Juntos por el Perú (derecha)
+function ladosMovil(cam) {
+  const L = DATOS.redes.votacion && DATOS.redes.votacion[cam] && DATOS.redes.votacion[cam].lados; if (!L || !L.puntos.length) return "";
+  const media = b => { const ps = L.puntos.filter(p => p.bancada === b); return ps.reduce((s, p) => s + p.x, 0) / (ps.length || 1); };
+  const cus = L.puntos.filter(p => p.cusco).sort((a, b) => b.x - a.x);
+  return `<div class="lm solo-movil"><div class="lm-ejes"><span>← ${esc(BANCADAS[L.a])}</span><span style="text-align:right">${esc(BANCADAS[L.b])} →</span></div>
+    ${cus.map(p => { const c = DATOS.congresistas.find(x => String(x.id) === String(p.id)), tot = p.como_a + p.como_b;
+      return `<div class="lm-fila"><div class="lm-cab"><b>${esc(c ? apellido(c) : p.nombre)}</b> <span class="muted small">${esc(BANCADAS[p.bancada] || "")}</span></div>
+        <div class="lm-pista"><span class="lm-mitad"></span><i class="lm-banc" style="left:${(100 * media(p.bancada)).toFixed(1)}%"></i>
+          <svg class="lm-yo" style="left:${(100 * p.x).toFixed(1)}%" viewBox="0 0 26 26" aria-hidden="true">${forma(p.bancada, 13, 13, 10)}</svg></div>
+        <p class="lm-txt">Votó como ${esc(BANCADAS[L.b])} en ${p.como_b} de ${tot}${p.como_a ? `, y como ${esc(BANCADAS[L.a])} en ${p.como_a}` : ""}.</p></div>`; }).join("")}
+    <p class="muted small">Figura: cada cusqueño. Raya gris: el promedio de su bancada. Línea punteada: mitad y mitad.</p></div>`;
 }
 function listaLados(cam) {
   const L = DATOS.redes.votacion && DATOS.redes.votacion[cam] && DATOS.redes.votacion[cam].lados; if (!L) return "";
@@ -1386,6 +1501,7 @@ function seccionRedes() {
       <button type="button" aria-pressed="true" data-foco="">Toda la cámara</button>${dip.map(c => `<button type="button" aria-pressed="false" data-foco="${c.id}">${esc(apellido(c))}</button>`).join("")}</div>
     ${leyendaBancadas()}
     <div class="red" id="red-D">${redCamara("D")}</div>
+    <div id="lista-red-D" aria-live="polite"></div>
     ${S ? `<div class="red-senado"><div class="red" id="red-S">${redCamara("S")}</div>
       <p class="muted small"><b>Senado.</b> ${S.nodos.length} senadores con proyectos. ${sen.map(c => { const m = S.metricas[c.id]; return m ? `${esc(c.corto)} firmó con ${m.coautores} colegas (puesto ${m.puesto_coautores} de ${S.nodos.length}), ${m.fuera_de_bancada ? `${pct1(m.fuera_de_bancada)} fuera de su bancada` : "todos de su bancada"}, y no ha presentado proyectos como autor principal.`.replace(/, y no ha presentado proyectos como autor principal\./, m.proyectos_propios ? `, y es autor principal de ${m.proyectos_propios}.` : ", y no ha presentado proyectos como autor principal.") : ""; }).join(" ")}</p></div>` : ""}
 
@@ -1437,7 +1553,12 @@ function padronBarras() {
       ${col.clave === "habla" && f.palabras ? `<span class="pb-sub">${f.palabras.toLocaleString("es-PE")} palabras · puesto ${f.puesto} de ${f.miembros}</span>` : ""}
     </div>`;
   };
-  return `<div class="pb" role="table" aria-label="Proyectos propios, coautorías e intervenciones de cada congresista">
+  // En el celular: una pestaña por indicador, con los seis en un mismo gráfico
+  const movil = `<div class="pbm"><div class="chips desliza" role="group" aria-label="Elegir indicador">${cols.map((col, k) =>
+      `<button type="button" data-pbm="${k}" aria-pressed="${k === 0}">${col.titulo}</button>`).join("")}</div>
+    ${cols.map((col, k) => `<div class="pbm-panel" data-panel="${k}"${k ? " hidden" : ""}><p class="pbm-nota">${col.titulo}: ${col.nota}${col.med ? ". La marca vertical es " + (col.clave === "asis" ? "el promedio" : "la mediana") + " de su cámara" : ""}.</p>
+      ${filas.map(f => `<a class="pbm-fila" href="#${f.c.slug}"><span><span class="pbm-nom">${esc(apellido(f.c))}</span><span class="pb-sub"><svg class="pb-forma" viewBox="0 0 16 16" aria-hidden="true">${forma(f.b, 8, 8, 6.5)}</svg>${f.c.camara === "S" ? "Senado" : esc(f.b)}</span></span>${barra(f, col)}</a>`).join("")}</div>`).join("")}</div>`;
+  return `${movil}<div class="pb" role="table" aria-label="Proyectos propios, coautorías e intervenciones de cada congresista">
     <div class="pb-fila pb-cab" role="row"><span role="columnheader"></span>${cols.map(col => `<span role="columnheader"><b>${col.titulo}</b><br><span class="muted">${col.nota}</span></span>`).join("")}</div>
     ${filas.map(f => `<a class="pb-fila" role="row" href="#${f.c.slug}">
       <span role="cell"><span class="pb-nom">${esc(f.c.corto)}</span><span class="pb-sub"><svg class="pb-forma" viewBox="0 0 16 16" aria-hidden="true">${forma(f.b, 8, 8, 6.5)}</svg>${esc(f.c.partido)} · ${f.c.camara === "S" ? "Senado" : "Diputados"}</span></span>
@@ -1480,7 +1601,7 @@ function seccionRecorrido(soloId) {
   const leyes = D.por_etapa[4] + S.por_etapa[4];
   if (soloId === "cuerpo") return { filas, leyes };
   return `<section class="sec" aria-labelledby="t-recorrido${soloId ? "-f" : ""}">
-    ${encabezado("Proyectos de ley", "¿Hasta dónde llegan?", `Cada cuadro es un proyecto en el que ${soloId ? "es" : "cada uno es"} autor principal, según la etapa a la que llegó. Arriba, como referencia, todos los proyectos de ${soloId ? "su cámara" : "cada cámara"}: en lo que va del período, ${pct1(100 * D.dictamen_o_mas / (D.total || 1))} de los proyectos de diputados tiene dictamen o más${leyes ? ` y ${leyes} ya son ley` : " y ninguno es ley todavía"}. Pasa el cursor por un cuadro para ver el proyecto.`, "t-recorrido" + (soloId ? "-f" : ""))}
+    ${encabezado("Proyectos de ley", "¿Hasta dónde llegan?", `Cada cuadro es un proyecto en el que ${soloId ? "es" : "cada uno es"} autor principal, según la etapa a la que llegó. Arriba, como referencia, todos los proyectos de ${soloId ? "su cámara" : "cada cámara"}: en lo que va del período, ${pct1(100 * D.dictamen_o_mas / (D.total || 1))} de los proyectos de diputados tiene dictamen o más${leyes ? ` y ${leyes} ya son ley` : " y ninguno es ley todavía"}. Toca un cuadro (o pasa el cursor) para ver el proyecto.`, "t-recorrido" + (soloId ? "-f" : ""))}
     ${leyendaEtapas()}
     <div class="recorrido">${filas}</div>
   </section>`;
@@ -1490,7 +1611,7 @@ function recorridoCuerpo() {
   const R = DATOS.recorrido; if (!R) return "";
   const { filas } = seccionRecorrido("cuerpo");
   return `<h3 class="subtit">¿Hasta dónde llegan?</h3>
-    <p class="muted">Cada cuadro es un proyecto propio, según la etapa a la que llegó; arriba, como referencia, todos los de su cámara. Pasa el cursor por un cuadro para ver cuál es.</p>
+    <p class="muted">Cada cuadro es un proyecto propio, según la etapa a la que llegó; arriba, como referencia, todos los de su cámara. Toca un cuadro (o pasa el cursor) para ver cuál es.</p>
     ${leyendaEtapas()}<div class="recorrido">${filas}</div>`;
 }
 
@@ -1557,6 +1678,9 @@ function actualizarMensaje(regenerar) {
   const enlace = g("m-abrir");
   enlace.href = `mailto:${correo}?subject=${encodeURIComponent(g("m-asunto").value)}&body=${encodeURIComponent(g("m-cuerpo").value.replace(/\n/g, "\r\n"))}`;
   enlace.toggleAttribute("aria-disabled", !correo);
+  const k = ((DATOS.contacto || {})[c && c.id]) || {}, info = g("m-info");
+  if (info) info.innerHTML = c ? [correo ? `<a class="acta" href="mailto:${esc(correo)}">${esc(correo)}</a>` : "Correo no publicado",
+    k.votos_obtenidos ? `${k.votos_obtenidos.toLocaleString("es-PE")} votos en la elección de 2026` : "", k.ficha ? `<a href="${esc(k.ficha)}" target="_blank" rel="noopener">ficha oficial</a>` : ""].filter(Boolean).join("<br>") : "";
   g("m-dest").textContent = correo ? `Se abrirá tu propio correo, dirigido a ${correo}.` : "Este congresista no tiene un correo publicado.";
 }
 function seccionEscribele(soloId) {
@@ -1564,7 +1688,7 @@ function seccionEscribele(soloId) {
   const inicial = soloId || DATOS.congresistas[0].id;
   return `<section class="sec" aria-labelledby="t-escribe${soloId ? "-f" : ""}" id="escribele">
     ${encabezado("Participa", soloId ? "Escríbele" : "Escríbele a tu congresista", "Su correo institucional es público. Arma tu mensaje aquí: se abre en tu propio correo para que lo revises y lo envíes tú. Esta página no guarda ni envía nada.", "t-escribe" + (soloId ? "-f" : ""))}
-    ${soloId ? "" : `<div class="contactos">${lista.map(tarjetaContacto).join("")}</div>`}
+    ${soloId ? "" : `<div class="contactos solo-ancho">${lista.map(tarjetaContacto).join("")}</div>`}
     <form class="redactor" id="redactor" onsubmit="return false">
       <div class="r-campos">
         <label>Para<select id="m-para">${DATOS.congresistas.map(c => `<option value="${c.id}"${c.id === inicial ? " selected" : ""}>${esc(c.corto)}</option>`).join("")}</select></label>
@@ -1573,6 +1697,7 @@ function seccionEscribele(soloId) {
         <label>Tu nombre <span class="muted">(opcional)</span><input id="m-nombre" type="text" autocomplete="name" value="${esc(recuerda("nombre"))}"></label>
         <label>Tu provincia <span class="muted">(opcional)</span><select id="m-prov"><option value="">—</option>${PROVINCIAS_CUSCO.map(p => `<option${recuerda("prov") === p ? " selected" : ""}>${p}</option>`).join("")}</select></label>
       </div>
+      <p class="small solo-movil" id="m-info"></p>
       <label class="r-ancho">Asunto<input id="m-asunto" type="text"></label>
       <label class="r-ancho">Mensaje<textarea id="m-cuerpo" rows="11"></textarea></label>
       <div class="r-acciones"><a class="boton" id="m-abrir" href="#">Abrir en mi correo</a><button type="button" id="m-copiar">Copiar el mensaje</button><span class="small muted" id="m-dest" aria-live="polite"></span></div>
@@ -1650,8 +1775,8 @@ function mostrar(id = location.hash.slice(1)) {
   N_PLEGADO = 0;
   document.getElementById("app").innerHTML = c ? ficha(c) : id === "como-se-hizo" ? metodologia() : inicio();
   if (c) filtrar(".filtros", "#votos", (d, tr) => {
-    const v = tr.querySelector(".voto").textContent;
-    return d.v === "todas" || (d.v === "NO" && v === "NO") || (d.v === "ABST" && v === "Abst.") || (d.v === "sin" && !["SI", "NO", "Abst.", "Presidía"].includes(v));
+    const v = tr.querySelector(".voto").dataset.v;
+    return d.v === "todas" || (d.v === "NO" && v === "NO") || (d.v === "ABST" && v === "ABST") || (d.v === "sin" && !["SI", "NO", "ABST", "***"].includes(v));
   });
   else filtrar(".filtros", "#acta", (d, tr) => d.f === "todas" || tr.classList.contains("split"));
   actualizarMensaje(true);
@@ -1704,12 +1829,23 @@ document.addEventListener("click", ev => {
     b.textContent = ocultas ? "Ver menos" : `Ver ${filas.length} más`;
   }
 });
+// Al enfocar a un cusqueño, sus vínculos también como lista (en el celular la red se ve pequeña)
+function listaVinculos(red, id) {
+  const caja = document.getElementById("lista-" + red.id); if (!caja) return;
+  const R = DATOS.redes.coautoria[red.id.slice(-1)], c = DATOS.congresistas.find(x => x.id === id);
+  if (!id || !R || !c) { caja.innerHTML = ""; return; }
+  const nodo = Object.fromEntries(R.nodos.map(n => [n.id, n]));
+  const socios = R.aristas.filter(a => a.a === id || a.b === id).map(a => ({ n: nodo[a.a === id ? a.b : a.a], peso: a.peso })).sort((x, y) => y.peso - x.peso);
+  caja.innerHTML = `<p class="red-lista-cab">${esc(c.corto)} firmó con ${socios.length} ${socios.length === 1 ? "colega" : "colegas"}:</p>` +
+    plegar(socios.map(s => `<div><b>${esc(String(s.n.nombre).toLowerCase().replace(/(^|[\s-])\S/g, x => x.toUpperCase()))}</b> <span class="muted small">${esc(BANCADAS[s.n.bancada] || "")}, ${s.peso} ${s.peso === 1 ? "proyecto" : "proyectos"}</span></div>`), 8, "red-lista");
+}
 function enfocarRed(red, id) {
   red.querySelectorAll(".on").forEach(x => x.classList.remove("on"));
   const grupo = document.querySelector(`[data-red="${red.id}"]`);
   if (grupo) grupo.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.foco === (id || "")));
-  if (!id || red.dataset.foco === id) { red.classList.remove("foco"); red.dataset.foco = ""; if (grupo) grupo.querySelector('[data-foco=""]').setAttribute("aria-pressed", "true"); return; }
+  if (!id || red.dataset.foco === id) { red.classList.remove("foco"); red.dataset.foco = ""; listaVinculos(red, ""); if (grupo) grupo.querySelector('[data-foco=""]').setAttribute("aria-pressed", "true"); return; }
   red.dataset.foco = id; red.classList.add("foco");
+  listaVinculos(red, id);
   const vec = new Set([id]);
   red.querySelectorAll(".arista").forEach(a => { if (a.dataset.a === id || a.dataset.b === id) { a.classList.add("on"); vec.add(a.dataset.a); vec.add(a.dataset.b); } });
   red.querySelectorAll(".nodo, text").forEach(x => { if (vec.has(x.dataset.n)) x.classList.add("on"); });
@@ -1733,6 +1869,7 @@ function redibujarMapa() {
 // Tooltip compartido para cuadros del tejido, barras y pases de lista.
 const tip = document.getElementById("tip");
 document.addEventListener("pointermove", ev => {
+  if (ev.pointerType !== "mouse") return;
   const t = ev.target.closest && ev.target.closest("[data-tip]");
   if (!t) { tip.hidden = true; return; }
   tip.innerHTML = t.getAttribute("data-tip");
@@ -1740,6 +1877,44 @@ document.addEventListener("pointermove", ev => {
   const w = tip.offsetWidth, h = tip.offsetHeight;
   tip.style.left = Math.min(ev.clientX + 14, innerWidth - w - 8) + "px";
   tip.style.top = (ev.clientY + 16 + h > innerHeight ? ev.clientY - h - 12 : ev.clientY + 16) + "px";
+});
+let toque = false, tipFijo = null;
+document.addEventListener("pointerdown", ev => { toque = ev.pointerType !== "mouse"; }, true);
+document.addEventListener("click", ev => {
+  if (!toque && !matchMedia("(hover: none)").matches) return;
+  const t = ev.target.closest && ev.target.closest("[data-tip]");
+  if (!t || t === tipFijo || t.closest("a[href]")) { tip.hidden = true; tipFijo = null; return; }
+  tip.innerHTML = t.getAttribute("data-tip"); tip.hidden = false; tipFijo = t;
+  const r = t.getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight;
+  tip.style.left = Math.min(Math.max(8, r.left + r.width / 2 - w / 2), innerWidth - w - 8) + "px";
+  tip.style.top = (r.top - h - 10 > 8 ? r.top - h - 10 : r.bottom + 10) + "px";
+});
+// Al desplazarse: se oculta el globo, aparece "volver arriba" y el menú marca la sección en pantalla
+let pendiente = false;
+addEventListener("scroll", () => {
+  if (tipFijo) { tip.hidden = true; tipFijo = null; }
+  if (pendiente) return; pendiente = true;
+  requestAnimationFrame(() => {
+    pendiente = false;
+    document.getElementById("arriba").hidden = scrollY < 1200;
+    const menu = document.querySelector(".menu-sec"); if (!menu) return;
+    let actual = null;
+    SECCIONES.forEach(([id]) => { const d = document.getElementById(id); if (d && d.getBoundingClientRect().top < 120) actual = id; });
+    if (!actual && menu.querySelector('[aria-current="true"]')) menu.scrollTo({ left: 0, behavior: "smooth" });
+    menu.querySelectorAll("a").forEach(a => {
+      const si = a.dataset.ir === actual;
+      if (si && a.getAttribute("aria-current") !== "true") menu.scrollTo({ left: a.offsetLeft - 16, behavior: "smooth" });
+      si ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current");
+    });
+  });
+}, { passive: true });
+document.getElementById("arriba").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+// Pestañas del padrón en el celular
+document.addEventListener("click", ev => {
+  const b = ev.target.closest("[data-pbm]"); if (!b) return;
+  const caja = b.closest(".pbm");
+  caja.querySelectorAll("[data-pbm]").forEach(x => x.setAttribute("aria-pressed", x === b));
+  caja.querySelectorAll(".pbm-panel").forEach(p => p.hidden = p.dataset.panel !== b.dataset.pbm);
 });
 // Los enlaces internos (#holguin) se resuelven en la página; algunos visores no propagan el cambio de ancla.
 document.addEventListener("click", ev => {
