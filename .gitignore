@@ -1,0 +1,10 @@
+# Descargas y lecturas OCR: pesan mucho y la actualización semanal las guarda en su caché, no en el repositorio
+pdfs/
+votaciones/pdfs/
+votaciones/ocr/
+intervenciones/pdfs/
+agenda/
+datos/cache/
+# Copias locales que genera generar_web.py
+web/index.html
+web/busqueda.json

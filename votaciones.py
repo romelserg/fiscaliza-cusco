@@ -267,6 +267,7 @@ def main():
                       votos={str(k): v for k, v in ev["votos"].items()})
             eventos.append(ev)
 
+    conservar_lo_revisado(eventos)
     eventos.sort(key=lambda e: (e["fecha"] or "", e["camara"], e["hora"] or ""))
     (CARPETA / "eventos.json").write_text(json.dumps(eventos, ensure_ascii=False, indent=1))
     pendientes = [(e["pdf"], e["pagina"], i) for e in eventos for i, v in e["votos"].items() if v == "REVISAR"]
@@ -275,6 +276,28 @@ def main():
     print(f"{len(eventos)} registros (asistencias y votaciones); {len(pendientes)} lecturas por revisar.")
     for p in pendientes:
         print("  REVISAR", *p)
+
+
+def conservar_lo_revisado(eventos):
+    """El OCR no lee igual en todas las máquinas (la actualización semanal corre en una Mac de GitHub):
+    una celda ya verificada no vuelve a "REVISAR", y un registro publicado no desaparece porque el
+    Congreso reemplazó el acta provisional por una final que el OCR lee peor."""
+    anterior_f = CARPETA / "eventos.json"
+    if not anterior_f.exists():
+        return
+    clave = lambda e: (e["camara"], e["fecha"], e["hora"], e["tipo"])
+    anteriores = {clave(e): e for e in json.loads(anterior_f.read_text())}
+    actuales = {clave(e) for e in eventos}
+    for ev in eventos:
+        previo = anteriores.get(clave(ev))
+        if previo:
+            for ident, v in ev["votos"].items():
+                if v == "REVISAR" and previo["votos"].get(ident, "REVISAR") != "REVISAR":
+                    ev["votos"][ident] = previo["votos"][ident]
+    perdidos = [e for k, e in anteriores.items() if k not in actuales]
+    for e in perdidos:
+        print("  Se conserva el registro anterior:", e["camara"], e["fecha"], e["hora"], e["tipo"], e["pdf"])
+    eventos.extend(perdidos)
 
 
 def escribir_reporte(eventos, congresistas):
