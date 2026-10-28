@@ -27,8 +27,10 @@ import pypdf
 BASE = Path(__file__).resolve().parent
 API = "https://api.congreso.gob.pe/spley-portal-service"
 # Actas con texto digital donde figura cada congresista con su bancada
-ACTAS_PADRON = {"D": "votaciones/pdfs/D_ASISTENCIA-PLENO-DIPUTADOS-20261006-vbR.pdf",
-                "S": "votaciones/pdfs/S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf"}
+# Actas de las que se lee la bancada de cada congresista. El Congreso cambia el nombre del archivo cuando
+# reemplaza la versión provisional por la final, así que se buscan por patrón y se prefiere la final.
+ACTAS_PADRON = {"D": "D_ASISTENCIA-PLENO-DIPUTADOS-20261006*.pdf",
+                "S": "S_Asistencias_y_votaciones*sesion_del_7_10_2026*.pdf"}
 CODIGO = {"Ahora Nación": "AN", "Juntos por el Perú": "JP", "Partido del Buen Gobierno": "PBG",
           "Partido Cívico Obras": "PCO", "Fuerza Popular": "FP", "Renovación Popular": "RP"}
 ANCHO, ALTO = 960, 720
@@ -44,8 +46,11 @@ def clave(nombre):
 
 def bancadas():
     salida = {}
-    for camara, ruta in ACTAS_PADRON.items():
-        texto = "\n".join(pg.extract_text(extraction_mode="layout") for pg in pypdf.PdfReader(str(BASE / ruta)).pages[:4])
+    for camara, patron in ACTAS_PADRON.items():
+        actas = sorted((BASE / "votaciones" / "pdfs").glob(patron), key=lambda a: "PROVISIONAL" in a.name)
+        if not actas:
+            raise SystemExit(f"redes.py: no se encontró el acta {patron} en votaciones/pdfs")
+        texto = "\n".join(pg.extract_text(extraction_mode="layout") for pg in pypdf.PdfReader(str(actas[0])).pages[:4])
         # El nombre no cruza columnas: termina en coma o en un hueco de 2+ espacios (apellidos compuestos
         # que no caben en la celda, como "ANDRADE SALGUERO DE", quedan sin coma).
         for b, nombre in re.findall(r"\b(FP|JP|PBG|RP|PCO|AN) +([A-ZÁÉÍÓÚÑÜ\-]+(?: [A-ZÁÉÍÓÚÑÜ\-]+)*)(?=,| {2,}|$)", texto, re.M):
