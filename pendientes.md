@@ -12,8 +12,9 @@ Ninguno.
 
 Los resúmenes van en `datos/resumenes.json`.
 
-## Intervenciones sin resumen (0)
+## Intervenciones sin resumen (2)
 
-Ninguna.
+- [ ] 2026-10-22 · César Holguín · 420 palabras · [transcripción](https://diputados.congreso.gob.pe/wp-content/uploads/2026/10/PLO-2026-10-DIPUTADOS.pdf#page=26)
+- [ ] 2026-10-22 · Analí Márquez · 340 palabras · [transcripción](https://diputados.congreso.gob.pe/wp-content/uploads/2026/10/PLO-2026-10-DIPUTADOS.pdf#page=15)
 
 Los resúmenes van en `intervenciones/resumenes.json`.

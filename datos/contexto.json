@@ -102,10 +102,10 @@
      "bancada": "SI"
     }
    ],
-   "palabras": 281,
-   "puesto_palabras": 82,
-   "promedio_palabras": 740,
-   "oradores": 100,
+   "palabras": 701,
+   "puesto_palabras": 51,
+   "promedio_palabras": 857,
+   "oradores": 104,
    "miembros": 130
   },
   "205": {
@@ -119,10 +119,10 @@
    "comparables": 14,
    "con_su_bancada": 100.0,
    "distinto": [],
-   "palabras": 3135,
+   "palabras": 3475,
    "puesto_palabras": 5,
-   "promedio_palabras": 740,
-   "oradores": 100,
+   "promedio_palabras": 857,
+   "oradores": 104,
    "miembros": 130
   },
   "226": {
@@ -137,9 +137,9 @@
    "con_su_bancada": 100.0,
    "distinto": [],
    "palabras": 374,
-   "puesto_palabras": 71,
-   "promedio_palabras": 740,
-   "oradores": 100,
+   "puesto_palabras": 77,
+   "promedio_palabras": 857,
+   "oradores": 104,
    "miembros": 130
   },
   "175": {
@@ -161,9 +161,9 @@
     }
    ],
    "palabras": 1285,
-   "puesto_palabras": 18,
-   "promedio_palabras": 740,
-   "oradores": 100,
+   "puesto_palabras": 25,
+   "promedio_palabras": 857,
+   "oradores": 104,
    "miembros": 130
   },
   "201": {
@@ -178,9 +178,9 @@
    "con_su_bancada": 100.0,
    "distinto": [],
    "palabras": 983,
-   "puesto_palabras": 36,
-   "promedio_palabras": 740,
-   "oradores": 100,
+   "puesto_palabras": 44,
+   "promedio_palabras": 857,
+   "oradores": 104,
    "miembros": 130
   },
   "305": {

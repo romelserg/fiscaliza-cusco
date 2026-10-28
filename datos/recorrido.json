@@ -9,22 +9,22 @@
  ],
  "camaras": {
   "D": {
-   "total": 451,
+   "total": 472,
    "por_etapa": [
-    34,
-    403,
-    5,
+    23,
+    431,
+    9,
     4,
     0,
     5
    ],
-   "dictamen_o_mas": 9,
+   "dictamen_o_mas": 13,
    "dias_esperando_mediana": 34,
    "firmantes": 134,
    "mediana_propios": 2.0,
-   "mediana_coautor": 14.0,
+   "mediana_coautor": 16.0,
    "max_propios": 23,
-   "max_coautor": 90
+   "max_coautor": 91
   },
   "S": {
    "total": 9,
@@ -37,7 +37,7 @@
     0
    ],
    "dictamen_o_mas": 2,
-   "dias_esperando_mediana": 73,
+   "dias_esperando_mediana": 75,
    "firmantes": 26,
    "mediana_propios": 0.0,
    "mediana_coautor": 1.0,
@@ -49,106 +49,112 @@
   "192": {
    "total": 11,
    "por_etapa": [
-    2,
-    9,
     0,
+    10,
+    1,
     0,
     0,
     0
    ],
-   "dictamen_o_mas": 0,
-   "dias_esperando_mediana": 53,
+   "dictamen_o_mas": 1,
+   "dias_esperando_mediana": 55,
    "coautor": {
-    "total": 67,
+    "total": 68,
     "por_etapa": [
-     3,
-     63,
+     2,
+     65,
      0,
      1,
      0,
      0
     ],
     "dictamen_o_mas": 1,
-    "dias_esperando_mediana": 40
+    "dias_esperando_mediana": 41
    },
-   "avanzados": [],
+   "avanzados": [
+    {
+     "numero": "00004-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32735, CONOCIDA COMO LEY DE IMPUNIDAD MILITAR POLICIAL Y RESTITUYE LA COMPETENCIA DE LA JUSTICIA PENAL ORDINARIA",
+     "estado": "CON DICTAMEN"
+    }
+   ],
    "proyectos": [
+    {
+     "numero": "00004-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32735, CONOCIDA COMO LEY DE IMPUNIDAD MILITAR POLICIAL Y RESTITUYE LA COMPETENCIA DE LA JUSTICIA PENAL ORDINARIA",
+     "estado": "CON DICTAMEN",
+     "etapa": 2,
+     "dias": 84
+    },
     {
      "numero": "00002-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA EL MARCO NORMATIVO CONOCIDO COMO LEYES PRO CRIMEN Y RESTABLECE LAS CAPACIDADES DEL ESTADO PARA LA INVESTIGACIÓN Y PERSECUCIÓN DEL CRIMEN ORGANIZADO, LA CORRUPCIÓN Y LAS GRAVES VIOLACIONES A LOS DERECHOS HUMANOS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 83
-    },
-    {
-     "numero": "00004-2026-2031-CD",
-     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32735, CONOCIDA COMO LEY DE IMPUNIDAD MILITAR POLICIAL Y RESTITUYE LA COMPETENCIA DE LA JUSTICIA PENAL ORDINARIA",
-     "estado": "EN COMISIÓN",
-     "etapa": 1,
-     "dias": 82
+     "dias": 85
     },
     {
      "numero": "00011-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE PROMUEVE LA INOCUIDAD DE LOS ALIMENTOS A FAVOR DE LOS CONSUMIDORES MEDIANTE EL FORTALECIMIENTO DEL SISTEMA DE CONTROL Y VIGILANCIA SANITARIA",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 77
+     "dias": 79
     },
     {
      "numero": "00080-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA DIVERSOS ARTÍCULOS DE LA LEY 32434, LEY QUE PROMUEVE LA TRANSFORMACIÓN PRODUCTIVA, COMPETITIVA Y SOSTENIBLE DEL SECTOR AGRARIO CON PROTECCIÓN SOCIAL HACIA LA AGRICULTURA MODERNA, CON EL FIN DE ELIMINAR LOS PRIVILEGIOS TRIBUTARIOS A LAS GRANDES EMPRESAS Y FORTALECER LA RECAUDACIÓN DEL ESTADO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 66
+     "dias": 68
     },
     {
      "numero": "00082-2026-2031-CD",
      "titulo": "PROPOSICIÓN DE RESOLUCIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 45 DEL REGLAMENTO DE LA CÁMARA DE DIPUTADOS, CON EL FIN DE RESTABLECER LA COMISIÓN DE CULTURA Y PATRIMONIO CULTURAL.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 66
+     "dias": 68
     },
     {
      "numero": "00125-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE PROTEGE LOS DERECHOS DE LOS CONSUMIDORES BANCARIOS Y FINANCIEROS ELIMINANDO LAS COMISIONES POR TRANSFERENCIAS BANCARIAS Y PAGO DE TARJETA DE CRÉDITO ",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 53
+     "dias": 55
     },
     {
      "numero": "00126-2026-2031-CD",
      "titulo": "PROPOSICIÓN  DE RESOLUCIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 25 DE LA RESOLUCIÓN LEGISLATIVA DEL CONGRESO N°005-2025-2026-CR, QUE APRUEBA EL REGLAMENTO DE LA CÁMARA DE DIPUTADOS, A FIN DE FORTALECER LAS GARANTÍAS PARA EL USO DE LAS LENGUAS ORIGINARIAS O INDÍGENAS EN EL EJERCICIO DE LA FUNCIÓN PARLAMENTARIA.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 53
+     "dias": 55
     },
     {
      "numero": "00151-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 30220, PARA FORTALECER LA AUTONOMÍA DE LAS UNIVERSIDADES PÚBLICAS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 49
+     "dias": 51
     },
     {
      "numero": "00612-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32326, LEY QUE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, A FIN DE PERFECCIONAR EL PROCESO DE EXTINCIÓN DE DOMINIO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 7
+     "dias": 9
     },
     {
      "numero": "00640-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1252, DECRETO LEGISLATIVO QUE CREA EL SISTEMA NACIONAL DE PROGRAMACIÓN MULTIANUAL Y GESTIÓN DE INVERSIONES, CON EL FIN DE FORTALECER LA PLANIFICACIÓN DE LAS INVERSIONES EN LAS UNIVERSIDADES PÚBLICAS.",
-     "estado": "PRESENTADO",
-     "etapa": 0,
-     "dias": 5
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 7
     },
     {
      "numero": "00648-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE RESTABLECE EL CONTENIDO ESENCIAL DEL DERECHO CONSTITUCIONAL DE REFERÉNDUM.",
-     "estado": "PRESENTADO",
-     "etapa": 0,
-     "dias": 4
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 6
     }
    ]
   },
@@ -163,19 +169,19 @@
     0
    ],
    "dictamen_o_mas": 0,
-   "dias_esperando_mediana": 28,
+   "dias_esperando_mediana": 30,
    "coautor": {
     "total": 15,
     "por_etapa": [
-     1,
-     13,
      0,
+     13,
+     1,
      1,
      0,
      0
     ],
-    "dictamen_o_mas": 1,
-    "dias_esperando_mediana": 34
+    "dictamen_o_mas": 2,
+    "dias_esperando_mediana": 35
    },
    "avanzados": [],
    "proyectos": [
@@ -184,84 +190,84 @@
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE EXCLUYE A LA GRAN EMPRESA DE LOS BENEFICIOS TRIBUTARIOS DE LA LEY 32434, LEY QUE PROMUEVE LA TRANSFORMACIÓN PRODUCTIVA, COMPETITIVA Y SOSTENIBLE DEL SECTOR AGRARIO CON PROTECCIÓN SOCIAL HACIA LA AGRICULTURA MODERNA.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 67
+     "dias": 69
     },
     {
      "numero": "00100-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1267, LEY DE LA POLICÍA NACIONAL DEL PERÚ, PARA RESTABLECER LA FACULTAD DE REMOCIÓN POR PÉRDIDA DE CONFIANZA DEL COMANDANTE GENERAL.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 56
+     "dias": 58
     },
     {
      "numero": "00180-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE OTORGA PLAZO EXCEPCIONAL PARA LA ADECUACIÓN DE UNIDADES DE GESTIÓN MUNICIPAL (UGM) EN EL MARCO DEL DECRETO LEGISLATIVO 1280.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 46
+     "dias": 48
     },
     {
      "numero": "00181-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 108-A DEL CÓDIGO PENAL PARA FORTALECER LA PROTECCIÓN PENAL DE PERSONAS DEFENSORAS AMBIENTALES, GUARDAPARQUES E INTEGRANTES DE PUEBLOS INDÍGENAS U ORIGINARIOS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 46
+     "dias": 48
     },
     {
      "numero": "00451-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE RECONOCE LA CONDICIÓN DE ELEGIBLES Y ESTABLECE SU REGISTRO PARA LA ASIGNACIÓN PROGRESIVA DE PLAZAS EN EL SEGURO SOCIAL DE SALUD – ESSALUD, EN EL MARCO DEL PROCESO DE PROMOCIÓN INTERNA 2025–2026 DE FORMA EXCEPCIONAL Y POR ÚNICA VEZ.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 28
+     "dias": 30
     },
     {
      "numero": "00452-2026-2031-CD",
      "titulo": "PROPOSICIÓN DE RESOLUCIÓN LEGISLATIVA QUE MODIFICA EL ART 45 DEL REGLAMENTO DE LA CÁMARA DE DIPUTADOS DEL CONGRESO DE LA REPÚBLICA, Y CREA LA COMISIÓN ORDINARIA DE LAS PERSONAS CON DISCAPACIDAD",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 28
+     "dias": 30
     },
     {
      "numero": "00453-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE TIPIFICA EL DELITO DE MANIPULACIÓN COORDINADA E INAUTÉNTICA DEL ECOSISTEMA DIGITAL Y ESTABLECE MEDIDAS DE PROTECCIÓN DE LA SOBERANÍA POPULAR EN PROCESOS ELECTORALES.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 28
+     "dias": 30
     },
     {
      "numero": "00456-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE RECONOCE EL AGUA COMO DERECHO HUMANO FUNDAMENTAL, PROHÍBE SU PRIVATIZACIÓN Y GARANTIZA EL ACCESO UNIVERSAL.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 27
+     "dias": 29
     },
     {
      "numero": "00458-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LOS DECRETOS DE URGENCIA 010-2025 Y 003-2026, A FIN DE EVITAR LA PRIVATIZACIÓN DE PETROPERÚ S.A. Y ESTABLECE MEDIDAS URGENTES PARA SU FORTALECIMIENTO FINANCIERO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 27
+     "dias": 29
     },
     {
      "numero": "00530-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 31873, LEY QUE REGULA LOS PROCESOS DE ASCENSOS DEL PERSONAL DE LA POLICÍA NACIONAL DEL PERÚ Y QUE INCLUYE COMO REQUISITO DE EVALUACIÓN DE CONTROL Y CONFIANZA LA TÉCNICA POLIGRÁFICA PARA EL PROCESO DE ASCENSO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 20
+     "dias": 22
     },
     {
      "numero": "00558-2026-2031-CD",
      "titulo": "PROPOSICIÓN DE RESOLUCIÓN LEGISLATIVA DEL CONGRESO QUE MODIFICA Y DEROGA DIVERSOS ARTÍCULOS DEL REGLAMENTO DEL CONGRESO DE LA REPÚBLICA PARA ADECUAR LA NORMATIVA SOBRE SU ORGANIZACIÓN Y FUNCIONAMIENTO ADMINISTRATIVO A LA INDEPENDENCIA Y AUTONOMÍA DE LAS CÁMARAS LEGISLATIVAS",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 17
+     "dias": 19
     },
     {
      "numero": "00600-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE ESTABLECE EXCEPCIONES A LA PROHIBICIÓN DE DESINTEGRACIÓN O ESCISIÓN DE EMPRESAS PRESTADORAS PÚBLICAS DE ACCIONARIADO MUNICIPAL Y AUTORIZA LA CONSTITUCIÓN DE LA EPS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 7
+     "dias": 9
     }
    ]
   },
@@ -276,19 +282,19 @@
     0
    ],
    "dictamen_o_mas": 1,
-   "dias_esperando_mediana": 21,
+   "dias_esperando_mediana": 23,
    "coautor": {
     "total": 23,
     "por_etapa": [
      0,
-     22,
-     1,
+     21,
+     2,
      0,
      0,
      0
     ],
-    "dictamen_o_mas": 1,
-    "dias_esperando_mediana": 46
+    "dictamen_o_mas": 2,
+    "dias_esperando_mediana": 47
    },
    "avanzados": [
     {
@@ -303,21 +309,21 @@
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE FORTALECE LA PROTECCIÓN DE LA HOJA DE COCA Y SUS USOS CULTURALES TRADICIONALES, Y PROMUEVE LA INVESTIGACIÓN CIENTÍFICA, EL DESARROLLO TECNOLÓGICO Y EL APROVECHAMIENTO LÍCITO.",
      "estado": "CON DICTAMEN",
      "etapa": 2,
-     "dias": 33
+     "dias": 35
     },
     {
      "numero": "00476-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE INCORPORA EL SERVICIO DE ALIMENTACIÓN ESTUDIANTIL PARA LOS ESTUDIANTES DE LOS INSTITUTOS Y ESCUELAS DE EDUCACIÓN SUPERIOR PÚBLICOS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 25
+     "dias": 27
     },
     {
      "numero": "00563-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE ESTABLECE EL MARCO PARA LA ATENCIÓN PREFERENTE Y EL DESARROLLO INTEGRAL DEL VALLE DE LOS RIOS APURIMAC, ENE Y MANTARO - VRAEM",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 17
+     "dias": 19
     }
    ]
   },
@@ -332,19 +338,19 @@
     0
    ],
    "dictamen_o_mas": 0,
-   "dias_esperando_mediana": 68,
+   "dias_esperando_mediana": 70,
    "coautor": {
-    "total": 11,
+    "total": 17,
     "por_etapa": [
-     3,
-     7,
-     0,
+     6,
+     9,
+     1,
      1,
      0,
      0
     ],
-    "dictamen_o_mas": 1,
-    "dias_esperando_mediana": 20
+    "dictamen_o_mas": 2,
+    "dias_esperando_mediana": 6
    },
    "avanzados": [],
    "proyectos": [
@@ -353,26 +359,26 @@
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE AMPLÍA EL PASAJE UNIVERSITARIO URBANO E INTERURBANO A TODOS LOS DÍAS DE LA SEMANA Y PRECISA EL CÁLCULO DEL PASAJE DIFERENCIADO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 68
+     "dias": 70
     }
    ]
   },
   "201": {
    "total": 4,
    "por_etapa": [
-    1,
-    3,
+    0,
+    4,
     0,
     0,
     0,
     0
    ],
    "dictamen_o_mas": 0,
-   "dias_esperando_mediana": 20,
+   "dias_esperando_mediana": 22,
    "coautor": {
-    "total": 17,
+    "total": 18,
     "por_etapa": [
-     0,
+     1,
      17,
      0,
      0,
@@ -380,7 +386,7 @@
      0
     ],
     "dictamen_o_mas": 0,
-    "dias_esperando_mediana": 20
+    "dias_esperando_mediana": 22
    },
    "avanzados": [],
    "proyectos": [
@@ -389,28 +395,28 @@
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 261 Y 264 DEL CODIGO PROCESAL, INCORPORA REGLAS DE MOTIVACION EN DELITOS ESPECIALES, MODIFICA PLAZOS DE LA DETENCION PRELIMINAR",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 75
+     "dias": 77
     },
     {
      "numero": "00517-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 57 DEL CÓDIGO PENAL, SE INCORPORA NUEVAS FIGURAS DELICTIVAS SUSCEPTIBLES DE INAPLICACIÓN DE LA SUSPENSIÓN DE EJECUCIÓN DE LA PENA.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 20
+     "dias": 22
     },
     {
      "numero": "00518-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA EL SEGUNDO PÁRRAFO DEL ARTÍCULO 418 DEL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, SOBRE PREVARICATO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 20
+     "dias": 22
     },
     {
      "numero": "00635-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DECLARA DE INTERÉS NACIONAL Y NECESIDAD PÚBLICA LA PROTECCIÓN, CONSERVACIÓN Y RECUPERACIÓN DEL PINGUINO DE HUMBOLDT (SPHENISCUS HUMBOLDTI) Y DE SU HABITAD EN EL LITORAL PERUANO.",
-     "estado": "PRESENTADO",
-     "etapa": 0,
-     "dias": 5
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 7
     }
    ]
   },
@@ -437,7 +443,7 @@
      0
     ],
     "dictamen_o_mas": 1,
-    "dias_esperando_mediana": 73
+    "dias_esperando_mediana": 75
    },
    "avanzados": [],
    "proyectos": []
