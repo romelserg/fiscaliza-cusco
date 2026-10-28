@@ -8,9 +8,9 @@
    "con_su_bancada": 98.1
   },
   "S": {
-   "pases": 22,
+   "pases": 24,
    "votaciones": 34,
-   "asistencia": 85.2,
+   "asistencia": 85.0,
    "participacion": 87.8,
    "con_su_bancada": 97.2
   }
@@ -41,27 +41,27 @@
    "con_su_bancada": 90.1
   },
   "S-FP": {
-   "asistencia": 87.4,
+   "asistencia": 86.7,
    "con_su_bancada": 99.7
   },
   "S-JP": {
-   "asistencia": 86.4,
+   "asistencia": 84.8,
    "con_su_bancada": 96.3
   },
   "S-RP": {
-   "asistencia": 85.8,
+   "asistencia": 86.5,
    "con_su_bancada": 99.6
   },
   "S-PBG": {
-   "asistencia": 82.5,
+   "asistencia": 82.7,
    "con_su_bancada": 95.2
   },
   "S-PCO": {
-   "asistencia": 88.2,
+   "asistencia": 89.2,
    "con_su_bancada": 94.2
   },
   "S-AN": {
-   "asistencia": 69.3,
+   "asistencia": 71.9,
    "con_su_bancada": 88.5
   }
  },
@@ -72,10 +72,10 @@
    "presente": 29,
    "asistencia": 100.0,
    "votaciones": 15,
-   "participo": 14,
-   "participacion": 93.3,
-   "comparables": 14,
-   "con_su_bancada": 71.4,
+   "participo": 15,
+   "participacion": 100.0,
+   "comparables": 15,
+   "con_su_bancada": 73.3,
    "distinto": [
     {
      "fecha": "2026-10-06",
@@ -102,34 +102,34 @@
      "bancada": "SI"
     }
    ],
-   "palabras": 701,
-   "puesto_palabras": 51,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "palabras": 281,
+   "puesto_palabras": 82,
+   "promedio_palabras": 740,
+   "oradores": 100,
    "miembros": 130
   },
   "205": {
    "bancada": "JP",
    "pases": 29,
-   "presente": 26,
-   "asistencia": 89.7,
+   "presente": 29,
+   "asistencia": 100.0,
    "votaciones": 14,
-   "participo": 13,
-   "participacion": 92.9,
-   "comparables": 13,
+   "participo": 14,
+   "participacion": 100.0,
+   "comparables": 14,
    "con_su_bancada": 100.0,
    "distinto": [],
-   "palabras": 3475,
+   "palabras": 3135,
    "puesto_palabras": 5,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "promedio_palabras": 740,
+   "oradores": 100,
    "miembros": 130
   },
   "226": {
    "bancada": "JP",
    "pases": 29,
-   "presente": 22,
-   "asistencia": 75.9,
+   "presente": 23,
+   "asistencia": 79.3,
    "votaciones": 15,
    "participo": 9,
    "participacion": 60.0,
@@ -137,21 +137,21 @@
    "con_su_bancada": 100.0,
    "distinto": [],
    "palabras": 374,
-   "puesto_palabras": 77,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "puesto_palabras": 71,
+   "promedio_palabras": 740,
+   "oradores": 100,
    "miembros": 130
   },
   "175": {
    "bancada": "PBG",
    "pases": 29,
-   "presente": 23,
-   "asistencia": 79.3,
+   "presente": 27,
+   "asistencia": 93.1,
    "votaciones": 15,
-   "participo": 14,
-   "participacion": 93.3,
-   "comparables": 14,
-   "con_su_bancada": 92.9,
+   "participo": 15,
+   "participacion": 100.0,
+   "comparables": 15,
+   "con_su_bancada": 93.3,
    "distinto": [
     {
      "fecha": "2026-09-10",
@@ -161,16 +161,16 @@
     }
    ],
    "palabras": 1285,
-   "puesto_palabras": 25,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "puesto_palabras": 18,
+   "promedio_palabras": 740,
+   "oradores": 100,
    "miembros": 130
   },
   "201": {
    "bancada": "PCO",
    "pases": 29,
-   "presente": 25,
-   "asistencia": 86.2,
+   "presente": 28,
+   "asistencia": 96.6,
    "votaciones": 15,
    "participo": 15,
    "participacion": 100.0,
@@ -178,21 +178,21 @@
    "con_su_bancada": 100.0,
    "distinto": [],
    "palabras": 983,
-   "puesto_palabras": 44,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "puesto_palabras": 36,
+   "promedio_palabras": 740,
+   "oradores": 100,
    "miembros": 130
   },
   "305": {
    "bancada": "JP",
-   "pases": 22,
-   "presente": 22,
+   "pases": 24,
+   "presente": 24,
    "asistencia": 100.0,
    "votaciones": 34,
-   "participo": 32,
-   "participacion": 94.1,
-   "comparables": 32,
-   "con_su_bancada": 96.9,
+   "participo": 33,
+   "participacion": 97.1,
+   "comparables": 33,
+   "con_su_bancada": 97.0,
    "distinto": [
     {
      "fecha": "2026-09-30",
@@ -209,7 +209,7 @@
   }
  },
  "cobertura": {
-  "validas": 100,
-  "total": 138
+  "validas": 102,
+  "total": 140
  }
 }
