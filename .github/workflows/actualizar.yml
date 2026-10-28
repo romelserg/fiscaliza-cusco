@@ -1,0 +1,75 @@
+# Actualización semanal de Fiscaliza Cusco.
+# Corre en una Mac de GitHub (gratis en repositorios públicos) porque el OCR usa el motor Vision de macOS.
+# Descarga proyectos, actas y Diario de Debates nuevos; regenera la web (docs/) y las piezas para Stories;
+# y deja en un aviso ("issue") lo que necesita revisión humana. También se puede lanzar a mano desde la
+# pestaña Actions → "Actualizar Fiscaliza Cusco" → Run workflow.
+name: Actualizar Fiscaliza Cusco
+
+on:
+  schedule:
+    - cron: "0 13 * * 6"   # sábados, 8:00 de Lima
+  workflow_dispatch:
+
+permissions:
+  contents: write   # publicar los datos y la web actualizados
+  issues: write     # avisar qué quedó pendiente de revisión
+
+concurrency:
+  group: actualizar
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: macos-14
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      # PDFs y lecturas OCR no se guardan en el repositorio (pesan mucho): se reutilizan entre corridas.
+      - name: Recuperar descargas y OCR de la corrida anterior
+        uses: actions/cache@v4
+        with:
+          path: |
+            pdfs
+            votaciones/pdfs
+            votaciones/ocr
+            intervenciones/pdfs
+            agenda
+            datos/cache
+          key: descargas-${{ github.run_id }}
+          restore-keys: descargas-
+
+      - name: Actualizar datos, web y piezas para Stories
+        run: sh actualizar.sh
+
+      - name: Publicar cambios
+        run: |
+          git config user.name "fiscaliza-cusco-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A docs datos texto votaciones intervenciones reporte.md reporte_votaciones.md pendientes.md
+          if git diff --cached --quiet; then
+            echo "Sin cambios."
+          else
+            git commit -m "Actualización automática $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Avisar lo pendiente de revisión
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          titulo="Pendientes de revisión (actualización automática)"
+          numero=$(gh issue list --state open --search "$titulo in:title" --json number --jq '.[0].number')
+          if [ -n "$numero" ]; then
+            gh issue edit "$numero" --body-file pendientes.md
+          else
+            gh issue create --title "$titulo" --body-file pendientes.md
+          fi
