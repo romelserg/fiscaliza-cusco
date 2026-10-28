@@ -6,9 +6,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE RESTABLECE EL CONTENIDO ESENCIAL DEL DERECHO CONSTITUCIONAL DE REFERÉNDUM.",
   "sumilla": "PROPONE RESTABLECER EL CONTENIDO ESENCIAL DEL DERECHO CONSTITUCIONAL DE REFERÉNDUM QUE LE CORRESPONDE A LA CIUDADANÍA PERUANA Y DEROGAR LA LEY 31399.",
   "bancada_autor": "Ahora Nación",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Constitución, Reglamento y Relaciones Exteriores",
+    "detalle": ""
+   },
    {
     "fecha": "2026-10-22",
     "estado": "PRESENTADO",
@@ -76,9 +82,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1252, DECRETO LEGISLATIVO QUE CREA EL SISTEMA NACIONAL DE PROGRAMACIÓN MULTIANUAL Y GESTIÓN DE INVERSIONES, CON EL FIN DE FORTALECER LA PLANIFICACIÓN DE LAS INVERSIONES EN LAS UNIVERSIDADES PÚBLICAS.",
   "sumilla": "PROPONE MODIFICAR EL DECRETO LEGISLATIVO 1252, DECRETO LEGISLATIVO QUE CREA EL SISTEMA NACIONAL DE PROGRAMACIÓN MULTIANUAL Y GESTIÓN DE INVERSIONES, CON EL FIN DE FORTALECER LA PLANIFICACIÓN DE LAS INVERSIONES EN LAS UNIVERSIDADES PÚBLICAS.",
   "bancada_autor": "Ahora Nación",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Economía, Banca, Finanzas e Inteligencia Financiera",
+    "detalle": ""
+   },
    {
     "fecha": "2026-10-21",
     "estado": "PRESENTADO",
@@ -804,6 +816,56 @@
    "192": "Autor principal"
   }
  },
+ "D-677": {
+  "numero": "00677-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-10-27",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 28278, LEY DE RADIO Y TELEVISIÓN, PARA QUE LA SEÑAL PÚBLICA, EDUCATIVA Y DE EMERGENCIA LLEGUE AL PERÚ PROFUNDO MEDIANTE DTH.",
+  "sumilla": "PROPONE MODIFICAR LA LEY 28278, LEY DE RADIO Y TELEVISIÓN, PARA FORTALECER LA RADIODIFUSIÓN PÚBLICA SATELITAL DIRECTA AL HOGAR (DTH).",
+  "bancada_autor": "Ahora Nación",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-10-27",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 28278, LEY DE RADIO Y TELEVISIÓN, PARA QUE LA SEÑAL PÚBLICA, EDUCATIVA Y DE EMERGENCIA LLEGUE AL PERÚ PROFUNDO MEDIANTE DTH."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 203,
+    "nombre": "Manrique Olivera, Bernardino Jair",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 194,
+    "nombre": "Huilca Flores, Indira Isabel",
+    "rol": "Coautor"
+   },
+   {
+    "id": 192,
+    "nombre": "Holguín Loaiza, César Augusto",
+    "rol": "Coautor"
+   },
+   {
+    "id": 168,
+    "nombre": "Colchado Huamani, Harvey Julio",
+    "rol": "Coautor"
+   },
+   {
+    "id": 156,
+    "nombre": "Buitrón Martínez, Freshman",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 415534,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NTM0/pdf",
+  "cusco": {
+   "192": "Coautor"
+  }
+ },
  "D-666": {
   "numero": "00666-2026-2031-CD",
   "camara": "D",
@@ -871,9 +933,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE CREA EL SISTEMA NACIONAL DE CUIDADOS.",
   "sumilla": "PROPONE GARANTIZAR EL CUMPLIMIENTO DEL DERECHO AL CUIDADO Y CREAR EL SISTEMA INTEGRAL DE CUIDADOS.",
   "bancada_autor": "Multipartidario",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Constitución, Reglamento y Relaciones Exteriores",
+    "detalle": ""
+   },
    {
     "fecha": "2026-10-23",
     "estado": "PRESENTADO",
@@ -981,9 +1049,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 5 DEL TEXTO ÚNICO ORDENADO DEL DECRETO LEGISLATIVO 1252, DECRETO LEGISLATIVO QUE CREA EL SISTEMA NACIONAL DE PROGRAMACIÓN MULTIANUAL Y GESTIÓN DE INVERSIONES, PARA INCORPORAR A LAS UNIVERSIDADES PÚBLICAS Y RECONOCERLES LA FACULTAD DE CONTAR CON UNA OFICINA DE PROGRAMACIÓN MULTIANUAL DE INVERSIONES AUTÓNOMA.",
   "sumilla": "PROPONE MODIFICAR EL ARTÍCULO 5 DEL TEXTO ÚNICO ORDENADO DEL DECRETO LEGISLATIVO 1252.",
   "bancada_autor": "Ahora Nación",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Economía, Banca, Finanzas e Inteligencia Financiera",
+    "detalle": ""
+   },
    {
     "fecha": "2026-10-21",
     "estado": "PRESENTADO",
@@ -4577,9 +4651,21 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32645, LEY QUE CREA EL COLEGIO PROFESIONAL DE ARTISTAS DEL PERÚ (CPAP)",
   "sumilla": "PROPONE DEROGAR LA LEY 32645, LEY QUE CREA EL COLEGIO PROFESIONAL DE ARTISTAS DEL PERÚ",
   "bancada_autor": "Multipartidario",
-  "estado": "APROBADO",
+  "estado": "Expediente de propuesta legislativa remitida al senado de la república",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "Expediente de propuesta legislativa remitida al senado de la república",
+    "comisiones": null,
+    "detalle": ""
+   },
+   {
+    "fecha": "2026-10-26",
+    "estado": "PROPUESTA LEGISLATIVA APROBADA",
+    "comisiones": null,
+    "detalle": "OFICIO 045-2026-2027-ADP-P/CD, REMITE, EN TEXTO ADJUNTO, LA PROPUESTA LEGISLATIVA APROBADA EN EL PLENO DE LA CÁMARA DE DIPUTADOS EN SU SESIÓN DEL 22 DE OCTUBRE DE 2026, POR EL CUAL SE PROPONE DEROGAR LA LEY 32645, LEY QUE CREA EL COLEGIO PROFESIONAL DEL ARTISTA DEL PERÚ (CPAP)"
+   },
    {
     "fecha": "2026-10-22",
     "estado": "APROBADO",
@@ -6005,9 +6091,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 29338, LEY DE RECURSOS HÍDRICOS, PARA REGULAR LA MODIFICACIÓN DE LOS DERECHOS DE USO DE AGUA ANTE LA ESCASEZ PERMANENTE DEL RECURSO HÍDRICO PARA USO POBLACIONAL.",
   "sumilla": "PROPONE MODIFICAR LA LEY 29338, LEY DE RECURSOS HÍDRICOS.",
   "bancada_autor": "Juntos por el Perú",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Desarrollo Agrario",
+    "detalle": ""
+   },
    {
     "fecha": "2026-10-21",
     "estado": "PRESENTADO",
@@ -8390,6 +8482,486 @@
    "175": "Autor principal"
   }
  },
+ "D-679": {
+  "numero": "00679-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-10-27",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 200 DEL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, PARA ESTABLECER AGRAVANTES ESPECÍFICAS EN EL DELITO DE EXTORSIÓN VINCULADO AL SERVICIO DE TRANSPORTE PÚBLICO DE PASAJEROS.",
+  "sumilla": "PROPONE MODIFICAR EL ARTÍCULO 200 DEL CÓDIGO PENAL, DECRETO LEGISLATIVO 635.",
+  "bancada_autor": "Partido del Buen Gobierno",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-10-27",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 200 DEL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, PARA ESTABLECER AGRAVANTES ESPECÍFICAS EN EL DELITO DE EXTORSIÓN VINCULADO AL SERVICIO DE TRANSPORTE PÚBLICO DE PASAJEROS."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 186,
+    "nombre": "Gonzales Polar, Édgar Dember",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 231,
+    "nombre": "Prado Vallejos, Lila Marianela",
+    "rol": "Coautor"
+   },
+   {
+    "id": 233,
+    "nombre": "Quispe Candia, Luis Eliseo",
+    "rol": "Coautor"
+   },
+   {
+    "id": 212,
+    "nombre": "Molina Soto, Nathaly Milagros",
+    "rol": "Coautor"
+   },
+   {
+    "id": 175,
+    "nombre": "Espinoza Huillca, Edwin",
+    "rol": "Coautor"
+   },
+   {
+    "id": 174,
+    "nombre": "Duarte Patiño de Pezet, Carmen Georgina",
+    "rol": "Coautor"
+   },
+   {
+    "id": 200,
+    "nombre": "Llaque Linares, Nora María",
+    "rol": "Coautor"
+   },
+   {
+    "id": 160,
+    "nombre": "Castrejon Fernandez, Segundo Juan",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 415541,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NTQx/pdf",
+  "cusco": {
+   "175": "Coautor"
+  }
+ },
+ "D-678": {
+  "numero": "00678-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-10-27",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 31883 PARA AMPLIAR PROGRESIVAMENTE HASTA LOS 26 AÑOS LA VACUNACIÓN CONTRA EL VIRUS DEL PAPILOMA HUMANO Y FORTALECER LA PREVENCIÓN DEL CÁNCER DE CUELLO UTERINO.",
+  "sumilla": "PROPONE MODIFICAR EL TITULO Y LOS ARTÍCULOS 1, 2, 3, 4 Y 5 DE LA LEY 31883, LEY QUE PROMUEVE LA VACUNACIÓN CONTRA EL VIRUS DEL PAPILOMA HUAMANO (VPH) EN LA NIÑEZ Y ADOLESCENCIA; INCORPORAR LOS ARTÍCULOS 6 Y 7; Y MODIFICAR SU DISPOSICIÓN COMPLEMENTARIA FINAL ÚNICA CON LA FINALIDAD DE AMPLIAR PROGRESIVAMENTE HASTA LOS 26 AÑOS DE EDAD LA VACUNACIÓN CONTRA EL VIRUS DEL PAPILOMA HUMANO PARA MUJERES Y VARONES QUE NO HAYAN INICIADO O COMPLEMENTARIO EL ESQUEMA DE VACUNACIÓN.",
+  "bancada_autor": "Partido del Buen Gobierno",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-10-27",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 31883 PARA AMPLIAR PROGRESIVAMENTE HASTA LOS 26 AÑOS LA VACUNACIÓN CONTRA EL VIRUS DEL PAPILOMA HUMANO Y FORTALECER LA PREVENCIÓN DEL CÁNCER DE CUELLO UTERINO."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 193,
+    "nombre": "Huaman Cornejo, Miguel Félix",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 250,
+    "nombre": "Uribe Sáenz, Romina Alejandra",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 174,
+    "nombre": "Duarte Patiño de Pezet, Carmen Georgina",
+    "rol": "Coautor"
+   },
+   {
+    "id": 175,
+    "nombre": "Espinoza Huillca, Edwin",
+    "rol": "Coautor"
+   },
+   {
+    "id": 200,
+    "nombre": "Llaque Linares, Nora María",
+    "rol": "Coautor"
+   },
+   {
+    "id": 190,
+    "nombre": "Hirache Pizarro, Gloria Charito",
+    "rol": "Coautor"
+   },
+   {
+    "id": 212,
+    "nombre": "Molina Soto, Nathaly Milagros",
+    "rol": "Coautor"
+   },
+   {
+    "id": 143,
+    "nombre": "Alayza Maccera, Rossana Herminia",
+    "rol": "Coautor"
+   },
+   {
+    "id": 160,
+    "nombre": "Castrejon Fernandez, Segundo Juan",
+    "rol": "Coautor"
+   },
+   {
+    "id": 186,
+    "nombre": "Gonzales Polar, Édgar Dember",
+    "rol": "Coautor"
+   },
+   {
+    "id": 183,
+    "nombre": "García Huby, Fernando Alberto",
+    "rol": "Coautor"
+   },
+   {
+    "id": 233,
+    "nombre": "Quispe Candia, Luis Eliseo",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 415538,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NTM4/pdf",
+  "cusco": {
+   "175": "Coautor"
+  }
+ },
+ "D-676": {
+  "numero": "00676-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-10-26",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32301 Y RESTITUYE EL MARCO LEGAL ANTERIOR DE LA AGENCIA DE COOPERACIÓN INTERNACIONAL (APCI).",
+  "sumilla": "PROPONE DEROGAR EXPRESAMENTE LA LEY 32301, LEY QUE MODIFICA LA LEY 27692.",
+  "bancada_autor": "Partido del Buen Gobierno",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32301 Y RESTITUYE EL MARCO LEGAL ANTERIOR DE LA AGENCIA DE COOPERACIÓN INTERNACIONAL (APCI)."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 250,
+    "nombre": "Uribe Sáenz, Romina Alejandra",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 183,
+    "nombre": "García Huby, Fernando Alberto",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 174,
+    "nombre": "Duarte Patiño de Pezet, Carmen Georgina",
+    "rol": "Coautor"
+   },
+   {
+    "id": 143,
+    "nombre": "Alayza Maccera, Rossana Herminia",
+    "rol": "Coautor"
+   },
+   {
+    "id": 160,
+    "nombre": "Castrejon Fernandez, Segundo Juan",
+    "rol": "Coautor"
+   },
+   {
+    "id": 212,
+    "nombre": "Molina Soto, Nathaly Milagros",
+    "rol": "Coautor"
+   },
+   {
+    "id": 175,
+    "nombre": "Espinoza Huillca, Edwin",
+    "rol": "Coautor"
+   },
+   {
+    "id": 186,
+    "nombre": "Gonzales Polar, Édgar Dember",
+    "rol": "Coautor"
+   },
+   {
+    "id": 233,
+    "nombre": "Quispe Candia, Luis Eliseo",
+    "rol": "Coautor"
+   },
+   {
+    "id": 190,
+    "nombre": "Hirache Pizarro, Gloria Charito",
+    "rol": "Coautor"
+   },
+   {
+    "id": 200,
+    "nombre": "Llaque Linares, Nora María",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 415513,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NTEz/pdf",
+  "cusco": {
+   "175": "Coautor"
+  }
+ },
+ "D-671": {
+  "numero": "00671-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-10-26",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 27806, LEY DE TRANSPARENCIA Y ACCESO A LA INFORMACIÓN PÚBLICA, PARA ESTABLECER LA PUBLICACIÓN DEL ESTADO DEL EQUIPAMIENTO MÉDICO DE ALTA COMPLEJIDAD TECNOLÓGICA EN LOS PORTALES DE TRANSPARENCIA ESTÁNDAR.",
+  "sumilla": "PROPONE GARANTIZAR EL ACCESO PÚBLICO, OPORTUNO Y TRANSPARENTE A LA INFORMACIÓN SOBRE LA EXISTENCIA, EL ESTADO OPERATIVO Y LA DISPONIBILIDAD DE LOS SERVICIOS ASOCIADOS AL EQUIPAMIENTO MÉDICO.",
+  "bancada_autor": "Partido del Buen Gobierno",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 27806, LEY DE TRANSPARENCIA Y ACCESO A LA INFORMACIÓN PÚBLICA, PARA ESTABLECER LA PUBLICACIÓN DEL ESTADO DEL EQUIPAMIENTO MÉDICO DE ALTA COMPLEJIDAD TECNOLÓGICA EN LOS PORTALES DE TRANSPARENCIA ESTÁNDAR."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 193,
+    "nombre": "Huaman Cornejo, Miguel Félix",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 231,
+    "nombre": "Prado Vallejos, Lila Marianela",
+    "rol": "Coautor"
+   },
+   {
+    "id": 183,
+    "nombre": "García Huby, Fernando Alberto",
+    "rol": "Coautor"
+   },
+   {
+    "id": 143,
+    "nombre": "Alayza Maccera, Rossana Herminia",
+    "rol": "Coautor"
+   },
+   {
+    "id": 190,
+    "nombre": "Hirache Pizarro, Gloria Charito",
+    "rol": "Coautor"
+   },
+   {
+    "id": 174,
+    "nombre": "Duarte Patiño de Pezet, Carmen Georgina",
+    "rol": "Coautor"
+   },
+   {
+    "id": 233,
+    "nombre": "Quispe Candia, Luis Eliseo",
+    "rol": "Coautor"
+   },
+   {
+    "id": 212,
+    "nombre": "Molina Soto, Nathaly Milagros",
+    "rol": "Coautor"
+   },
+   {
+    "id": 160,
+    "nombre": "Castrejon Fernandez, Segundo Juan",
+    "rol": "Coautor"
+   },
+   {
+    "id": 186,
+    "nombre": "Gonzales Polar, Édgar Dember",
+    "rol": "Coautor"
+   },
+   {
+    "id": 200,
+    "nombre": "Llaque Linares, Nora María",
+    "rol": "Coautor"
+   },
+   {
+    "id": 175,
+    "nombre": "Espinoza Huillca, Edwin",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 415459,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDU5/pdf",
+  "cusco": {
+   "175": "Coautor"
+  }
+ },
+ "D-670": {
+  "numero": "00670-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-10-26",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 27806, LEY DE TRANSPARENCIA Y ACCESO A LA INFORMACIÓN PÚBLICA, PARA ESTABLECER OBLIGACIONES DE TRANSPARENCIA ACTIVA SOBRE LA DISPONIBILIDAD Y REPOSICIÓN DE MEDICAMENTOS EN EL SECTOR PÚBLICO.",
+  "sumilla": "PROPONE GARANTIZAR EL ACCESO A LA CIUDADANÍA A INFORMACIÓN PÚBLICA, OPORTUNA Y COMPRENSIBLE SOBRE LA DISPONIBILIDAD EFECTIVA DE MEDICAMENTOS.",
+  "bancada_autor": "Partido del Buen Gobierno",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 27806, LEY DE TRANSPARENCIA Y ACCESO A LA INFORMACIÓN PÚBLICA, PARA ESTABLECER OBLIGACIONES DE TRANSPARENCIA ACTIVA SOBRE LA DISPONIBILIDAD Y REPOSICIÓN DE MEDICAMENTOS EN EL SECTOR PÚBLICO."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 193,
+    "nombre": "Huaman Cornejo, Miguel Félix",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 231,
+    "nombre": "Prado Vallejos, Lila Marianela",
+    "rol": "Coautor"
+   },
+   {
+    "id": 233,
+    "nombre": "Quispe Candia, Luis Eliseo",
+    "rol": "Coautor"
+   },
+   {
+    "id": 175,
+    "nombre": "Espinoza Huillca, Edwin",
+    "rol": "Coautor"
+   },
+   {
+    "id": 183,
+    "nombre": "García Huby, Fernando Alberto",
+    "rol": "Coautor"
+   },
+   {
+    "id": 212,
+    "nombre": "Molina Soto, Nathaly Milagros",
+    "rol": "Coautor"
+   },
+   {
+    "id": 143,
+    "nombre": "Alayza Maccera, Rossana Herminia",
+    "rol": "Coautor"
+   },
+   {
+    "id": 160,
+    "nombre": "Castrejon Fernandez, Segundo Juan",
+    "rol": "Coautor"
+   },
+   {
+    "id": 190,
+    "nombre": "Hirache Pizarro, Gloria Charito",
+    "rol": "Coautor"
+   },
+   {
+    "id": 186,
+    "nombre": "Gonzales Polar, Édgar Dember",
+    "rol": "Coautor"
+   },
+   {
+    "id": 174,
+    "nombre": "Duarte Patiño de Pezet, Carmen Georgina",
+    "rol": "Coautor"
+   },
+   {
+    "id": 200,
+    "nombre": "Llaque Linares, Nora María",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 415458,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDU4/pdf",
+  "cusco": {
+   "175": "Coautor"
+  }
+ },
+ "D-668": {
+  "numero": "00668-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-10-26",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE INCORPORA EL ARTÍCULO 4-A EN LA LEY 23330, LEY DEL SERVICIO RURAL Y URBANO MARGINAL DE SALUD, PARA RECONOCER EL SERUMS COMO EXPERIENCIA LABORAL.",
+  "sumilla": "PROPONE RECONOCER EL SERVICIO RURAL Y URBANO MARGINAL DE SALUD (SERUMS) COMO EXPERIENCIA LABORAL PARA EL ACCESO AL EMPLEO Y LA EVALUACIÓN DE LA EXPEDIENCIA EN LOS PROCESOS DE SELECCIÓN DE LOS SECTORES PÚBLICOS Y PRIVADOS.",
+  "bancada_autor": "Partido del Buen Gobierno",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE INCORPORA EL ARTÍCULO 4-A EN LA LEY 23330, LEY DEL SERVICIO RURAL Y URBANO MARGINAL DE SALUD, PARA RECONOCER EL SERUMS COMO EXPERIENCIA LABORAL."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 193,
+    "nombre": "Huaman Cornejo, Miguel Félix",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 160,
+    "nombre": "Castrejon Fernandez, Segundo Juan",
+    "rol": "Coautor"
+   },
+   {
+    "id": 143,
+    "nombre": "Alayza Maccera, Rossana Herminia",
+    "rol": "Coautor"
+   },
+   {
+    "id": 233,
+    "nombre": "Quispe Candia, Luis Eliseo",
+    "rol": "Coautor"
+   },
+   {
+    "id": 186,
+    "nombre": "Gonzales Polar, Édgar Dember",
+    "rol": "Coautor"
+   },
+   {
+    "id": 174,
+    "nombre": "Duarte Patiño de Pezet, Carmen Georgina",
+    "rol": "Coautor"
+   },
+   {
+    "id": 175,
+    "nombre": "Espinoza Huillca, Edwin",
+    "rol": "Coautor"
+   },
+   {
+    "id": 200,
+    "nombre": "Llaque Linares, Nora María",
+    "rol": "Coautor"
+   },
+   {
+    "id": 190,
+    "nombre": "Hirache Pizarro, Gloria Charito",
+    "rol": "Coautor"
+   },
+   {
+    "id": 212,
+    "nombre": "Molina Soto, Nathaly Milagros",
+    "rol": "Coautor"
+   },
+   {
+    "id": 183,
+    "nombre": "García Huby, Fernando Alberto",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 415456,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDU2/pdf",
+  "cusco": {
+   "175": "Coautor"
+  }
+ },
  "D-654": {
   "numero": "00654-2026-2031-CD",
   "camara": "D",
@@ -8397,9 +8969,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE FORTALECE LA SEGURIDAD ALIMENTARIA Y NUTRICIONAL PARA LA PREVENCIÓN DE LA ANEMIA INFANTIL, INCORPORANDO LA PARTICIPACIÓN DEL INGENIERO ZOOTECNISTA.",
   "sumilla": "PROPONE FORTALECER LAS POLÍTICAS PÚBLICAS DE PREVENCIÓN Y REDUCCIÓN DE LA ANEMIA INFANTIL Y DE PROMOCIÓN DE LA SEGURIDAD ALIMENTARIA Y NUTRICIONAL.",
   "bancada_autor": "Partido del Buen Gobierno",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Salud; Desarrollo Agrario",
+    "detalle": ""
+   },
    {
     "fecha": "2026-10-22",
     "estado": "PRESENTADO",
@@ -8472,9 +9050,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA DE REFORMA CONSTITUCIONAL QUE RECONOCE COMO DERECHO FUNDAMENTAL EL DERECHO A LA VERDAD.",
   "sumilla": "PROPONE MODIFICAR EL ARTÍCULO 44 DE LA CONSTITUCIÓN POLÍTICA DEL PERÚ.",
   "bancada_autor": "Partido del Buen Gobierno",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Constitución, Reglamento y Relaciones Exteriores",
+    "detalle": ""
+   },
    {
     "fecha": "2026-10-22",
     "estado": "PRESENTADO",
@@ -8552,9 +9136,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE FORTALECE LOS RECURSOS PROPIOS DEL MINISTERIO PÚBLICO PROVENIENTES DE LA APLICACIÓN DEL PRINCIPIO DE OPORTUNIDAD, DE LAS MULTAS POR DENUNCIA CALUMNIOSA Y DEL PAGO POR REPRODUCCIÓN DE COPIAS FÍSICAS.",
   "sumilla": "PROPONE MODIFICAR EL ARTÍCULO 274 DEL CÓDIGO PENAL.",
   "bancada_autor": "Partido del Buen Gobierno",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Justicia y Derechos Humanos",
+    "detalle": ""
+   },
    {
     "fecha": "2026-10-22",
     "estado": "PRESENTADO",
@@ -9144,9 +9734,21 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY N' 32645, LEY QUE CREA EL COLEGIO PROFESIONAL DE ARTISTAS DEL PERÚ (CPAP)",
   "sumilla": "PROPONE DEROGAR LA LEY 32645, LEY QUE CREA EL COLEGIO PROFESIONAL DE ARTISTAS DEL PERÚ (CPAP) POR RESULTAR LESIVA A LAS LIBERTADES DE TRABAJO Y DE EXPRESIÓN ARTÍSTICA",
   "bancada_autor": "Partido del Buen Gobierno",
-  "estado": "APROBADO",
+  "estado": "Expediente de propuesta legislativa remitida al senado de la república",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "Expediente de propuesta legislativa remitida al senado de la república",
+    "comisiones": null,
+    "detalle": ""
+   },
+   {
+    "fecha": "2026-10-26",
+    "estado": "PROPUESTA LEGISLATIVA APROBADA",
+    "comisiones": null,
+    "detalle": "OFICIO 045-2026-2027-ADP-P/CD, REMITE, EN TEXTO ADJUNTO, LA PROPUESTA LEGISLATIVA APROBADA EN EL PLENO DE LA CÁMARA DE DIPUTADOS EN SU SESIÓN DEL 22 DE OCTUBRE DE 2026, POR EL CUAL SE PROPONE DEROGAR LA LEY 32645, LEY QUE CREA EL COLEGIO PROFESIONAL DEL ARTISTA DEL PERÚ (CPAP)"
+   },
    {
     "fecha": "2026-10-22",
     "estado": "APROBADO",
@@ -9253,9 +9855,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE DECLARA DE INTERÉS NACIONAL Y NECESIDAD PÚBLICA LA PROTECCIÓN, CONSERVACIÓN Y RECUPERACIÓN DEL PINGUINO DE HUMBOLDT (SPHENISCUS HUMBOLDTI) Y DE SU HABITAD EN EL LITORAL PERUANO.",
   "sumilla": "PROPONE DECLARAR DE INTERÉS NACIONAL Y NECESIDAD PÚBLICA LA PROTECCIÓN, CONSERVACIÓN Y RECUPERACIÓN DEL PINGUINO DE HUMBOLDT (SPHENISCUS HUMBOLDTI) ESPECIE NATIVA MARINO-COSTERO CATEGORIZADA EN PELIGRO DE EXTINCIÓN.",
   "bancada_autor": "Partido Cívico Obras",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Medio Ambiente y Sostenibilidad",
+    "detalle": ""
+   },
    {
     "fecha": "2026-10-21",
     "estado": "PRESENTADO",
@@ -9533,6 +10141,56 @@
   "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDEyMzIw/pdf",
   "cusco": {
    "201": "Autor principal"
+  }
+ },
+ "D-667": {
+  "numero": "00667-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-10-26",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE FORTALECE LA INTEROPERABILIDAD DE LA INFORMACIÓN CATRASTAL Y REGISTRAL PARA PREVENIR Y GESTIONAR SUPERPOSICIONES TERRITORIALES.",
+  "sumilla": "PROPONE FORTALECER LA INTEROPERABILIDAD DE LA INFORMACIÓN CATRASTAL, REGISTRAL Y TERRITORIAL ENTRE LAS ENTIDADES PÚBLICAS.",
+  "bancada_autor": "Partido Cívico Obras",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE FORTALECE LA INTEROPERABILIDAD DE LA INFORMACIÓN CATRASTAL Y REGISTRAL PARA PREVENIR Y GESTIONAR SUPERPOSICIONES TERRITORIALES."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 224,
+    "nombre": "Peralta Jorpa, Máximo",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 159,
+    "nombre": "Camargo Porta, Raúl Jesús",
+    "rol": "Coautor"
+   },
+   {
+    "id": 157,
+    "nombre": "Cabrera Nieto, Juan César",
+    "rol": "Coautor"
+   },
+   {
+    "id": 228,
+    "nombre": "Piñán Mamani, Víctor Eduardo",
+    "rol": "Coautor"
+   },
+   {
+    "id": 201,
+    "nombre": "López Letona, Heber",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 415446,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE1NDQ2/pdf",
+  "cusco": {
+   "201": "Coautor"
   }
  },
  "D-628": {
@@ -10518,9 +11176,15 @@
   "titulo": "PROPOSICIÓN DE RESOLUCIÓN LEGISLATIVA QUE APRUEBA EL REGLAMENTO PARA LA ELECCIÓN DE MAGISTRADOS DEL TRIBUNAL CONSTITUCIONAL",
   "sumilla": "PROPONE APROBAR EL REGLAMENTO ESPECIAL PARA LA SELECCIÓN DE CANDIDATOS APTOS Y LA ELECCIÓN DE MAGISTRADOS DEL TRIBUNAL CONSTITUCIONAL",
   "bancada_autor": "Juntos por el Perú",
-  "estado": "CON DICTAMEN",
+  "estado": "EN AGENDA DEL PLENO",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-10-26",
+    "estado": "EN AGENDA DEL PLENO",
+    "comisiones": null,
+    "detalle": "LA JUNTA DE PORTAVOCES DEL SENADO, EN SESIÓN DEL 26 DE OCTUBRE DE 2026, ACORDÓ QUE LOS REFERIDOS PROYECTOS SEAN PROCESADOS BAJO EL PROCEDIMIENTO DE URGENCIA Y SE INCLUYAN EN LA AGENDA DEL PLENO DEL SENADO"
+   },
    {
     "fecha": "2026-10-23",
     "estado": "CON DICTAMEN",
