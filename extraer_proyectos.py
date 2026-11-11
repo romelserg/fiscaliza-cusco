@@ -183,7 +183,7 @@ def escribir_reporte(proyectos, congresistas, novedades):
     if novedades:
         l += ["## Novedades desde la última revisión", ""]
         for tipo, clave, p in novedades:
-            l.append(f'- **{tipo}** · [{p["numero"]}]({p["pdf"]}) · {p["titulo"][:160]}')
+            l.append(f'- **{tipo}** - [{p["numero"]}]({p["pdf"]}) - {p["titulo"][:160]}')
         l.append("")
     l += ["## Resumen", "", "| Congresista | Cámara | Autor principal | Coautor | Adherente | Total |",
           "|---|---|---|---|---|---|"]
@@ -201,13 +201,13 @@ def escribir_reporte(proyectos, congresistas, novedades):
         for p in propios:
             r = resumenes.get(p["numero"])
             if not r:
-                l += [f'### {p["numero"]} · {p["fecha"]} · {p["estado"]}', "",
+                l += [f'### {p["numero"]} - {p["fecha"]} - {p["estado"]}', "",
                       f'{p["titulo"]}', "", "_Resumen pendiente._", f'[PDF oficial]({p["pdf"]})', ""]
                 continue
             etiqueta = {"directa": "🟢 Relación directa con Cusco", "indirecta": "🟡 Relación indirecta con Cusco",
                         "nacional": "⚪ Alcance nacional"}[r["cusco"]]
-            l += [f'### {p["numero"]} · {r["tema"]}', "",
-                  f'{p["fecha"]} · **{p["estado"]}** · {etiqueta}', "", r["resumen"]]
+            l += [f'### {p["numero"]} - {r["tema"]}', "",
+                  f'{p["fecha"]} - **{p["estado"]}** - {etiqueta}', "", r["resumen"]]
             if r.get("por_que_cusco"):
                 l.append(f'\n*Por qué importa en Cusco:* {r["por_que_cusco"]}')
             if r.get("nota"):

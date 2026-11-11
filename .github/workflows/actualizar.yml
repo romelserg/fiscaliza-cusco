@@ -60,6 +60,8 @@ jobs:
             echo "Sin cambios."
           else
             git commit -m "Actualización automática $(date -u +%Y-%m-%d)"
+            # por si alguien publicó cambios mientras corría la actualización
+            git pull --rebase
             git push
           fi
 

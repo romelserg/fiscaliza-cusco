@@ -34,13 +34,13 @@ def main():
                          for t in turnos if t["id"] not in res_int and not t.get("preside"))
     l = ["Lista generada por la actualización automática. Lo que está aquí ya se publicó, marcado como pendiente.", ""]
     l += [f"## Votos por verificar ({len(votos)})", ""]
-    l += [f"- [ ] {f} · {n} · `{pdf}` pág. {pag}" for f, pdf, pag, n in votos] or ["Ninguno."]
+    l += [f"- [ ] {f} - {n} - `{pdf}` pág. {pag}" for f, pdf, pag, n in votos] or ["Ninguno."]
     l += ["", "Se corrigen en `votaciones/correcciones.json` (clave `archivo.pdf#página|id`).", ""]
     l += [f"## Proyectos sin resumen ({len(sin_resumen)})", ""]
-    l += [f"- [ ] {f} · {num} · {tit.capitalize()[:120]}" for f, num, tit in sin_resumen] or ["Ninguno."]
+    l += [f"- [ ] {f} - {num} - {tit.capitalize()[:120]}" for f, num, tit in sin_resumen] or ["Ninguno."]
     l += ["", "Los resúmenes van en `datos/resumenes.json`.", ""]
     l += [f"## Intervenciones sin resumen ({len(sin_res_int)})", ""]
-    l += [f"- [ ] {f} · {n} · {pal} palabras · [transcripción]({url})" for f, _, n, pal, url in sin_res_int] or ["Ninguna."]
+    l += [f"- [ ] {f} - {n} - {pal} palabras - [transcripción]({url})" for f, _, n, pal, url in sin_res_int] or ["Ninguna."]
     l += ["", "Los resúmenes van en `intervenciones/resumenes.json`."]
     (BASE / "pendientes.md").write_text("\n".join(l) + "\n")
     print(f"pendientes.md: {len(votos)} votos por verificar, {len(sin_resumen)} proyectos y {len(sin_res_int)} intervenciones sin resumen")

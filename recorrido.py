@@ -96,10 +96,10 @@ def main():
                                                    for f in sorted(por_autor[i], key=lambda f: (-f["etapa"] if f["etapa"] < 5 else 1, f["numero"]))]}
     (BASE / "datos" / "recorrido.json").write_text(json.dumps(salida, ensure_ascii=False, indent=1))
     for cam, r in salida["camaras"].items():
-        print(f"{cam}: {r['total']} proyectos de congresistas · por etapa {r['por_etapa']} · mediana de días esperando {r['dias_esperando_mediana']}")
+        print(f"{cam}: {r['total']} proyectos de congresistas - por etapa {r['por_etapa']} - mediana de días esperando {r['dias_esperando_mediana']}")
     for c in congresistas:
         r = salida["congresistas"][str(c["id"])]
-        print(f"  {c['corto']}: {r['total']} como autor {r['por_etapa']} · coautor {r['coautor']['total']} {r['coautor']['por_etapa']}")
+        print(f"  {c['corto']}: {r['total']} como autor {r['por_etapa']} - coautor {r['coautor']['total']} {r['coautor']['por_etapa']}")
 
 
 if __name__ == "__main__":

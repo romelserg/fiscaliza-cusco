@@ -328,8 +328,8 @@ def escribir_reporte(eventos, congresistas):
             extra = (f' _(por constancia de la presidencia; el sistema marcaba '
                      f'{SIGNIFICADO.get(e["registro_sistema"][cid], e["registro_sistema"][cid])})_'
                      if cid in e.get("registro_sistema", {}) else "")
-            l.append(f'- {e["fecha"]} {e["hora"] or ""} · **{SIGNIFICADO.get(v, v)}** · '
-                     f'{e["asunto"][:220]}{extra} · [PDF]({e["fuente"]})')
+            l.append(f'- {e["fecha"]} {e["hora"] or ""} - **{SIGNIFICADO.get(v, v)}** - '
+                     f'{e["asunto"][:220]}{extra} - [PDF]({e["fuente"]})')
     (BASE / "reporte_votaciones.md").write_text("\n".join(l) + "\n", encoding="utf-8")
 
 

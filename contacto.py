@@ -75,7 +75,7 @@ def main():
         except Exception as e:
             print(f"  {c['corto']}: no se pudo bajar la foto ({e}); se conserva la anterior")
             salida[str(c["id"])]["foto"] = (previo.get(str(c["id"])) or {}).get("foto")
-        print(f"  {c['corto']}: {salida[str(c['id'])]['correo']} · {salida[str(c['id'])]['votos_obtenidos']} votos")
+        print(f"  {c['corto']}: {salida[str(c['id'])]['correo']} - {salida[str(c['id'])]['votos_obtenidos']} votos")
     destino.write_text(json.dumps(salida, ensure_ascii=False, indent=1))
 
 

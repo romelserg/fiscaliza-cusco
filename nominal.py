@@ -192,7 +192,7 @@ def main():
     (V.CARPETA / "nominal.json").write_text(json.dumps(salida, ensure_ascii=False, indent=1))
     deducidos = informe.pop("deducidos", 0)
     print("Votaciones validadas:", {f"{c} {'ok' if ok else 'descartada'}": n for (c, ok), n in sorted(informe.items())},
-          f"· votos deducidos de los totales: {deducidos}")
+          f"- votos deducidos de los totales: {deducidos}")
 
 
 if __name__ == "__main__":
