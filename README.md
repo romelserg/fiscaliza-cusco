@@ -1,4 +1,4 @@
-# Fiscaliza Cusco
+# Curul 131 (antes Curul 131)
 
 Proyectos de ley, asistencia y votaciones de los congresistas elegidos por Cusco (período 2026–2031), con enlace a cada documento oficial del Congreso.
 
@@ -6,7 +6,7 @@ Web: https://romelserg.github.io/fiscaliza-cusco/
 
 ## Cómo se actualiza
 
-**Automáticamente, cada sábado**, con GitHub Actions (`.github/workflows/actualizar.yml`): corre en una Mac de GitHub (gratis en repositorios públicos), publica la web actualizada y las piezas para Stories, y deja en un aviso (*issue*) "Pendientes de revisión" lo que necesita una persona. También se puede lanzar a mano: pestaña **Actions → Actualizar Fiscaliza Cusco → Run workflow**.
+**Automáticamente, cada sábado**, con GitHub Actions (`.github/workflows/actualizar.yml`): corre en una Mac de GitHub (gratis en repositorios públicos), publica la web actualizada y las piezas para Stories, y deja en un aviso (*issue*) "Pendientes de revisión" lo que necesita una persona. También se puede lanzar a mano: pestaña **Actions → Actualizar Curul 131 → Run workflow**.
 
 A mano, en una Mac:
 

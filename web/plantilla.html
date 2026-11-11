@@ -1,4 +1,4 @@
-<title>Fiscaliza Cusco · Observatorio ciudadano del Congreso</title>
+<title>Curul 131 - observatorio ciudadano del Congreso desde Cusco</title>
 <meta name="description" content="Proyectos de ley, asistencia y votaciones de los congresistas elegidos por Cusco, con enlace a cada documento oficial.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect width="32" height="32" rx="6" fill="%232b2520"/%3E%3Cpath d="M4 28V23h6v-5h6v-5h12v15z" fill="%23b23a48"/%3E%3Crect x="17" y="5" width="9" height="5" fill="%23f4ede0"/%3E%3Crect x="16" y="6" width="11" height="3" fill="%23f4ede0"/%3E%3Crect x="25" y="4" width="4" height="4" fill="%23a8761a"/%3E%3Crect x="18" y="10" width="2" height="3" fill="%23f4ede0"/%3E%3Crect x="23" y="10" width="2" height="3" fill="%23f4ede0"/%3E%3C/svg%3E">
 <link rel="icon" type="image/png" href="favicon.png">
@@ -181,6 +181,8 @@ a.pb-fila:hover { background: var(--paper-2); }
 .portada { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 20px 40px; align-items: center; }
 .portada-txt { display: grid; gap: 10px; justify-items: start; }
 @media (max-width: 760px) { .portada { grid-template-columns: minmax(0, 1fr); } }
+.portada-131 { font: 1.05rem/1.4 var(--body); margin: 0.6rem 0 0.2rem; max-width: 34rem; }
+.portada-131 b { color: var(--cs); }
 .portada-k { font: 600 0.82rem var(--body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--cs); }
 .portada h1 { font: 700 clamp(2.6rem, 5.6vw, 4.5rem)/0.95 var(--titulo); letter-spacing: -0.015em; display: flex; align-items: flex-end; gap: 0.16em; flex-wrap: nowrap; white-space: nowrap; }
 .portada h1 span { color: var(--cs); font-style: italic; }
@@ -594,7 +596,7 @@ const apellido = c => c.corto.split(" ").slice(-1)[0];
 
 function iconoMarca() {
   // Escalón de tocapu con un borreguito en la cima (@sieteborreguitos). Colores fijos: es la marca.
-  return `<svg class="marca" viewBox="0 0 32 32" role="img" aria-label="Ícono de Fiscaliza Cusco"><rect width="32" height="32" rx="6" fill="#2b2520"/>
+  return `<svg class="marca" viewBox="0 0 32 32" role="img" aria-label="Ícono de Curul 131"><rect width="32" height="32" rx="6" fill="#2b2520"/>
     <path d="M4 28V23h6v-5h6v-5h12v15z" fill="#b23a48"/><rect x="17" y="5" width="9" height="5" fill="#f4ede0"/>
     <rect x="16" y="6" width="11" height="3" fill="#f4ede0"/><rect x="25" y="4" width="4" height="4" fill="#a8761a"/>
     <rect x="18" y="10" width="2" height="3" fill="#f4ede0"/><rect x="23" y="10" width="2" height="3" fill="#f4ede0"/></svg>`;
@@ -643,7 +645,7 @@ function pases(k, c) {
   const porSesion = {};
   ev.forEach(e => {
     const v = e.votos[c.id], ok = v === "PRE" || v === "***", lic = /^L[A-Z]$/.test(v || "");
-    (porSesion[e.fecha] = porSesion[e.fecha] || []).push(`<i class="${ok ? "" : lic ? "lic" : "no"}" data-tip="<b>${fecha(e.fecha)} · ${esc(e.hora || "")}</b><br>${esc(LARGO[v] || v)}">${ok ? "✓" : lic ? "L" : "✗"}</i>`);
+    (porSesion[e.fecha] = porSesion[e.fecha] || []).push(`<i class="${ok ? "" : lic ? "lic" : "no"}" data-tip="<b>${fecha(e.fecha)} - ${esc(e.hora || "")}</b><br>${esc(LARGO[v] || v)}">${ok ? "✓" : lic ? "L" : "✗"}</i>`);
   });
   const cuadros = Object.values(porSesion).map(cs => `<span class="sesion">${cs.join("")}</span>`).join("");
   return `<div class="pases" role="img" aria-label="${k.presente} asistencias de ${k.pases} pases de lista, en ${sesiones} sesiones del Pleno">${cuadros}</div>
@@ -670,7 +672,7 @@ function tejido(lista, camara) {
       const v = col.e.votos[c.id];
       const cls = v === "***" ? "f-pres" : ["SI", "NO", "ABST"].includes(v) ? "f-" + v : "f-otro";
       s += `<rect class="cell ${cls}" x="${col.x}" y="${y}" width="${C}" height="${C}" rx="2"
-        data-tip="<b>${esc(esc(c.corto))} · ${esc(LARGO[v] || v)}</b><br>${fecha(col.e.fecha)}, ${esc(col.e.hora || "")}<br>${esc(esc(capital(col.e.asunto).slice(0, 160)))}…"/>`;
+        data-tip="<b>${esc(esc(c.corto))} - ${esc(LARGO[v] || v)}</b><br>${fecha(col.e.fecha)}, ${esc(col.e.hora || "")}<br>${esc(esc(capital(col.e.asunto).slice(0, 160)))}…"/>`;
     });
   });
   return s + "</svg>";
@@ -720,10 +722,11 @@ function inicio() {
   return `
   <header class="portada">
     <div class="portada-txt">
-      <p class="portada-k">Observatorio ciudadano del Congreso</p>
-      <h1>Fiscaliza <span>Cusco</span>${iconoMarca()}</h1>
+      <p class="portada-k">Cusco - observatorio ciudadano del Congreso</p>
+      <h1>Curul <span>131</span>${iconoMarca()}</h1>
+      <p class="portada-131">La Cámara de Diputados tiene 130 curules. <b>La 131 es la tuya</b>: la del ciudadano que vigila.</p>
       <p class="portada-lead">Vigilamos lo que hacen en el Congreso los <b>5 diputados y el senador</b> elegidos por Cusco: si asisten, cómo votan, qué proponen y con quién trabajan.</p>
-      <p class="portada-meta">Período 2026–2031 · datos al ${fecha(DATOS.actualizado)}<br>${DATOS.proyectos.length} proyectos de ley · ${sesiones} sesiones del Pleno<br>Cada dato enlaza al documento oficial</p>
+      <p class="portada-meta">Período 2026–2031 - datos al ${fecha(DATOS.actualizado)}<br>${DATOS.proyectos.length} proyectos de ley - ${sesiones} sesiones del Pleno<br>Cada dato enlaza al documento oficial</p>
     </div>
     ${hemiciclo("D")}
   </header>
@@ -792,10 +795,10 @@ function hemiciclo(cam) {
       const nombre = m.n.split(",")[0].toLowerCase().replace(/(^|\s)\S/g, x => x.toUpperCase());
       if (cus.has(m.id)) {
         const c = cus.get(m.id);
-        s += `<a href="#${c.slug}" aria-label="${esc(c.corto)}, ver su ficha"><circle class="escano cus" cx="${X.toFixed(1)}" cy="${Y.toFixed(1)}" r="${rad + 3}" style="fill:var(--b-${b})" data-tip="<b>${esc(c.corto)}</b> · ${esc(BANCADAS[b])}<br>Representa a Cusco · toca para ver su ficha"/></a>`;
+        s += `<a href="#${c.slug}" aria-label="${esc(c.corto)}, ver su ficha"><circle class="escano cus" cx="${X.toFixed(1)}" cy="${Y.toFixed(1)}" r="${rad + 3}" style="fill:var(--b-${b})" data-tip="<b>${esc(c.corto)}</b> - ${esc(BANCADAS[b])}<br>Representa a Cusco - toca para ver su ficha"/></a>`;
         marcados.push({ X, Y, c });
       } else {
-        s += `<circle class="escano" cx="${X.toFixed(1)}" cy="${Y.toFixed(1)}" r="${rad}" style="fill:var(--b-${b || "x"}, var(--vacio))" data-tip="<b>${esc(nombre)}</b> · ${esc(BANCADAS[b] || "")}"/>`;
+        s += `<circle class="escano" cx="${X.toFixed(1)}" cy="${Y.toFixed(1)}" r="${rad}" style="fill:var(--b-${b || "x"}, var(--vacio))" data-tip="<b>${esc(nombre)}</b> - ${esc(BANCADAS[b] || "")}"/>`;
       }
     });
   });
@@ -832,7 +835,7 @@ function glosa(termino, definicion) {
 function eligeCongresista() {
   return `<section class="elige" aria-labelledby="t-elige"><h2 id="t-elige" class="etq">Elige a tu congresista</h2>
     <div class="elige-grid">${DATOS.congresistas.map(c => { const b = CODIGO_PARTIDO[c.partido];
-      return `<a href="#${c.slug}"><svg viewBox="0 0 16 16" aria-hidden="true">${forma(b, 8, 8, 6.5)}</svg><span><b>${esc(c.corto)}</b><small>${esc(c.partido)} · ${c.camara === "S" ? "Senado" : "Diputados"}</small></span></a>`; }).join("")}</div></section>`;
+      return `<a href="#${c.slug}"><svg viewBox="0 0 16 16" aria-hidden="true">${forma(b, 8, 8, 6.5)}</svg><span><b>${esc(c.corto)}</b><small>${esc(c.partido)} - ${c.camara === "S" ? "Senado" : "Diputados"}</small></span></a>`; }).join("")}</div></section>`;
 }
 // Listas largas: muestran unas pocas y el resto detrás de un botón
 let N_PLEGADO = 0;
@@ -876,10 +879,10 @@ function ficha(c) {
   <a class="volver" href="#inicio">← Volver al padrón</a>
   <header class="ficha-head${foto ? " con-foto" : ""}">
     ${foto ? `<figure class="ficha-foto"><img src="${foto}" alt="Foto oficial de ${esc(c.corto)}" width="168" height="168"><figcaption>Foto: Congreso de la República</figcaption></figure>` : ""}
-    <span class="etq">${CAMARA[c.camara]} · ${esc(c.partido)}</span>
+    <span class="etq">${CAMARA[c.camara]} - ${esc(c.partido)}</span>
     <h1>${esc(c.corto)}</h1>
     <span class="acta muted small">${esc(c.nombre)}</span>
-    ${((DATOS.contacto || {})[c.id] || {}).correo ? `<span class="small">Correo institucional: <a class="acta" href="mailto:${esc(DATOS.contacto[c.id].correo)}">${esc(DATOS.contacto[c.id].correo)}</a> · <a href="#escribele" data-ir="escribele">escríbele desde aquí</a></span>` : ""}
+    ${((DATOS.contacto || {})[c.id] || {}).correo ? `<span class="small">Correo institucional: <a class="acta" href="mailto:${esc(DATOS.contacto[c.id].correo)}">${esc(DATOS.contacto[c.id].correo)}</a> - <a href="#escribele" data-ir="escribele">escríbele desde aquí</a></span>` : ""}
   </header>
   ${tocapu()}
   <p class="resumen-prosa">Desde julio de 2026 estuvo presente en <b>${k.presente} de ${k.pases}</b> pases de lista del Pleno y votó en <b>${k.participo} de ${k.votables}</b> votaciones: ${k.si} a favor, ${k.no} en contra y ${k.abst} ${k.abst === 1 ? "abstención" : "abstenciones"}${k.presidio ? `; en otras ${k.presidio} presidía la sesión y no votaba` : ""}. Es autor principal de <b>${k.autor}</b> ${k.autor === 1 ? "proyecto" : "proyectos"} de ley y firmó otros ${k.coautor} como coautor. En el Diario de Debates figura con <b>${k.habla}</b> ${k.habla === 1 ? "intervención" : "intervenciones"} como orador${DATOS.presidio[c.id] ? ` y ${DATOS.presidio[c.id]} turnos presidiendo la sesión` : ""}.</p>
@@ -906,7 +909,7 @@ function ficha(c) {
     ${coaut.length ? `<details><summary>Ver los ${coaut.length} proyectos que firmó como coautor</summary><div class="lista">${coaut.map(p => `
       <div class="item"><div class="exp"><a href="${esc(p.pdf)}" target="_blank" rel="noopener">${esc(p.numero.split("-")[0])}</a><br>${fecha(p.fecha)}</div>
       <div class="txt"><span class="small">${esc(capital(p.titulo.replace(/^PROPOSICI[ÓO]N (DE RESOLUCI[ÓO]N )?LEGISLATIVA (DEL CONGRESO )?(QUE )?/, "")))}</span>
-      <span class="nota">Autor: ${esc(p.autor.split(",")[0])} · ${esc(capital(p.estado))}</span></div></div>`).join("")}</div></details>` : ""}
+      <span class="nota">Autor: ${esc(p.autor.split(",")[0])} - ${esc(capital(p.estado))}</span></div></div>`).join("")}</div></details>` : ""}
   </section>
   ${seccionRecorrido(c.id)}
 
@@ -931,7 +934,7 @@ function proyecto(p, conAutor) {
     <div class="exp"><a href="${esc(p.pdf)}" target="_blank" rel="noopener">${esc(p.numero.replace("-2026-2031-CD", ""))}</a><br>${fecha(p.fecha)}<br>${esc(capital(p.estado))}
       ${r ? `<br><span class="pill">${r.cusco === "nacional" ? "Nacional" : r.cusco === "directa" ? "Cusco: directa" : "Cusco: indirecta"}</span>` : ""}</div>
     <div class="txt">
-      <h3>${esc(r ? r.tema : capital(p.titulo))}${autor ? ` <span class="muted small">· ${esc(autor.corto)}</span>` : ""}</h3>
+      <h3>${esc(r ? r.tema : capital(p.titulo))}${autor ? ` <span class="muted small">- ${esc(autor.corto)}</span>` : ""}</h3>
       ${r ? `<p>${esc(r.resumen)}</p>` : `<p class="nota">Resumen pendiente. Título oficial: ${esc(capital(p.titulo))}</p>`}
       ${r && r.por_que_cusco ? `<p class="nota"><b>Por qué importa en Cusco:</b> ${esc(r.por_que_cusco)}</p>` : ""}
       ${r && r.nota ? `<p class="nota"><b>Nota:</b> ${esc(r.nota)}</p>` : ""}
@@ -947,12 +950,12 @@ function intervencion(i, conNombre, conVotos) {
     <div class="exp">${fecha(i.fecha)}<br><a href="${esc(i.fuente)}" target="_blank" rel="noopener">Diario de Debates, p. ${i.pagina}</a><br>${i.palabras} palabras
       ${i.cusco ? `<br><span class="pill">Menciona Cusco</span>` : ""}</div>
     <div class="txt">
-      <h3>${esc(i.tema || "Intervención")}${conNombre ? ` <span class="muted small">· ${esc(c.corto)}</span>` : ""}</h3>
+      <h3>${esc(i.tema || "Intervención")}${conNombre ? ` <span class="muted small">- ${esc(c.corto)}</span>` : ""}</h3>
       ${i.resumen ? `<p>${esc(i.resumen)}</p>` : `<p class="nota">Resumen pendiente.</p>`}
       ${tagsTema(i.temas)}
       ${i.cita && !i.procedimiento ? `<blockquote class="cita">${esc(i.cita)}</blockquote>` : ""}
       ${votos.length ? `<div class="ese-dia"><span>Ese día votó:</span>${votos.map(e => { const v = e.votos[i.congresista];
-        return `<span class="chip-voto" style="--c:${COLOR[v] || "var(--vacio)"}" data-tip="<b>${esc(LARGO[v] || v)}</b> · ${esc(e.hora || "")}<br>${esc(esc(capital(e.asunto).slice(0, 150)))}…">${esc(ETQ[v] || v)}</span>`; }).join("")}</div>` : ""}
+        return `<span class="chip-voto" style="--c:${COLOR[v] || "var(--vacio)"}" data-tip="<b>${esc(LARGO[v] || v)}</b> - ${esc(e.hora || "")}<br>${esc(esc(capital(e.asunto).slice(0, 150)))}…">${esc(ETQ[v] || v)}</span>`; }).join("")}</div>` : ""}
     </div></article>`;
 }
 
@@ -965,7 +968,7 @@ function quienHabla() {
   return `<div class="hbars" role="img" aria-label="Palabras pronunciadas en el Pleno por cada congresista">${filas.map(f => `
     <div class="hbar"><a class="n" href="#${f.c.slug}">${esc(f.c.corto)}</a>
       <div class="track" style="width:${Math.max(100 * f.pal / max, 0.6)}%"><i style="flex:1;background:var(--ink);border-radius:0 4px 4px 0"
-        data-tip="<b>${f.n}</b> ${f.n === 1 ? "intervención" : "intervenciones"} · ${f.pal.toLocaleString("es-PE")} palabras${f.pres ? `<br>Además, ${f.pres} turnos presidiendo la sesión` : ""}"></i></div>
+        data-tip="<b>${f.n}</b> ${f.n === 1 ? "intervención" : "intervenciones"} - ${f.pal.toLocaleString("es-PE")} palabras${f.pres ? `<br>Además, ${f.pres} turnos presidiendo la sesión` : ""}"></i></div>
       <span class="v">${f.n}</span></div>`).join("")}</div>
   <p class="muted small">Largo de la barra: palabras pronunciadas. Número: intervenciones como orador (sin contar avisos de procedimiento${filas.some(f => f.pres) ? " ni los turnos presidiendo la sesión" : ""}).</p>`;
 }
@@ -1009,14 +1012,14 @@ function contexto(c) {
     ${encabezado("Comparación", "En contexto", `Sus cifras frente al promedio de ${nomCam} y de su bancada, en las mismas sesiones. Se usan solo las actas cuya tabla de totales cuadra al sumarla (${cam.pases} pases de lista y ${cam.votaciones} votaciones de ${nomCam}).`, "t-ctx")}
     ${leyendaContexto(c)}
     <div class="comp">
-      ${fila("Asistencia", k.asistencia, cam.asistencia, ban.asistencia, `${esc(c.corto)}: ${pct1(k.asistencia)} · cámara ${pct1(cam.asistencia)} · bancada ${pct1(ban.asistencia)}`)}
-      ${fila("Votó cuando le tocaba", k.participacion, cam.participacion, null, `${k.participo} de ${k.votaciones} votaciones · cámara ${pct1(cam.participacion)}`)}
-      ${fila("Votó igual que su bancada", k.con_su_bancada, cam.con_su_bancada, ban.con_su_bancada, `${pct1(k.con_su_bancada)} de ${k.comparables} votaciones · su bancada en promedio ${pct1(ban.con_su_bancada)} · cámara ${pct1(cam.con_su_bancada)}`)}
+      ${fila("Asistencia", k.asistencia, cam.asistencia, ban.asistencia, `${esc(c.corto)}: ${pct1(k.asistencia)} - cámara ${pct1(cam.asistencia)} - bancada ${pct1(ban.asistencia)}`)}
+      ${fila("Votó cuando le tocaba", k.participacion, cam.participacion, null, `${k.participo} de ${k.votaciones} votaciones - cámara ${pct1(cam.participacion)}`)}
+      ${fila("Votó igual que su bancada", k.con_su_bancada, cam.con_su_bancada, ban.con_su_bancada, `${pct1(k.con_su_bancada)} de ${k.comparables} votaciones - su bancada en promedio ${pct1(ban.con_su_bancada)} - cámara ${pct1(cam.con_su_bancada)}`)}
       <div class="comp-fila"><span class="t">Palabras en el Pleno</span>
         <svg viewBox="0 0 400 30" preserveAspectRatio="none" role="img"><line x1="8" x2="392" y1="15" y2="15" style="stroke:var(--rule)"/>
           <g data-tip="<b>${k.promedio_palabras.toLocaleString("es-PE")}</b> palabras: promedio por congresista">${MARCAS.camara(8 + k.promedio_palabras / maxPal * 384, 15)}</g>
           <g data-tip="<b>${k.palabras.toLocaleString("es-PE")}</b> palabras de ${esc(c.corto)}">${MARCAS.yo(8 + k.palabras / maxPal * 384, 15)}</g></svg>
-        <span class="d">${k.palabras.toLocaleString("es-PE")} palabras · puesto ${k.puesto_palabras || k.miembros} de ${k.miembros} · promedio ${k.promedio_palabras.toLocaleString("es-PE")}</span></div>
+        <span class="d">${k.palabras.toLocaleString("es-PE")} palabras - puesto ${k.puesto_palabras || k.miembros} de ${k.miembros} - promedio ${k.promedio_palabras.toLocaleString("es-PE")}</span></div>
     </div>
     ${distintos.length ? `<div class="sec-head" style="border-top-width:1px"><span class="folio">Detalle</span><h2 style="font-size:1.3rem">Cuando votó distinto a su bancada (${distintos.length})</h2><p>Votaciones en que su voto no coincidió con el de la mayoría de su bancada.</p></div>
       <div class="scroll"><table class="votos-t"><thead><tr><th>Fecha</th><th>Asunto</th><th class="c">Su voto</th><th class="c">Mayoría de su bancada</th></tr></thead><tbody>
@@ -1109,7 +1112,7 @@ function dibujoMapa(cid) {
     ${Object.entries(M.provincias).map(([p, g]) => { const l = cuenta[p], quien = {};
       l.forEach(m => { const c = DATOS.congresistas.find(x => x.id === m.congresista); quien[c.corto] = (quien[c.corto] || 0) + 1; });
       return `<path class="prov ${mapaSel === p ? "sel" : ""}" d="${g.d}" style="fill:${color(l.length)}" data-prov="${p}"
-        data-tip="<b>${nomProv(p)}</b> · ${l.length ? `${l.length} ${l.length === 1 ? "mención" : "menciones"}<br>${Object.entries(quien).map(([n, k]) => `${esc(n)}: ${k}`).join(" · ")}` : "sin menciones"}"/>`; }).join("")}
+        data-tip="<b>${nomProv(p)}</b> - ${l.length ? `${l.length} ${l.length === 1 ? "mención" : "menciones"}<br>${Object.entries(quien).map(([n, k]) => `${esc(n)}: ${k}`).join(" - ")}` : "sin menciones"}"/>`; }).join("")}
     ${Object.entries(M.provincias).map(([p, g]) => `<text x="${p === "ACOMAYO" ? g.x + 18 : g.x}" y="${p === "ACOMAYO" ? g.y + 14 : g.y}" text-anchor="middle">${nomProv(p)}</text>`).join("")}
   </svg>`;
 }
@@ -1128,7 +1131,7 @@ function listaProv(cid) {
   return `<h3 class="subtit">${nomProv(mapaSel)}: ${l.length} ${l.length === 1 ? "mención" : "menciones"}</h3>
     ${l.length ? `${plegar(l.sort((a, b) => b.fecha.localeCompare(a.fecha)).map(m => { const c = DATOS.congresistas.find(x => x.id === m.congresista);
       return `<div class="item"><div class="exp">${fecha(m.fecha)}<br>${m.tipo === "proyecto" ? "Proyecto de ley" : "Intervención en el Pleno"}</div>
-      <div class="txt"><h3>${esc(m.titulo)} <span class="muted small">· ${esc(c.corto)}</span></h3>
+      <div class="txt"><h3>${esc(m.titulo)} <span class="muted small">- ${esc(c.corto)}</span></h3>
       <a class="acta small" href="${esc(m.url)}" target="_blank" rel="noopener">${m.tipo === "proyecto" ? "Ver el proyecto" : "Ver en el Diario de Debates"}</a></div></div>`; }))}`
       : `<p class="muted">Ningún congresista cusqueño mencionó esta provincia en sus proyectos o intervenciones${cid ? " (con este filtro)" : ""}.</p>`}`;
 }
@@ -1153,7 +1156,7 @@ function seccionAgenda() {
     const pts = a.puntos, cus = pts.filter(p => p.cusqueños.length || p.menciona_cusco);
     total += pts.length; rel += cus.length;
     return `<div class="ag-col"><h3>${cam === "S" ? "Senado" : "Cámara de Diputados"}</h3>
-      <span class="acta small muted">${a.fecha >= hoy ? "Próxima sesión" : "Última agenda publicada"}: ${fecha(a.fecha)} · <a href="${esc(a.fuente)}" target="_blank" rel="noopener">PDF oficial</a> · ${pts.length} puntos, ${cus.length} relacionados con Cusco</span>
+      <span class="acta small muted">${a.fecha >= hoy ? "Próxima sesión" : "Última agenda publicada"}: ${fecha(a.fecha)} - <a href="${esc(a.fuente)}" target="_blank" rel="noopener">PDF oficial</a> - ${pts.length} puntos, ${cus.length} relacionados con Cusco</span>
       ${cus.length ? "" : `<p class="muted small ag-vacio">Ningún punto de esta agenda involucra a los congresistas cusqueños.</p>`}
       ${pts.map(p => { const quienes = p.cusqueños.map(i => DATOS.congresistas.find(c => c.id === i).corto);
         const t = p.texto.length > 260 ? `<details><summary>${esc(p.texto.slice(0, 240).replace(/\s+\S*$/, ""))}…</summary>${esc(p.texto)}</details>` : esc(p.texto);
@@ -1166,7 +1169,7 @@ function seccionAgenda() {
   return `<section class="sec" aria-labelledby="t-agenda" id="agenda">
     <details class="plegable">
       <summary><span class="folio">Agenda del Pleno</span><span class="plegable-tit" id="t-agenda">Lo que se verá en el Pleno</span>
-        <span class="plegable-sub">${total} puntos en la última agenda de cada cámara · ${rel} relacionados con Cusco · <span class="abrir">Abrir</span></span></summary>
+        <span class="plegable-sub">${total} puntos en la última agenda de cada cámara - ${rel} relacionados con Cusco - <span class="abrir">Abrir</span></span></summary>
       <p class="muted" style="margin:14px 0">La agenda que publica cada cámara, punto por punto. Marcados en rojo, los que firma un congresista cusqueño o que mencionan a Cusco.</p>
       <div class="chips" role="group" aria-label="Filtrar agenda"><button type="button" data-ag="cusco" aria-pressed="true">Relacionados con Cusco</button><button type="button" data-ag="todo" aria-pressed="false">Todos los puntos</button></div>
       <div class="agenda" id="agenda-cols" style="margin-top:14px">${cuerpo}</div>
@@ -1241,8 +1244,8 @@ async function buscar(q, tipo, mas) {
     terms.forEach(t => { s = s.replace(new RegExp(`(?<!\\p{L})(${patron(t)}${t.length >= 6 ? "" : "(?:s|es)?(?!\\p{L})"})`, "giu"), "<mark>$1</mark>"); });
     return (i ? "…" : "") + s + "…"; };
   const estado = INDICE_COMPLETO === true ? "" : INDICE_COMPLETO === "error"
-    ? " · el Diario de Debates completo no se pudo cargar; se busca en proyectos, votaciones y resúmenes de las intervenciones de los cusqueños"
-    : " · cargando el Diario de Debates completo…";
+    ? " - el Diario de Debates completo no se pudo cargar; se busca en proyectos, votaciones y resúmenes de las intervenciones de los cusqueños"
+    : " - cargando el Diario de Debates completo…";
   caja.innerHTML = (hall.length ? `<p class="acta small muted">${hall.length} resultados${estado}</p>` + lista.map(d => `<div class="res-item">
       <div class="meta">${fecha(d.f)}<br>${NOM[d.t]}</div>
       <div><div class="q">${esc(d.t === "diario" ? d.q : d.h)}${d.c.length && d.t !== "votación" ? ` <span class="pill" style="margin:0 0 0 6px">Cusco</span>` : ""}</div>
@@ -1283,12 +1286,12 @@ function redCamara(cam, id) {
     return `<line class="arista${a.peso < 2 ? " debil" : ""}" data-a="${a.a}" data-b="${a.b}" x1="${A.x}" y1="${A.y}" x2="${B.x}" y2="${B.y}" style="stroke-width:${(0.5 + 3 * Math.sqrt(a.peso / maxP)).toFixed(2)}"
       data-tip="<b>${esc(A.nombre)} y ${esc(B.nombre)}</b><br>${a.peso} ${a.peso === 1 ? "proyecto firmado" : "proyectos firmados"} juntos"/>`; }).join("");
   const nodos = [...R.nodos].sort((a, b) => a.cusco - b.cusco).map(n => forma(n.bancada, n.x, n.y, radio(n),
-    `class="nodo ${n.cusco ? "cus" : ""}" data-n="${n.id}" data-tip="<b>${esc(n.completo)}</b><br>${esc(BANCADAS[n.bancada] || "Bancada no identificada")}<br>${n.grado} coautores distintos · ${n.propios} ${n.propios === 1 ? "proyecto propio" : "proyectos propios"}"`)).join("");
+    `class="nodo ${n.cusco ? "cus" : ""}" data-n="${n.id}" data-tip="<b>${esc(n.completo)}</b><br>${esc(BANCADAS[n.bancada] || "Bancada no identificada")}<br>${n.grado} coautores distintos - ${n.propios} ${n.propios === 1 ? "proyecto propio" : "proyectos propios"}"`)).join("");
   const corto = id => { const c = DATOS.congresistas.find(x => x.id === id); return c ? apellido(c) : ""; };
   const etiquetas = R.nodos.filter(n => n.cusco).map(n => `<text x="${n.x}" y="${n.y - 16}" text-anchor="middle" data-n="${n.id}">${esc(corto(n.id))}</text>`).join("");
   return `<svg viewBox="0 0 ${R.ancho} ${R.alto}" role="img" aria-label="Red de coautoría de ${cam === "D" ? "la Cámara de Diputados" : "el Senado"}: ${R.nodos.length} congresistas y ${R.aristas.length} vínculos">
     ${(R.grupos || []).map(g => `<circle class="grupo" cx="${g.x}" cy="${g.y}" r="${g.r + 14}"/>
-      <text class="grupo-nom" x="${g.x}" y="${g.y + g.r + 32}" text-anchor="middle">${esc(BANCADAS[g.bancada] || g.bancada)} · ${g.miembros}</text>`).join("")}
+      <text class="grupo-nom" x="${g.x}" y="${g.y + g.r + 32}" text-anchor="middle">${esc(BANCADAS[g.bancada] || g.bancada)} - ${g.miembros}</text>`).join("")}
     <g class="aristas">${aristas}</g>${nodos}${etiquetas}</svg>`;
 }
 
@@ -1305,13 +1308,13 @@ function franja(R, campo, titulo, nota, formato, invertir = false) {
   const cuenta = {};
   const grises = vals.filter(n => !n.cusco).map(n => { const k = Math.round(X(n[campo]) / 5); cuenta[k] = (cuenta[k] || 0) + 1;
     const dy = ((cuenta[k] - 1) % 5) * 4 - 8;
-    return `<circle cx="${X(n[campo]).toFixed(1)}" cy="${y + dy}" r="2.6" class="gris" data-tip="<b>${esc(n.completo)}</b> · ${n.bancada || "?"}<br>${esc(titulo)}: ${formato(n[campo])}"/>`; }).join("");
+    return `<circle cx="${X(n[campo]).toFixed(1)}" cy="${y + dy}" r="2.6" class="gris" data-tip="<b>${esc(n.completo)}</b> - ${n.bancada || "?"}<br>${esc(titulo)}: ${formato(n[campo])}"/>`; }).join("");
   const cus = vals.filter(n => n.cusco).sort((a, b) => a[campo] - b[campo]);
   // Cusqueños con el mismo valor comparten una sola etiqueta
   const juntos = [];
   cus.forEach(n => { const g = juntos.find(j => Math.abs(X(j[0][campo]) - X(n[campo])) < 3); g ? g.push(n) : juntos.push([n]); });
   const filas = [];  // etiquetas en filas para que no se encimen
-  const marcas = juntos.map(g => { const x = X(g[0][campo]); const nom = g.map(n => nombreCus(n.id) || apellidoDe(n.completo)).join(" · ");
+  const marcas = juntos.map(g => { const x = X(g[0][campo]); const nom = g.map(n => nombreCus(n.id) || apellidoDe(n.completo)).join(" - ");
     const ancho = 8 + nom.length * 7; let f = 0;
     while (filas[f] != null && x - ancho / 2 - filas[f] < 6) f++; filas[f] = x + ancho / 2;
     const ly = 30 - f * 13;
@@ -1399,7 +1402,7 @@ function mapaVotacion(cam) {
     g.pts.filter(p => p.cusco).forEach(p => {
       const c = DATOS.congresistas.find(x => String(x.id) === String(p.id));
       s += forma(p.bancada, X(p.x), yc, 11, `class="nodo cus" style="stroke:var(--ink);stroke-width:2.5" data-tip="<b>${esc(c ? c.corto : p.nombre)}</b><br>Votó como ${esc(BANCADAS[L.b])} en ${p.como_b} y como ${esc(BANCADAS[L.a])} en ${p.como_a} de estas votaciones"`);
-      etiquetas.push({ x: X(p.x), y: yc - 18, t: `${c ? apellido(c) : p.nombre} · ${p.como_b} de ${p.como_a + p.como_b}` });
+      etiquetas.push({ x: X(p.x), y: yc - 18, t: `${c ? apellido(c) : p.nombre} - ${p.como_b} de ${p.como_a + p.como_b}` });
     });
   });
   etiquetas.forEach(e => { const ancho = e.t.length * 7.2; const tx = Math.min(Math.max(e.x, x0 + ancho / 2), x1 - ancho / 2);
@@ -1424,7 +1427,7 @@ function listaLados(cam) {
   const v = { SI: "a favor", NO: "en contra", ABST: "abstención" };
   return `<details><summary>Ver las ${L.votaciones} votaciones en que se dividieron</summary><div class="lista">${L.asuntos.map(a => `
     <div class="item"><div class="exp">${fecha(a.fecha)}<br>${esc(a.hora || "")}</div><div class="txt"><span class="small">${esc(capital(a.asunto))}…</span>
-    <span class="nota">${esc(BANCADAS[L.a])}: ${v[a[L.a]]} · ${esc(BANCADAS[L.b])}: ${v[a[L.b]]}</span></div></div>`).join("")}</div></details>`;
+    <span class="nota">${esc(BANCADAS[L.a])}: ${v[a[L.a]]} - ${esc(BANCADAS[L.b])}: ${v[a[L.b]]}</span></div></div>`).join("")}</div></details>`;
 }
 
 // Afinidad entre los cusqueños: cada uno ubicado según cuánto coincide con los demás (más coincidencia, más cerca).
@@ -1458,7 +1461,7 @@ function afinidadCusquenos() {
     s += `<text class="pct ${fuerte ? "fuerte" : ""}" x="${mx}" y="${my}" dy="5" text-anchor="middle">${Math.round(d.pct)}%</text>`;
   });
   p.forEach(q => { const b = CODIGO_PARTIDO[q.c.partido];
-    s += forma(b, q.x, q.y, 17, `class="nodo cus" style="stroke:var(--ink);stroke-width:3" data-tip="<b>${esc(q.c.corto)}</b> · ${esc(q.c.partido)}"`); });
+    s += forma(b, q.x, q.y, 17, `class="nodo cus" style="stroke:var(--ink);stroke-width:3" data-tip="<b>${esc(q.c.corto)}</b> - ${esc(q.c.partido)}"`); });
   // Nombres: en la dirección con más espacio libre (lejos de otros nodos, cifras y nombres)
   p.forEach(q => {
     let mejor = null;
@@ -1544,13 +1547,13 @@ function padronBarras() {
     const tip = col.clave === "asis"
       ? `<b>${esc(f.c.corto)}</b>: presente en ${f.k.presente} de ${f.k.pases} pases de lista (${pct1(v)})${med != null ? `<br>Promedio de ${f.c.camara === "S" ? "los senadores" : "los diputados"}: ${pct1(med)}` : ""}<br>Votó en ${f.k.participo} de ${f.k.votables} votaciones`
       : col.clave === "habla"
-      ? `<b>${esc(f.c.corto)}</b>: ${v} ${v === 1 ? "intervención" : "intervenciones"}${f.palabras ? `<br>${f.palabras.toLocaleString("es-PE")} palabras · puesto ${f.puesto} de ${f.miembros} en su cámara` : ""}`
+      ? `<b>${esc(f.c.corto)}</b>: ${v} ${v === 1 ? "intervención" : "intervenciones"}${f.palabras ? `<br>${f.palabras.toLocaleString("es-PE")} palabras - puesto ${f.puesto} de ${f.miembros} en su cámara` : ""}`
       : `<b>${esc(f.c.corto)}</b>: ${v} ${col.clave === "propios" ? (v === 1 ? "proyecto como autor principal" : "proyectos como autor principal") : (v === 1 ? "proyecto como coautor" : "proyectos como coautor")}${med != null ? `<br>Mediana de ${f.c.camara === "S" ? "los senadores" : "los diputados"}: ${String(med).replace(".", ",")}` : ""}`;
     return `<div class="pb-celda" data-tip="${tip}">
       <div class="pb-pista">${v ? `<i style="width:${pct.toFixed(1)}%;background:var(--b-${f.b}, var(--ink))"></i>` : ""}${med != null ? `<b class="pb-med" style="left:${(100 * med / col.max).toFixed(1)}%"></b>` : ""}</div>
       <span class="pb-v${col.pct && v < (med || 0) ? " bajo" : ""}">${col.pct ? Math.round(v) + "<small>%</small>" : v}</span>
-      ${col.clave === "asis" ? `<span class="pb-sub">${f.k.presente} de ${f.k.pases} · votó en ${f.k.participo} de ${f.k.votables} votaciones</span>` : ""}
-      ${col.clave === "habla" && f.palabras ? `<span class="pb-sub">${f.palabras.toLocaleString("es-PE")} palabras · puesto ${f.puesto} de ${f.miembros}</span>` : ""}
+      ${col.clave === "asis" ? `<span class="pb-sub">${f.k.presente} de ${f.k.pases} - votó en ${f.k.participo} de ${f.k.votables} votaciones</span>` : ""}
+      ${col.clave === "habla" && f.palabras ? `<span class="pb-sub">${f.palabras.toLocaleString("es-PE")} palabras - puesto ${f.puesto} de ${f.miembros}</span>` : ""}
     </div>`;
   };
   // En el celular: una pestaña por indicador, con los seis en un mismo gráfico
@@ -1561,7 +1564,7 @@ function padronBarras() {
   return `${movil}<div class="pb" role="table" aria-label="Proyectos propios, coautorías e intervenciones de cada congresista">
     <div class="pb-fila pb-cab" role="row"><span role="columnheader"></span>${cols.map(col => `<span role="columnheader"><b>${col.titulo}</b><br><span class="muted">${col.nota}</span></span>`).join("")}</div>
     ${filas.map(f => `<a class="pb-fila" role="row" href="#${f.c.slug}">
-      <span role="cell"><span class="pb-nom">${esc(f.c.corto)}</span><span class="pb-sub"><svg class="pb-forma" viewBox="0 0 16 16" aria-hidden="true">${forma(f.b, 8, 8, 6.5)}</svg>${esc(f.c.partido)} · ${f.c.camara === "S" ? "Senado" : "Diputados"}</span></span>
+      <span role="cell"><span class="pb-nom">${esc(f.c.corto)}</span><span class="pb-sub"><svg class="pb-forma" viewBox="0 0 16 16" aria-hidden="true">${forma(f.b, 8, 8, 6.5)}</svg>${esc(f.c.partido)} - ${f.c.camara === "S" ? "Senado" : "Diputados"}</span></span>
       ${cols.map(col => `<span role="cell">${barra(f, col)}</span>`).join("")}</a>`).join("")}
   </div>
   <p class="muted small">Cada barra lleva el color de la bancada del congresista. Marca vertical: en asistencia, el promedio de su cámara (${pct1(camCtx.D && camCtx.D.asistencia)} en Diputados, ${pct1(camCtx.S && camCtx.S.asistencia)} en el Senado); en proyectos, la mediana de su cámara (${R ? `${String(R.camaras.D.mediana_propios).replace(".", ",")} proyectos propios y ${String(R.camaras.D.mediana_coautor).replace(".", ",")} como coautor entre los diputados; ${String(R.camaras.S.mediana_propios).replace(".", ",")} y ${String(R.camaras.S.mediana_coautor).replace(".", ",")} entre los senadores, porque casi todos los proyectos entran por Diputados` : ""}). Las intervenciones no cuentan los turnos presidiendo la sesión.</p>`;
@@ -1573,7 +1576,7 @@ const COLOR_ETAPA = [0, 1, 2, 3, 4].map(k => `color-mix(in oklab, var(--ink) ${[
 function cuadroEtapa(p, c) {
   const archivado = p.etapa === 5;
   return `<i class="pz${archivado ? " arch" : ""}" style="${archivado ? "" : `background:${COLOR_ETAPA[p.etapa]}`}"
-    data-tip="<b>${esc(p.numero)}</b> · ${esc(DATOS.recorrido.etapas[p.etapa])}<br>${esc(capital(p.titulo).slice(0, 150))}${p.titulo.length > 150 ? "…" : ""}<br>Estado: ${esc(capital(p.estado))}${p.etapa < 2 ? ` · ${p.dias} días desde que se presentó` : ""}"></i>`;
+    data-tip="<b>${esc(p.numero)}</b> - ${esc(DATOS.recorrido.etapas[p.etapa])}<br>${esc(capital(p.titulo).slice(0, 150))}${p.titulo.length > 150 ? "…" : ""}<br>Estado: ${esc(capital(p.estado))}${p.etapa < 2 ? ` - ${p.dias} días desde que se presentó` : ""}"></i>`;
 }
 function leyendaEtapas() {
   return `<div class="legend">${DATOS.recorrido.etapas.map((e, k) => `<span><i style="${k === 5 ? "background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink-2)" : `--c:${COLOR_ETAPA[k]}`}"></i>${esc(e)}</span>`).join("")}</div>`;
@@ -1585,7 +1588,7 @@ function barraCamara(r) {
 function filaRecorrido(c) {
   const r = DATOS.recorrido.congresistas[c.id];
   const co = r.coautor;
-  return `<div class="rc-fila"><div><a href="#${c.slug}" class="rc-nom">${esc(c.corto)}</a><div class="sub">${r.total} ${r.total === 1 ? "proyecto propio" : "proyectos propios"}${r.dictamen_o_mas ? ` · <b>${r.dictamen_o_mas}</b> con dictamen o más` : ""}</div></div>
+  return `<div class="rc-fila"><div><a href="#${c.slug}" class="rc-nom">${esc(c.corto)}</a><div class="sub">${r.total} ${r.total === 1 ? "proyecto propio" : "proyectos propios"}${r.dictamen_o_mas ? ` - <b>${r.dictamen_o_mas}</b> con dictamen o más` : ""}</div></div>
     <div class="rc-pz">${r.total ? r.proyectos.map(p => cuadroEtapa(p, c)).join("") : `<span class="muted small">No es autor principal de ningún proyecto.</span>`}</div>
     <div class="small muted rc-co">Como coautor: ${co.total}${co.dictamen_o_mas ? `, ${co.dictamen_o_mas} con dictamen o más` : ""}</div></div>`;
 }
@@ -1596,7 +1599,7 @@ function seccionRecorrido(soloId) {
   const camaras = soloId && soloId !== "cuerpo" ? [lista[0].camara] : ["D", "S"];
   const filas = camaras.map(cam => { const r = R.camaras[cam]; return `
     <div class="rc-fila rc-camara"><div><span class="rc-nom">${cam === "D" ? "Toda la Cámara de Diputados" : "Todo el Senado"}</span><div class="sub">${r.total} proyectos de ${cam === "D" ? "diputados" : "senadores"}</div></div>
-      ${barraCamara(r)}<div class="small muted rc-co">${pct1(100 * r.dictamen_o_mas / (r.total || 1))} con dictamen o más${r.dias_esperando_mediana != null ? ` · los que esperan llevan ${r.dias_esperando_mediana} días (mediana)` : ""}</div></div>
+      ${barraCamara(r)}<div class="small muted rc-co">${pct1(100 * r.dictamen_o_mas / (r.total || 1))} con dictamen o más${r.dias_esperando_mediana != null ? ` - los que esperan llevan ${r.dias_esperando_mediana} días (mediana)` : ""}</div></div>
     ${lista.filter(c => c.camara === cam).map(filaRecorrido).join("")}`; }).join("");
   const leyes = D.por_etapa[4] + S.por_etapa[4];
   if (soloId === "cuerpo") return { filas, leyes };
@@ -1627,9 +1630,9 @@ function recuerda(clave, valor) {
 function tarjetaContacto(c) {
   const k = (DATOS.contacto || {})[c.id] || {};
   return `<div class="contacto">
-    <div><b class="rc-nom">${esc(c.corto)}</b><div class="sub">${esc(c.partido)} · ${c.camara === "S" ? "Senado" : "Diputados"}</div></div>
+    <div><b class="rc-nom">${esc(c.corto)}</b><div class="sub">${esc(c.partido)} - ${c.camara === "S" ? "Senado" : "Diputados"}</div></div>
     ${k.correo ? `<a class="acta" href="mailto:${esc(k.correo)}">${esc(k.correo)}</a>` : `<span class="muted small">Correo no publicado</span>`}
-    <div class="small muted">${k.votos_obtenidos ? `${k.votos_obtenidos.toLocaleString("es-PE")} votos en la elección de 2026` : ""}${k.ficha ? ` · <a href="${esc(k.ficha)}" target="_blank" rel="noopener">ficha oficial</a>` : ""}</div>
+    <div class="small muted">${k.votos_obtenidos ? `${k.votos_obtenidos.toLocaleString("es-PE")} votos en la elección de 2026` : ""}${k.ficha ? ` - <a href="${esc(k.ficha)}" target="_blank" rel="noopener">ficha oficial</a>` : ""}</div>
     <button type="button" class="redactar" data-para="${c.id}">Escribirle</button>
   </div>`;
 }
@@ -1637,11 +1640,11 @@ function opcionesSobre(id, motivo) {
   const c = DATOS.congresistas.find(x => x.id === id); if (!c) return "";
   if (motivo === "proyecto") {
     const ps = DATOS.proyectos.filter(p => p.cusco[id] === "Autor principal");
-    return ps.length ? ps.map(p => `<option value="${esc(p.numero)}">${numCorto(p.numero)} · ${esc(p.resumen ? p.resumen.tema : tituloCorto(p.titulo).slice(0, 80))}</option>`).join("") : `<option value="">No es autor principal de ningún proyecto</option>`;
+    return ps.length ? ps.map(p => `<option value="${esc(p.numero)}">${numCorto(p.numero)} - ${esc(p.resumen ? p.resumen.tema : tituloCorto(p.titulo).slice(0, 80))}</option>`).join("") : `<option value="">No es autor principal de ningún proyecto</option>`;
   }
   if (motivo === "voto") {
     return DATOS.eventos.filter(e => e.camara === c.camara && e.tipo === "VOTACIÓN" && ["SI", "NO", "ABST"].includes(e.votos[id] || "")).slice(-15).reverse()
-      .map((e, k) => `<option value="${esc(e.fecha + "|" + e.hora + "|" + k)}">${fecha(e.fecha)} · ${esc(LARGO[e.votos[id]])} · ${esc(capital(e.asunto).slice(0, 70))}</option>`).join("") || `<option value="">Sin votaciones registradas</option>`;
+      .map((e, k) => `<option value="${esc(e.fecha + "|" + e.hora + "|" + k)}">${fecha(e.fecha)} - ${esc(LARGO[e.votos[id]])} - ${esc(capital(e.asunto).slice(0, 70))}</option>`).join("") || `<option value="">Sin votaciones registradas</option>`;
   }
   return "";
 }
@@ -1733,7 +1736,7 @@ document.addEventListener("click", ev => {
 });
 
 function pie() {
-  return `<footer><div class="pie-marca">${siluetaCusco()}<p class="que-es"><b>Fiscaliza Cusco</b> es un observatorio ciudadano e independiente del Congreso de la República, hecho por Ciudad Sur con datos públicos oficiales.<br><span class="muted">Hecho en el Qosqo, para sus 13 provincias.</span></p></div>
+  return `<footer><div class="pie-marca">${siluetaCusco()}<p class="que-es"><b>Curul 131</b> es un observatorio ciudadano e independiente del Congreso de la República, hecho por Ciudad Sur con datos públicos oficiales. Se llama así porque la Cámara de Diputados tiene 130 curules: la 131 es la de cada ciudadano que vigila lo que hacen sus representantes.<br><span class="muted">Hecho en el Qosqo, para sus 13 provincias.</span></p></div>
     <h2>De dónde salen los datos</h2>
     <p>Todo sale de documentos oficiales del Congreso: el sistema de proyectos de ley, las actas de asistencia y votación del Pleno y el Diario de Debates. Cada cifra enlaza a su fuente. <a href="#como-se-hizo">Cómo se hizo, paso a paso</a>.</p>
     <p class="firma">${iconoMarca()}<span>Un proyecto de <a href="https://ciudadsur.pe" target="_blank" rel="noopener">Ciudad Sur</a> y <a href="https://www.instagram.com/sieteborreguitos" target="_blank" rel="noopener">@sieteborreguitos</a></span></p></footer>`;

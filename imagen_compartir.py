@@ -182,10 +182,10 @@ def main():
     # Columna izquierda: qué es
     lz.texto("OBSERVATORIO CIUDADANO", 60, 140, franklin(22, 700), CS, 3)
     lz.texto("DEL CONGRESO", 60, 170, franklin(22, 700), CS, 3)
-    lz.texto("Fiscaliza", 54, 286, cardo(112), TINTA)
-    ancho_cusco = lz.texto("Cusco", 58, 392, cardo_it(112), CS)
+    lz.texto("Curul", 54, 286, cardo(112), TINTA)
+    ancho_cusco = lz.texto("131", 58, 392, cardo_it(112), CS)
     icono(lz, 58 + ancho_cusco + 20, 392 - 78, 78)
-    lz.parrafo("De los 130 diputados, 5 representan a Cusco. Si asisten, cómo votan y qué proponen.",
+    lz.parrafo("Hay 130 diputados y 5 son de Cusco. La curul 131 es la tuya: mira si asisten, cómo votan y qué proponen.",
                62, 420, 470, 100, franklin(27), TINTA)
     lz.texto("fiscaliza.ciudadsur.pe", 62, 552, franklin(20, 500), TINTA2)
 

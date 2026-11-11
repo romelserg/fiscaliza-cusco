@@ -2,7 +2,7 @@
 """Piezas semanales para Instagram Stories (1080×1920): lo que hicieron los congresistas de Cusco en la semana.
 
 Genera docs/historias/AAAA-MM-DD/ (fecha del último día de la semana) con:
-  01 portada · 02 votación clave · 03 asistencia · 04 proyectos nuevos · 05 lo que dijeron · 06 escríbeles
+  01 portada - 02 votación clave - 03 asistencia - 04 proyectos nuevos - 05 lo que dijeron - 06 escríbeles
 y docs/historias/index.html para descargarlas desde el celular. Solo dibuja las piezas que tienen datos.
 
 Reglas de formato (Stories): nada importante arriba de y≈260 (barra de progreso y perfil) ni debajo de
@@ -129,7 +129,7 @@ def main():
     corto = {str(c["id"]): c["corto"] for c in congresistas}
     piezas = []  # (nombre, función de dibujo)
 
-    # 02 · Votación clave: donde los cusqueños se dividieron; si no, la más reñida del Pleno
+    # 02 - Votación clave: donde los cusqueños se dividieron; si no, la más reñida del Pleno
     votos_d = [e for e in ev if e["tipo"] == "VOTACIÓN" and e["camara"] == "D"]
     clave_v = None
     if votos_d:
@@ -157,7 +157,7 @@ def main():
     sesiones = len({(e["camara"], e["fecha"]) for e in ev})
 
     def portada(lz, n, tot):
-        y, _ = marco(lz, "Fiscaliza Cusco · Ciudad Sur", [("La semana de", cardo(104), TINTA, 104),
+        y, _ = marco(lz, "Curul 131 - Ciudad Sur", [("La semana de", cardo(104), TINTA, 104),
                                                         ("tus congresistas", cardo_it(104), CS, 104),
                                                         (rango(d0, d1) + f" {d1.year}", franklin(40, 700), TINTA, 50)],
                      "actas del Pleno de la Cámara de Diputados y del Senado, Diario de Debates y sistema de proposiciones legislativas del Congreso.", n, tot)
@@ -177,7 +177,7 @@ def main():
         e = clave_v
         t = totales.get((e["pdf"], e["pagina"]))
         fuente_txt = f"acta de votación del Pleno de la Cámara de Diputados del {fecha_larga(e['fecha'])} de {d1.year}, {e['hora'] or ''} (archivo {e['pdf'].split('_', 1)[1]}, pág. {e['pagina']})."
-        y, tope = marco(lz, "Votación de la semana · Diputados", [("Así votaron", cardo(100), TINTA, 100),
+        y, tope = marco(lz, "Votación de la semana - Diputados", [("Así votaron", cardo(100), TINTA, 100),
                                                                  (f"el {fecha_larga(e['fecha'])}", cardo_it(100), CS, 100)], fuente_txt, n, tot)
         asunto = e["asunto"][:1].upper() + e["asunto"][1:].lower()
         y = bloque(lz, asunto, X0, y + 10, franklin(32, 500), TINTA, X1 - X0, 42, tope=4) + 34
@@ -205,7 +205,7 @@ def main():
 
     def asistencia(lz, n, tot):
         fechas = sorted({e["fecha"] for e in asis})
-        y, tope = marco(lz, "Asistencia · Pleno", [("¿Fueron a", cardo(104), TINTA, 104), ("trabajar?", cardo_it(104), CS, 104),
+        y, tope = marco(lz, "Asistencia - Pleno", [("¿Fueron a", cardo(104), TINTA, 104), ("trabajar?", cardo_it(104), CS, 104),
                                                     (rango(d0, d1), franklin(36, 700), TINTA, 46)],
                         f"actas de asistencia del Pleno de cada cámara ({len(asis)} pases de lista entre el {fecha_larga(fechas[0])} y el {fecha_larga(fechas[-1])} de {d1.year}).", n, tot)
         y += 30
@@ -224,7 +224,7 @@ def main():
                     lz.rect(x, y + 60, lado, 30, NO); lz.rect(x + 3, y + 63, lado - 6, 24, PAPEL)
                 x += lado + 6
             y += paso
-        lz.texto("Lleno: presente · Contorno rojo: ausente o con licencia", X0, y + 14, franklin(26, 500), TINTA2)
+        lz.texto("Lleno: presente - Contorno rojo: ausente o con licencia", X0, y + 14, franklin(26, 500), TINTA2)
 
     def proyectos_nuevos(lz, n, tot):
         nums = ", ".join(str(int(p["numero"].split("-")[0])) for p in nuevos)
@@ -240,7 +240,7 @@ def main():
             autor = next(i for i, r in p["cusco"].items() if r == "Autor principal")
             r = resumenes.get(p["numero"], {})
             titulo = r.get("tema") or p["titulo"].capitalize()
-            lz.texto(f"{corto.get(autor, '')} · PL {int(p['numero'].split('-')[0])}", X0, y + 34, franklin(30, 700), CS)
+            lz.texto(f"{corto.get(autor, '')} - PL {int(p['numero'].split('-')[0])}", X0, y + 34, franklin(30, 700), CS)
             y = bloque(lz, titulo, X0, y + 86, cardo(48), TINTA, X1 - X0, 54, tope=1 if compacto else 2)
             if r.get("resumen") and len(nuevos) <= 3:  # con muchos proyectos, solo autor y tema
                 y = bloque(lz, r["resumen"], X0, y + 4, franklin(29, 450), TINTA2, X1 - X0, 38, tope=2 if compacto else 3)
@@ -310,13 +310,13 @@ def escribir_indice(raiz, semanas):
                        for p in sorted(s.glob("*.png")))
         bloques.append(f'<section><h2>Semana al {d.day} de {MESES[d.month - 1]} de {d.year}</h2><div class="g">{imgs}</div></section>')
     (raiz / "index.html").write_text(f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Historias · Fiscaliza Cusco</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Historias - Curul 131</title>
 <meta name="robots" content="noindex">
 <style>body{{margin:0;background:#f4ede0;color:#2b2520;font:16px/1.5 system-ui,sans-serif}}main{{max-width:1100px;margin:0 auto;padding:20px 16px 60px}}
 h1{{font-family:Georgia,serif;font-size:2rem;margin:.2em 0}}h2{{font-size:1.1rem;margin:28px 0 10px}}
 .g{{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}}img{{width:100%;display:block;border:1px solid #d6c9b2}}
 p{{color:#6b6157;max-width:60ch}}</style></head><body><main><h1>Historias para Instagram</h1>
-<p>Toca una imagen para descargarla (en el celular: mantén presionado y elige «Guardar imagen»). Se generan solas cada semana con los datos de Fiscaliza Cusco.</p>
+<p>Toca una imagen para descargarla (en el celular: mantén presionado y elige «Guardar imagen»). Se generan solas cada semana con los datos de Curul 131.</p>
 {''.join(bloques)}</main></body></html>""")
 
 
