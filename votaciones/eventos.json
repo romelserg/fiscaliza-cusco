@@ -5,11 +5,11 @@
   "hora": "04:17 PM",
   "asunto": "",
   "votos": {
-   "175": "AUS",
    "192": "PRE",
    "201": "AUS",
    "205": "PRE",
-   "226": "PRE"
+   "226": "PRE",
+   "175": "AUS"
   },
   "constancias": {},
   "registro_sistema": {},
@@ -61,7 +61,7 @@
    "205": "PRE"
   },
   "constancias": {
-   "175": "Constancia de la asistencia de los diputados Alayza Maccera, Andrade Salguero, Beteta Rubin, Chacón de Vettori, Espinoza Huillca, Hancco Hancco, Hirache Pizarro Huilca Flores, Infantes Castañeda, Meza Rivera, Navas Sánchez, Piñán Mamani, Prado Vallejos, Quispe Candia, Ramos Rosales y Vidaurre Floridas."
+   "175": "Constancia asistencia de los diputados Alayza Maccera, Andrade Salguero, Beteta Rubin, Chacón de Vettori, Espinoza Huillca, Hancco Hancco, Hirache Pizarro, Huilca Flores, Infantes Castañeda, Meza Rivera, Navas Sánchez, Piñán Mamani, Prado Vallejos, Quispe Candia, Ramos Rosales y Vidaurre Floridas. Agenda yh No de Retnna."
   },
   "registro_sistema": {
    "175": "AUS"
@@ -302,9 +302,9 @@
   "votos": {
    "226": "PRE",
    "192": "PRE",
+   "201": "PRE",
    "205": "PRE",
-   "175": "PRE",
-   "201": "PRE"
+   "175": "PRE"
   },
   "constancias": {},
   "registro_sistema": {},
@@ -358,10 +358,10 @@
   "asunto": "",
   "votos": {
    "226": "PRE",
-   "192": "PRE",
    "201": "PRE",
-   "175": "PRE",
-   "205": "PRE"
+   "192": "PRE",
+   "205": "PRE",
+   "175": "PRE"
   },
   "constancias": {},
   "registro_sistema": {},
@@ -630,7 +630,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-09",
   "hora": "03:57 PM",
-  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 18, QUE PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL DE SEGUIMIENTO, PREVENCIÓN Y RESPUESTA ANTE EL FENÓMENO EL NIÑO Y A LA GESTIÓN DEL RIESGO DE DESASTRES, ENCARGADA DE REALIZAR EL ESTUDIO, EVALUACIÓN Y SEGUIMIENTO ESPECIAL DE LAS POLÍTICAS, PLANES, PROGRAMAS, INTERVENCIONES Y MEDIDAS ADOPTADAS POR LAS ENTIDADES PÚBLICAS COMPETENTES AGUINAGA KECUENCO -CALLO KIVADENEYRAI MUNANE BARKIOS",
+  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 18, QUE PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL DE SEGUIMIENTO, PREVENCIÓN Y RESPUESTA ANTE EL FENÓMENO EL NIÑO Y A LA GESTIÓN DEL RIESGO DE DESASTRES, ENCARGADA DE REALIZAR EL ESTUDIO, EVALUACIÓN Y SEGUIMIENTO ESPECIAL DE LAS POLÍTICAS, PLANES, PROGRAMAS, INTERVENCIONES Y MEDIDAS ADOPTADAS POR LAS ENTIDADES PÚBLICAS COMPETENTES AGUINAGA KECUENCO -CALLO KIVADEN-YRA MUNANE BARKIOS",
   "votos": {
    "305": "SI"
   },
@@ -660,7 +660,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-09",
   "hora": "04:01 PM",
-  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 45, QUE PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL MULTIPARTIDARIA ENCARGADA DEL SEGUIMIENTO, FISCALIZACIÓN, EVALUACIÓN Y FORMULACIÓN DE PROPUESTAS SOBRE LAS ACCIONES DE PREVENCIÓN, PREPARACIÓN, RESPUESTA, REHABILITACIÓN Y RECONSTRUCCIÓN FRENTE AL FENÓMENO EL NIÑO Y OTROS EVENTOS OIMATICOS-XR-MO",
+  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 45, QUE PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL MULTIPARTIDARIA ENCARGADA DEL SEGUIMIENTO, FISCALIZACIÓN, EVALUACIÓN Y FORMULACIÓN DE PROPUESTAS SOBRE LAS ACCIONES DE PREVENCIÓN, PREPARACIÓN, RESPUESTA, REHABILITACIÓN Y RECONSTRUCCIÓN FRENTE AL FENÓMENO EL NIÑO Y OTROS EVENTOS OIMATICOS-XR-MOS",
   "votos": {
    "305": "SI"
   },
@@ -690,7 +690,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-09",
   "hora": "04:28 PM",
-  "asunto": "TEXTO SUSTITUTORIO DE LAS MOCIONES DE ORDEN DEL DÍA 18, 32 Y 45, QUE PROPONE CREAR LA COMISIÓN ESPECIAL DE SEGUIMIENTO. PREVENCIÓN Y RESPUESTA ANTE EL FENÓMENO EL NIÑO Y A LA GESTIÓN DEL RIESGO DE DESASTRES, COMO ÓRGANO PARLAMENTARIO",
+  "asunto": "TEXTO SUSTITUTORIO DE LAS MOCIONES DE ORDEN DEL DÍA 18, 32 Y 45, QUE PROPONE CREAR LA COMISIÓN ESPECIAL DE SEGUIMIENTO, PREVENCIÓN Y RESPUESTA ANTE EL FENÓMENO EL NIÑO Y A LA GESTIÓN DEL RIESGO DE DESASTRES, COMO ÓRGANO PARLAMENTARIC DE LAS POLÍTICAS, INTERVENCIONES Y MEDIDAS ADOPTADAS POR LAS ENTIDADES PÚBLICAS COMPETENTES",
   "votos": {
    "305": "SI"
   },
@@ -720,7 +720,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-09",
   "hora": "04:39 PM",
-  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 31, QUE PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL MULTIPARTIDARIA DE SEGUIMIENTO ESTRATEGICO PARA LA PREVENCION DE CONFLICTOS SOCIALES, ORIENTADA A LA GOBERNABILIDAD Y LA PAZ SOCIAL EN EL PERÚ",
+  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 31, QUE PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL NUTWAKTDAKIA DE SEGUIMIENTO ESTRATEGICO PARA LA PREVENCION DE CONFLICTOS SOCIALES, ORIENTADA A LA GOBERNABILIDAD Y LA PAZ SOCIAL EN EL PERÚ",
   "votos": {
    "305": "SI"
   },
@@ -750,7 +750,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-09",
   "hora": "05:07 PM",
-  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 22, QUE PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL MULTIPARTIDARIA DE PROTECCIÓN INTEGRAL DE LA INFANCIA Y LA ADOLESCENCIA DEL SENADO DE LA REPÚBLICA, ENCARGADA DE REALIZAR LABORES DE SEGUIMIENTO; EVALUACIÓN DE LA LEGISLACIÓN NACIONAL; MONITOREO DE LAS POLÍTICAS Y PROGRAMAS SOCIALES MULTISECTORIALES (SALUD, EDUCACIÓN, PROTECCIÓN FRENTE A LA VIOLENCIA Y REDUCCIÓN DE LA POBREZA INFANTIL); Y DE FISCALIZACIÓN EN LOS TRES NIVELES DE GOBIERNO, DE FORMA QUE CONTRIBUYA A GARANTIZAR EL PLENO EJERCICIO DE LOS DERECHOS DE LAS NIÑAS, NIÑOS Y ADOLESCENTES EN EL PERÚ",
+  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 22, QUE PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL MULTIPARTIDARIA DE PROTECCIÓN INTEGRAL DE LA INFANCIA Y LA ADOLESCENCIA DEL SENADO DE LA REPÚBLICA, ENCARGADA DE REALIZAR LABORES DE SEGUIMIENTO; EVALUACIÓN DE LA LEGISLACIÓN NACIONAL; MONITOREO DE LAS POLÍTICAS Y PROGRAMAS SOCIALES MULTISECTORIALES (SALUD, PROTECCIÓN FRENTE A LA VIOLENCIA Y REDUCCIÓN DE LA POBREZA INFANTIL); Y DE FISCALIZACIÓN EN LOS TRES NIVELES DE GOBIERNO, DE FORMA QUE CONIKIBUYA A GAKANTILAK EL PLENO EJCRCICIO DE LOS DERCCHOS DE LAS NINAS. NINOS Y ADOLESCENIES ENEL PER",
   "votos": {
    "305": "NO"
   },
@@ -960,7 +960,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-09",
   "hora": "07:31 PM",
-  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 71, QUE PROPONEN QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL MULTIPARTIDARIA DE SEGURIDAD CIUDADANA, ENCARGADA DEL SEGUIMIENTO, FISCALIZACIÓN, EVALUACIÓN Y FORMULACIÓN DE PROPUESTAS ORIENTADAS AL FORTALECIMIENTO DE LAS POLÍTICAS PÚBLICAS EN MATERIA DE SEGURIDAD CIUDADANA",
+  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 71, QUE PROPONEN QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL MULTIPARTIDARIA DE SEGURIDAD CIUDADANA, ENCARGADA DEL SEGUIMIENTO, FISCALIZACIÓN, EVALUACION Y FORMULACION DE PROPUESTAS ORIENTADAS AL FORTALECIMIENTO DE LAS POLÍTICAS PÚBLICAS EN MATERIA DE SEGURIDAD CIUDADANA",
   "votos": {
    "305": "NO"
   },
@@ -990,7 +990,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-09",
   "hora": "07:46 PM",
-  "asunto": "TEXTO SUSTITUTORIO DE LA MOCIÓN 71, QUE PROPONE CREAR LA COMISIÓN ESPECIAL MULTIPARTIDARIA DE SEGURIDAD CIUDADANA ENCARGADA DEL SEGUIMIENTO, FISCALIZACIÓN, EVALUACIÓN Y FORMULACIÓN DE PROPUESTAS ORIENTADAS AL FORTALECIMIENTO DE LAS POLÍTICAS PÚBLICAS EN MATERIA DE SEGURIDAD CIUDADANA",
+  "asunto": "TEXTO SUSTITUTORIO DE LA MOCIÓN 71, QUE PROPONE CREAR LA COMISIÓN ESPECIAL MULTIPARTIDARIA DE SEGURIDAD CIUDADANA ENCARGADA DEL SEGUIMIENTO, FISCALIZACION, EVALUACION Y FORMULACION DE PROPUESTAS ORIENTADAS AL FORTALECIMIENTO DE LAS POLÍTICAS PÚBLICAS EN MATERIA DE SEGURIDAD CIUDADANA",
   "votos": {
    "305": "NO"
   },
@@ -1150,11 +1150,11 @@
   "hora": "03:30 PM",
   "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN 86, LA CUAL PROPONE QUE EL CONGRESO DE LA REPÚBLICA, INTERPELE AL MINISTRO DE DEFENSA, SEÑOR RAFAEL BELAÚNDE LLOSA, A FIN DE QUE CONCURRA AL PLENO DE LA CÁMARA DE DIPUTADOS",
   "votos": {
-   "226": "SI",
    "192": "ABST",
    "201": "ABST",
+   "205": "SI",
    "175": "NO",
-   "205": "SI"
+   "226": "SI"
   },
   "constancias": {},
   "registro_sistema": {},
@@ -1188,10 +1188,10 @@
   "hora": "03:49 PM",
   "asunto": "ADMISIÓN DE LA MOCIÓN 256, LA CUAL PROPONE QUE LA CÁMARA DE DIPUTADOS INTERPELE AL MINISTRO DEL INTERIOR, SEÑOR CÉSAR AUGUSTO ASTUDILLO SALCEDO",
   "votos": {
-   "192": "SI",
    "201": "SI",
    "205": "SI",
    "175": "NO",
+   "192": "SI",
    "226": "SI"
   },
   "constancias": {},
@@ -1262,7 +1262,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-10",
   "hora": "10:33 AM",
-  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN DE ORDEN DEL DÍA 186, QUE PROPONE INVITAR AL PRESIDENTE DEL CONSEJO DE MINISTROS, AL MINISTRO DELINTERIOR Y AL MINISTRO DE DEFENSA PARA QUE CONCURRAN, CON CARÁCTER URGENTE, ANTE EL PLENO DE LA CÁMARA DE DIPUTADOS PARA QUE INFORMEN Y RINDAN CUENTAS SOBRE EL GRAVE DETERIORO DE LA SEGURIDAD CIUDADANA Y LA EXPANSIÓN DE LA CRIMINALIDAD ORGANIZADA EN EL PAIS.",
+  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN DE ORDEN DEL DÍA 186, QUE PROPONE INVITAR AL PRESIDENTE DEL CONSEJO DE MINISTROS, AL MINISTRO DEL INTERIOR Y AL MINISTRO DE DEFENSA PARA QUE CONCURRAN, CON CARÁCTER URGENTE, ANTE EL PLENO DE LA CÁMARA DE DIPUTADOS PARA QUE INFORMEN Y RINDAN CUENTAS SOBRE EL GRAVE DETERIORO DE LA SEGURIDAD CIUDADANA Y LA EXPANSIÓN DE LA CRIMINALIDAD ORGANIZADA EN EL PAIS.",
   "votos": {
    "226": "SI",
    "192": "SI",
@@ -1283,11 +1283,11 @@
   "hora": "10:40 AM",
   "asunto": "",
   "votos": {
-   "226": "PRE",
    "192": "PRE",
    "201": "PRE",
    "205": "PRE",
-   "175": "PRE"
+   "175": "PRE",
+   "226": "PRE"
   },
   "constancias": {},
   "registro_sistema": {},
@@ -1321,11 +1321,11 @@
   "hora": "11:08 AM",
   "asunto": "",
   "votos": {
+   "226": "PRE",
    "192": "PRE",
    "201": "PRE",
    "175": "PRE",
-   "205": "PRE",
-   "226": "PRE"
+   "205": "PRE"
   },
   "constancias": {},
   "registro_sistema": {},
@@ -1338,7 +1338,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-10",
   "hora": "11:10 AM",
-  "asunto": "QUE PROPONEN CONFORMAR LA COMISIÓN ESPECIAL ADMISIÓN A DEBATE DE LA MOCIONES DE ORDEN DEL DIA 15, 46, 85 Y 90, MULTIPARTIDARIA DE SEGUIMIENTO Y FISCALIZACIÓN DE LAS ACCIONES DE PREVENCIÓN DE DESASTRES EN EL MARCO DEL FENOMENO EL NIÑO 2026-2027",
+  "asunto": "ADMISIÓN A DEBATE DE LA MOCIONES DE ORDEN DEL DiA 15, 46, 85 Y 90, QUE PROPONEN CONFORMAR LA COMISIÓN ESPECIAL MULTIPARTIDARIA DE SEGUIMIENTO Y FISCALIZACIÓN DE LAS ACCIONES DE PREVENCIÓN DE DESASTRES EN EL MARCO DEL FENOMENO EL NIÑO 2026-2027",
   "votos": {
    "226": "SI",
    "192": "SI",
@@ -1347,7 +1347,7 @@
    "175": "SI"
   },
   "constancias": {
-   "175": "Constancia de la votación a favor de los diputados Bazán Calderón, Zeballos Aponte, Duarte Patiño, Dominguez Herrera, Espinoza Huillca y Samanez Gonzales an este ulfiftea de volgai • eierce la oresidencia Ge peraroria y nom"
+   "175": "Constancia de la votación a favor de los diputados Bazán Calderón, Zeballos Aponte, Duarte Patiño, Dominguez Herrera, Espinoza Huillca y Samanez Gonzales n este ktfte de vougei eejerce la presidencia. a Relaroria y oi"
   },
   "registro_sistema": {
    "175": "SINRES"
@@ -1380,12 +1380,12 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-10",
   "hora": "12:24 PM",
-  "asunto": "TEXTO SUSTITUTORIO DE LAS MOCIONES DE ORDEN DEL DIA 15, 46, 85 Y 90, QUE PROPONEN CONFORMAR LA COMISION ESPECIAL DE SEGUIMIENTO YFISCALIZACIÓN PARLAMENTARIA DE LAS INVERSIONES Y RECURSOS PÚBLICOS DESTINADOS A LA PREVENCIÓN Y ATENCION DE LOS EFECTOS DEL FENOMENO EL NINO",
+  "asunto": "TEXTO SUSTITUTORIO DE LAS MOCIONES DE ORDEN DEL DÍA 15, 46, 85 Y 90, QUE PROPONEN CONFORMAR LA COMISIÓN ESPECIAL DE SEGUIMIENTO YFISCALIZACIÓN PARLAMENTARIA DE LAS INVERSIONES Y RECURSOS PÚBLICOS DESTINADOS A LA PREVENCIÓN Y AI-NGON HOsT--EOsF--NOM-NG-NING",
   "votos": {
    "201": "SI",
+   "205": "SI",
    "175": "SI",
    "192": "SI",
-   "205": "SI",
    "226": "SI"
   },
   "constancias": {},
@@ -1459,7 +1459,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-16",
   "hora": "07:04 PM",
-  "asunto": "ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 110-2026-PCM, SOLICITADO POR LA PRESIDENCIA DE LA REPÚBLICA",
+  "asunto": "ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDC MEDIANTE EL DECRETO SUPREMO 110-2026-PCM, SOLICITADO POR LA PRESIDENCIA DE LA REPÚBLICA",
   "votos": {
    "305": "NO"
   },
@@ -1519,7 +1519,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-16",
   "hora": "07:57 PM",
-  "asunto": "INFORME FINAL Y PROYECTO DE RESOLUCIÓN LEGISLATIVA 9, RESOLUCIÓN LEGISLATIVA DEL SENADO QUE RATIFICA LA DESIGNACIÓN DEL PRESIDENTE DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PERU",
+  "asunto": "INFORME FINAL Y PROYECTO DE RESOLUCIÓN LEGISLATIVA 9, RESOLUCIÓN LEGISLATIVA DEL SENADO QUE RATIFICA LA DESIGNACIÓN DEL PRESIDENTE DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PERÚ",
   "votos": {
    "305": "NO"
   },
@@ -1583,7 +1583,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-30",
   "hora": "12:46 PM",
-  "asunto": "ESTADO DE EMERGENCIA ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA SOLICITUD DE PRÓRROGA DEL PLAZO DEL ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 113-2026-PCM, SOLICITADA POR LA PRESIDENCIA DE LA REPÚBLICA",
+  "asunto": "ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA SOLICITUD DE PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 113-2026-PCM, SOLICITADA POR LA PRESIDENCIA DE LA REPÚBLICA",
   "votos": {
    "305": "ABST"
   },
@@ -1598,7 +1598,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-09-30",
   "hora": "12:49 PM",
-  "asunto": "ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA SOLICITUD DE PRORROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 114-2026-PCM, SOLICITADA POR LA PRESIDENCIA DE LA REPUBLICA",
+  "asunto": "ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA SOLICITUD DE PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 114-2026-PCM, SOLICITADA POR LA PRESIDENCIA DE LA REPUBLICA",
   "votos": {
    "305": "ABST"
   },
@@ -2026,7 +2026,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-10-21",
   "hora": "01:29 PM",
-  "asunto": "TEXTO SUSTITUTORIO DEL PROYECTO DE LEY 13, QUE PROPONE LA LEY QUE DELEGA EN EL PODER EJECUTIVO LA FACULTAD DE LEGISLAR EN MATERIAS DE SEGURIDAD CIUDADANA Y DEL FENOMENO EL NINO",
+  "asunto": "TEXTO SUSTITUTORIO DEL PROYECTO DE LEY 13, QUE PROPONE LA LEY QUE DELEGA EN EL PODER EJECUTIVO LA FACULTAD DE LEGISLAR EN MATERIAS DE SEGURIDAD CIUDADANA Y DEL FENÓMENO EL NIÑO",
   "votos": {
    "305": "NO"
   },
@@ -2071,7 +2071,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-10-21",
   "hora": "04:06 PM",
-  "asunto": "PPOR CATALA COME MEÓN O DEL DRECTORNE DEL BANCO OENTRAL DEM FESTER VA DE PER EN EL INFORME FINAL, JOSE RICARDO",
+  "asunto": "PPOR CATALA COME MEÓN O DEL DRECTORNE DEL BANCO OENTRAL DEM FESTER VA DE PER EN EL INFORME FINAL, JOSE RICARDO PROPUESTA DE DESIGNACIÓN DEL",
   "votos": {
    "305": "NO"
   },
@@ -2086,7 +2086,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-10-21",
   "hora": "04:08 PM",
-  "asunto": "PIOS ESIN CONOAEN NE S E NN CEN DE RESERVE DEL PEME FINAL, JOSE ANTONIO",
+  "asunto": "OPUESTA DE DESIGNACIÓN DEL CANDIDATO NÚMERO 3 DEL ORDEN DE MÉRITO CONTENIDO EN EL INFORME FINAL, JOSÉ ANTO RNÁNDEZ BACA LLAMOSAS, COMO MIEMBRO DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PE",
   "votos": {
    "305": "SI"
   },
@@ -2101,7 +2101,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-10-21",
   "hora": "04:10 PM",
-  "asunto": "PROPUESTA DE DESIGNACIÓN DEL CANDIDATO NÚMERO 4 DEL ORDEN DE MÉRITO CONTENIDO EN EL INFORME FINAL, SANTIAGO FRANCISCO ROCA TAVELLA. COMO MIEMBRO DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PERÚ",
+  "asunto": "'ROPUESTA DE DESIGNACIÓN DEL CANDIDATO NÚMERO 4 DEL ORDEN DE MÉRITO CONTENIDO EN EL INFORME FINAL, SANTIAGC RANCISCO ROCA TAVELLA, COMO MIEMBRO DEL DIRECTORIO DEL BANCO CENTRAL DE RESERVA DEL PERÚ",
   "votos": {
    "305": "SI"
   },
@@ -2146,7 +2146,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-10-21",
   "hora": "04:19 PM",
-  "asunto": "APROBAR LA SOLICITUD DE PRORROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 120- 2026-PCM, QUE DECLARA EL ESTADO DE EMERGENCIA EN EL DISTRITO DE ENCAÑADA DE LA PROVINCIA DE CAJAMARCA; EN EL DISTRITO",
+  "asunto": "APROBAR LA SOLICITUD DE PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 120- 2026-PCM, QUE DECLARA EL ESTADO DE EMERGENCIA EN EL DISTRITO DE ENCAÑADA DE LA PROVINCIA DE CAJAMARCA; EN EL DISTRITO",
   "votos": {
    "305": "SI"
   },
@@ -2206,7 +2206,7 @@
   "tipo": "VOTACIÓN",
   "fecha": "2026-10-21",
   "hora": "04:28 PM",
-  "asunto": "NACIONAL, COMO IMPLEMENTACIÓN DE LAS POLÍTICAS PÚBLICAS. LOS PLANES Y LOS PROGRAMAS VINCULADOS CON LA INFANCIA Y LA ADOLESCENCIA; Y DE FISCALIZAR, EN EI MARCO DE SUS COMPETENCIAS, LA ACTUACIÓN DE LAS ENTIDADES DE LOS TRES NIVELES DE GOBIERNO EN ESTA MATERIA. (MOCIÓN 22)",
+  "asunto": "NACIONAL, COMO IMPL EMENTACIÓN DE LAS POLÍTICAS PÚBLICAS. LOS PLANES Y LOS PROGRAMAS VINCULADOS CON LA INFANCIA Y LA ADOLESCENCIA; Y DE FISCALIZAR, EN EI MARCO DE SUS COMPETENCIAS, LA ACTUACIÓN DE LAS ENTIDADES DE LOS TRES NIVELES DE GOBIERNO EN ESTA MATERIA. (MOCIÓN 22)",
   "votos": {
    "305": "SI"
   },
@@ -2326,5 +2326,825 @@
   "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/10/ASISTENCIA-PLENO-DIPUTADOS-20261020-vbR.pdf",
   "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbR.pdf",
   "pagina": 3
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-28",
+  "hora": "09:34 AM",
+  "asunto": "",
+  "votos": {
+   "305": "AUS"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 1
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-28",
+  "hora": "09:45 AM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 2
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-28",
+  "hora": "09:47 AM",
+  "asunto": "PROYECTO DE RESOLUCIÓN LEGISLATIVA 14-2026-2031-S, QUE PROPONE AUTORIZAR EL INGRESO Y TRÁNSITO DE UNA UNIDAD NAVAL Y DE PERSONAL MILITAR DE LA REPÚBLICA DE CHILE AL TERRITORIO DE LA REPÚBLICA DEL PERÚ. INICIATIVA. PODER EJECUTIVO.",
+  "votos": {
+   "305": "NO"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 3
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-28",
+  "hora": "10:53 AM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 4
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-28",
+  "hora": "10:54 AM",
+  "asunto": "ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 125-2026-PCM, SOLICITADO POR LA PRESIDENCIA DE LA REPÚBLICA",
+  "votos": {
+   "305": "NO"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 5
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-28",
+  "hora": "10:57 AM",
+  "asunto": "ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 126-2026-PCM, SOLICITADO POR LA PRESIDENCIA DE LA REPÚBLICA",
+  "votos": {
+   "305": "REVISAR"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 6
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-28",
+  "hora": "10:59 AM",
+  "asunto": "ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 128-2026-PCM, SOLICITADO POR LA PRESIDENCIA DE LA REPÚBLICA",
+  "votos": {
+   "305": "NO"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 7
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-28",
+  "hora": "11:13 AM",
+  "asunto": "",
+  "votos": {
+   "305": "AUS"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 8
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-28",
+  "hora": "11:14 AM",
+  "asunto": "PROYECTOS DE RESOLUCIÓN LEGISLATIVA DEL SENADO 11-2026-2031-S Y 16-2026-2031-S, QUE PROPONE APROBAR EL REGLAMENTO ESPECIAL DE ELECCIÓN DE LOS MAGISTRADOS DEL TRIBUNAL CONSTITUCIONAL",
+  "votos": {
+   "305": "AUS"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/10/Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 9
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-29",
+  "hora": "10:18 AM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {
+   "226": "Constancia de la asistencia de los diputados Valqui Calderón, Yonz Nuñez, Pérez Mallqui y Prado Vallejos."
+  },
+  "registro_sistema": {
+   "226": "AUS"
+  },
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 1
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-29",
+  "hora": "11:40 AM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 2
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-29",
+  "hora": "11:43 AM",
+  "asunto": "PROYECTO DE RESOLUCIÓN LEGISLATIVA DE LA CÁMARA DE DIPUTADOS QUE PROPONE LA AGENDA LEGISLATIVA DEL PERIODO ANUAL DE SESIONES 2026-2027",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 3
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-10-29",
+  "hora": "11:54 AM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 4
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-10-29",
+  "hora": "11:56 AM",
+  "asunto": "TEXTO SUSTITUTORIO DE LAS PROPOSICIONES LEGISLATIVAS 91 Y 159, QUE PROPONEN MODIFICAR LA LEY 27669, LEY DEL TRABAJO DE LA ENFERMERA(O), A FIN DE FORTALECER EL MARCO DE ACCIÓN DE LA PROFESIÓN DE ENFERMERÍA",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 5
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "03:22 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 1
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "06:52 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "AUS"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 2
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "06:54 PM",
+  "asunto": "PRIMERA CONCLUSIÓN DEL INFORME FINAL DE LA DENUNCIA CONSTITUCIONAL 12 (ANTES 403), ACUSACIÓN POR LA PRESUNTA COMISIÓN DE LOS DELITOS DE PATROCINIO ILEGAL (ARTÍCULO 385 DEL CÓDIGO PENAL), ABUSO DE AUTORIDAD (ARTÍCULO 376 DEL",
+  "votos": {
+   "226": "NO",
+   "192": "ABST",
+   "201": "NO",
+   "205": "NO",
+   "175": "AUS"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 3
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "06:58 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 4
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "07:00 PM",
+  "asunto": "SEGUNDA CONCLUSIÓN DEL INFORME FINAL DE LA DENUNCIA CONSTITUCIONAL 12 (ANTES 403), ACUSACIÓN CONTRA WALTER EDISON AYALA GONZALES, POR LA PRESUNTA COMISIÓN DE LOS DELITOS DE ABUSO DE AUTORIDAD (ARTÍCULO 376 DEL CÓDIGO PENAL),",
+  "votos": {
+   "226": "NO",
+   "192": "ABST",
+   "201": "NO",
+   "205": "NO",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 5
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "07:03 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 6
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "07:06 PM",
+  "asunto": "SE RECOMIENDA ARCHIVAR EL EXTREMO REFERIDO AL DELITO DE ORGANIZACIÓN CRIMINAL (ARTÍCULO 317 DEL CÓDIGO PENAL), DADO QUE NO SE HA ACREDITADO LA EXISTENCIA DE UNA ESTRUCTURA CRIMINAL PARALELA DISTINTA A LA ESTATAL DE LA DENUNCIA",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 7
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "07:16 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 8
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "07:18 PM",
+  "asunto": "TEXTO SUSTITUTORIO CONSENSUADO DE LAS COMISIONES DE EDUCACIÓN Y ECONOMÍA, LEY QUE OTORGA TEMPORALMENTE EL REINTEGRO TRIBUTARIO DEL IMPUESTO GENERAL A LAS VENTAS A LAS EDITORIALES DE LIBROS.",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 9
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "07:49 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "AUS"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 10
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "07:52 PM",
+  "asunto": "PROPOSICIONES LEGISLATIVA 509, 581 Y 439, QUE PROPONEN MODIFICAR LA LEY DEL IMPUESTO A LA RENTA",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "AUS"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 11
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "08:17 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 12
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "08:20 PM",
+  "asunto": "PROPOSICIÓN LEGISLATIVA 507, QUE PROPONE MODIFICAR LA LEY 30498, LEY QUE PROMUEVE LA DONACIÓN DE ALIMENTOS Y FACILITA EL TRANSPORTE DE DONACIONES EN SITUACIONES DE DESASTRES NATURALES.",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 13
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "09:30 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 14
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "09:33 PM",
+  "asunto": "PROPOSICIONES LEGISLATIVAS 2, 7, 9, 471, 494, 538, 611 Y 625, QUE PROPONEN MODIFICAR EL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, Y EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, Y DEROGA LA LEY 32104, LEY QUE PRECISA LA APLICACIÓN",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 15
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "09:42 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 16
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "09:43 PM",
+  "asunto": "INFORME DE CALIFICACIÓN Y EL PLAZO PARA QUE LA COMISIÓN DE ACUSACIONES CONSTITUCIONALES REALICE LA INVESTIGACIÓN Y PRESENTE SU INFORME FINAL. EN ESE SENTIDO, LA PRESIDENCIA PROPONE OTORGAR UN PLAZO DE HASTA 15 DÍAS HÁBILES A LA",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "ABST",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 17
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-10",
+  "hora": "10:43 PM",
+  "asunto": "",
+  "votos": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 18
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "10:46 PM",
+  "asunto": "PROPOSICIONES LEGISLATIVAS 13, 17, 477, 540 Y 612, QUE PROPONEN MODIFICAR EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, PARA RESTABLECER LA AUTONOMÍA DEL PROCESO Y FORTALECER SUS GARANTÍAS.",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 19
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-11",
+  "hora": "01:02 PM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 10
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-11",
+  "hora": "01:04 PM",
+  "asunto": "ADMISIÓN A DEBATE DE LA MOCIÓN DE ORDEN DEL DÍA 12, MEDIANTE LA CUAL PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL DE PUEBLOS INDÍGENAS U ORIGINARIOS, COMUNIDADES CAMPESINAS Y NATIVAS, PUEBLO",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 11
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-11",
+  "hora": "01:47 PM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 12
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-11",
+  "hora": "01:48 PM",
+  "asunto": "NÓMINA DE LA COMISIÓN ESPECIAL DE SEGUIMIENTO, PREVENCIÓN Y RESPUESTA ANTE EL FENÓMENO EL NIÑO Y A LA GESTIÓN DEL RIESGO DE DESASTRES, COMO ÓRGANO PARLAMENTARIO ENCARGADO DE REALIZAR EL ESTUDIO, EVALUACIÓN Y SEGUIMIENTO",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 13
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-11",
+  "hora": "02:05 PM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 14
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-11",
+  "hora": "02:06 PM",
+  "asunto": "TEXTO SUSTITUTORIO DE LA MOCIÓN DE ORDEN DEL DÍA 12, MEDIANTE LA CUAL PROPONE QUE EL SENADO DE LA REPÚBLICA CONSTITUYA UNA COMISIÓN ESPECIAL DE PUEBLOS INDÍGENAS U ORIGINARIOS, COMUNIDADES CAMPESINAS Y NATIVAS Y PUEBLO",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 15
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-11",
+  "hora": "11:34 AM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 1
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-11",
+  "hora": "11:52 AM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 2
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-11",
+  "hora": "11:53 AM",
+  "asunto": "CUESTIÓN PREVIA PARA QUE SE VOTE POR SEPARADO LA SOLICITUD DE VIAJE DE LA PRESIDENTA DE LA REPÚBLICA",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 3
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-11",
+  "hora": "12:20 PM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 4
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-11",
+  "hora": "12:21 PM",
+  "asunto": "PROYECTO DE RESOLUCIÓN LEGISLATIVA 22, QUE AUTORIZA A LA SEÑORA PRESIDENTA DE LA REPÚBLICA PARA SALIR DEL TERRITORIO NACIONAL DEL 15 AL 21 DE NOVIEMBRE DE 2026",
+  "votos": {
+   "305": "ABST"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 5
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-11",
+  "hora": "12:34 PM",
+  "asunto": "",
+  "votos": {
+   "305": "PRE"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 6
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-11",
+  "hora": "12:35 PM",
+  "asunto": "ACUERDO DEL SENADO DE LA REPÚBLICA QUE APRUEBA LA PRÓRROGA DEL PLAZO DEL ESTADO DE EMERGENCIA ESTABLECIDO MEDIANTE EL DECRETO SUPREMO 132-2026-PCM, SOLICITADO POR LA PRESIDENCIA DE LA REPÚBLICA",
+  "votos": {
+   "305": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 7
+ },
+ {
+  "tipo": "ASISTENCIA",
+  "fecha": "2026-11-11",
+  "hora": "12:51 PM",
+  "asunto": "",
+  "votos": {
+   "305": "AUS"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 8
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-11",
+  "hora": "12:52 PM",
+  "asunto": "PROYECTO DE RESOLUCIÓN LEGISLATIVA 17, QUE AUTORIZA EL INGRESO Y TRÁNSITO DE UNA UNIDAD NAVAL Y DE PERSONAL MILITAR DE LA REPÚBLICA DE COREA CON ARMAS DE GUERRA AL TERRITORIO DE LA REPÚBLICA DEL PERÚ",
+  "votos": {
+   "305": "AUS"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "S",
+  "fuente": "https://senado.congreso.gob.pe/wp-content/uploads/2026/11/Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 9
  }
 ]

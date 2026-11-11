@@ -9,69 +9,79 @@
  ],
  "camaras": {
   "D": {
-   "total": 472,
+   "total": 591,
    "por_etapa": [
-    23,
-    431,
-    9,
-    4,
+    19,
+    531,
+    11,
+    22,
     0,
-    5
+    8
    ],
-   "dictamen_o_mas": 13,
-   "dias_esperando_mediana": 34,
+   "dictamen_o_mas": 33,
+   "dias_esperando_mediana": 36,
    "firmantes": 134,
-   "mediana_propios": 2.0,
-   "mediana_coautor": 16.0,
-   "max_propios": 23,
-   "max_coautor": 91
+   "mediana_propios": 3.0,
+   "mediana_coautor": 19.0,
+   "max_propios": 28,
+   "max_coautor": 113
   },
   "S": {
-   "total": 9,
+   "total": 10,
    "por_etapa": [
     0,
-    7,
+    8,
+    0,
+    0,
     2,
-    0,
-    0,
     0
    ],
    "dictamen_o_mas": 2,
-   "dias_esperando_mediana": 75,
-   "firmantes": 26,
-   "mediana_propios": 0.0,
-   "mediana_coautor": 1.0,
+   "dias_esperando_mediana": 86,
+   "firmantes": 27,
+   "mediana_propios": 0,
+   "mediana_coautor": 1,
    "max_propios": 2,
    "max_coautor": 4
   }
  },
  "congresistas": {
   "192": {
-   "total": 11,
+   "total": 13,
    "por_etapa": [
     0,
     10,
     1,
-    0,
+    2,
     0,
     0
    ],
-   "dictamen_o_mas": 1,
-   "dias_esperando_mediana": 55,
+   "dictamen_o_mas": 3,
+   "dias_esperando_mediana": 67,
    "coautor": {
-    "total": 68,
+    "total": 85,
     "por_etapa": [
-     2,
-     65,
+     3,
+     76,
      0,
-     1,
+     6,
      0,
      0
     ],
-    "dictamen_o_mas": 1,
-    "dias_esperando_mediana": 41
+    "dictamen_o_mas": 6,
+    "dias_esperando_mediana": 37
    },
    "avanzados": [
+    {
+     "numero": "00612-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32326, LEY QUE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, A FIN DE PERFECCIONAR EL PROCESO DE EXTINCIÓN DE DOMINIO.",
+     "estado": "APROBADO"
+    },
+    {
+     "numero": "00002-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA EL MARCO NORMATIVO CONOCIDO COMO LEYES PRO CRIMEN Y RESTABLECE LAS CAPACIDADES DEL ESTADO PARA LA INVESTIGACIÓN Y PERSECUCIÓN DEL CRIMEN ORGANIZADO, LA CORRUPCIÓN Y LAS GRAVES VIOLACIONES A LOS DERECHOS HUMANOS.",
+     "estado": "APROBADO"
+    },
     {
      "numero": "00004-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32735, CONOCIDA COMO LEY DE IMPUNIDAD MILITAR POLICIAL Y RESTITUYE LA COMPETENCIA DE LA JUSTICIA PENAL ORDINARIA",
@@ -80,108 +90,122 @@
    ],
    "proyectos": [
     {
+     "numero": "00002-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA EL MARCO NORMATIVO CONOCIDO COMO LEYES PRO CRIMEN Y RESTABLECE LAS CAPACIDADES DEL ESTADO PARA LA INVESTIGACIÓN Y PERSECUCIÓN DEL CRIMEN ORGANIZADO, LA CORRUPCIÓN Y LAS GRAVES VIOLACIONES A LOS DERECHOS HUMANOS.",
+     "estado": "APROBADO",
+     "etapa": 3,
+     "dias": 99
+    },
+    {
+     "numero": "00612-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32326, LEY QUE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, A FIN DE PERFECCIONAR EL PROCESO DE EXTINCIÓN DE DOMINIO.",
+     "estado": "APROBADO",
+     "etapa": 3,
+     "dias": 23
+    },
+    {
      "numero": "00004-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32735, CONOCIDA COMO LEY DE IMPUNIDAD MILITAR POLICIAL Y RESTITUYE LA COMPETENCIA DE LA JUSTICIA PENAL ORDINARIA",
      "estado": "CON DICTAMEN",
      "etapa": 2,
-     "dias": 84
-    },
-    {
-     "numero": "00002-2026-2031-CD",
-     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA EL MARCO NORMATIVO CONOCIDO COMO LEYES PRO CRIMEN Y RESTABLECE LAS CAPACIDADES DEL ESTADO PARA LA INVESTIGACIÓN Y PERSECUCIÓN DEL CRIMEN ORGANIZADO, LA CORRUPCIÓN Y LAS GRAVES VIOLACIONES A LOS DERECHOS HUMANOS.",
-     "estado": "EN COMISIÓN",
-     "etapa": 1,
-     "dias": 85
+     "dias": 98
     },
     {
      "numero": "00011-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE PROMUEVE LA INOCUIDAD DE LOS ALIMENTOS A FAVOR DE LOS CONSUMIDORES MEDIANTE EL FORTALECIMIENTO DEL SISTEMA DE CONTROL Y VIGILANCIA SANITARIA",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 79
+     "dias": 93
     },
     {
      "numero": "00080-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA DIVERSOS ARTÍCULOS DE LA LEY 32434, LEY QUE PROMUEVE LA TRANSFORMACIÓN PRODUCTIVA, COMPETITIVA Y SOSTENIBLE DEL SECTOR AGRARIO CON PROTECCIÓN SOCIAL HACIA LA AGRICULTURA MODERNA, CON EL FIN DE ELIMINAR LOS PRIVILEGIOS TRIBUTARIOS A LAS GRANDES EMPRESAS Y FORTALECER LA RECAUDACIÓN DEL ESTADO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 68
+     "dias": 82
     },
     {
      "numero": "00082-2026-2031-CD",
      "titulo": "PROPOSICIÓN DE RESOLUCIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 45 DEL REGLAMENTO DE LA CÁMARA DE DIPUTADOS, CON EL FIN DE RESTABLECER LA COMISIÓN DE CULTURA Y PATRIMONIO CULTURAL.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 68
+     "dias": 82
     },
     {
      "numero": "00125-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE PROTEGE LOS DERECHOS DE LOS CONSUMIDORES BANCARIOS Y FINANCIEROS ELIMINANDO LAS COMISIONES POR TRANSFERENCIAS BANCARIAS Y PAGO DE TARJETA DE CRÉDITO ",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 55
+     "dias": 69
     },
     {
      "numero": "00126-2026-2031-CD",
      "titulo": "PROPOSICIÓN  DE RESOLUCIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 25 DE LA RESOLUCIÓN LEGISLATIVA DEL CONGRESO N°005-2025-2026-CR, QUE APRUEBA EL REGLAMENTO DE LA CÁMARA DE DIPUTADOS, A FIN DE FORTALECER LAS GARANTÍAS PARA EL USO DE LAS LENGUAS ORIGINARIAS O INDÍGENAS EN EL EJERCICIO DE LA FUNCIÓN PARLAMENTARIA.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 55
+     "dias": 69
     },
     {
      "numero": "00151-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 30220, PARA FORTALECER LA AUTONOMÍA DE LAS UNIVERSIDADES PÚBLICAS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 51
-    },
-    {
-     "numero": "00612-2026-2031-CD",
-     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32326, LEY QUE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, A FIN DE PERFECCIONAR EL PROCESO DE EXTINCIÓN DE DOMINIO.",
-     "estado": "EN COMISIÓN",
-     "etapa": 1,
-     "dias": 9
+     "dias": 65
     },
     {
      "numero": "00640-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1252, DECRETO LEGISLATIVO QUE CREA EL SISTEMA NACIONAL DE PROGRAMACIÓN MULTIANUAL Y GESTIÓN DE INVERSIONES, CON EL FIN DE FORTALECER LA PLANIFICACIÓN DE LAS INVERSIONES EN LAS UNIVERSIDADES PÚBLICAS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 7
+     "dias": 21
     },
     {
      "numero": "00648-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE RESTABLECE EL CONTENIDO ESENCIAL DEL DERECHO CONSTITUCIONAL DE REFERÉNDUM.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 6
+     "dias": 20
+    },
+    {
+     "numero": "00705-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA DE REFORMA CONSTITUCIONAL DE LOS ARTÍCULOS 113 Y 134 DE LA CONSTITUCIÓN POLÍTICA DEL PERÚ PARA GARANTIZAR LA ESTABILIDAD POLÍTICA DEL PAÍS.",
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 13
+    },
+    {
+     "numero": "00790-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA PARA EL EMPLEO JUVENIL DIGNO.",
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 5
     }
    ]
   },
   "205": {
-   "total": 12,
+   "total": 20,
    "por_etapa": [
-    0,
-    12,
+    1,
+    19,
     0,
     0,
     0,
     0
    ],
    "dictamen_o_mas": 0,
-   "dias_esperando_mediana": 30,
+   "dias_esperando_mediana": 34,
    "coautor": {
-    "total": 15,
+    "total": 19,
     "por_etapa": [
      0,
-     13,
+     16,
      1,
-     1,
+     2,
      0,
      0
     ],
-    "dictamen_o_mas": 2,
-    "dias_esperando_mediana": 35
+    "dictamen_o_mas": 3,
+    "dias_esperando_mediana": 37
    },
    "avanzados": [],
    "proyectos": [
@@ -190,84 +214,140 @@
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE EXCLUYE A LA GRAN EMPRESA DE LOS BENEFICIOS TRIBUTARIOS DE LA LEY 32434, LEY QUE PROMUEVE LA TRANSFORMACIÓN PRODUCTIVA, COMPETITIVA Y SOSTENIBLE DEL SECTOR AGRARIO CON PROTECCIÓN SOCIAL HACIA LA AGRICULTURA MODERNA.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 69
+     "dias": 83
     },
     {
      "numero": "00100-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1267, LEY DE LA POLICÍA NACIONAL DEL PERÚ, PARA RESTABLECER LA FACULTAD DE REMOCIÓN POR PÉRDIDA DE CONFIANZA DEL COMANDANTE GENERAL.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 58
+     "dias": 72
     },
     {
      "numero": "00180-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE OTORGA PLAZO EXCEPCIONAL PARA LA ADECUACIÓN DE UNIDADES DE GESTIÓN MUNICIPAL (UGM) EN EL MARCO DEL DECRETO LEGISLATIVO 1280.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 48
+     "dias": 62
     },
     {
      "numero": "00181-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 108-A DEL CÓDIGO PENAL PARA FORTALECER LA PROTECCIÓN PENAL DE PERSONAS DEFENSORAS AMBIENTALES, GUARDAPARQUES E INTEGRANTES DE PUEBLOS INDÍGENAS U ORIGINARIOS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 48
+     "dias": 62
     },
     {
      "numero": "00451-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE RECONOCE LA CONDICIÓN DE ELEGIBLES Y ESTABLECE SU REGISTRO PARA LA ASIGNACIÓN PROGRESIVA DE PLAZAS EN EL SEGURO SOCIAL DE SALUD – ESSALUD, EN EL MARCO DEL PROCESO DE PROMOCIÓN INTERNA 2025–2026 DE FORMA EXCEPCIONAL Y POR ÚNICA VEZ.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 30
+     "dias": 44
     },
     {
      "numero": "00452-2026-2031-CD",
      "titulo": "PROPOSICIÓN DE RESOLUCIÓN LEGISLATIVA QUE MODIFICA EL ART 45 DEL REGLAMENTO DE LA CÁMARA DE DIPUTADOS DEL CONGRESO DE LA REPÚBLICA, Y CREA LA COMISIÓN ORDINARIA DE LAS PERSONAS CON DISCAPACIDAD",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 30
+     "dias": 44
     },
     {
      "numero": "00453-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE TIPIFICA EL DELITO DE MANIPULACIÓN COORDINADA E INAUTÉNTICA DEL ECOSISTEMA DIGITAL Y ESTABLECE MEDIDAS DE PROTECCIÓN DE LA SOBERANÍA POPULAR EN PROCESOS ELECTORALES.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 30
+     "dias": 44
     },
     {
      "numero": "00456-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE RECONOCE EL AGUA COMO DERECHO HUMANO FUNDAMENTAL, PROHÍBE SU PRIVATIZACIÓN Y GARANTIZA EL ACCESO UNIVERSAL.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 29
+     "dias": 43
     },
     {
      "numero": "00458-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LOS DECRETOS DE URGENCIA 010-2025 Y 003-2026, A FIN DE EVITAR LA PRIVATIZACIÓN DE PETROPERÚ S.A. Y ESTABLECE MEDIDAS URGENTES PARA SU FORTALECIMIENTO FINANCIERO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 29
+     "dias": 43
     },
     {
      "numero": "00530-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA LA LEY 31873, LEY QUE REGULA LOS PROCESOS DE ASCENSOS DEL PERSONAL DE LA POLICÍA NACIONAL DEL PERÚ Y QUE INCLUYE COMO REQUISITO DE EVALUACIÓN DE CONTROL Y CONFIANZA LA TÉCNICA POLIGRÁFICA PARA EL PROCESO DE ASCENSO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 22
+     "dias": 36
     },
     {
      "numero": "00558-2026-2031-CD",
      "titulo": "PROPOSICIÓN DE RESOLUCIÓN LEGISLATIVA DEL CONGRESO QUE MODIFICA Y DEROGA DIVERSOS ARTÍCULOS DEL REGLAMENTO DEL CONGRESO DE LA REPÚBLICA PARA ADECUAR LA NORMATIVA SOBRE SU ORGANIZACIÓN Y FUNCIONAMIENTO ADMINISTRATIVO A LA INDEPENDENCIA Y AUTONOMÍA DE LAS CÁMARAS LEGISLATIVAS",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 19
+     "dias": 33
     },
     {
      "numero": "00600-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE ESTABLECE EXCEPCIONES A LA PROHIBICIÓN DE DESINTEGRACIÓN O ESCISIÓN DE EMPRESAS PRESTADORAS PÚBLICAS DE ACCIONARIADO MUNICIPAL Y AUTORIZA LA CONSTITUCIÓN DE LA EPS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 9
+     "dias": 23
+    },
+    {
+     "numero": "00744-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE AMPLÍA EL PROCESO DE FORMALIZACIÓN MINERA HASTA LA CULMINACIÓN DEL CENSO Y LA REVERSIÓN DE CONCESIONES OCIOSAS PARA DEMOCRATIZAR EL ACCESO HACIA UNA NUEVA MINERÍA COMPETITIVA EN EL PERÚ.",
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 7
+    },
+    {
+     "numero": "00753-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DISPONE EL ESTABLECIMIENTO DE LA ZONA DE PROTECCIÓN DE RECURSOS HIDRICOS DEL APU CURASMA.",
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 7
+    },
+    {
+     "numero": "00754-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL TEXTO ÚNICO ORDENADO DEL DECRETO LEGISLATIVO 728 – LEY DE PRODUCTIVIDAD Y COMPETITIVIDAD LABORAL, APROBADO MEDIANTE DECRETO SUPREMO N° 003-97-TR, A FIN DE ACTUALIZAR LA REGULACIÓN DE LA LICENCIA SIN GOCE DE HABER Y LAS CAUSALES DE CESE DEFINITIVO PARA LOS TRABAJADORES COMPRENDIDOS EN LOS GOBIERNOS REGIONALES Y LOCALES.",
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 7
+    },
+    {
+     "numero": "00755-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA EL DECRETO LEGISLATIVO 1740, DECRETO LEGISLATIVO QUE MODIFICA EL ARTÍCULO 94 DEL DECRETO LEY 25844, LEY DE CONCESIONES ELÉCTRICAS, A FIN DE INCREMENTAR LOS NIVELES DE ILUMINACIÓN EN LAS VÍAS CON ÍNDICES DE CRIMINALIDAD COMPROBADOS.",
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 7
+    },
+    {
+     "numero": "00761-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA DE REFORMA CONSTITUCIONAL QUE MODIFICA LOS ARTÍCULOS 110, 111, 113 Y 124 DE LA CONSTITUCIÓN POLÍTICA DEL PERÚ, PARA QUE LOS CANDIDATOS A LA PRESIDENCIA Y A LAS VICEPRESIDENCIAS DE LA REPÚBLICA Y QUIENES EJERZAN DICHOS CARGOS, ASÍ COMO LOS MINISTROS DE ESTADO DESIGNADOS, TENGAN NACIONALIDAD ÚNICA",
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 6
+    },
+    {
+     "numero": "00788-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO VIII DEL TÍTULO PRELIMINAR DEL NUEVO CÓDIGO PROCESAL CONSTITUCIONAL (LEY N° 31307) PARA CONSOLIDAR EL CONTROL DE CONVENCIONALIDAD Y REFORZAR LA MOTIVACIÓN JUDICIAL ANTE PRONUNCIAMIENTOS DE ORGANISMOS INTERNACIONALES DE DERECHOS HUMANOS",
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 5
+    },
+    {
+     "numero": "00789-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE CREA LA UNIVERSIDAD NACIONAL CIENTIFICA DE LA MAR -UNCLAM.",
+     "estado": "EN COMISIÓN",
+     "etapa": 1,
+     "dias": 5
+    },
+    {
+     "numero": "00784-2026-2031-CD",
+     "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL LITERAL C) DEL ARTÍCULO 3 DE LA LEY 32566, LEY QUE AUTORIZA EL CAMBIO DE CONTRATO CAS-COVID A CONTRATO CAS AL PERSONAL ASISTENCIAL DEL SEGURO SOCIAL DE SALUD (ESSALUD) NO BENEFICIADO POR LA LEY 31539 [...], PARA INCORPORAR AL PERSONAL QUE RENUNCIÓ AL CONTRATO CAS-COVID.",
+     "estado": "PRESENTADO",
+     "etapa": 0,
+     "dias": 5
     }
    ]
   },
@@ -282,19 +362,19 @@
     0
    ],
    "dictamen_o_mas": 1,
-   "dias_esperando_mediana": 23,
+   "dias_esperando_mediana": 37,
    "coautor": {
-    "total": 23,
+    "total": 35,
     "por_etapa": [
-     0,
-     21,
+     1,
+     31,
      2,
-     0,
+     1,
      0,
      0
     ],
-    "dictamen_o_mas": 2,
-    "dias_esperando_mediana": 47
+    "dictamen_o_mas": 3,
+    "dias_esperando_mediana": 42
    },
    "avanzados": [
     {
@@ -309,21 +389,21 @@
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE FORTALECE LA PROTECCIÓN DE LA HOJA DE COCA Y SUS USOS CULTURALES TRADICIONALES, Y PROMUEVE LA INVESTIGACIÓN CIENTÍFICA, EL DESARROLLO TECNOLÓGICO Y EL APROVECHAMIENTO LÍCITO.",
      "estado": "CON DICTAMEN",
      "etapa": 2,
-     "dias": 35
+     "dias": 49
     },
     {
      "numero": "00476-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE INCORPORA EL SERVICIO DE ALIMENTACIÓN ESTUDIANTIL PARA LOS ESTUDIANTES DE LOS INSTITUTOS Y ESCUELAS DE EDUCACIÓN SUPERIOR PÚBLICOS.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 27
+     "dias": 41
     },
     {
      "numero": "00563-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE ESTABLECE EL MARCO PARA LA ATENCIÓN PREFERENTE Y EL DESARROLLO INTEGRAL DEL VALLE DE LOS RIOS APURIMAC, ENE Y MANTARO - VRAEM",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 19
+     "dias": 33
     }
    ]
   },
@@ -338,19 +418,19 @@
     0
    ],
    "dictamen_o_mas": 0,
-   "dias_esperando_mediana": 70,
+   "dias_esperando_mediana": 84,
    "coautor": {
-    "total": 17,
+    "total": 18,
     "por_etapa": [
-     6,
-     9,
+     0,
+     16,
      1,
      1,
      0,
      0
     ],
     "dictamen_o_mas": 2,
-    "dias_esperando_mediana": 6
+    "dias_esperando_mediana": 20
    },
    "avanzados": [],
    "proyectos": [
@@ -359,7 +439,7 @@
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE AMPLÍA EL PASAJE UNIVERSITARIO URBANO E INTERURBANO A TODOS LOS DÍAS DE LA SEMANA Y PRECISA EL CÁLCULO DEL PASAJE DIFERENCIADO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 70
+     "dias": 84
     }
    ]
   },
@@ -374,19 +454,19 @@
     0
    ],
    "dictamen_o_mas": 0,
-   "dias_esperando_mediana": 22,
+   "dias_esperando_mediana": 36,
    "coautor": {
-    "total": 18,
+    "total": 24,
     "por_etapa": [
      1,
-     17,
+     22,
      0,
      0,
      0,
-     0
+     1
     ],
     "dictamen_o_mas": 0,
-    "dias_esperando_mediana": 22
+    "dias_esperando_mediana": 36
    },
    "avanzados": [],
    "proyectos": [
@@ -395,28 +475,28 @@
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 261 Y 264 DEL CODIGO PROCESAL, INCORPORA REGLAS DE MOTIVACION EN DELITOS ESPECIALES, MODIFICA PLAZOS DE LA DETENCION PRELIMINAR",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 77
+     "dias": 91
     },
     {
      "numero": "00517-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 57 DEL CÓDIGO PENAL, SE INCORPORA NUEVAS FIGURAS DELICTIVAS SUSCEPTIBLES DE INAPLICACIÓN DE LA SUSPENSIÓN DE EJECUCIÓN DE LA PENA.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 22
+     "dias": 36
     },
     {
      "numero": "00518-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA EL SEGUNDO PÁRRAFO DEL ARTÍCULO 418 DEL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, SOBRE PREVARICATO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 22
+     "dias": 36
     },
     {
      "numero": "00635-2026-2031-CD",
      "titulo": "PROPOSICIÓN LEGISLATIVA QUE DECLARA DE INTERÉS NACIONAL Y NECESIDAD PÚBLICA LA PROTECCIÓN, CONSERVACIÓN Y RECUPERACIÓN DEL PINGUINO DE HUMBOLDT (SPHENISCUS HUMBOLDTI) Y DE SU HABITAD EN EL LITORAL PERUANO.",
      "estado": "EN COMISIÓN",
      "etapa": 1,
-     "dias": 7
+     "dias": 21
     }
    ]
   },
@@ -437,13 +517,13 @@
     "por_etapa": [
      0,
      1,
+     0,
+     0,
      1,
-     0,
-     0,
      0
     ],
     "dictamen_o_mas": 1,
-    "dias_esperando_mediana": 75
+    "dias_esperando_mediana": 89
    },
    "avanzados": [],
    "proyectos": []

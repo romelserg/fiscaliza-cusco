@@ -222,11 +222,11 @@
    }
   },
   "votos_cusco": {
-   "226": "PRE",
    "192": "PRE",
    "201": "PRE",
    "205": "PRE",
-   "175": "PRE"
+   "175": "PRE",
+   "226": "PRE"
   }
  },
  {
@@ -558,11 +558,11 @@
    }
   },
   "votos_cusco": {
-   "226": "SI",
    "192": "ABST",
    "201": "ABST",
+   "205": "SI",
    "175": "NO",
-   "205": "SI"
+   "226": "SI"
   }
  },
  {
@@ -1580,6 +1580,914 @@
   }
  },
  {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 1,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "03:22 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 26,
+    "aus": 11,
+    "lic": 4,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 31,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 17,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 13,
+    "aus": 0,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 12,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 10,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 2,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "06:52 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 27,
+    "aus": 3,
+    "lic": 11,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 32,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 16,
+    "aus": 2,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 13,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "AUS"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 4,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "06:58 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 26,
+    "aus": 3,
+    "lic": 12,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 32,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 17,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 13,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 6,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "07:03 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 26,
+    "aus": 4,
+    "lic": 11,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 32,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 17,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 13,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 8,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "07:16 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 26,
+    "aus": 4,
+    "lic": 11,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 31,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 17,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 12,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 9,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "07:18 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 9,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 26,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "JP": {
+    "si": 31,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 16,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PCO": {
+    "si": 12,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 11,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 10,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "07:49 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 26,
+    "aus": 4,
+    "lic": 11,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 29,
+    "aus": 3,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 16,
+    "aus": 2,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 12,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 10,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "AUS"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 11,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "07:52 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 8,
+    "no": 0,
+    "abst": 2,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 26,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "JP": {
+    "si": 23,
+    "no": 0,
+    "abst": 6,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 15,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PCO": {
+    "si": 12,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 2,
+    "no": 0,
+    "abst": 8,
+    "sinres": 1
+   }
+  },
+  "votos_cusco": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "AUS"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 12,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "08:17 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 24,
+    "aus": 4,
+    "lic": 13,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 29,
+    "aus": 3,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 16,
+    "aus": 2,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 8,
+    "aus": 5,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 12,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 13,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "08:20 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 9,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 24,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "JP": {
+    "si": 29,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 15,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PCO": {
+    "si": 12,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 8,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 14,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "09:30 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 24,
+    "aus": 4,
+    "lic": 13,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 31,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 17,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 10,
+    "aus": 2,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 15,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "09:33 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 9,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 0,
+    "no": 0,
+    "abst": 24,
+    "sinres": 0
+   },
+   "JP": {
+    "si": 31,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 16,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PCO": {
+    "si": 11,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 10,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 16,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "09:42 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 25,
+    "aus": 3,
+    "lic": 13,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 31,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 17,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 10,
+    "aus": 2,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 17,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "09:43 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 9,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 25,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "JP": {
+    "si": 31,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 16,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PCO": {
+    "si": 9,
+    "no": 0,
+    "abst": 2,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 10,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "SI",
+   "192": "SI",
+   "201": "ABST",
+   "205": "SI",
+   "175": "SI"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 18,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "10:43 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 24,
+    "aus": 4,
+    "lic": 13,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 31,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 16,
+    "aus": 2,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 10,
+    "aus": 2,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "pagina": 19,
+  "camara": "D",
+  "fecha": "2026-11-10",
+  "hora": "10:46 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 9,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 0,
+    "no": 0,
+    "abst": 24,
+    "sinres": 0
+   },
+   "JP": {
+    "si": 31,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 15,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PCO": {
+    "si": 10,
+    "no": 0,
+    "abst": 1,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 0,
+    "no": 0,
+    "abst": 10,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  }
+ },
+ {
   "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbR.pdf",
   "pagina": 1,
   "camara": "D",
@@ -1849,6 +2757,289 @@
    },
    "RP": {
     "si": 12,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 1,
+  "camara": "D",
+  "fecha": "2026-10-29",
+  "hora": "10:18 AM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 36,
+    "aus": 3,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 27,
+    "aus": 4,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 15,
+    "aus": 3,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 10,
+    "aus": 4,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 13,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 7,
+    "aus": 2,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 2,
+  "camara": "D",
+  "fecha": "2026-10-29",
+  "hora": "11:40 AM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 37,
+    "aus": 2,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 22,
+    "aus": 8,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 17,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 13,
+    "aus": 0,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 13,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 3,
+  "camara": "D",
+  "fecha": "2026-10-29",
+  "hora": "11:43 AM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 9,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 37,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "JP": {
+    "si": 21,
+    "no": 0,
+    "abst": 1,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 15,
+    "no": 0,
+    "abst": 0,
+    "sinres": 2
+   },
+   "PCO": {
+    "si": 13,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 13,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 4,
+  "camara": "D",
+  "fecha": "2026-10-29",
+  "hora": "11:54 AM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 38,
+    "aus": 1,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 30,
+    "aus": 0,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 17,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 13,
+    "aus": 0,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 14,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 9,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "226": "PRE",
+   "192": "PRE",
+   "201": "PRE",
+   "205": "PRE",
+   "175": "PRE"
+  }
+ },
+ {
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-vbRRRRRRRRRR.pdf",
+  "pagina": 5,
+  "camara": "D",
+  "fecha": "2026-10-29",
+  "hora": "11:56 AM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 9,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 37,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "JP": {
+    "si": 29,
+    "no": 0,
+    "abst": 1,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 16,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PCO": {
+    "si": 14,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 13,
     "no": 0,
     "abst": 0,
     "sinres": 0
@@ -2152,9 +3343,9 @@
   "votos_cusco": {
    "226": "PRE",
    "192": "PRE",
+   "201": "PRE",
    "205": "PRE",
-   "175": "PRE",
-   "201": "PRE"
+   "175": "PRE"
   }
  },
  {
@@ -2269,10 +3460,10 @@
   },
   "votos_cusco": {
    "226": "PRE",
-   "192": "PRE",
    "201": "PRE",
-   "175": "PRE",
-   "205": "PRE"
+   "192": "PRE",
+   "205": "PRE",
+   "175": "PRE"
   }
  },
  {
@@ -2498,11 +3689,11 @@
    }
   },
   "votos_cusco": {
-   "175": "AUS",
    "192": "PRE",
    "201": "AUS",
    "205": "PRE",
-   "226": "PRE"
+   "226": "PRE",
+   "175": "AUS"
   }
  },
  {
@@ -2928,6 +4119,789 @@
   }
  },
  {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 1,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "11:34 AM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 18,
+    "aus": 1,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 10,
+    "aus": 3,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 6,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 4,
+    "aus": 2,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 4,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 2,
+    "aus": 2,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "PRE"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 2,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "11:52 AM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 19,
+    "aus": 0,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 6,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 6,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 4,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 4,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "PRE"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 3,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "11:53 AM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 4,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 0,
+    "no": 18,
+    "abst": 0,
+    "sinres": 1
+   },
+   "JP": {
+    "si": 10,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PBG": {
+    "si": 5,
+    "no": 1,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 0,
+    "no": 3,
+    "abst": 1,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 0,
+    "no": 6,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "SI"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 4,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "12:20 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 18,
+    "aus": 1,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 12,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 6,
+    "aus": 0,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 6,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 5,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 4,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "PRE"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 5,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "12:21 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 0,
+    "no": 0,
+    "abst": 4,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 17,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "JP": {
+    "si": 9,
+    "no": 1,
+    "abst": 1,
+    "sinres": 1
+   },
+   "PBG": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "ABST"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 6,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "12:34 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 19,
+    "aus": 0,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 12,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 6,
+    "aus": 0,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 6,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 5,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 4,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "PRE"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 7,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "12:35 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 4,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 18,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "JP": {
+    "si": 11,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PBG": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "SI"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 8,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "12:51 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 18,
+    "aus": 1,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 11,
+    "aus": 2,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 6,
+    "aus": 0,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 6,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 5,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 4,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "AUS"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 9,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "12:52 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 4,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 17,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "JP": {
+    "si": 0,
+    "no": 11,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "AUS"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 10,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "01:02 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 14,
+    "aus": 5,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 12,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 6,
+    "aus": 0,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 5,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 5,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 4,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "PRE"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 11,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "01:04 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 4,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 14,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "JP": {
+    "si": 12,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   }
+  },
+  "votos_cusco": {
+   "305": "SI"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 12,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "01:47 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 14,
+    "aus": 5,
+    "lic": 3,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 12,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 5,
+    "aus": 1,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 5,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 5,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 4,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "PRE"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 13,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "01:48 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 4,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 13,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "JP": {
+    "si": 12,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "SI"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 14,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "02:05 PM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 19,
+    "aus": 1,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 12,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 6,
+    "aus": 0,
+    "lic": 2,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 5,
+    "aus": 1,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 5,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 4,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "PRE"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_11_11_2026.pdf",
+  "pagina": 15,
+  "camara": "S",
+  "fecha": "2026-11-11",
+  "hora": "02:06 PM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 4,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 17,
+    "no": 0,
+    "abst": 0,
+    "sinres": 2
+   },
+   "JP": {
+    "si": 12,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 5,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "SI"
+  }
+ },
+ {
   "pdf": "S_Asistencias_y_votaciones_PROVISIONAL_sesion_del_7_10_2026.pdf",
   "pagina": 2,
   "camara": "S",
@@ -3035,6 +5009,263 @@
   },
   "votos_cusco": {
    "305": "PRE"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 1,
+  "camara": "S",
+  "fecha": "2026-10-28",
+  "hora": "09:34 AM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 10,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 10,
+    "aus": 4,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 4,
+    "aus": 4,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 4,
+    "aus": 3,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 3,
+    "aus": 2,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 0,
+    "aus": 4,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "AUS"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 3,
+  "camara": "S",
+  "fecha": "2026-10-28",
+  "hora": "09:47 AM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 3,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 16,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "JP": {
+    "si": 0,
+    "no": 12,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 3,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "NO"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 7,
+  "camara": "S",
+  "fecha": "2026-10-28",
+  "hora": "10:59 AM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 2,
+    "no": 0,
+    "abst": 1,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 19,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "JP": {
+    "si": 7,
+    "no": 6,
+    "abst": 0,
+    "sinres": 1
+   },
+   "PBG": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 4,
+    "no": 0,
+    "abst": 1,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 2
+   }
+  },
+  "votos_cusco": {
+   "305": "NO"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 8,
+  "camara": "S",
+  "fecha": "2026-10-28",
+  "hora": "11:13 AM",
+  "tipo": "ASISTENCIA",
+  "bancadas": {
+   "FP": {
+    "pre": 21,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "JP": {
+    "pre": 13,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "RP": {
+    "pre": 7,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PBG": {
+    "pre": 6,
+    "aus": 1,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "PCO": {
+    "pre": 5,
+    "aus": 0,
+    "lic": 0,
+    "sus": 0,
+    "otr": 0
+   },
+   "AN": {
+    "pre": 3,
+    "aus": 0,
+    "lic": 1,
+    "sus": 0,
+    "otr": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "AUS"
+  }
+ },
+ {
+  "pdf": "S_Asistencias_y_votaciones_senado_sesion_del_28_10_2026_vb.pdf",
+  "pagina": 9,
+  "camara": "S",
+  "fecha": "2026-10-28",
+  "hora": "11:14 AM",
+  "tipo": "VOTACIÓN",
+  "bancadas": {
+   "AN": {
+    "si": 0,
+    "no": 0,
+    "abst": 3,
+    "sinres": 0
+   },
+   "FP": {
+    "si": 20,
+    "no": 0,
+    "abst": 0,
+    "sinres": 1
+   },
+   "JP": {
+    "si": 1,
+    "no": 12,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PBG": {
+    "si": 6,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   },
+   "PCO": {
+    "si": 4,
+    "no": 0,
+    "abst": 1,
+    "sinres": 0
+   },
+   "RP": {
+    "si": 7,
+    "no": 0,
+    "abst": 0,
+    "sinres": 0
+   }
+  },
+  "votos_cusco": {
+   "305": "AUS"
   }
  },
  {

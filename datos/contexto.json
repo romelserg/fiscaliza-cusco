@@ -1,81 +1,81 @@
 {
  "camaras": {
   "D": {
-   "pases": 29,
-   "votaciones": 15,
-   "asistencia": 88.8,
-   "participacion": 88.7,
-   "con_su_bancada": 98.1
+   "pases": 42,
+   "votaciones": 23,
+   "asistencia": 86.7,
+   "participacion": 86.0,
+   "con_su_bancada": 98.2
   },
   "S": {
-   "pases": 24,
-   "votaciones": 34,
-   "asistencia": 85.0,
-   "participacion": 87.8,
+   "pases": 34,
+   "votaciones": 44,
+   "asistencia": 83.3,
+   "participacion": 86.6,
    "con_su_bancada": 97.2
   }
  },
  "bancadas": {
   "D-FP": {
-   "asistencia": 86.9,
-   "con_su_bancada": 98.7
+   "asistencia": 81.2,
+   "con_su_bancada": 99.1
   },
   "D-JP": {
-   "asistencia": 95.2,
-   "con_su_bancada": 98.9
+   "asistencia": 94.6,
+   "con_su_bancada": 98.1
   },
   "D-PBG": {
-   "asistencia": 90.2,
-   "con_su_bancada": 99.6
-  },
-  "D-RP": {
-   "asistencia": 82.5,
-   "con_su_bancada": 100.0
-  },
-  "D-PCO": {
-   "asistencia": 88.9,
-   "con_su_bancada": 96.7
-  },
-  "D-AN": {
-   "asistencia": 83.4,
-   "con_su_bancada": 90.1
-  },
-  "S-FP": {
-   "asistencia": 86.7,
+   "asistencia": 90.7,
    "con_su_bancada": 99.7
   },
+  "D-RP": {
+   "asistencia": 79.5,
+   "con_su_bancada": 99.3
+  },
+  "D-PCO": {
+   "asistencia": 88.6,
+   "con_su_bancada": 96.8
+  },
+  "D-AN": {
+   "asistencia": 85.5,
+   "con_su_bancada": 92.6
+  },
+  "S-FP": {
+   "asistencia": 84.0,
+   "con_su_bancada": 99.8
+  },
   "S-JP": {
-   "asistencia": 84.8,
-   "con_su_bancada": 96.3
+   "asistencia": 84.0,
+   "con_su_bancada": 95.4
   },
   "S-RP": {
-   "asistencia": 86.5,
-   "con_su_bancada": 99.6
+   "asistencia": 82.4,
+   "con_su_bancada": 99.7
   },
   "S-PBG": {
-   "asistencia": 82.7,
-   "con_su_bancada": 95.2
+   "asistencia": 80.7,
+   "con_su_bancada": 95.8
   },
   "S-PCO": {
-   "asistencia": 89.2,
-   "con_su_bancada": 94.2
+   "asistencia": 90.0,
+   "con_su_bancada": 94.1
   },
   "S-AN": {
-   "asistencia": 71.9,
-   "con_su_bancada": 88.5
+   "asistencia": 75.0,
+   "con_su_bancada": 90.7
   }
  },
  "congresistas": {
   "192": {
    "bancada": "AN",
-   "pases": 29,
-   "presente": 29,
+   "pases": 42,
+   "presente": 42,
    "asistencia": 100.0,
-   "votaciones": 15,
-   "participo": 15,
+   "votaciones": 23,
+   "participo": 23,
    "participacion": 100.0,
-   "comparables": 15,
-   "con_su_bancada": 73.3,
+   "comparables": 23,
+   "con_su_bancada": 82.6,
    "distinto": [
     {
      "fecha": "2026-10-06",
@@ -103,55 +103,55 @@
     }
    ],
    "palabras": 701,
-   "puesto_palabras": 51,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "puesto_palabras": 54,
+   "promedio_palabras": 903,
+   "oradores": 105,
    "miembros": 130
   },
   "205": {
    "bancada": "JP",
-   "pases": 29,
-   "presente": 29,
+   "pases": 42,
+   "presente": 42,
    "asistencia": 100.0,
-   "votaciones": 14,
-   "participo": 14,
+   "votaciones": 22,
+   "participo": 22,
    "participacion": 100.0,
-   "comparables": 14,
+   "comparables": 22,
    "con_su_bancada": 100.0,
    "distinto": [],
    "palabras": 3475,
    "puesto_palabras": 5,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "promedio_palabras": 903,
+   "oradores": 105,
    "miembros": 130
   },
   "226": {
    "bancada": "JP",
-   "pases": 29,
-   "presente": 23,
-   "asistencia": 79.3,
-   "votaciones": 15,
-   "participo": 9,
-   "participacion": 60.0,
-   "comparables": 9,
+   "pases": 42,
+   "presente": 36,
+   "asistencia": 85.7,
+   "votaciones": 23,
+   "participo": 17,
+   "participacion": 73.9,
+   "comparables": 17,
    "con_su_bancada": 100.0,
    "distinto": [],
    "palabras": 374,
-   "puesto_palabras": 77,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "puesto_palabras": 79,
+   "promedio_palabras": 903,
+   "oradores": 105,
    "miembros": 130
   },
   "175": {
    "bancada": "PBG",
-   "pases": 29,
-   "presente": 27,
-   "asistencia": 93.1,
-   "votaciones": 15,
-   "participo": 15,
-   "participacion": 100.0,
-   "comparables": 15,
-   "con_su_bancada": 93.3,
+   "pases": 42,
+   "presente": 38,
+   "asistencia": 90.5,
+   "votaciones": 23,
+   "participo": 22,
+   "participacion": 95.7,
+   "comparables": 22,
+   "con_su_bancada": 95.5,
    "distinto": [
     {
      "fecha": "2026-09-10",
@@ -161,39 +161,58 @@
     }
    ],
    "palabras": 1285,
-   "puesto_palabras": 25,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "puesto_palabras": 31,
+   "promedio_palabras": 903,
+   "oradores": 105,
    "miembros": 130
   },
   "201": {
    "bancada": "PCO",
-   "pases": 29,
-   "presente": 28,
-   "asistencia": 96.6,
-   "votaciones": 15,
-   "participo": 15,
+   "pases": 42,
+   "presente": 41,
+   "asistencia": 97.6,
+   "votaciones": 23,
+   "participo": 23,
    "participacion": 100.0,
-   "comparables": 15,
-   "con_su_bancada": 100.0,
-   "distinto": [],
+   "comparables": 23,
+   "con_su_bancada": 95.7,
+   "distinto": [
+    {
+     "fecha": "2026-11-10",
+     "hora": "09:43 PM",
+     "voto": "ABST",
+     "bancada": "SI"
+    }
+   ],
    "palabras": 983,
-   "puesto_palabras": 44,
-   "promedio_palabras": 857,
-   "oradores": 104,
+   "puesto_palabras": 47,
+   "promedio_palabras": 903,
+   "oradores": 105,
    "miembros": 130
   },
   "305": {
    "bancada": "JP",
-   "pases": 24,
-   "presente": 24,
-   "asistencia": 100.0,
-   "votaciones": 34,
-   "participo": 33,
-   "participacion": 97.1,
-   "comparables": 33,
-   "con_su_bancada": 97.0,
+   "pases": 34,
+   "presente": 31,
+   "asistencia": 91.2,
+   "votaciones": 44,
+   "participo": 41,
+   "participacion": 93.2,
+   "comparables": 41,
+   "con_su_bancada": 92.7,
    "distinto": [
+    {
+     "fecha": "2026-11-11",
+     "hora": "12:21 PM",
+     "voto": "ABST",
+     "bancada": "SI"
+    },
+    {
+     "fecha": "2026-10-28",
+     "hora": "10:59 AM",
+     "voto": "NO",
+     "bancada": "SI"
+    },
     {
      "fecha": "2026-09-30",
      "hora": "12:46 PM",
@@ -202,14 +221,14 @@
     }
    ],
    "palabras": 1950,
-   "puesto_palabras": 11,
-   "promedio_palabras": 1412,
+   "puesto_palabras": 15,
+   "promedio_palabras": 1548,
    "oradores": 56,
    "miembros": 60
   }
  },
  "cobertura": {
-  "validas": 102,
-  "total": 140
+  "validas": 143,
+  "total": 188
  }
 }
