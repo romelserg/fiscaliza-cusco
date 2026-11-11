@@ -5,6 +5,7 @@ al compartir el enlace. Usa los datos reales del tejido de votos de Diputados.
 Requiere macOS (Quartz + CoreText vía pyobjc) y las fuentes de la carpeta fuentes/.
 """
 import json
+import math
 from pathlib import Path
 
 import CoreText
@@ -95,17 +96,34 @@ class Lienzo:
 
 
 def icono(lz, x, y, lado, redondeo=True):
-    """El ícono (escalón de tocapu con un borreguito en la cima), dibujado sobre una grilla de 32."""
+    """El ícono (hemiciclo de la Cámara con la curul 131 en dorado), dibujado sobre una grilla de 32, igual que en la web."""
     k = lado / 32
-    r = lambda gx, gy, gw, gh, col: lz.rect(x + gx * k, y + gy * k, gw * k, gh * k, col)
     if redondeo:
-        lz.redondeado(x, y, lado, lado, 6 * k, TINTA)
+        lz.redondeado(x, y, lado, lado, 6 * k, "#ffffff")
     else:
-        lz.rect(x, y, lado, lado, TINTA)
-    lz.poligono([(x + px * k, y + py * k) for px, py in
-                 [(4, 28), (4, 23), (10, 23), (10, 18), (16, 18), (16, 13), (28, 13), (28, 28)]], NO)
-    r(17, 5, 9, 5, PAPEL); r(16, 6, 11, 3, PAPEL); r(25, 4, 4, 4, ABST)
-    r(18, 10, 2, 3, PAPEL); r(23, 10, 2, 3, PAPEL)
+        lz.rect(x, y, lado, lado, "#ffffff")
+    cuotas = [("JP", 32), ("PBG", 18), ("AN", 10), ("PCO", 14), ("RP", 15), ("FP", 41)]
+    total = sum(n for _, n in cuotas)
+    def bancada(f):
+        acum = 0
+        for b, n in cuotas:
+            acum += n / total
+            if f <= acum + 1e-9:
+                return b
+        return "FP"
+    for fila, (radio, n) in enumerate([(13, 10), (10, 8), (7, 6)]):
+        for i in range(n):
+            t = math.pi - i * math.pi / (n - 1)
+            cx, cy = 16 + radio * math.cos(t), 19.5 - radio * math.sin(t)
+            if (fila, i) == (0, 7):  # la curul 131
+                lz.circulo(x + cx * k, y + cy * k, 2.15 * k, TINTA)
+                lz.circulo(x + cx * k, y + cy * k, 1.45 * k, "#f0cf74")
+            else:
+                lz.circulo(x + cx * k, y + cy * k, 1.25 * k, BANCADA_COLOR[bancada(i / (n - 1))])
+    f = fuente("Cardo-Bold.ttf", 7.4 * k)
+    linea = CoreText.CTLineCreateWithAttributedString(CoreText.CFAttributedStringCreate(None, "131", {CoreText.kCTFontAttributeName: f}))
+    ancho = CoreText.CTLineGetTypographicBounds(linea, None, None, None)[0]
+    lz.texto("131", x + 16 * k - ancho / 2, y + 29 * k, f, TINTA)
 
 
 def tocapu(lz, y, alto):
@@ -187,7 +205,7 @@ def main():
     icono(lz, 58 + ancho_cusco + 20, 392 - 78, 78)
     lz.parrafo("Hay 130 diputados y 5 son de Cusco. La curul 131 es la tuya: mira si asisten, cómo votan y qué proponen.",
                62, 420, 470, 100, franklin(27), TINTA)
-    lz.texto("curul131.ciudadsur.pe", 62, 552, franklin(20, 500), TINTA2)
+    lz.texto("fiscaliza.ciudadsur.pe", 62, 552, franklin(20, 500), TINTA2)
 
     # Columna derecha: el hemiciclo de la Cámara de Diputados
     marcados = hemiciclo(lz, 880, 500, 290, padron, congresistas, orden)
