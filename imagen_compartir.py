@@ -96,7 +96,7 @@ class Lienzo:
 
 
 def icono(lz, x, y, lado, redondeo=True):
-    """El ícono (hemiciclo de la Cámara con la curul 131 en dorado), dibujado sobre una grilla de 32, igual que en la web."""
+    """El ícono (hemiciclo de la Cámara con un asiento más en dorado: el del ciudadano), dibujado sobre una grilla de 32, igual que en la web."""
     k = lado / 32
     if redondeo:
         lz.redondeado(x, y, lado, lado, 6 * k, "#ffffff")
@@ -111,19 +111,15 @@ def icono(lz, x, y, lado, redondeo=True):
             if f <= acum + 1e-9:
                 return b
         return "FP"
-    for fila, (radio, n) in enumerate([(13, 10), (10, 8), (7, 6)]):
+    for fila, (radio, n) in enumerate([(14, 10), (10.5, 8), (7, 6)]):
         for i in range(n):
             t = math.pi - i * math.pi / (n - 1)
-            cx, cy = 16 + radio * math.cos(t), 19.5 - radio * math.sin(t)
-            if (fila, i) == (0, 7):  # la curul 131
-                lz.circulo(x + cx * k, y + cy * k, 2.15 * k, TINTA)
-                lz.circulo(x + cx * k, y + cy * k, 1.45 * k, "#f0cf74")
+            cx, cy = 16 + radio * math.cos(t), 23 - radio * math.sin(t)
+            if (fila, i) == (0, 7):  # un asiento más: el del ciudadano
+                lz.circulo(x + cx * k, y + cy * k, 2.4 * k, TINTA)
+                lz.circulo(x + cx * k, y + cy * k, 1.65 * k, "#f0cf74")
             else:
-                lz.circulo(x + cx * k, y + cy * k, 1.25 * k, BANCADA_COLOR[bancada(i / (n - 1))])
-    f = fuente("Cardo-Bold.ttf", 7.4 * k)
-    linea = CoreText.CTLineCreateWithAttributedString(CoreText.CFAttributedStringCreate(None, "131", {CoreText.kCTFontAttributeName: f}))
-    ancho = CoreText.CTLineGetTypographicBounds(linea, None, None, None)[0]
-    lz.texto("131", x + 16 * k - ancho / 2, y + 29 * k, f, TINTA)
+                lz.circulo(x + cx * k, y + cy * k, 1.4 * k, BANCADA_COLOR[bancada(i / (n - 1))])
 
 
 def tocapu(lz, y, alto):
@@ -200,10 +196,10 @@ def main():
     # Columna izquierda: qué es
     lz.texto("OBSERVATORIO CIUDADANO", 60, 140, franklin(22, 700), CS, 3)
     lz.texto("DEL CONGRESO", 60, 170, franklin(22, 700), CS, 3)
-    lz.texto("Curul", 54, 286, cardo(112), TINTA)
-    ancho_cusco = lz.texto("131", 58, 392, cardo_it(112), CS)
+    lz.texto("Fiscaliza", 54, 286, cardo(112), TINTA)
+    ancho_cusco = lz.texto("Perú", 58, 392, cardo_it(112), CS)
     icono(lz, 58 + ancho_cusco + 20, 392 - 78, 78)
-    lz.parrafo("Hay 130 diputados y 5 son de Cusco. La curul 131 es la tuya: mira si asisten, cómo votan y qué proponen.",
+    lz.parrafo("De los 130 diputados, 5 representan a Cusco. Si asisten, cómo votan y qué proponen.",
                62, 420, 470, 100, franklin(27), TINTA)
     lz.texto("fiscalizaperu.ciudadsur.pe", 62, 552, franklin(20, 500), TINTA2)
 

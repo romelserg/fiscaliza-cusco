@@ -1,9 +1,9 @@
-# Actualización semanal de Curul 131.
+# Actualización semanal de Fiscaliza Perú.
 # Corre en una Mac de GitHub (gratis en repositorios públicos) porque el OCR usa el motor Vision de macOS.
 # Descarga proyectos, actas y Diario de Debates nuevos; regenera la web (docs/) y las piezas para Stories;
 # y deja en un aviso ("issue") lo que necesita revisión humana. También se puede lanzar a mano desde la
-# pestaña Actions → "Actualizar Curul 131" → Run workflow.
-name: Actualizar Curul 131
+# pestaña Actions → "Actualizar Fiscaliza Perú" → Run workflow.
+name: Actualizar Fiscaliza Perú
 
 on:
   schedule:

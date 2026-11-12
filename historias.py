@@ -157,7 +157,7 @@ def main():
     sesiones = len({(e["camara"], e["fecha"]) for e in ev})
 
     def portada(lz, n, tot):
-        y, _ = marco(lz, "Curul 131 - Ciudad Sur", [("La semana de", cardo(104), TINTA, 104),
+        y, _ = marco(lz, "Fiscaliza Perú - Ciudad Sur", [("La semana de", cardo(104), TINTA, 104),
                                                         ("tus congresistas", cardo_it(104), CS, 104),
                                                         (rango(d0, d1) + f" {d1.year}", franklin(40, 700), TINTA, 50)],
                      "actas del Pleno de la Cámara de Diputados y del Senado, Diario de Debates y sistema de proposiciones legislativas del Congreso.", n, tot)
@@ -310,13 +310,13 @@ def escribir_indice(raiz, semanas):
                        for p in sorted(s.glob("*.png")))
         bloques.append(f'<section><h2>Semana al {d.day} de {MESES[d.month - 1]} de {d.year}</h2><div class="g">{imgs}</div></section>')
     (raiz / "index.html").write_text(f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Historias - Curul 131</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Historias - Fiscaliza Perú</title>
 <meta name="robots" content="noindex">
 <style>body{{margin:0;background:#f4ede0;color:#2b2520;font:16px/1.5 system-ui,sans-serif}}main{{max-width:1100px;margin:0 auto;padding:20px 16px 60px}}
 h1{{font-family:Georgia,serif;font-size:2rem;margin:.2em 0}}h2{{font-size:1.1rem;margin:28px 0 10px}}
 .g{{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}}img{{width:100%;display:block;border:1px solid #d6c9b2}}
 p{{color:#6b6157;max-width:60ch}}</style></head><body><main><h1>Historias para Instagram</h1>
-<p>Toca una imagen para descargarla (en el celular: mantén presionado y elige «Guardar imagen»). Se generan solas cada semana con los datos de Curul 131.</p>
+<p>Toca una imagen para descargarla (en el celular: mantén presionado y elige «Guardar imagen»). Se generan solas cada semana con los datos de Fiscaliza Perú.</p>
 {''.join(bloques)}</main></body></html>""")
 
 
