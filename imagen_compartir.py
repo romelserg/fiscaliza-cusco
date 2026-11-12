@@ -205,7 +205,7 @@ def main():
     icono(lz, 58 + ancho_cusco + 20, 392 - 78, 78)
     lz.parrafo("Hay 130 diputados y 5 son de Cusco. La curul 131 es la tuya: mira si asisten, cómo votan y qué proponen.",
                62, 420, 470, 100, franklin(27), TINTA)
-    lz.texto("curul131.ciudadsur.pe", 62, 552, franklin(20, 500), TINTA2)
+    lz.texto("fiscalizaperu.ciudadsur.pe", 62, 552, franklin(20, 500), TINTA2)
 
     # Columna derecha: el hemiciclo de la Cámara de Diputados
     marcados = hemiciclo(lz, 880, 500, 290, padron, congresistas, orden)
