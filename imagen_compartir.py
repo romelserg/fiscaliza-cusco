@@ -96,12 +96,21 @@ class Lienzo:
 
 
 def icono(lz, x, y, lado, redondeo=True):
-    """El ícono (hemiciclo de la Cámara con un asiento más en dorado: el del ciudadano), dibujado sobre una grilla de 32, igual que en la web."""
+    """El ícono (lupa sobre el hemiciclo de la Cámara, con el asiento del ciudadano en dorado), sobre una grilla de 32, igual que en la web."""
     k = lado / 32
+    P = lambda gx, gy: (x + gx * k, y + gy * k)
     if redondeo:
-        lz.redondeado(x, y, lado, lado, 6 * k, "#ffffff")
+        lz.redondeado(x, y, lado, lado, 6 * k, PAPEL)
     else:
-        lz.rect(x, y, lado, lado, "#ffffff")
+        lz.rect(x, y, lado, lado, PAPEL)
+    # mango: de (20.5, 20.5) a (28, 28), 3.5 de grosor y puntas redondas
+    m = 3.5 / 2 / math.sqrt(2)
+    lz.poligono([P(20.5 - m, 20.5 + m), P(20.5 + m, 20.5 - m), P(28 + m, 28 - m), P(28 - m, 28 + m)], "#8e2433")
+    for gx in (20.5, 28):
+        lz.circulo(*P(gx, gx), 1.75 * k, "#8e2433")
+    # lente
+    lz.circulo(*P(13.5, 13.5), 10.5 * k, TINTA)
+    lz.circulo(*P(13.5, 13.5), 8.5 * k, "#ffffff")
     cuotas = [("JP", 32), ("PBG", 18), ("AN", 10), ("PCO", 14), ("RP", 15), ("FP", 41)]
     total = sum(n for _, n in cuotas)
     def bancada(f):
@@ -111,15 +120,15 @@ def icono(lz, x, y, lado, redondeo=True):
             if f <= acum + 1e-9:
                 return b
         return "FP"
-    for fila, (radio, n) in enumerate([(14, 10), (10.5, 8), (7, 6)]):
+    for fila, (radio, n) in enumerate([(6.65, 10), (4.99, 8), (3.33, 6)]):
         for i in range(n):
             t = math.pi - i * math.pi / (n - 1)
-            cx, cy = 16 + radio * math.cos(t), 23 - radio * math.sin(t)
-            if (fila, i) == (0, 7):  # un asiento más: el del ciudadano
-                lz.circulo(x + cx * k, y + cy * k, 2.4 * k, TINTA)
-                lz.circulo(x + cx * k, y + cy * k, 1.65 * k, "#f0cf74")
+            cx, cy = 13.5 + radio * math.cos(t), 16.5 - radio * math.sin(t)
+            if (fila, i) == (0, 7):  # el asiento del ciudadano
+                lz.circulo(*P(cx, cy), 1.52 * k, TINTA)
+                lz.circulo(*P(cx, cy), 1.04 * k, "#f0cf74")
             else:
-                lz.circulo(x + cx * k, y + cy * k, 1.4 * k, BANCADA_COLOR[bancada(i / (n - 1))])
+                lz.circulo(*P(cx, cy), 0.8 * k, BANCADA_COLOR[bancada(i / (n - 1))])
 
 
 def tocapu(lz, y, alto):
