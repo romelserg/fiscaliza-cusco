@@ -2576,8 +2576,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 1
  },
  {
@@ -2595,27 +2595,31 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 2
  },
  {
   "tipo": "VOTACIÓN",
   "fecha": "2026-11-10",
   "hora": "06:54 PM",
-  "asunto": "PRIMERA CONCLUSIÓN DEL INFORME FINAL DE LA DENUNCIA CONSTITUCIONAL 12 (ANTES 403), ACUSACIÓN POR LA PRESUNTA COMISIÓN DE LOS DELITOS DE PATROCINIO ILEGAL (ARTÍCULO 385 DEL CÓDIGO PENAL), ABUSO DE AUTORIDAD (ARTÍCULO 376 DEL",
+  "asunto": "PRIMERA CONCLUSIÓN DEL INFORME FINAL DE LA DENUNCIA CONSTITUCIONAL 12 (ANTES 403), QUE PROPONE ACUSAR POR LA PRESUNTA COMISIÓN DE LOS DELITOS DE PATROCINIO ILEGAL(ARTÍCULO 385 DEL CÓDIGO PENAL), ABUSO DE AUTORIDAD (ARTÍCULO 376 DEL CÓDIGO PENAL) Y COHECHO PASIVO PROPIO (ARTÍCULO 393 DEL CÓDIGO PENAL) AL HABERSE ACREDITADO QUE SE INSTRUMENTALIZÓ SU CARGO PARA VENDER ASCENSOS Y FAVORECER INDEBIDAMENTE A TERCEROS, CONDUCTA QUE SE SUBSUME PLENAMENTE EN ESTOS TIPOS PENALES FUNCIONALES, QUE ENERVAN LA PRESUNCIÓN CONSTITUCIONAL DE INOCENCIA DE JOSÉ PEDRO CASTILLO TERRONES.",
   "votos": {
    "226": "NO",
    "192": "ABST",
    "201": "NO",
    "205": "NO",
+   "175": "SI"
+  },
+  "constancias": {
+   "175": "Constancia del voto a favor de los diputados Espinoza Huillca y Santana Vera."
+  },
+  "registro_sistema": {
    "175": "AUS"
   },
-  "constancias": {},
-  "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 3
  },
  {
@@ -2633,9 +2637,28 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 4
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "07:00 PM",
+  "asunto": "SEGUNDACONCLUSIÓNDELINFORME FINAL DE LA DENUNCIA CONSTITUCIONAL 12 (ANTES 403), EN EL EXTREMO QUE PROPONE ACUSAR AL EXMINISTRO DE DEFENSA WALTER EDISON AYALA GONZALES, POR LA PRESUNTA COMISIÓN DE LOS DELITOS DE ABUSO DE AUTORIDAD (ARTÍCULO 376 DEL CÓDIGO PENAL), COHECHO ACTIVO GENÉRICO (ARTÍCULO 397 DEL CÓDIGO PENAL) Y TRÁFICO DE INFLUENCIAS AGRAVADO (ARTÍCULO 400 DEL CÓDIGO PENAL), AL HABER ACTUADO COMO INTERMEDIARIO Y GESTOR DE LOS INTERESES ILÍCITOS DEL PRESIDENTE Y DE TERCEROS,VULNERANDO SUS DEBERES FUNCIONALES. ASIMISMO, LA PROPUESTA PARA EL LEVANTAMIENTO DEL FUERO DEL ACUSADO PARA QUE EL MINISTERIO PÚBLICO PROCEDA CONFORMEA SUS ATRIBUCIONES RESPECTO A LOS DELITOS FUNCIONALES IDENTIFICADOS.",
+  "votos": {
+   "226": "NO",
+   "192": "ABST",
+   "201": "NO",
+   "205": "NO",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pagina": 5
  },
  {
   "tipo": "VOTACIÓN",
@@ -2671,9 +2694,28 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 6
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "07:06 PM",
+  "asunto": "SEGUNDA CONCLUSIÓN DEL INFORME FINAL DE LA DENUNCIA CONSTITUCIONAL 12 (ANTES 403), QUE RECOMIENDA ARCHIVAR EL EXTREMO REFERIDO AL DELITO DE ORGANIZACIÓN CRIMINAL (ARTÍCULO 317 DEL CÓDIGO PENAL), DADO QUE NO SE HA ACREDITADO LA EXISTENCIA DE UNA ESTRUCTURA CRIMINAL PARALELA DISTINTA A LA ESTATAL DE LA DENUNCIA CONSTITUCIONAL, RESPECTO DEL SEÑOR WALTER EDISON AYALA GONZALES, EXMINISTRO DE DEFENSA.",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "SI",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pagina": 7
  },
  {
   "tipo": "VOTACIÓN",
@@ -2709,8 +2751,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 8
  },
  {
@@ -2728,8 +2770,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 9
  },
  {
@@ -2747,8 +2789,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 10
  },
  {
@@ -2766,8 +2808,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 11
  },
  {
@@ -2785,8 +2827,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 12
  },
  {
@@ -2804,8 +2846,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 13
  },
  {
@@ -2823,15 +2865,15 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 14
  },
  {
   "tipo": "VOTACIÓN",
   "fecha": "2026-11-10",
   "hora": "09:33 PM",
-  "asunto": "PROPOSICIONES LEGISLATIVAS 2, 7, 9, 471, 494, 538, 611 Y 625, QUE PROPONEN MODIFICAR EL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, Y EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, Y DEROGA LA LEY 32104, LEY QUE PRECISA LA APLICACIÓN",
+  "asunto": "PROPOSICIONES LEGISLATIVAS 2, 7, 9, 471, 494, 538, 611 Y 625, QUE PROPONEN MODIFICAR EL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, Y EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, Y DEROGA LA LEY 32104, LEY QUE PRECISA LA APLICACIÓN DEL PÁRRAFO SEGUNDO DEL ARTÍCULO 84 DEL CÓDIGO PENAL, MODIFICADO POR LA LEY 31751, LEY QUE MODIFICA EL CÓDIGO PENAL Y EL NUEVO CÓDIGO PROCESAL PENAL PARA MODIFICAR LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN, A FIN DE ESTABLECER UN LÍMITE PROPORCIONAL A LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN DE LA ACCIÓN PENAL.",
   "votos": {
    "226": "SI",
    "192": "SI",
@@ -2842,8 +2884,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 15
  },
  {
@@ -2861,9 +2903,28 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 16
+ },
+ {
+  "tipo": "VOTACIÓN",
+  "fecha": "2026-11-10",
+  "hora": "09:43 PM",
+  "asunto": "INFORME DE CALIFICACIÓN Y UN PLAZO DE 15 DÍAS HÁBILES PARA QUE LA COMISIÓN DE ACUSACIONES CONSTITUCIONALES REALICE LA INVESTIGACIÓN Y PRESENTE SU INFORME FINAL.",
+  "votos": {
+   "226": "SI",
+   "192": "SI",
+   "201": "ABST",
+   "205": "SI",
+   "175": "SI"
+  },
+  "constancias": {},
+  "registro_sistema": {},
+  "camara": "D",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pagina": 17
  },
  {
   "tipo": "VOTACIÓN",
@@ -2899,8 +2960,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 18
  },
  {
@@ -2918,8 +2979,8 @@
   "constancias": {},
   "registro_sistema": {},
   "camara": "D",
-  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
-  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261020-provisional.pdf",
+  "fuente": "https://diputados.congreso.gob.pe/wp-content/uploads/2026/11/ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
+  "pdf": "D_ASISTENCIA-PLENO-DIPUTADOS-20261110-vbR.pdf",
   "pagina": 19
  },
  {

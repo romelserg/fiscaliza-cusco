@@ -311,9 +311,21 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 32326, LEY QUE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, A FIN DE PERFECCIONAR EL PROCESO DE EXTINCIÓN DE DOMINIO.",
   "sumilla": "PROPONE DEROGAR LA LEY 32326, LEY QUE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO.",
   "bancada_autor": "Ahora Nación",
-  "estado": "APROBADO",
+  "estado": "Expediente de propuesta legislativa remitida al senado de la república",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "Expediente de propuesta legislativa remitida al senado de la república",
+    "comisiones": null,
+    "detalle": "EXPEDIENTE REMITIDO POR EL SISTEMA DE TRÁMITE DOCUMENTARIO MEDIANTE RU 66926-CD"
+   },
+   {
+    "fecha": "2026-11-13",
+    "estado": "PROPUESTA LEGISLATIVA APROBADA",
+    "comisiones": null,
+    "detalle": "OFICIO 056-2026-2027-ADP-P/CD, REMITE, EN TEXTO ADJUNTO, LA PROPUESTA LEGISLATIVA APROBADA EN EL PLENO DE LA CÁMARA DE DIPUTADOS EN SU SESIÓN DEL 10 DE NOVIEMBRE DE 2026, POR EL CUAL SE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, PARA RESTABLECER LA AUTONOMÍA DEL PROCESO Y FORTALECER SUS GARANTÍAS"
+   },
    {
     "fecha": "2026-11-10",
     "estado": "APROBADO",
@@ -954,14 +966,32 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA EL MARCO NORMATIVO CONOCIDO COMO LEYES PRO CRIMEN Y RESTABLECE LAS CAPACIDADES DEL ESTADO PARA LA INVESTIGACIÓN Y PERSECUCIÓN DEL CRIMEN ORGANIZADO, LA CORRUPCIÓN Y LAS GRAVES VIOLACIONES A LOS DERECHOS HUMANOS.",
   "sumilla": "PROPONE DEROGAR EL CONJUNTO DE NORMAS QUE HAN DEBILITADO LA CAPACIDAD DEL ESTADO PERUANO PARA INVESTIGAR, PERSEGUIR Y SANCIONAR EL CRIMEN ORGANIZADO, LA CORRUPCIÓN, LA MINERÍA ILEGAL Y LAS GRAVES VIOLACIONES A LOS DERECHOS HUMANOS.",
   "bancada_autor": "Ahora Nación",
-  "estado": "APROBADO",
+  "estado": "Expediente de propuesta legislativa remitida al senado de la república",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "Expediente de propuesta legislativa remitida al senado de la república",
+    "comisiones": null,
+    "detalle": "EXPEDIENTE REMITIDO POR EL SISTEMA DE TRÁMITE DOCUMENTARIO MEDIANTE RU 66924-CD"
+   },
+   {
+    "fecha": "2026-11-13",
+    "estado": "PROPUESTA LEGISLATIVA APROBADA",
+    "comisiones": null,
+    "detalle": "OFICIO 055-2026-2027-ADP-P/CD, REMITE, EN TEXTO ADJUNTO, LA PROPUESTA LEGISLATIVA APROBADA EN EL PLENO DE LA CÁMARA DE DIPUTADOS EN SU SESIÓN DEL 10 DE NOVIEMBRE DE 2026, POR EL CUAL SE MODIFICA EL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, Y EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, Y DEROGA LA LEY 32104, LEY QUE PRECISA LA APLICACIÓN DEL PÁRRAFO SEGUNDO DEL ARTÍCULO 84 DEL CÓDIGO PENAL, MODIFICADO POR LA LEY 31751, LEY QUE MODIFICA EL CÓDIGO PENAL Y EL NUEVO CÓDIGO PROCESAL PENAL PARA MODIFICAR LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN, A FIN DE ESTABLECER UN LÍMITE PROPORCIONAL A LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN DE LA ACCIÓN PENAL"
+   },
    {
     "fecha": "2026-11-10",
     "estado": "APROBADO",
     "comisiones": null,
     "detalle": "ASISTENCIA Y VOTACIÓN - APROBADO"
+   },
+   {
+    "fecha": "2026-11-10",
+    "estado": "EN DEBATE - PLENO",
+    "comisiones": null,
+    "detalle": "EN SESIÓN DEL PLENO DEL 10 DE NOVIEMBRE DE 2026, SE ACUMULÓ EN SALA LA PL 00625 AL TEXTO SUSTITUTORIO DE LA COMISIÓN DE JUSTICIA RECAIDO EN LAS PL 00002, 00007 Y OTROS"
    },
    {
     "fecha": "2026-11-09",
@@ -1031,6 +1061,126 @@
    "192": "Autor principal"
   }
  },
+ "D-829": {
+  "numero": "00829-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-11-12",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE CREA EL FONDO SOBERANO DE RIQUEZA DEL PERÚ Y REGULA EL AHORRO FISCAL NACIONAL, EL AHORRO DE BONANZA EXTRACTIVA Y LA GESTIÓN Y RENTABILIZACIÓN DE ACTIVOS PÚBLICOS.",
+  "sumilla": "PROPONE CREAR EL FONDO SOBERANO DE RIQUEZA DEL PERÚ, EN ADELANTE FSR PERÚ.",
+  "bancada_autor": "Ahora Nación",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-11-12",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE CREA EL FONDO SOBERANO DE RIQUEZA DEL PERÚ Y REGULA EL AHORRO FISCAL NACIONAL, EL AHORRO DE BONANZA EXTRACTIVA Y LA GESTIÓN Y RENTABILIZACIÓN DE ACTIVOS PÚBLICOS."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 204,
+    "nombre": "Marcelo Salazar, José Miguel",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 155,
+    "nombre": "Bravo Quispe, Aldo Antonio",
+    "rol": "Coautor"
+   },
+   {
+    "id": 156,
+    "nombre": "Buitrón Martínez, Freshman",
+    "rol": "Coautor"
+   },
+   {
+    "id": 192,
+    "nombre": "Holguín Loaiza, César Augusto",
+    "rol": "Coautor"
+   },
+   {
+    "id": 194,
+    "nombre": "Huilca Flores, Indira Isabel",
+    "rol": "Coautor"
+   },
+   {
+    "id": 231,
+    "nombre": "Prado Vallejos, Lila Marianela",
+    "rol": "Coautor"
+   },
+   {
+    "id": 213,
+    "nombre": "Muedas Balbiese, César Augusto",
+    "rol": "Coautor"
+   },
+   {
+    "id": 176,
+    "nombre": "Eusebio Padilla, Arturo César",
+    "rol": "Coautor"
+   },
+   {
+    "id": 168,
+    "nombre": "Colchado Huamani, Harvey Julio",
+    "rol": "Coautor"
+   },
+   {
+    "id": 203,
+    "nombre": "Manrique Olivera, Bernardino Jair",
+    "rol": "Coautor"
+   },
+   {
+    "id": 178,
+    "nombre": "Fernández González, Svieta Valia",
+    "rol": "Coautor"
+   },
+   {
+    "id": 149,
+    "nombre": "Arminta Valencia, Marleny Bibiana",
+    "rol": "Coautor"
+   },
+   {
+    "id": 144,
+    "nombre": "Albañil Carmona, Henry Antonio",
+    "rol": "Coautor"
+   },
+   {
+    "id": 177,
+    "nombre": "Fernandez de la Torre, Hilda Judit",
+    "rol": "Coautor"
+   },
+   {
+    "id": 183,
+    "nombre": "García Huby, Fernando Alberto",
+    "rol": "Coautor"
+   },
+   {
+    "id": 256,
+    "nombre": "Yalta Sotelo, Carlos Alberto",
+    "rol": "Coautor"
+   },
+   {
+    "id": 126,
+    "nombre": "Yarrow Lumbreras, Norma Martina",
+    "rol": "Coautor"
+   },
+   {
+    "id": 239,
+    "nombre": "Santana Vera, Milagros Karina",
+    "rol": "Coautor"
+   },
+   {
+    "id": 210,
+    "nombre": "Meneses Crispin, Ángel Renato",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 416160,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE2MTYw/pdf",
+  "cusco": {
+   "192": "Coautor"
+  }
+ },
  "D-822": {
   "numero": "00822-2026-2031-CD",
   "camara": "D",
@@ -1038,9 +1188,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1107 CON LA FINALIDAD DE CREAR EL FONDO PARA LA REMEDIACIÓN AMBIENTAL DE LOS DAÑOS OCASIONADOS POR LA MINERÍA ILEGAL E INFORMAL (FORAMII).",
   "sumilla": "PROPONE MODIFICAR E INCORPORAR ARTÍCULOS AL DECRETO LEGISLATIV0 1107.",
   "bancada_autor": "Ahora Nación",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Economía, Banca, Finanzas e Inteligencia Financiera",
+    "detalle": ""
+   },
    {
     "fecha": "2026-11-10",
     "estado": "PRESENTADO",
@@ -1108,9 +1264,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE PROHÍBE EL ACCESO A CUENTAS PERSONALES EN REDES SOCIALES A MENORES DE QUINCE AÑOS PARA FORTALECER LA PROTECCIÓN DIGITAL DE NIÑOS, NIÑAS Y ADOLESCENTES EN EL PERÚ.",
   "sumilla": "PROPONE PROTEGER INTEGRALMENTE LOS DERECHOS DE LOS NIÑOS(AS) Y LOS ADOLESCENTES MENORES DE QUINCE AÑOS FRENTE A LOS RIESGOS ASOCIADOS AL USO DE REDES SOCIALES DIGITALES.",
   "bancada_autor": "Ahora Nación",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Defensa del Consumidor y Regulación de los Servicios Públicos",
+    "detalle": ""
+   },
    {
     "fecha": "2026-11-10",
     "estado": "PRESENTADO",
@@ -1366,9 +1528,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE FORTALECE LA PROHIBICIÓN DE DISCRIMINACIÓN EN RAZÓN DE MATERNIDAD, PATERNIDAD Y CONTRA LA INFANCIA.",
   "sumilla": "PROPONE GENERAR REGLAS CONCRETAS DE PROTECCIÓN DE LA MATERNIDAD, DE LA PATERNIDAD Y CONTRA LA INFANCIA EN DIFERENTES ÁMBITOS.",
   "bancada_autor": "Ahora Nación",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Trabajo y Seguridad Social",
+    "detalle": ""
+   },
    {
     "fecha": "2026-11-05",
     "estado": "PRESENTADO",
@@ -3336,9 +3504,21 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1373 PARA FORTALECER LA AUTONOMÍA, EFICACIA Y GARANTÍAS DEL PROCESO DE EXTINCIÓN DE DOMINIO.",
   "sumilla": "PROPONE MODIFICAR DIVERSAS DISPOSICIONES DEL DECRETO LEGISLATIVO 1373, PRINCIPALMENTE AQUELLAS MODIFICADAS POR LA LEY 32326.",
   "bancada_autor": "Ahora Nación",
-  "estado": "APROBADO",
+  "estado": "Expediente de propuesta legislativa remitida al senado de la república",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "Expediente de propuesta legislativa remitida al senado de la república",
+    "comisiones": null,
+    "detalle": "EXPEDIENTE REMITIDO POR EL SISTEMA DE TRÁMITE DOCUMENTARIO MEDIANTE RU 66926-CD"
+   },
+   {
+    "fecha": "2026-11-13",
+    "estado": "PROPUESTA LEGISLATIVA APROBADA",
+    "comisiones": null,
+    "detalle": "OFICIO 056-2026-2027-ADP-P/CD, REMITE, EN TEXTO ADJUNTO, LA PROPUESTA LEGISLATIVA APROBADA EN EL PLENO DE LA CÁMARA DE DIPUTADOS EN SU SESIÓN DEL 10 DE NOVIEMBRE DE 2026, POR EL CUAL SE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, PARA RESTABLECER LA AUTONOMÍA DEL PROCESO Y FORTALECER SUS GARANTÍAS"
+   },
    {
     "fecha": "2026-11-10",
     "estado": "APROBADO",
@@ -3486,14 +3666,32 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL ARTÍCULO 84 DEL CÓDIGO PENAL PARA REGULAR LA SUSPENSIÓN DE LA PRESCRIPCIÓN DE LA ACCIÓN PENAL.",
   "sumilla": "PROPONE MODIFICAR EL ARTÍCULO 84 DEL CÓDIGO PENAL PARA PRECISAR LOS SUPUESTOS DE SUSPENSIÓN DE LA PRESCRIPCIÓN DE LA ACCIÓN PENAL.",
   "bancada_autor": "Ahora Nación",
-  "estado": "APROBADO",
+  "estado": "Expediente de propuesta legislativa remitida al senado de la república",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "Expediente de propuesta legislativa remitida al senado de la república",
+    "comisiones": null,
+    "detalle": "EXPEDIENTE REMITIDO POR EL SISTEMA DE TRÁMITE DOCUMENTARIO MEDIANTE RU 66924-CD"
+   },
+   {
+    "fecha": "2026-11-13",
+    "estado": "PROPUESTA LEGISLATIVA APROBADA",
+    "comisiones": null,
+    "detalle": "OFICIO 055-2026-2027-ADP-P/CD, REMITE, EN TEXTO ADJUNTO, LA PROPUESTA LEGISLATIVA APROBADA EN EL PLENO DE LA CÁMARA DE DIPUTADOS EN SU SESIÓN DEL 10 DE NOVIEMBRE DE 2026, POR EL CUAL SE MODIFICA EL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, Y EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, Y DEROGA LA LEY 32104, LEY QUE PRECISA LA APLICACIÓN DEL PÁRRAFO SEGUNDO DEL ARTÍCULO 84 DEL CÓDIGO PENAL, MODIFICADO POR LA LEY 31751, LEY QUE MODIFICA EL CÓDIGO PENAL Y EL NUEVO CÓDIGO PROCESAL PENAL PARA MODIFICAR LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN, A FIN DE ESTABLECER UN LÍMITE PROPORCIONAL A LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN DE LA ACCIÓN PENAL"
+   },
    {
     "fecha": "2026-11-10",
     "estado": "APROBADO",
     "comisiones": null,
     "detalle": "ASISTENCIA Y VOTACIÓN - APROBADO"
+   },
+   {
+    "fecha": "2026-11-10",
+    "estado": "EN DEBATE - PLENO",
+    "comisiones": null,
+    "detalle": "EN SESIÓN DEL PLENO DEL 10 DE NOVIEMBRE DE 2026, SE ACUMULÓ EN SALA LA PL 00625 AL TEXTO SUSTITUTORIO DE LA COMISIÓN DE JUSTICIA RECAIDO EN LAS PL 00002, 00007 Y OTROS"
    },
    {
     "fecha": "2026-11-09",
@@ -6188,9 +6386,21 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL DECRETO LEGISLATIVO 1373 SOBRE EXTINCIÓN DE DOMINIO",
   "sumilla": "PROPONE FORTALECER EL RÉGIMEN DE EXTINCIÓN DE DOMINIO PARA LA RECUPERACIÓN DE ACTIVOS VINCULADOS CON LA CORRUPCIÓN Y EL CRIMEN ORGANIZADO",
   "bancada_autor": "Ahora Nación",
-  "estado": "APROBADO",
+  "estado": "Expediente de propuesta legislativa remitida al senado de la república",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "Expediente de propuesta legislativa remitida al senado de la república",
+    "comisiones": null,
+    "detalle": "EXPEDIENTE REMITIDO POR EL SISTEMA DE TRÁMITE DOCUMENTARIO MEDIANTE RU 66926-CD"
+   },
+   {
+    "fecha": "2026-11-13",
+    "estado": "PROPUESTA LEGISLATIVA APROBADA",
+    "comisiones": null,
+    "detalle": "OFICIO 056-2026-2027-ADP-P/CD, REMITE, EN TEXTO ADJUNTO, LA PROPUESTA LEGISLATIVA APROBADA EN EL PLENO DE LA CÁMARA DE DIPUTADOS EN SU SESIÓN DEL 10 DE NOVIEMBRE DE 2026, POR EL CUAL SE MODIFICA EL DECRETO LEGISLATIVO 1373, DECRETO LEGISLATIVO SOBRE EXTINCIÓN DE DOMINIO, PARA RESTABLECER LA AUTONOMÍA DEL PROCESO Y FORTALECER SUS GARANTÍAS"
+   },
    {
     "fecha": "2026-11-10",
     "estado": "APROBADO",
@@ -6645,9 +6855,15 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE MODIFICA EL LITERAL C) DEL ARTÍCULO 3 DE LA LEY 32566, LEY QUE AUTORIZA EL CAMBIO DE CONTRATO CAS-COVID A CONTRATO CAS AL PERSONAL ASISTENCIAL DEL SEGURO SOCIAL DE SALUD (ESSALUD) NO BENEFICIADO POR LA LEY 31539 [...], PARA INCORPORAR AL PERSONAL QUE RENUNCIÓ AL CONTRATO CAS-COVID.",
   "sumilla": "PROPONE MODIFICAR LA LEY 32566, A FIN DE GARANTIZAR EL ACCESO AL CAMBIO DE CONTRATO CAS-COVID A CONTRATO CAS REGULAR DE LOS TRABAJADORES DEL SEGURO SOCIAL DE SALUD –ESSALUD.",
   "bancada_autor": "Juntos por el Perú",
-  "estado": "PRESENTADO",
+  "estado": "EN COMISIÓN",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "EN COMISIÓN",
+    "comisiones": "Economía, Banca, Finanzas e Inteligencia Financiera",
+    "detalle": ""
+   },
    {
     "fecha": "2026-11-06",
     "estado": "PRESENTADO",
@@ -8172,6 +8388,66 @@
    "205": "Coautor"
   }
  },
+ "D-834": {
+  "numero": "00834-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-11-13",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE PROHÍBE LA ACUICULTURA DE OCTÓPODOS EN EL TERRITORIO NACIONAL Y LA IMPORTACIÓN DE PRODUCTOS PROVENIENTES DE GRANJAS DE OCTÓPODOS.",
+  "sumilla": "PROPONE GARANTIZAR LA PROTECCIÓN DE LOS ECOSISTEMAS MARINOS, LA BIODIVERSIDAD ACUÁTICA, LA SALUD PÚBLICA Y EL BIENESTAR DE LOS OCTÓPODOS (PULPOS).",
+  "bancada_autor": "Juntos por el Perú",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE PROHÍBE LA ACUICULTURA DE OCTÓPODOS EN EL TERRITORIO NACIONAL Y LA IMPORTACIÓN DE PRODUCTOS PROVENIENTES DE GRANJAS DE OCTÓPODOS."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 261,
+    "nombre": "Zunini Yerren, Ernesto Alonzo",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 255,
+    "nombre": "Villanueva Calderón, Juan Amílcar",
+    "rol": "Coautor"
+   },
+   {
+    "id": 243,
+    "nombre": "Soto Ferrari, Luz Mérida",
+    "rol": "Coautor"
+   },
+   {
+    "id": 195,
+    "nombre": "Isla Rojas, Azucena",
+    "rol": "Coautor"
+   },
+   {
+    "id": 205,
+    "nombre": "Márquez Huanca, Analí",
+    "rol": "Coautor"
+   },
+   {
+    "id": 225,
+    "nombre": "Pérez Alccahuaman, Jesús",
+    "rol": "Coautor"
+   },
+   {
+    "id": 185,
+    "nombre": "Gonzales Delgado, Gabriel Robertino",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 416260,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE2MjYw/pdf",
+  "cusco": {
+   "205": "Coautor"
+  }
+ },
  "D-792": {
   "numero": "00792-2026-2031-CD",
   "camara": "D",
@@ -9327,14 +9603,32 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA LA LEY 31751 Y LA LEY 32104, QUE MODIFICAN LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN DE LA ACCIÓN PENAL",
   "sumilla": "PROPONE RESTITUIR LA VIGENCIA DEL ARTÍCULO 84 DEL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, Y DEL INCISO 1 DEL ARTÍCULO 339 DEL NUEVO CÓDIGO PROCESAL PENAL HASTA ANTES DE LA ENTRADA EN VIGENCIA DE LA LEY 31751",
   "bancada_autor": "Juntos por el Perú",
-  "estado": "APROBADO",
+  "estado": "Expediente de propuesta legislativa remitida al senado de la república",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "Expediente de propuesta legislativa remitida al senado de la república",
+    "comisiones": null,
+    "detalle": "EXPEDIENTE REMITIDO POR EL SISTEMA DE TRÁMITE DOCUMENTARIO MEDIANTE RU 66924-CD"
+   },
+   {
+    "fecha": "2026-11-13",
+    "estado": "PROPUESTA LEGISLATIVA APROBADA",
+    "comisiones": null,
+    "detalle": "OFICIO 055-2026-2027-ADP-P/CD, REMITE, EN TEXTO ADJUNTO, LA PROPUESTA LEGISLATIVA APROBADA EN EL PLENO DE LA CÁMARA DE DIPUTADOS EN SU SESIÓN DEL 10 DE NOVIEMBRE DE 2026, POR EL CUAL SE MODIFICA EL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, Y EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, Y DEROGA LA LEY 32104, LEY QUE PRECISA LA APLICACIÓN DEL PÁRRAFO SEGUNDO DEL ARTÍCULO 84 DEL CÓDIGO PENAL, MODIFICADO POR LA LEY 31751, LEY QUE MODIFICA EL CÓDIGO PENAL Y EL NUEVO CÓDIGO PROCESAL PENAL PARA MODIFICAR LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN, A FIN DE ESTABLECER UN LÍMITE PROPORCIONAL A LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN DE LA ACCIÓN PENAL"
+   },
    {
     "fecha": "2026-11-10",
     "estado": "APROBADO",
     "comisiones": null,
     "detalle": "ASISTENCIA Y VOTACIÓN - APROBADO"
+   },
+   {
+    "fecha": "2026-11-10",
+    "estado": "EN DEBATE - PLENO",
+    "comisiones": null,
+    "detalle": "EN SESIÓN DEL PLENO DEL 10 DE NOVIEMBRE DE 2026, SE ACUMULÓ EN SALA LA PL 00625 AL TEXTO SUSTITUTORIO DE LA COMISIÓN DE JUSTICIA RECAIDO EN LAS PL 00002, 00007 Y OTROS"
    },
    {
     "fecha": "2026-11-09",
@@ -9558,6 +9852,76 @@
   ],
   "pdf_id": 414148,
   "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE0MTQ4/pdf",
+  "cusco": {
+   "226": "Coautor"
+  }
+ },
+ "D-842": {
+  "numero": "00842-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-11-13",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE PROMUEVE LA ARTICULACIÓN Y EL FORTALECIMIENTO DE LAS ESCUELAS DE CAMPO Y DE CAPACITACIÓN AGROPECUARIA EN EL PERÚ.",
+  "sumilla": "PROPONE PROMOVER Y FORTALECER LA ARTICULACIÓN Y EL FORTALECIMIENTO DE LAS INICIATIVAS EXISTENTES DE CAPACITACIÓN PRÁCTICA Y ASISTENCIA TÉCNICA AGROPECUARIA.",
+  "bancada_autor": "Juntos por el Perú",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE PROMUEVE LA ARTICULACIÓN Y EL FORTALECIMIENTO DE LAS ESCUELAS DE CAMPO Y DE CAPACITACIÓN AGROPECUARIA EN EL PERÚ."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 223,
+    "nombre": "Peña Córdova, Olver",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 212,
+    "nombre": "Molina Soto, Nathaly Milagros",
+    "rol": "Coautor"
+   },
+   {
+    "id": 225,
+    "nombre": "Pérez Alccahuaman, Jesús",
+    "rol": "Coautor"
+   },
+   {
+    "id": 218,
+    "nombre": "Palomino Casavilca, Catherin Norma",
+    "rol": "Coautor"
+   },
+   {
+    "id": 191,
+    "nombre": "Holguín Aguirre, James Arturo",
+    "rol": "Coautor"
+   },
+   {
+    "id": 226,
+    "nombre": "Pérez Mallqui, Julián Luis",
+    "rol": "Coautor"
+   },
+   {
+    "id": 198,
+    "nombre": "Lavado Valdivia, Marino Teófilo",
+    "rol": "Coautor"
+   },
+   {
+    "id": 246,
+    "nombre": "Tapullima Insapillo, Jacqueline Viviana",
+    "rol": "Coautor"
+   },
+   {
+    "id": 244,
+    "nombre": "Sulca Castillo, Pilar",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 416317,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE2MzE3/pdf",
   "cusco": {
    "226": "Coautor"
   }
@@ -10813,14 +11177,32 @@
   "titulo": "PROPOSICIÓN LEGISLATIVA QUE DEROGA DIVERSAS REFORMAS LEGISLATIVAS QUE HAN GENERADO RETROCESOS NORMATIVOS EN LA LUCHA CONTRA EL CRIMEN ORGANIZADO\n",
   "sumilla": "PROPONE DEROGAR DIVERSAS REFORMAS LEGISLATIVAS QUE HAN GENERADO RETROCESOS NORMATIVOS EN LA LUCHA CONTRA EL CRIMEN ORGANIZADO, LA CORRUPCIÓN, EL LAVADO DE ACTIVOS, LA MINERÍA ILEGAL Y OTRAS FORMAS DE CRIMINALIDAD COMPLEJA ",
   "bancada_autor": "Juntos por el Perú",
-  "estado": "APROBADO",
+  "estado": "Expediente de propuesta legislativa remitida al senado de la república",
   "legislatura": "Primera Legislatura Ordinaria 2026",
   "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "Expediente de propuesta legislativa remitida al senado de la república",
+    "comisiones": null,
+    "detalle": "EXPEDIENTE REMITIDO POR EL SISTEMA DE TRÁMITE DOCUMENTARIO MEDIANTE RU 66924-CD"
+   },
+   {
+    "fecha": "2026-11-13",
+    "estado": "PROPUESTA LEGISLATIVA APROBADA",
+    "comisiones": null,
+    "detalle": "OFICIO 055-2026-2027-ADP-P/CD, REMITE, EN TEXTO ADJUNTO, LA PROPUESTA LEGISLATIVA APROBADA EN EL PLENO DE LA CÁMARA DE DIPUTADOS EN SU SESIÓN DEL 10 DE NOVIEMBRE DE 2026, POR EL CUAL SE MODIFICA EL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, Y EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, Y DEROGA LA LEY 32104, LEY QUE PRECISA LA APLICACIÓN DEL PÁRRAFO SEGUNDO DEL ARTÍCULO 84 DEL CÓDIGO PENAL, MODIFICADO POR LA LEY 31751, LEY QUE MODIFICA EL CÓDIGO PENAL Y EL NUEVO CÓDIGO PROCESAL PENAL PARA MODIFICAR LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN, A FIN DE ESTABLECER UN LÍMITE PROPORCIONAL A LA SUSPENSIÓN DEL PLAZO DE PRESCRIPCIÓN DE LA ACCIÓN PENAL"
+   },
    {
     "fecha": "2026-11-10",
     "estado": "APROBADO",
     "comisiones": null,
     "detalle": "ASISTENCIA Y VOTACIÓN - APROBADO"
+   },
+   {
+    "fecha": "2026-11-10",
+    "estado": "EN DEBATE - PLENO",
+    "comisiones": null,
+    "detalle": "EN SESIÓN DEL PLENO DEL 10 DE NOVIEMBRE DE 2026, SE ACUMULÓ EN SALA LA PL 00625 AL TEXTO SUSTITUTORIO DE LA COMISIÓN DE JUSTICIA RECAIDO EN LAS PL 00002, 00007 Y OTROS"
    },
    {
     "fecha": "2026-11-09",
@@ -12753,6 +13135,56 @@
   "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDEyMzIw/pdf",
   "cusco": {
    "201": "Autor principal"
+  }
+ },
+ "D-832": {
+  "numero": "00832-2026-2031-CD",
+  "camara": "D",
+  "fecha": "2026-11-13",
+  "titulo": "PROPOSICIÓN LEGISLATIVA QUE FORTALECE EL CUMPLIMIENTO Y SEGUIMIENTO DE LAS OBLIGACIONES DE TRANSFORMACIÓN DIGITAL EN LAS ENTIDADES PÚBLICAS.",
+  "sumilla": "PROPONE FORTALECER EL CUMPLIMIENTO DE LAS OBLIGACIONES DE TRANSFORMACIÓN DIGITAL EN LAS ENTIDADES PÚBLICAS.",
+  "bancada_autor": "Partido Cívico Obras",
+  "estado": "PRESENTADO",
+  "legislatura": "Primera Legislatura Ordinaria 2026",
+  "seguimiento": [
+   {
+    "fecha": "2026-11-13",
+    "estado": "PRESENTADO",
+    "comisiones": null,
+    "detalle": "PROPOSICIÓN LEGISLATIVA QUE FORTALECE EL CUMPLIMIENTO Y SEGUIMIENTO DE LAS OBLIGACIONES DE TRANSFORMACIÓN DIGITAL EN LAS ENTIDADES PÚBLICAS."
+   }
+  ],
+  "firmantes": [
+   {
+    "id": 257,
+    "nombre": "Yataco Torrealva, José Ricardo",
+    "rol": "Autor principal"
+   },
+   {
+    "id": 224,
+    "nombre": "Peralta Jorpa, Máximo",
+    "rol": "Coautor"
+   },
+   {
+    "id": 201,
+    "nombre": "López Letona, Heber",
+    "rol": "Coautor"
+   },
+   {
+    "id": 145,
+    "nombre": "Alvarón De la Cruz, Édgar Adrián",
+    "rol": "Coautor"
+   },
+   {
+    "id": 228,
+    "nombre": "Piñán Mamani, Víctor Eduardo",
+    "rol": "Coautor"
+   }
+  ],
+  "pdf_id": 416184,
+  "pdf": "https://api.congreso.gob.pe/spley-portal-service/archivo/NDE2MTg0/pdf",
+  "cusco": {
+   "201": "Coautor"
   }
  },
  "D-825": {

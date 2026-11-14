@@ -2,10 +2,10 @@
  "camaras": {
   "D": {
    "pases": 42,
-   "votaciones": 23,
+   "votaciones": 27,
    "asistencia": 86.7,
-   "participacion": 86.0,
-   "con_su_bancada": 98.2
+   "participacion": 85.4,
+   "con_su_bancada": 98.1
   },
   "S": {
    "pases": 34,
@@ -18,27 +18,27 @@
  "bancadas": {
   "D-FP": {
    "asistencia": 81.2,
-   "con_su_bancada": 99.1
+   "con_su_bancada": 99.2
   },
   "D-JP": {
    "asistencia": 94.6,
-   "con_su_bancada": 98.1
+   "con_su_bancada": 98.4
   },
   "D-PBG": {
    "asistencia": 90.7,
-   "con_su_bancada": 99.7
+   "con_su_bancada": 99.8
   },
   "D-RP": {
    "asistencia": 79.5,
-   "con_su_bancada": 99.3
+   "con_su_bancada": 99.4
   },
   "D-PCO": {
    "asistencia": 88.6,
-   "con_su_bancada": 96.8
+   "con_su_bancada": 95.8
   },
   "D-AN": {
    "asistencia": 85.5,
-   "con_su_bancada": 92.6
+   "con_su_bancada": 92.1
   },
   "S-FP": {
    "asistencia": 84.0,
@@ -71,11 +71,11 @@
    "pases": 42,
    "presente": 42,
    "asistencia": 100.0,
-   "votaciones": 23,
-   "participo": 23,
+   "votaciones": 27,
+   "participo": 27,
    "participacion": 100.0,
-   "comparables": 23,
-   "con_su_bancada": 82.6,
+   "comparables": 27,
+   "con_su_bancada": 85.2,
    "distinto": [
     {
      "fecha": "2026-10-06",
@@ -113,10 +113,10 @@
    "pases": 42,
    "presente": 42,
    "asistencia": 100.0,
-   "votaciones": 22,
-   "participo": 22,
+   "votaciones": 26,
+   "participo": 26,
    "participacion": 100.0,
-   "comparables": 22,
+   "comparables": 26,
    "con_su_bancada": 100.0,
    "distinto": [],
    "palabras": 3475,
@@ -130,10 +130,10 @@
    "pases": 42,
    "presente": 36,
    "asistencia": 85.7,
-   "votaciones": 23,
-   "participo": 17,
-   "participacion": 73.9,
-   "comparables": 17,
+   "votaciones": 27,
+   "participo": 21,
+   "participacion": 77.8,
+   "comparables": 21,
    "con_su_bancada": 100.0,
    "distinto": [],
    "palabras": 374,
@@ -147,11 +147,11 @@
    "pases": 42,
    "presente": 38,
    "asistencia": 90.5,
-   "votaciones": 23,
-   "participo": 22,
-   "participacion": 95.7,
-   "comparables": 22,
-   "con_su_bancada": 95.5,
+   "votaciones": 27,
+   "participo": 26,
+   "participacion": 96.3,
+   "comparables": 26,
+   "con_su_bancada": 96.2,
    "distinto": [
     {
      "fecha": "2026-09-10",
@@ -171,12 +171,18 @@
    "pases": 42,
    "presente": 41,
    "asistencia": 97.6,
-   "votaciones": 23,
-   "participo": 23,
+   "votaciones": 27,
+   "participo": 27,
    "participacion": 100.0,
-   "comparables": 23,
-   "con_su_bancada": 95.7,
+   "comparables": 27,
+   "con_su_bancada": 92.6,
    "distinto": [
+    {
+     "fecha": "2026-11-10",
+     "hora": "09:43 PM",
+     "voto": "ABST",
+     "bancada": "SI"
+    },
     {
      "fecha": "2026-11-10",
      "hora": "09:43 PM",
@@ -228,7 +234,7 @@
   }
  },
  "cobertura": {
-  "validas": 143,
-  "total": 188
+  "validas": 147,
+  "total": 191
  }
 }
